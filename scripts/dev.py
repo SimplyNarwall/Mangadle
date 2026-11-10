@@ -11,6 +11,7 @@ mangadle dev tools. Run from anywhere; paths default to this repo.
   python3 scripts/dev.py check 2026-11-11 --blind --fix   redact flagged words without showing them
   python3 scripts/dev.py approve 2026-11-11     mark a day "reviewed": true (optional; the site ignores it)
   python3 scripts/dev.py shuffle --upcoming      mix up the title order of days not played yet
+  python3 scripts/dev.py audit                  after re-processing the snapshot: find days to rebuild
   python3 scripts/dev.py renumber               after changing LAUNCH_DATE in build_day.py
   python3 scripts/dev.py index                  rebuild the past days list
 
@@ -123,7 +124,7 @@ def cmd_serve(args):
     for d in days[-8:]:
         print(f"  {d}: {base}?date={d}")
     for d in dev_days:
-        print(f"  {d} (dev/test): {base}?date={d}" + ("&preview" if d > str(today()) else ""))
+        print(f"  {d} (dev/test): {base}?date={d}")
     if not days and not dev_days:
         print("  no day files yet; try: python3 scripts/dev.py fake")
     print(f"  add &reset to any URL to wipe your progress for that day")
@@ -381,6 +382,36 @@ def cmd_shuffle(args):
         print(f"{date}: shuffled")
 
 
+def cmd_audit(args):
+    """Spoiler-free: find built days with picks the current snapshot no longer allows."""
+    import build_day as bd
+    snap_path = os.path.join(args.data, "snapshot.json")
+    if not os.path.exists(snap_path):
+        raise SystemExit(f"no snapshot at {snap_path}")
+    eligible = {r["anilist_id"] for r in bd.load_json(snap_path, []) if r["accepted_aliases"]}
+    start = str(today()) if not args.all else "0000"
+    flagged = []
+    for name in sorted(os.listdir(DAYS)):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", name) or name[:10] < start:
+            continue
+        day = bd.load_json(os.path.join(DAYS, name), {})
+        # random-tier picks were never in the snapshot, so they can't go stale
+        stale = [i for i, t in enumerate(day.get("titles", []), 1)
+                 if t.get("tier") != "random" and t["anilist_id"] not in eligible]
+        status = f"{len(stale)} title(s) no longer eligible (positions {', '.join(map(str, stale))})" if stale else "ok"
+        print(f"  {name[:10]}: {status}")
+        if stale:
+            flagged.append(name[:10])
+    if flagged:
+        print("\nRebuild those days (prints nothing about the new titles):")
+        for d in flagged:
+            print(f"  python3 scripts/dev.py rebuild {d}")
+        if str(today()) in flagged:
+            print("Today's puzzle is in the list; rebuilding it resets anyone's progress on it.")
+    else:
+        print("\nall good.")
+
+
 def cmd_renumber(args):
     import build_day as bd
     hist_path = os.path.join(args.data, "history.json")
@@ -453,6 +484,11 @@ def main():
     s.add_argument("--include-today", action="store_true", help="with --upcoming, include today")
     s.add_argument("--force", action="store_true", help="allow today or earlier (only if nobody has played it)")
     s.set_defaults(func=cmd_shuffle)
+
+    s = sub.add_parser("audit", help="find built days with titles the snapshot no longer allows (spoiler-free)")
+    s.add_argument("--data", default=DATA)
+    s.add_argument("--all", action="store_true", help="include past days too")
+    s.set_defaults(func=cmd_audit)
 
     s = sub.add_parser("renumber", help="recount puzzle numbers after changing LAUNCH_DATE")
     s.add_argument("--data", default=DATA)

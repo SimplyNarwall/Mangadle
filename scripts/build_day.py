@@ -164,16 +164,18 @@ def pick_random_id(rng, exclude, fetch=anilist, attempts=40):
     for _ in range(attempts):
         ids = rng.sample(range(1, RANDOM_ID_MAX), 50)
         hits = fetch(RANDOM_QUERY, {"ids": ids})["Page"]["media"]
-        hits = [m for m in hits if m["id"] not in exclude and not snap.is_spinoff(m)]
+        # Skip spin-offs, sequels, and anything with alternative versions (we can't tell which one is main).
+        hits = [m for m in hits if m["id"] not in exclude and not snap.is_spinoff(m)
+                and not snap.is_sequel(m) and not snap.alternatives(m)]
         if hits:
             return rng.choice(hits)["id"]
     raise RuntimeError("could not find a random eligible title")
 
 
-def choose_titles(date, snapshot, history, suggestions, fetch=anilist):
+def choose_titles(date, snapshot, history, suggestions, fetch=anilist, avoid=()):
     """Returns (list of (anilist_id, source, tier)), remaining suggestions."""
     rng = random.Random(f"mangadle-{date.isoformat()}")
-    exclude = recent_ids(history, date)
+    exclude = recent_ids(history, date) | set(avoid)
     by_id = {r["anilist_id"]: r for r in snapshot}
     picks, remaining = [], []
 
@@ -428,6 +430,10 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
     if os.path.exists(out_path) and not (force or same_titles):
         print(f"{date}: already built (use --force to rebuild)")
         return out_path
+    # A full rebuild of an existing day re-picks everything and avoids the titles it had,
+    # so a day you've seen (or spoiled) comes back with 10 different titles.
+    previous = load_json(out_path, None) if (force and not same_titles) else None
+    avoid = {t["anilist_id"] for t in previous["titles"]} if previous else set()
     history = [h for h in history if h["date"] != date.isoformat()]
 
     snapshot = load_json(os.path.join(data_dir, "snapshot.json"), None)
@@ -441,7 +447,7 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
         picks = [(t["anilist_id"], t.get("source", "fallback"), t.get("tier", "random")) for t in old_day["titles"]]
         remaining = suggestions
     else:
-        picks, remaining = choose_titles(date, snapshot, history, suggestions, fetch)
+        picks, remaining = choose_titles(date, snapshot, history, suggestions, fetch, avoid=avoid)
     titles = []
     for pid, source, tier in picks:
         print(f"{date}: building {pid} ({source}, {tier})", file=sys.stderr)

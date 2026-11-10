@@ -21,6 +21,7 @@ minutes.
 
 import argparse
 import json
+import re
 import os
 import sys
 import time
@@ -204,6 +205,21 @@ def titles_of(media):
     return out
 
 
+def main_title_parts(names):
+    """'Kino's Journey: The Beautiful World' also answers as 'Kino's Journey'.
+    Splits on ':' or ' - '; keeps the part before it if it's long enough to be
+    a real title (not 'Re' from 'Re:Zero')."""
+    out = []
+    for n in names:
+        for sep in (":", " - ", " ~"):
+            if sep in n:
+                head = n.split(sep, 1)[0].strip()
+                letters = re.sub(r"[^\w]", "", head)
+                if len(letters) >= 4 and head.lower() != n.lower():
+                    out.append(head)
+    return out
+
+
 def edges(media, relation_type):
     return [
         e["node"] for e in (media.get("relations") or {}).get("edges", [])
@@ -212,8 +228,75 @@ def edges(media, relation_type):
 
 
 def is_spinoff(media):
-    """Spin-offs and side stories point back to their main series with PARENT."""
-    return any(n.get("format") != "NOVEL" for n in edges(media, "PARENT"))
+    """Spin-offs and side stories point back to their main series with PARENT.
+    The parent can be a light novel or an anime, not just a manga."""
+    return any(e["relationType"] == "PARENT" for e in (media.get("relations") or {}).get("edges", []))
+
+
+def alternatives(media):
+    """Other manga versions of the same story (e.g. two adaptations of one game)."""
+    return [n for n in edges(media, "ALTERNATIVE") if n.get("format") != "NOVEL"]
+
+
+def is_sequel(media, by_id=None):
+    """A later entry in a series: it has a PREQUEL that is in the pool and came out
+    no later than it did. (AniList also calls later-written prequels PREQUEL, e.g.
+    Corpse Party's Cemetery 0; those don't count.) With no by_id, e.g. for random
+    picks outside the pool, any manga PREQUEL counts."""
+    prequels = [n for n in edges(media, "PREQUEL") if n.get("format") != "NOVEL"]
+    if by_id is None:
+        return bool(prequels)
+    year = (media.get("startDate") or {}).get("year")
+    for n in prequels:
+        full = by_id.get(n["id"])
+        if full is None:
+            continue  # obscure prequel outside the pool: this entry stands in for the series
+        p_year = (full.get("startDate") or {}).get("year")
+        if year is None or p_year is None or p_year <= year:
+            return True
+    return False
+
+
+def _norm_title(t):
+    return re.sub(r"\s+", " ", re.sub(r"[^\w]+", " ", (t or "").lower())).strip()
+
+
+def build_title_index(raw):
+    """normalized main title -> highest popularity of any manga using it as its full title."""
+    idx = {}
+    for m in raw:
+        if m.get("isAdult") or m.get("format") == "NOVEL":
+            continue
+        for t in ((m.get("title") or {}).get("english"), (m.get("title") or {}).get("romaji")):
+            k = _norm_title(t)
+            if k:
+                idx[k] = max(idx.get(k, 0), m.get("popularity") or 0)
+    return idx
+
+
+def is_named_spinoff(media, title_index):
+    """'Attack on Titan: Before the Fall' when 'Attack on Titan' is a more popular series.
+    Catches spin-offs AniList only links through their light novel source."""
+    pop = media.get("popularity") or 0
+    t = media.get("title") or {}
+    for head in main_title_parts([x for x in (t.get("english"), t.get("romaji")) if x]):
+        if title_index.get(_norm_title(head), 0) > pop:
+            return True
+    return False
+
+
+def is_lesser_alternative(media, by_id):
+    """True if a more popular alternative version of this story is also in the pool.
+    Only the most popular version gets picked; its answers accept every version's name."""
+    pop = media.get("popularity") or 0
+    for n in alternatives(media):
+        other = by_id.get(n["id"])
+        if other is None:
+            continue  # below the popularity floor, so not competing
+        other_pop = other.get("popularity") or 0
+        if other_pop > pop or (other_pop == pop and other["id"] < media["id"]):
+            return True
+    return False
 
 
 def series_root(media, by_id, max_depth=20):
@@ -251,7 +334,23 @@ def build_record(m, by_id):
             node = root
         if node is not None:
             root_aliases.extend(titles_of(node))
-    accepted = list(dict.fromkeys(aliases + root_aliases))
+    alt_aliases = []
+    for n in alternatives(m):
+        alt_aliases.extend(titles_of(by_id.get(n["id"], n)))
+    # The light novel / web novel this manga adapts usually goes by the same name.
+    source_aliases = []
+    for e in (m.get("relations") or {}).get("edges", []):
+        if e["relationType"] in ("ADAPTATION", "SOURCE") and e["node"].get("format") == "NOVEL":
+            source_aliases.extend(titles_of(e["node"]))
+    full = aliases + root_aliases + alt_aliases + source_aliases
+    accepted = list(dict.fromkeys(full + main_title_parts(full)))
+    # case-insensitive de-dupe, keeping the first spelling
+    seen, unique = set(), []
+    for a in accepted:
+        if a.lower() not in seen:
+            seen.add(a.lower())
+            unique.append(a)
+    accepted = unique
 
     tags = sorted(m.get("tags") or [], key=lambda t: -t["rank"])
     demographic = [t["name"] for t in tags if t.get("category") == "Demographic"]
@@ -270,6 +369,7 @@ def build_record(m, by_id):
         },
         "accepted_aliases": accepted,
         "is_sequel": len(chain) > 1,
+        "has_alternatives": bool(alternatives(m)),
         "series_root_id": root["id"] if len(chain) > 1 else None,
         "origin": ORIGIN_NAMES.get(m.get("countryOfOrigin"), m.get("countryOfOrigin")),
         "country": m.get("countryOfOrigin"),
@@ -299,6 +399,7 @@ def build_record(m, by_id):
 
 def process(raw):
     by_id = {m["id"]: m for m in raw}
+    title_index = build_title_index(raw)
     records, excluded = [], Counter()
     for m in raw:
         if m.get("format") not in ("MANGA", "ONE_SHOT"):
@@ -306,6 +407,15 @@ def process(raw):
             continue
         if is_spinoff(m):
             excluded["spin-off / side story"] += 1
+            continue
+        if is_named_spinoff(m, title_index):
+            excluded["spin-off (named after a more popular series)"] += 1
+            continue
+        if is_sequel(m, by_id):
+            excluded["sequel (only first entries are picked)"] += 1
+            continue
+        if is_lesser_alternative(m, by_id):
+            excluded["alternative version of a more popular entry"] += 1
             continue
         records.append(build_record(m, by_id))
     records.sort(key=lambda r: -(r["popularity"] or 0))
@@ -331,7 +441,7 @@ def summarize(records, excluded):
         parts = ", ".join(f"{o} {combo.get((name, o), 0)}" for o in ("manga", "manhwa", "manhua"))
         lines.append(f"  {name:<8} {parts}")
     lines.append("")
-    lines.append(f"sequels (original's names also accepted): {sum(r['is_sequel'] for r in records)}")
+    lines.append(f"with alternative versions (their names also accepted): {sum(r.get('has_alternatives', False) for r in records)}")
     lines.append(f"titles with no Latin-script alias: {sum(1 for r in records if not r['accepted_aliases'])}")
     lines.append("")
     lines.append("excluded:")

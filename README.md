@@ -66,6 +66,24 @@ python3 scripts/sync_suggestions.py --data data
 
 Run this before `build_day.py`. Suggested titles fill the next day's slots first; random picks cover whatever tiers are missing.
 
+## Re-processing the snapshot
+
+After changing tiers or the filtering rules in `scripts/anilist_snapshot.py`, re-process the raw data you already have (no new download) and check the days you've already built:
+
+```
+python3 scripts/anilist_snapshot.py --raw data/raw_anilist.json --out data
+python3 scripts/dev.py audit
+```
+
+`audit` lists any upcoming day containing a title the new snapshot no longer allows, without showing which, and prints the `rebuild` command for each.
+
+Filtering rules (in `scripts/anilist_snapshot.py`):
+- No adult titles and no light novels.
+- No spin-offs or side stories: anything AniList links to a parent (manga, light novel, or anime), plus titles named "X: Something" when X is a more popular series (catches spin-offs AniList only links through their novel).
+- No sequels: an entry is skipped if an earlier entry of its series is in the pool. If the only earlier entry is too obscure to be in the pool, or came out later (a prequel written afterwards), the entry stays and its answers also accept that entry's names.
+- Alternative versions (e.g. different manga adaptations of the same game): only the most popular is picked, and it accepts every version's names.
+- Answers also accept the main title before a colon ("Kino's Journey" for "Kino's Journey: The Beautiful World") and the source light novel's names.
+
 ## Launch date and puzzle numbers
 
 Puzzle #1 is `LAUNCH_DATE` near the top of `scripts/build_day.py` (currently 2026-11-11). Every day's number is counted from it, so to move the launch:
@@ -79,7 +97,7 @@ Day files dated before the launch stay playable by URL but are hidden from the p
 
 `archive.html` lists every day from launch through today (never future days, even ones already built), with your score for each one played in this browser. The list comes from `docs/days/index.json`, which `build_day.py` rewrites on every build; `python3 scripts/dev.py index` regenerates it by hand.
 
-Future days can't be played on the site unless the URL has `&preview`.
+Future days can't be played on the live site unless the URL has `&preview` (locally they always open).
 
 ## Spoiler-free checking
 
@@ -104,7 +122,7 @@ python3 scripts/dev.py serve
 While serving, add these to the URL:
 - `?date=2026-11-11` plays any date (`?date=2000-01-01` for the fake day)
 - `&reset` wipes your progress for that date so you can replay it
-- `&preview` lets you play a date that hasn't happened yet
+- Future dates open freely on localhost; on the live site they need `&preview`
 - `&api=http://localhost:8787` points at a local worker instead of the one in `config.js`
 
 Reviewing and fixing a day:

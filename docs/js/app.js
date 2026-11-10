@@ -466,7 +466,9 @@ async function boot() {
   }
   setupSuggestions();
 
-  if (date > todayIn(CONFIG.timezone) && !params.has("preview")) {
+  // Future dates are locked on the live site; local testing (localhost) can open any date.
+  const isLocal = ["localhost", "127.0.0.1"].includes(location.hostname);
+  if (date > todayIn(CONFIG.timezone) && !params.has("preview") && !isLocal) {
     $("#app").replaceChildren(h("div", { class: "card empty" }, h("h2", {}, "Not out yet"),
       h("p", { class: "muted" }, `The puzzle for ${date} isn't out yet. `, h("a", { href: "./" }, "Play today's puzzle"), ".")));
     return;
