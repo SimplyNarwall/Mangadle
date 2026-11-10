@@ -4,7 +4,7 @@ compatibility_date = "2025-06-01"
 
 [vars]
 # Comma-separated list of origins allowed to call the API, e.g. "https://simplynarwall.github.io"
-ALLOWED_ORIGIN = "*"
+ALLOWED_ORIGIN = "https://simplynarwall.github.io"
 
 [[d1_databases]]
 binding = "DB"
