@@ -5,6 +5,198 @@
  "start_points": 1000,
  "titles": [
   {
+   "anilist_id": 30028,
+   "source": "fallback",
+   "tier": "easy",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 59621,
+    "average_score": 88,
+    "genres": [
+     "Drama",
+     "Music",
+     "Romance",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2000, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30028-VJqBC1ar6AxE.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character] is a young woman who's endured an unending string of boyfriend problems. Moving to Tokyo, she's hoping to take control of her life and put all those messy misadventures behind her. She's looking for love and she's hoping to find it in the big city.\n\n[title] Osaki, on the other hand, is cool, confident and focused. She swaggers into town and proceeds to kick down the doors to Tokyo's underground punk scene. She's got a dream and won't give up until she becomes Japan's No. 1 rock'n'roll superstar.\n\nThis is the story of two 20-year-old women who share the same name. Even though they come from completely different backgrounds, they somehow meet and become best friends. The world of [title] is a world exploding with sex, music, fashion, gossip and all-night parties.\n\nNote: Winner of the 48th Shogakukan Manga Award in the Shoujo Category in 2002."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Adult Cast",
+       "rank": 91,
+       "spoiler": false
+      },
+      {
+       "name": "Pregnancy",
+       "rank": 90,
+       "spoiler": true
+      },
+      {
+       "name": "Band",
+       "rank": 89,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 85,
+       "spoiler": true
+      },
+      {
+       "name": "Philosophy",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Time Skip",
+       "rank": 77,
+       "spoiler": true
+      },
+      {
+       "name": "Found Family",
+       "rank": 76,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Ai Yazawa",
+       "native": "矢沢あい",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Nana Oosaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b702-qqO3zbj5hp1l.png"
+      },
+      {
+       "name": "Nana Komatsu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b701-gNKbnxT6dbrf.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Shinichi Okazaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1424-dcHnhsX7XfrP.jpg"
+      },
+      {
+       "name": "Yasushi Takagi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2450-fybfLw3SlimN.jpg"
+      },
+      {
+       "name": "Nobuo Terashima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2449-V3b2fG5cCww5.png"
+      },
+      {
+       "name": "Ren Honjou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1425-zZVyHt5cc742.jpg"
+      },
+      {
+       "name": "Layla Serizawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2089-zofXDvhPOO2U.jpg"
+      },
+      {
+       "name": "Takumi Ichinose",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2451-W6dBNWlhwQ3Y.jpg"
+      },
+      {
+       "name": "Miu Shinoda",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b7344-kiJV9hdzQTgx.png"
+      },
+      {
+       "name": "Junko Saotome",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/8017.jpg"
+      },
+      {
+       "name": "Kyousuke Takakura",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/4461.jpg"
+      },
+      {
+       "name": "Naoki Fujieda",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/5341.jpg"
+      },
+      {
+       "name": "Mai Tsuzuki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/9996.jpg"
+      },
+      {
+       "name": "Nami Komatsu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b240244-VMX5qThdBjnX.png"
+      },
+      {
+       "name": "Asami Matsumoto",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b22258-v09nOE7y6xmh.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Arguably the best drama in the medium.",
+      "excerpt": "[title] is a masterpiece that gives the reader/watcher a roller-coaster of emotions. Ai Yazawa creates a world with amazing character writing and portrays relationships and the dynamics between the characters in a way that make the characters feel connected with the reader, and by extension support along the way. The dynamic between the two main female leads despite their contrasting backgrounds and...",
+      "score": 90,
+      "upvotes": 78,
+      "url": "https://anilist.co/review/13608"
+     },
+     {
+      "cost": 50,
+      "summary": "I made this review as short as possible, but this manga can make me talk for hours on end.",
+      "excerpt": "_This review does not contain explicit spoilers, but if you haven’t read it or seen the anime yet, I’d advise you to just go into it blind_.\n\n⠀\nI will make the plot summary as brief as possible, as you probably know it already: two girls’ coincidental encounter on a train to Tokyo ends up in a number of new, compelling and complicated relationships.\n\n⠀⠀⠀\nALL THAT’S RIGHT WITH [title]\n\nThe first...",
+      "score": 95,
+      "upvotes": 70,
+      "url": "https://anilist.co/review/12448"
+     },
+     {
+      "cost": 50,
+      "summary": "Some stories end when you finish reading them. Some don't.",
+      "excerpt": "I'm writing this \"review\" because I just wanna write something about [title]. It's been over a year since I read [title] and I still can't get it out of my head. It's just stuck there, sucking off my life like a parasite. Every time I look back on this series I just can't help but get emotional and my heart starts to hurt really bad. \n\n[title] was a series that always interested me. Ever since my early...",
+      "score": 100,
+      "upvotes": 55,
+      "url": "https://anilist.co/review/33532"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Nana",
+    "romaji": "NANA",
+    "native": "NANA",
+    "url": "https://anilist.co/manga/30028",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30028-VJqBC1ar6AxE.png",
+    "accepted_aliases": [
+     "Nana",
+     "NANA"
+    ],
+    "mangadex_id": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb"
+   },
+   "review_notes": []
+  },
+  {
    "anilist_id": 53390,
    "source": "fallback",
    "tier": "easy",
@@ -522,198 +714,6 @@
    "review_notes": []
   },
   {
-   "anilist_id": 30028,
-   "source": "fallback",
-   "tier": "easy",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 59621,
-    "average_score": 88,
-    "genres": [
-     "Drama",
-     "Music",
-     "Romance",
-     "Slice of Life"
-    ],
-    "demographic": [
-     "Shoujo"
-    ],
-    "release": "2000, ongoing"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30028-VJqBC1ar6AxE.png"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "[character] is a young woman who's endured an unending string of boyfriend problems. Moving to Tokyo, she's hoping to take control of her life and put all those messy misadventures behind her. She's looking for love and she's hoping to find it in the big city.\n\n[title] Osaki, on the other hand, is cool, confident and focused. She swaggers into town and proceeds to kick down the doors to Tokyo's underground punk scene. She's got a dream and won't give up until she becomes Japan's No. 1 rock'n'roll superstar.\n\nThis is the story of two 20-year-old women who share the same name. Even though they come from completely different backgrounds, they somehow meet and become best friends. The world of [title] is a world exploding with sex, music, fashion, gossip and all-night parties.\n\nNote: Winner of the 48th Shogakukan Manga Award in the Shoujo Category in 2002."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Female Protagonist",
-       "rank": 92,
-       "spoiler": false
-      },
-      {
-       "name": "Primarily Adult Cast",
-       "rank": 91,
-       "spoiler": false
-      },
-      {
-       "name": "Pregnancy",
-       "rank": 90,
-       "spoiler": true
-      },
-      {
-       "name": "Band",
-       "rank": 89,
-       "spoiler": false
-      },
-      {
-       "name": "Tragedy",
-       "rank": 85,
-       "spoiler": true
-      },
-      {
-       "name": "Philosophy",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Time Skip",
-       "rank": 77,
-       "spoiler": true
-      },
-      {
-       "name": "Found Family",
-       "rank": 76,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Ai Yazawa",
-       "native": "矢沢あい",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Nana Oosaki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b702-qqO3zbj5hp1l.png"
-      },
-      {
-       "name": "Nana Komatsu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b701-gNKbnxT6dbrf.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Shinichi Okazaki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1424-dcHnhsX7XfrP.jpg"
-      },
-      {
-       "name": "Yasushi Takagi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2450-fybfLw3SlimN.jpg"
-      },
-      {
-       "name": "Nobuo Terashima",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2449-V3b2fG5cCww5.png"
-      },
-      {
-       "name": "Ren Honjou",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1425-zZVyHt5cc742.jpg"
-      },
-      {
-       "name": "Layla Serizawa",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2089-zofXDvhPOO2U.jpg"
-      },
-      {
-       "name": "Takumi Ichinose",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2451-W6dBNWlhwQ3Y.jpg"
-      },
-      {
-       "name": "Miu Shinoda",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b7344-kiJV9hdzQTgx.png"
-      },
-      {
-       "name": "Junko Saotome",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/8017.jpg"
-      },
-      {
-       "name": "Kyousuke Takakura",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/4461.jpg"
-      },
-      {
-       "name": "Naoki Fujieda",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/5341.jpg"
-      },
-      {
-       "name": "Mai Tsuzuki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/9996.jpg"
-      },
-      {
-       "name": "Nami Komatsu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b240244-VMX5qThdBjnX.png"
-      },
-      {
-       "name": "Asami Matsumoto",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b22258-v09nOE7y6xmh.png"
-      }
-     ]
-    },
-    "reviews": [
-     {
-      "cost": 50,
-      "summary": "Arguably the best drama in the medium.",
-      "excerpt": "[title] is a masterpiece that gives the reader/watcher a roller-coaster of emotions. Ai Yazawa creates a world with amazing character writing and portrays relationships and the dynamics between the characters in a way that make the characters feel connected with the reader, and by extension support along the way. The dynamic between the two main female leads despite their contrasting backgrounds and...",
-      "score": 90,
-      "upvotes": 78,
-      "url": "https://anilist.co/review/13608"
-     },
-     {
-      "cost": 50,
-      "summary": "I made this review as short as possible, but this manga can make me talk for hours on end.",
-      "excerpt": "_This review does not contain explicit spoilers, but if you haven’t read it or seen the anime yet, I’d advise you to just go into it blind_.\n\n⠀\nI will make the plot summary as brief as possible, as you probably know it already: two girls’ coincidental encounter on a train to Tokyo ends up in a number of new, compelling and complicated relationships.\n\n⠀⠀⠀\nALL THAT’S RIGHT WITH [title]\n\nThe first...",
-      "score": 95,
-      "upvotes": 70,
-      "url": "https://anilist.co/review/12448"
-     },
-     {
-      "cost": 50,
-      "summary": "Some stories end when you finish reading them. Some don't.",
-      "excerpt": "I'm writing this \"review\" because I just wanna write something about [title]. It's been over a year since I read [title] and I still can't get it out of my head. It's just stuck there, sucking off my life like a parasite. Every time I look back on this series I just can't help but get emotional and my heart starts to hurt really bad. \n\n[title] was a series that always interested me. Ever since my early...",
-      "score": 100,
-      "upvotes": 55,
-      "url": "https://anilist.co/review/33532"
-     }
-    ]
-   },
-   "answer": {
-    "title": "Nana",
-    "romaji": "NANA",
-    "native": "NANA",
-    "url": "https://anilist.co/manga/30028",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30028-VJqBC1ar6AxE.png",
-    "accepted_aliases": [
-     "Nana",
-     "NANA"
-    ],
-    "mangadex_id": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb"
-   },
-   "review_notes": []
-  },
-  {
    "anilist_id": 30102,
    "source": "fallback",
    "tier": "medium",
@@ -908,6 +908,258 @@
    "review_notes": []
   },
   {
+   "anilist_id": 56206,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 2019,
+    "average_score": 51,
+    "genres": [
+     "Ecchi",
+     "Horror",
+     "Mystery",
+     "Psychological",
+     "Supernatural"
+    ],
+    "demographic": [],
+    "release": "2010 to 2012"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b56206-vpnTGBsfDqLc.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "It happened after school one rainy day... A group of friends have stayed behind to prepare for the next day’s school festival. One moment they are idly telling ghost stories but the next an enormous earthquake strikes and the entire school seems to fall down around them. They awake to find themselves trapped in a parallel version of their school. As school abandoned and disheveled and whose calendar dates back to 1927. Can they find a way out of this nightmare or are they doomed to the same fate that befell the other victims whose corpses that lie numerous throughout the school?\n\nNote: Chapter counts contains an extra chapter and an origin chapter."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "School",
+       "rank": 50,
+       "spoiler": false
+      },
+      {
+       "name": "Crossdressing",
+       "rank": 40,
+       "spoiler": true
+      },
+      {
+       "name": "Demons",
+       "rank": 40,
+       "spoiler": false
+      },
+      {
+       "name": "Isekai",
+       "rank": 40,
+       "spoiler": false
+      },
+      {
+       "name": "Ghost",
+       "rank": 40,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Makoto Kedouin",
+       "native": "祁答院慎",
+       "role": "Story"
+      },
+      {
+       "name": "Mika Orie",
+       "native": "織衣美歌",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Yoshiki Kishinuma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b40286-mJAUnDE5XFAn.png"
+      },
+      {
+       "name": "Sachiko Shinozaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/61535.jpg"
+      },
+      {
+       "name": "Naomi Nakashima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40293.jpg"
+      },
+      {
+       "name": "Satoshi Mochida",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b40289-kXcWlUW55dX5.jpg"
+      },
+      {
+       "name": "Kou Kibiki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/78387.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Ayumi Shinozaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40290.jpg"
+      },
+      {
+       "name": "Yuka Mochida",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40287-llwi5TDXgoBj.jpg"
+      },
+      {
+       "name": "Naho Saenoki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/57683-xdd8cQ54AevZ.jpg"
+      },
+      {
+       "name": "Miyu Shinohara",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/63217.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Pretty good if you've played the PC-98 og. fanservice unneeded.",
+      "excerpt": "(This is my first review here and I don't write reviews often. I apologize if this is a weird mix of everything and not coherent. Wanted to get my thoughts out there.)\n\n[title] is a pretty odd entry in the Corpse Party series. Its a retelling of the original PC-98 Corpse Party, while having a few original elements and elements from Corpse Party: Blood Covered. For those who's only...",
+      "score": 75,
+      "upvotes": 5,
+      "url": "https://anilist.co/review/25370"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Corpse Party: Musume",
+    "romaji": "Corpse Party: Musume",
+    "native": "コープスパーティー娘",
+    "url": "https://anilist.co/manga/56206",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b56206-vpnTGBsfDqLc.jpg",
+    "accepted_aliases": [
+     "Corpse Party: Musume",
+     "Corpse Party Cemetery 0: Kaibyaku no Ars Moriendi",
+     "Corpse Party CEMETERY0",
+     "Corpse Party - Musume"
+    ],
+    "mangadex_id": "1c0d8638-6e0f-4c6c-ae95-7c472682b419"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 98489,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 2998,
+    "average_score": 75,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy",
+     "Mystery",
+     "Sci-Fi",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2017 to 2020"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b98489-pBwQAQBpxiMK.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "“So, who’s the kid?”\n\n“My name is…”\n\n××××× hesitated for a moment, turning slightly to look back along the road they were traveling. Beyond the red horizon, her homeland’s gates sank into the distance, never to be seen again.\nFacing forward once more, ××××× looked past [character]’s side to focus intently on the path ahead before answering.\n\n“My name is—”\n\n[character] travels with the trusty talking motorrad, [character]. The duo are always together, with [character] providing speed, and [character] providing balance. They stay in each country for no more than three days, as a rule—enough time to learn about each destination’s unique customs and people. And so [character] and [character] journey ever onward….\"\n\nNote : Includes four extra chapters."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Motorcycles",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Travel",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Philosophy",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Guns",
+       "rank": 20,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Keiichi Shigusawa",
+       "native": "時雨沢恵一",
+       "role": "Story"
+      },
+      {
+       "name": "Iruka Shiomiya",
+       "native": "シオミヤイルカ",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Kino",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b87-1sKGYKWY8EHQ.jpg"
+      },
+      {
+       "name": "Hermes",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n88-yhTNhq67e5U2.png"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Kino's Journey: The Beautiful World",
+    "romaji": "Kino no Tabi: the Beautiful World",
+    "native": "キノの旅 -the Beautiful World-",
+    "url": "https://anilist.co/manga/98489",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b98489-pBwQAQBpxiMK.png",
+    "accepted_aliases": [
+     "Kino's Journey: The Beautiful World",
+     "Kino no Tabi: the Beautiful World",
+     "Kino's Journey",
+     "Kino's Journey - the Beautiful World",
+     "Kino no Tabi - the Beautiful World (Shiomiya)"
+    ],
+    "mangadex_id": "3964ad51-a435-4bf4-a37d-650d19789edd"
+   },
+   "review_notes": []
+  },
+  {
    "anilist_id": 52651,
    "source": "fallback",
    "tier": "medium",
@@ -1064,6 +1316,75 @@
      "The Breaker - New Waves"
     ],
     "mangadex_id": "80185498-a09f-4534-925a-63cd554c075c"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 148466,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 1469,
+    "average_score": 65,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy"
+    ],
+    "demographic": [],
+    "release": "2022 to 2024"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx148466-OuXkwoHWUx6u.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Alvin is a young adventurer with an atrocious negative skill. In spite of his overwhelming strength, he's considered a nuisance by those around him and kicked out of his party.\n\nIn the throes of despair, he hears a rumor about a dungeon where one can obtain an item that erases skills and recklessly decides to solo the boss. That is, until he meets Cocoru, a cleric who has also long suffered from her own negative skill. However, when Alvin learns the effect of her skill, he can't help but think…\n\n\"Couldn't our skills work well together?\"\n\nThe negatives cancel each other out and become a positive! As their skills multiply together, nothing can stand in their way! This is the ultimate \"mutual support\" story for these unfortunate adventurers!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": null
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Hiromi Taihei",
+       "native": "太平洋海",
+       "role": "Story & Art"
+      },
+      {
+       "name": "Kosuzu Kiichi",
+       "native": "小鈴危一",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "How Four Negative Skills = Unrivaled Synergy",
+    "romaji": "Minus Skill Mochi Yonin ga Atsumattara, nanka Synergy Hakki shite Saikyou Party ga Dekita Ken",
+    "native": "マイナススキル持ち四人が集まったら、なんかシナジー発揮して最強パーティーができた件",
+    "url": "https://anilist.co/manga/148466",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx148466-OuXkwoHWUx6u.jpg",
+    "accepted_aliases": [
+     "How Four Negative Skills = Unrivaled Synergy",
+     "Minus Skill Mochi Yonin ga Atsumattara, nanka Synergy Hakki shite Saikyou Party ga Dekita Ken",
+     "The Chronicles of the Misfit Quartet and Their Unrivaled Synergy",
+     "Minus Skill: The Story of Four Nuisances That Once Gathered Together, Manifested a Synergy That Created the Strongest Party",
+     "Minus Skill-mochi Yonin ga Atsumattara, Nanka Synergy Hakki Shite Saikyou Party ga Dekita Ken"
+    ],
+    "mangadex_id": "a9e23d07-b293-4530-b592-e97880c8101f"
    },
    "review_notes": []
   },
@@ -1242,115 +1563,6 @@
    "review_notes": []
   },
   {
-   "anilist_id": 98489,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 2998,
-    "average_score": 75,
-    "genres": [
-     "Action",
-     "Adventure",
-     "Fantasy",
-     "Mystery",
-     "Sci-Fi",
-     "Slice of Life"
-    ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "2017 to 2020"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b98489-pBwQAQBpxiMK.png"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "“So, who’s the kid?”\n\n“My name is…”\n\n××××× hesitated for a moment, turning slightly to look back along the road they were traveling. Beyond the red horizon, her homeland’s gates sank into the distance, never to be seen again.\nFacing forward once more, ××××× looked past [character]’s side to focus intently on the path ahead before answering.\n\n“My name is—”\n\n[character] travels with the trusty talking motorrad, [character]. The duo are always together, with [character] providing speed, and [character] providing balance. They stay in each country for no more than three days, as a rule—enough time to learn about each destination’s unique customs and people. And so [character] and [character] journey ever onward….\"\n\nNote : Includes four extra chapters."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Female Protagonist",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Motorcycles",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Travel",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Philosophy",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Guns",
-       "rank": 20,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Keiichi Shigusawa",
-       "native": "時雨沢恵一",
-       "role": "Story"
-      },
-      {
-       "name": "Iruka Shiomiya",
-       "native": "シオミヤイルカ",
-       "role": "Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Kino",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b87-1sKGYKWY8EHQ.jpg"
-      },
-      {
-       "name": "Hermes",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n88-yhTNhq67e5U2.png"
-      }
-     ],
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Kino's Journey: The Beautiful World",
-    "romaji": "Kino no Tabi: the Beautiful World",
-    "native": "キノの旅 -the Beautiful World-",
-    "url": "https://anilist.co/manga/98489",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b98489-pBwQAQBpxiMK.png",
-    "accepted_aliases": [
-     "Kino's Journey: The Beautiful World",
-     "Kino no Tabi: the Beautiful World",
-     "Kino's Journey",
-     "Kino's Journey - the Beautiful World",
-     "Kino no Tabi - the Beautiful World (Shiomiya)"
-    ],
-    "mangadex_id": "3964ad51-a435-4bf4-a37d-650d19789edd"
-   },
-   "review_notes": []
-  },
-  {
    "anilist_id": 36888,
    "source": "fallback",
    "tier": "hard",
@@ -1463,218 +1675,6 @@
      "Dance Subaru"
     ],
     "mangadex_id": "e12ad0dc-f0e7-42d0-8ac3-101c18f9e945"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 56206,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 2019,
-    "average_score": 51,
-    "genres": [
-     "Ecchi",
-     "Horror",
-     "Mystery",
-     "Psychological",
-     "Supernatural"
-    ],
-    "demographic": [],
-    "release": "2010 to 2012"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b56206-vpnTGBsfDqLc.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "It happened after school one rainy day... A group of friends have stayed behind to prepare for the next day’s school festival. One moment they are idly telling ghost stories but the next an enormous earthquake strikes and the entire school seems to fall down around them. They awake to find themselves trapped in a parallel version of their school. As school abandoned and disheveled and whose calendar dates back to 1927. Can they find a way out of this nightmare or are they doomed to the same fate that befell the other victims whose corpses that lie numerous throughout the school?\n\nNote: Chapter counts contains an extra chapter and an origin chapter."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "School",
-       "rank": 50,
-       "spoiler": false
-      },
-      {
-       "name": "Crossdressing",
-       "rank": 40,
-       "spoiler": true
-      },
-      {
-       "name": "Demons",
-       "rank": 40,
-       "spoiler": false
-      },
-      {
-       "name": "Isekai",
-       "rank": 40,
-       "spoiler": false
-      },
-      {
-       "name": "Ghost",
-       "rank": 40,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Makoto Kedouin",
-       "native": "祁答院慎",
-       "role": "Story"
-      },
-      {
-       "name": "Mika Orie",
-       "native": "織衣美歌",
-       "role": "Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Yoshiki Kishinuma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b40286-mJAUnDE5XFAn.png"
-      },
-      {
-       "name": "Sachiko Shinozaki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/61535.jpg"
-      },
-      {
-       "name": "Naomi Nakashima",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40293.jpg"
-      },
-      {
-       "name": "Satoshi Mochida",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b40289-kXcWlUW55dX5.jpg"
-      },
-      {
-       "name": "Kou Kibiki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/78387.jpg"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Ayumi Shinozaki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40290.jpg"
-      },
-      {
-       "name": "Yuka Mochida",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40287-llwi5TDXgoBj.jpg"
-      },
-      {
-       "name": "Naho Saenoki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/57683-xdd8cQ54AevZ.jpg"
-      },
-      {
-       "name": "Miyu Shinohara",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/63217.jpg"
-      }
-     ]
-    },
-    "reviews": [
-     {
-      "cost": 50,
-      "summary": "Pretty good if you've played the PC-98 og. fanservice unneeded.",
-      "excerpt": "(This is my first review here and I don't write reviews often. I apologize if this is a weird mix of everything and not coherent. Wanted to get my thoughts out there.)\n\n[title] is a pretty odd entry in the Corpse Party series. Its a retelling of the original PC-98 Corpse Party, while having a few original elements and elements from Corpse Party: Blood Covered. For those who's only...",
-      "score": 75,
-      "upvotes": 5,
-      "url": "https://anilist.co/review/25370"
-     }
-    ]
-   },
-   "answer": {
-    "title": "Corpse Party: Musume",
-    "romaji": "Corpse Party: Musume",
-    "native": "コープスパーティー娘",
-    "url": "https://anilist.co/manga/56206",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b56206-vpnTGBsfDqLc.jpg",
-    "accepted_aliases": [
-     "Corpse Party: Musume",
-     "Corpse Party Cemetery 0: Kaibyaku no Ars Moriendi",
-     "Corpse Party CEMETERY0",
-     "Corpse Party - Musume"
-    ],
-    "mangadex_id": "1c0d8638-6e0f-4c6c-ae95-7c472682b419"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 148466,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 1469,
-    "average_score": 65,
-    "genres": [
-     "Action",
-     "Adventure",
-     "Fantasy"
-    ],
-    "demographic": [],
-    "release": "2022 to 2024"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx148466-OuXkwoHWUx6u.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "Alvin is a young adventurer with an atrocious negative skill. In spite of his overwhelming strength, he's considered a nuisance by those around him and kicked out of his party.\n\nIn the throes of despair, he hears a rumor about a dungeon where one can obtain an item that erases skills and recklessly decides to solo the boss. That is, until he meets Cocoru, a cleric who has also long suffered from her own negative skill. However, when Alvin learns the effect of her skill, he can't help but think…\n\n\"Couldn't our skills work well together?\"\n\nThe negatives cancel each other out and become a positive! As their skills multiply together, nothing can stand in their way! This is the ultimate \"mutual support\" story for these unfortunate adventurers!"
-    },
-    "tags": {
-     "cost": 75,
-     "items": null
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Hiromi Taihei",
-       "native": "太平洋海",
-       "role": "Story & Art"
-      },
-      {
-       "name": "Kosuzu Kiichi",
-       "native": "小鈴危一",
-       "role": "Original Story"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": null,
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "How Four Negative Skills = Unrivaled Synergy",
-    "romaji": "Minus Skill Mochi Yonin ga Atsumattara, nanka Synergy Hakki shite Saikyou Party ga Dekita Ken",
-    "native": "マイナススキル持ち四人が集まったら、なんかシナジー発揮して最強パーティーができた件",
-    "url": "https://anilist.co/manga/148466",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx148466-OuXkwoHWUx6u.jpg",
-    "accepted_aliases": [
-     "How Four Negative Skills = Unrivaled Synergy",
-     "Minus Skill Mochi Yonin ga Atsumattara, nanka Synergy Hakki shite Saikyou Party ga Dekita Ken",
-     "The Chronicles of the Misfit Quartet and Their Unrivaled Synergy",
-     "Minus Skill: The Story of Four Nuisances That Once Gathered Together, Manifested a Synergy That Created the Strongest Party",
-     "Minus Skill-mochi Yonin ga Atsumattara, Nanka Synergy Hakki Shite Saikyou Party ga Dekita Ken"
-    ],
-    "mangadex_id": "a9e23d07-b293-4530-b592-e97880c8101f"
    },
    "review_notes": []
   }

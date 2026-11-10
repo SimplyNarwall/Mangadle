@@ -5,6 +5,171 @@
  "start_points": 1000,
  "titles": [
   {
+   "anilist_id": 30584,
+   "source": "fallback",
+   "tier": "medium",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 23436,
+    "average_score": 68,
+    "genres": [
+     "Action",
+     "Mystery",
+     "Psychological",
+     "Supernatural",
+     "Thriller"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2006 to 2010"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx30584-cLpCKICFlyLX.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character] is a lonely student whose only hobby is the daily diary he keeps on his cell phone. But [character] has a secret that nobody knows about...his cellphone can tell the future! Now a vicious game of survival is about to begin among twelve future diaryholders - with the winner crowned god of the new world!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Battle Royale",
+       "rank": 100,
+       "spoiler": false
+      },
+      {
+       "name": "Yandere",
+       "rank": 96,
+       "spoiler": false
+      },
+      {
+       "name": "Time Manipulation",
+       "rank": 90,
+       "spoiler": true
+      },
+      {
+       "name": "Death Game",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Survival",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 72,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Sakae Esuno",
+       "native": "えすのサカエ ",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Yuno Gasai",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4963-7ZMcCtXW5hkY.png"
+      },
+      {
+       "name": "Yukiteru Amano",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4962-CpqPBVJngbq2.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Minene Uryuu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4966-Bb0hjxjJtidY.jpg"
+      },
+      {
+       "name": "Aru Akise",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8306-1plj927kFBCf.jpg"
+      },
+      {
+       "name": "Mur Mur",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4965-kfp8cXLa4n6y.png"
+      },
+      {
+       "name": "Tsubaki Kasugano",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4967-Wa34H0uvUKYz.png"
+      },
+      {
+       "name": "Yomotsu Hirasaka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8308-vwXduDuS8J39.png"
+      },
+      {
+       "name": "Hinata Hino",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8309-fQZWDvMP094O.png"
+      },
+      {
+       "name": "Mao Nonosaka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/8310.jpg"
+      },
+      {
+       "name": "Deus Ex Machina",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4964-lIULYnq59GaV.png"
+      },
+      {
+       "name": "Marco Ikusaba",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b23492-fYCMTjvSOHoU.png"
+      },
+      {
+       "name": "Masumi Nishijima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b16123-KwhuJzZcGYkC.png"
+      },
+      {
+       "name": "Ai Mikami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/23493.jpg"
+      },
+      {
+       "name": "Reisuke Houjou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8158-cRgD3SBzMaUP.png"
+      },
+      {
+       "name": "Keigo Kurusu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4968-i6fI9PpQ8TiA.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Future Diary",
+    "romaji": "Mirai Nikki",
+    "native": "未来日記",
+    "url": "https://anilist.co/manga/30584",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx30584-cLpCKICFlyLX.jpg",
+    "accepted_aliases": [
+     "Future Diary",
+     "Mirai Nikki",
+     "Pamiętnik Przyszłości",
+     "Diário do Futuro"
+    ],
+    "mangadex_id": "7bcdff73-7d1a-4c88-8501-58b027e1632c"
+   },
+   "review_notes": []
+  },
+  {
    "anilist_id": 86123,
    "source": "fallback",
    "tier": "easy",
@@ -398,6 +563,372 @@
      "Dr.STONE"
     ],
     "mangadex_id": "cfc3d743-bd89-48e2-991f-63e680cc4edf"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 96834,
+   "source": "fallback",
+   "tier": "medium",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 23081,
+    "average_score": 68,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy",
+     "Psychological"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2016, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx96834-N5hCllCng8pg.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "When a classroom of students is transported to another world to act as its saviors, [character] finds himself the weakest link. As his friends and classmates are granted strong classes and impressive abilities due to their existing skills, he is given the weak title of Synergist. When a dungeon quest leaves him separated from his group, [character] must discover his own talents or be left to rot in this world forever."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Isekai",
+       "rank": 93,
+       "spoiler": false
+      },
+      {
+       "name": "Dungeon",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Magic",
+       "rank": 83,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Body Horror",
+       "rank": 79,
+       "spoiler": true
+      },
+      {
+       "name": "Female Harem",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Anti-Hero",
+       "rank": 76,
+       "spoiler": false
+      },
+      {
+       "name": "Bullying",
+       "rank": 73,
+       "spoiler": false
+      },
+      {
+       "name": "Vampire",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Ryou Shirakome",
+       "native": "白米良",
+       "role": "Original Story"
+      },
+      {
+       "name": "RoGa",
+       "native": "RoGa",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Kaori Shirasaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132849-DWYOwdlxsEqV.png"
+      },
+      {
+       "name": "Yue",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132847-rxYUEsbcLxTm.png"
+      },
+      {
+       "name": "Hajime Nagumo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132848-HsUfgM0nr2Dz.jpg"
+      },
+      {
+       "name": "Shia Haulia",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132850-MQx1CPfMYGPC.png"
+      },
+      {
+       "name": "Tio Klarus",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132852-BDazhNHpH8ZA.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Shizuku Yaegashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b141266-XbfZ50w8R7fN.png"
+      },
+      {
+       "name": "Aiko Hatayama",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b142270-OGNqDfkk46tu.png"
+      },
+      {
+       "name": "Mikhail",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b257199-tbpBYSgNQEx1.jpg"
+      },
+      {
+       "name": "Freid Bagwa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b257200-mNTra0iGG1ju.jpg"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Arifureta: From Commonplace to World’s Strongest",
+    "romaji": "Arifureta Shokugyou de Sekai Saikyou",
+    "native": "ありふれた職業で世界最強",
+    "url": "https://anilist.co/manga/96834",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx96834-N5hCllCng8pg.jpg",
+    "accepted_aliases": [
+     "Arifureta: From Commonplace to World’s Strongest",
+     "Arifureta Shokugyou de Sekai Saikyou",
+     "From Common Job Class to the Strongest in the World",
+     "Arifureta: Der Kampf zurück in meine Welt",
+     "Arifureta: From Commonplace to World's Strongest"
+    ],
+    "mangadex_id": "248525ed-ad1c-4ddc-a834-5d6ce66a3ad2"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 127894,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 3041,
+    "average_score": 78,
+    "genres": [
+     "Mystery",
+     "Romance",
+     "Slice of Life",
+     "Supernatural"
+    ],
+    "demographic": [],
+    "release": "2019, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127894-jzji7YdMZSZJ.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "One day, a mediocre high school girl, [character], falls in love with [character], a beautiful girl in her next class. Although she was confused by her feelings, she wanted to get along with [character], who had a mysterious atmosphere somewhere..."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Yuri",
+       "rank": 98,
+       "spoiler": false
+      },
+      {
+       "name": "LGBTQ+ Themes",
+       "rank": 85,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Female Cast",
+       "rank": 76,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 70,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Kani",
+       "native": "かに",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Shou Segawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b230211-fcfu0FcK14Hh.png"
+      },
+      {
+       "name": "Umi Koumoto",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b230212-AT9dk9Xt7Bm7.png"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Following Ripples to Her : A Heartfelt Coastal Romance (light spoilers)",
+      "excerpt": "[title], or _The Blue Star On That Day_, by Kani is a coming-of-age yuri manga that follows [character], a rather ordinary high school girl in a seaside town, who finds herself drawn to the beautiful yet enigmatic [character]—an aloof schoolmate with a deep, almost spiritual fascination with the sea.\n\nStory\n\nThe story starts rather simple and typical for a romance: the affable...",
+      "score": 100,
+      "upvotes": 10,
+      "url": "https://anilist.co/review/27807"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Ano Koro no Aoi Hoshi",
+    "romaji": "Ano Koro no Aoi Hoshi",
+    "native": "あの頃の青い星",
+    "url": "https://anilist.co/manga/127894",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127894-jzji7YdMZSZJ.png",
+    "accepted_aliases": [
+     "Ano Koro no Aoi Hoshi",
+     "The Blue Star on That Day",
+     "Bǐ shí lán xīng"
+    ],
+    "mangadex_id": "9faba8cf-60df-4894-9370-22571592c8d3"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 111279,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "oneshot",
+    "popularity": 1528,
+    "average_score": 71,
+    "genres": [
+     "Comedy",
+     "Romance",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2018"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111279-OT95Sytnj3jj.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "1998, [character] is not on good terms with the school star Eimi Sawawatari, but maybe through the card game Magic: The Gathering they can improve their relationship...?!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Heterosexual",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Card Battle",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 65,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Katsura Ise",
+       "native": "伊瀬勝良",
+       "role": "Story"
+      },
+      {
+       "name": "Takuma Yokota",
+       "native": "横田卓馬",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Emi Sawatari",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b147855-D6U31TES3L1e.jpg"
+      },
+      {
+       "name": "Hajime Kanou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b147854-wzEfFcTrHSbK.png"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Subete no Jinrui wo Hakai suru. Sorera wa Saisei Dekinai.",
+    "romaji": "Subete no Jinrui wo Hakai suru. Sorera wa Saisei Dekinai.",
+    "native": "すべての人類を破壊する。それらは再生できない。",
+    "url": "https://anilist.co/manga/111279",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111279-OT95Sytnj3jj.jpg",
+    "accepted_aliases": [
+     "Subete no Jinrui wo Hakai suru. Sorera wa Saisei Dekinai.",
+     "Destroy all humankind. They can't be regenerated."
+    ],
+    "mangadex_id": null
    },
    "review_notes": []
   },
@@ -852,6 +1383,102 @@
    "review_notes": []
   },
   {
+   "anilist_id": 134954,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 1248,
+    "average_score": 62,
+    "genres": [
+     "Comedy",
+     "Romance",
+     "Sports"
+    ],
+    "demographic": [],
+    "release": "2021"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx134954-G0n9PcPZ1lcY.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character], 18 years old, is a reserved and quiet college student. Today, she's going on a date. Though, you shouldn't underestimate her just because she is a woman - she could kill you if she really wanted to!\n\nNote: Includes 1 extra chapter."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Tomboy",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Fitness",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Nudity",
+       "rank": 20,
+       "spoiler": false
+      },
+      {
+       "name": "Arranged Marriage",
+       "rank": 10,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Cisco Yaneura",
+       "native": "屋根裏シスコ",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Sakurako Kurahashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b360474-ZYHOcZTwCTtF.jpg"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Honki Daseba Omae Koroseru",
+    "romaji": "Honki Daseba Omae Koroseru",
+    "native": "本気出せばお前殺せる",
+    "url": "https://anilist.co/manga/134954",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx134954-G0n9PcPZ1lcY.jpg",
+    "accepted_aliases": [
+     "Honki Daseba Omae Koroseru",
+     "I Could Kill You if I Really Wanted To",
+     "If I get serious, I can kill you",
+     "I Could Kill You If I Really Wanted to",
+     "Honkidaseba Omae Koroseru",
+     "If I Get Serious, I Can Kill You"
+    ],
+    "mangadex_id": "5ae836aa-95fa-4f18-8b02-b5f6c261be5c"
+   },
+   "review_notes": []
+  },
+  {
    "anilist_id": 103156,
    "source": "fallback",
    "tier": "medium",
@@ -1004,633 +1631,6 @@
      "Skeleton Soldier Couldn't Protect the Dungeon"
     ],
     "mangadex_id": null
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 30584,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 23436,
-    "average_score": 68,
-    "genres": [
-     "Action",
-     "Mystery",
-     "Psychological",
-     "Supernatural",
-     "Thriller"
-    ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "2006 to 2010"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx30584-cLpCKICFlyLX.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "[character] is a lonely student whose only hobby is the daily diary he keeps on his cell phone. But [character] has a secret that nobody knows about...his cellphone can tell the future! Now a vicious game of survival is about to begin among twelve future diaryholders - with the winner crowned god of the new world!"
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Battle Royale",
-       "rank": 100,
-       "spoiler": false
-      },
-      {
-       "name": "Yandere",
-       "rank": 96,
-       "spoiler": false
-      },
-      {
-       "name": "Time Manipulation",
-       "rank": 90,
-       "spoiler": true
-      },
-      {
-       "name": "Death Game",
-       "rank": 88,
-       "spoiler": false
-      },
-      {
-       "name": "Female Protagonist",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Survival",
-       "rank": 75,
-       "spoiler": false
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 72,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Sakae Esuno",
-       "native": "えすのサカエ ",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Yuno Gasai",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4963-7ZMcCtXW5hkY.png"
-      },
-      {
-       "name": "Yukiteru Amano",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4962-CpqPBVJngbq2.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Minene Uryuu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4966-Bb0hjxjJtidY.jpg"
-      },
-      {
-       "name": "Aru Akise",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8306-1plj927kFBCf.jpg"
-      },
-      {
-       "name": "Mur Mur",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4965-kfp8cXLa4n6y.png"
-      },
-      {
-       "name": "Tsubaki Kasugano",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4967-Wa34H0uvUKYz.png"
-      },
-      {
-       "name": "Yomotsu Hirasaka",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8308-vwXduDuS8J39.png"
-      },
-      {
-       "name": "Hinata Hino",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8309-fQZWDvMP094O.png"
-      },
-      {
-       "name": "Mao Nonosaka",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/8310.jpg"
-      },
-      {
-       "name": "Deus Ex Machina",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4964-lIULYnq59GaV.png"
-      },
-      {
-       "name": "Marco Ikusaba",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b23492-fYCMTjvSOHoU.png"
-      },
-      {
-       "name": "Masumi Nishijima",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b16123-KwhuJzZcGYkC.png"
-      },
-      {
-       "name": "Ai Mikami",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/23493.jpg"
-      },
-      {
-       "name": "Reisuke Houjou",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8158-cRgD3SBzMaUP.png"
-      },
-      {
-       "name": "Keigo Kurusu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4968-i6fI9PpQ8TiA.png"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Future Diary",
-    "romaji": "Mirai Nikki",
-    "native": "未来日記",
-    "url": "https://anilist.co/manga/30584",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx30584-cLpCKICFlyLX.jpg",
-    "accepted_aliases": [
-     "Future Diary",
-     "Mirai Nikki",
-     "Pamiętnik Przyszłości",
-     "Diário do Futuro"
-    ],
-    "mangadex_id": "7bcdff73-7d1a-4c88-8501-58b027e1632c"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 96834,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 23081,
-    "average_score": 68,
-    "genres": [
-     "Action",
-     "Adventure",
-     "Fantasy",
-     "Psychological"
-    ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "2016, ongoing"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx96834-N5hCllCng8pg.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "When a classroom of students is transported to another world to act as its saviors, [character] finds himself the weakest link. As his friends and classmates are granted strong classes and impressive abilities due to their existing skills, he is given the weak title of Synergist. When a dungeon quest leaves him separated from his group, [character] must discover his own talents or be left to rot in this world forever."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Isekai",
-       "rank": 93,
-       "spoiler": false
-      },
-      {
-       "name": "Dungeon",
-       "rank": 86,
-       "spoiler": false
-      },
-      {
-       "name": "Magic",
-       "rank": 83,
-       "spoiler": false
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 82,
-       "spoiler": false
-      },
-      {
-       "name": "Heterosexual",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Body Horror",
-       "rank": 79,
-       "spoiler": true
-      },
-      {
-       "name": "Female Harem",
-       "rank": 77,
-       "spoiler": false
-      },
-      {
-       "name": "Anti-Hero",
-       "rank": 76,
-       "spoiler": false
-      },
-      {
-       "name": "Bullying",
-       "rank": 73,
-       "spoiler": false
-      },
-      {
-       "name": "Vampire",
-       "rank": 73,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Ryou Shirakome",
-       "native": "白米良",
-       "role": "Original Story"
-      },
-      {
-       "name": "RoGa",
-       "native": "RoGa",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Kaori Shirasaki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132849-DWYOwdlxsEqV.png"
-      },
-      {
-       "name": "Yue",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132847-rxYUEsbcLxTm.png"
-      },
-      {
-       "name": "Hajime Nagumo",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132848-HsUfgM0nr2Dz.jpg"
-      },
-      {
-       "name": "Shia Haulia",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132850-MQx1CPfMYGPC.png"
-      },
-      {
-       "name": "Tio Klarus",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b132852-BDazhNHpH8ZA.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Shizuku Yaegashi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b141266-XbfZ50w8R7fN.png"
-      },
-      {
-       "name": "Aiko Hatayama",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b142270-OGNqDfkk46tu.png"
-      },
-      {
-       "name": "Mikhail",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b257199-tbpBYSgNQEx1.jpg"
-      },
-      {
-       "name": "Freid Bagwa",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b257200-mNTra0iGG1ju.jpg"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Arifureta: From Commonplace to World’s Strongest",
-    "romaji": "Arifureta Shokugyou de Sekai Saikyou",
-    "native": "ありふれた職業で世界最強",
-    "url": "https://anilist.co/manga/96834",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx96834-N5hCllCng8pg.jpg",
-    "accepted_aliases": [
-     "Arifureta: From Commonplace to World’s Strongest",
-     "Arifureta Shokugyou de Sekai Saikyou",
-     "From Common Job Class to the Strongest in the World",
-     "Arifureta: Der Kampf zurück in meine Welt",
-     "Arifureta: From Commonplace to World's Strongest"
-    ],
-    "mangadex_id": "248525ed-ad1c-4ddc-a834-5d6ce66a3ad2"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 127894,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 3041,
-    "average_score": 78,
-    "genres": [
-     "Mystery",
-     "Romance",
-     "Slice of Life",
-     "Supernatural"
-    ],
-    "demographic": [],
-    "release": "2019, ongoing"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127894-jzji7YdMZSZJ.png"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "One day, a mediocre high school girl, [character], falls in love with [character], a beautiful girl in her next class. Although she was confused by her feelings, she wanted to get along with [character], who had a mysterious atmosphere somewhere..."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Yuri",
-       "rank": 98,
-       "spoiler": false
-      },
-      {
-       "name": "LGBTQ+ Themes",
-       "rank": 85,
-       "spoiler": false
-      },
-      {
-       "name": "Female Protagonist",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Primarily Female Cast",
-       "rank": 76,
-       "spoiler": false
-      },
-      {
-       "name": "School",
-       "rank": 70,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Kani",
-       "native": "かに",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Shou Segawa",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b230211-fcfu0FcK14Hh.png"
-      },
-      {
-       "name": "Umi Koumoto",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b230212-AT9dk9Xt7Bm7.png"
-      }
-     ],
-     "supporting": null
-    },
-    "reviews": [
-     {
-      "cost": 50,
-      "summary": "Following Ripples to Her : A Heartfelt Coastal Romance (light spoilers)",
-      "excerpt": "[title], or _The Blue Star On That Day_, by Kani is a coming-of-age yuri manga that follows [character], a rather ordinary high school girl in a seaside town, who finds herself drawn to the beautiful yet enigmatic [character]—an aloof schoolmate with a deep, almost spiritual fascination with the sea.\n\nStory\n\nThe story starts rather simple and typical for a romance: the affable...",
-      "score": 100,
-      "upvotes": 10,
-      "url": "https://anilist.co/review/27807"
-     }
-    ]
-   },
-   "answer": {
-    "title": "Ano Koro no Aoi Hoshi",
-    "romaji": "Ano Koro no Aoi Hoshi",
-    "native": "あの頃の青い星",
-    "url": "https://anilist.co/manga/127894",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127894-jzji7YdMZSZJ.png",
-    "accepted_aliases": [
-     "Ano Koro no Aoi Hoshi",
-     "The Blue Star on That Day",
-     "Bǐ shí lán xīng"
-    ],
-    "mangadex_id": "9faba8cf-60df-4894-9370-22571592c8d3"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 111279,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "oneshot",
-    "popularity": 1528,
-    "average_score": 71,
-    "genres": [
-     "Comedy",
-     "Romance",
-     "Slice of Life"
-    ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "2018"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111279-OT95Sytnj3jj.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "1998, [character] is not on good terms with the school star Eimi Sawawatari, but maybe through the card game Magic: The Gathering they can improve their relationship...?!"
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Heterosexual",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Card Battle",
-       "rank": 75,
-       "spoiler": false
-      },
-      {
-       "name": "School",
-       "rank": 65,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Katsura Ise",
-       "native": "伊瀬勝良",
-       "role": "Story"
-      },
-      {
-       "name": "Takuma Yokota",
-       "native": "横田卓馬",
-       "role": "Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Emi Sawatari",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b147855-D6U31TES3L1e.jpg"
-      },
-      {
-       "name": "Hajime Kanou",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b147854-wzEfFcTrHSbK.png"
-      }
-     ],
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Subete no Jinrui wo Hakai suru. Sorera wa Saisei Dekinai.",
-    "romaji": "Subete no Jinrui wo Hakai suru. Sorera wa Saisei Dekinai.",
-    "native": "すべての人類を破壊する。それらは再生できない。",
-    "url": "https://anilist.co/manga/111279",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111279-OT95Sytnj3jj.jpg",
-    "accepted_aliases": [
-     "Subete no Jinrui wo Hakai suru. Sorera wa Saisei Dekinai.",
-     "Destroy all humankind. They can't be regenerated."
-    ],
-    "mangadex_id": null
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 134954,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 1248,
-    "average_score": 62,
-    "genres": [
-     "Comedy",
-     "Romance",
-     "Sports"
-    ],
-    "demographic": [],
-    "release": "2021"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx134954-G0n9PcPZ1lcY.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "[character], 18 years old, is a reserved and quiet college student. Today, she's going on a date. Though, you shouldn't underestimate her just because she is a woman - she could kill you if she really wanted to!\n\nNote: Includes 1 extra chapter."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Female Protagonist",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Tomboy",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Fitness",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Nudity",
-       "rank": 20,
-       "spoiler": false
-      },
-      {
-       "name": "Arranged Marriage",
-       "rank": 10,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Cisco Yaneura",
-       "native": "屋根裏シスコ",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Sakurako Kurahashi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b360474-ZYHOcZTwCTtF.jpg"
-      }
-     ],
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Honki Daseba Omae Koroseru",
-    "romaji": "Honki Daseba Omae Koroseru",
-    "native": "本気出せばお前殺せる",
-    "url": "https://anilist.co/manga/134954",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx134954-G0n9PcPZ1lcY.jpg",
-    "accepted_aliases": [
-     "Honki Daseba Omae Koroseru",
-     "I Could Kill You if I Really Wanted To",
-     "If I get serious, I can kill you",
-     "I Could Kill You If I Really Wanted to",
-     "Honkidaseba Omae Koroseru",
-     "If I Get Serious, I Can Kill You"
-    ],
-    "mangadex_id": "5ae836aa-95fa-4f18-8b02-b5f6c261be5c"
    },
    "review_notes": []
   }
