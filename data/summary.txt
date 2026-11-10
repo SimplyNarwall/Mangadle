@@ -1,0 +1,50 @@
+eligible titles: 10206
+
+by tier:
+  easy     (50,000+): 117
+  medium   (10,000 to 50,000): 1003
+  hard     (1,000 to 10,000): 9086
+
+by origin:
+  manga: 7561
+  manhwa: 2151
+  manhua: 494
+
+by format:
+  series: 9957
+  oneshot: 249
+
+tier x origin:
+  easy     manga 105, manhwa 12, manhua 0
+  medium   manga 712, manhwa 263, manhua 28
+  hard     manga 6744, manhwa 1876, manhua 466
+
+sequels (original's names also accepted): 523
+titles with no Latin-script alias: 2
+
+excluded:
+  spin-off / side story: 376
+
+top 10 easy:
+   337,136  Chainsaw Man
+   288,976  Solo Leveling
+   256,827  Jujutsu Kaisen
+   248,951  Berserk
+   228,893  Attack on Titan
+   212,582  Demon Slayer: Kimetsu no Yaiba
+   199,894  Tokyo Ghoul
+   188,936  Goodnight Punpun
+   179,660  My Hero Academia
+   175,734  One-Punch Man
+
+hard tier sample (popularity just over 1,000):
+     1,001  The Almighty Baby Steps  (manhwa, series)
+     1,001  Osananajimitachi ga Ninki Idol ni Natta: Amaamana Kanojotachi wa Ore ni Mitsuide Kurete Iru  (manga, series)
+     1,000  Kintoki: Toki of the Kinme Clan  (manga, oneshot)
+     1,000  NASA: Urasawa Naoki Tanpenshuu  (manga, series)
+     1,000  Shitteru yo.  (manga, series)
+     1,000  Kemono Giga  (manga, series)
+     1,000  Butterfly Love Effect  (manhwa, series)
+     1,000  Osananajimi ga Kamisama datta Hanashi  (manga, series)
+     1,000  Jaeanggeum Yeongungnimi Gwihwanhasyeotda  (manhwa, oneshot)
+     1,000  The Northern Duke Needs a Warm Hug  (manga, series)
