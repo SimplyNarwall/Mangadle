@@ -1,0 +1,434 @@
+#!/usr/bin/env python3
+"""
+mangadle daily builder.
+
+Reads the snapshot made by anilist_snapshot.py, picks each day's 10 titles,
+fetches everything the hints need, redacts summaries and reviews, and writes
+one self-contained JSON file per day that the game loads:
+
+    data/
+      snapshot.json          (from anilist_snapshot.py)
+      raw_anilist.json       (from anilist_snapshot.py, used for sequel lookups)
+      suggestions.json       queue of player suggestions (you create/append)
+      history.json           every built day: date, puzzle number, AniList ids
+      days/2026-11-11.json   the puzzle for that date
+
+Usage (run from the folder that contains both scripts):
+    python build_day.py --data data                      # build tomorrow
+    python build_day.py --data data --date 2026-11-11    # build a given date
+    python build_day.py --data data --ahead 7            # build the next 7 missing days
+    python build_day.py --data data --date 2026-11-11 --force   # rebuild one day
+    python build_day.py --data data --days-dir docs/days --ahead 7   # write straight into the site
+
+suggestions.json format (oldest first; used entries are removed):
+    [ {"anilist_id": 30013, "by": "ethan"}, {"anilist_id": 105398} ]
+
+Every built day has "reviewed": false. Read its "review_notes" (names that were
+not auto-redacted but appear in the text) and fix anything that leaks, then
+set "reviewed": true.
+
+Standard library only.
+"""
+
+import argparse
+import datetime as dt
+import html
+import json
+import os
+import random
+import re
+import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+from collections import Counter
+from zoneinfo import ZoneInfo
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import anilist_snapshot as snap  # noqa: E402
+
+# ----------------------------------------------------------------- settings --
+SITE_TZ = ZoneInfo("America/Chicago")   # must match docs/js/config.js timezone
+TITLES_PER_DAY = 10
+NO_REPEAT_DAYS = 50
+REQUIRED_TIERS = ["easy", "easy", "medium", "medium", "hard", "hard"]  # minimum per tier
+WILDCARD_CHOICES = ["easy", "medium", "hard", "random"]
+TAG_RANK_CUTOFF = 70
+MIN_TAGS = 5
+MAX_CHARACTERS = 15
+REVIEW_COUNT = 3
+REVIEW_EXCERPT_CHARS = 400          # "X" in the spec; change freely
+MIN_REDACT_NAME_LEN = 3             # shorter names are not auto-redacted
+RANDOM_ID_MAX = 200_000             # AniList ids are below this
+MANGADEX_ALIAS_LANGS = {"en", "ja-ro", "ko-ro", "zh-ro"}
+CREATOR_ROLE = re.compile(r"^(story|art|story & art|original creator|original story|original work)\b", re.I)
+
+# Common words that are also character names; never auto-redacted, but flagged
+# in review_notes if they appear.
+COMMON_WORDS = {
+    "hope", "rock", "king", "queen", "light", "may", "will", "grace", "joy", "faith",
+    "love", "sky", "rain", "snow", "angel", "death", "god", "lord", "master", "father",
+    "mother", "brother", "sister", "boss", "doctor", "captain", "hero", "demon", "the",
+    "and", "you", "her", "his", "one", "two", "red", "blue", "black", "white", "gold",
+}
+
+DETAIL_QUERY = """
+query ($id: Int) {
+  Media(id: $id, type: MANGA) {
+    id idMal siteUrl isAdult
+    title { romaji english native }
+    synonyms format countryOfOrigin status
+    startDate { year } endDate { year }
+    chapters volumes popularity averageScore genres description(asHtml: false)
+    tags { name rank category isMediaSpoiler isGeneralSpoiler }
+    coverImage { extraLarge large color }
+    relations { edges { relationType node { id type format title { romaji english } synonyms } } }
+    staff(perPage: 25, sort: [RELEVANCE]) { edges { role node { name { full native } } } }
+    mainChars: characters(role: MAIN, sort: [FAVOURITES_DESC], perPage: 25) {
+      edges { role node { name { full first last native alternative } image { medium } } }
+    }
+    supportChars: characters(role: SUPPORTING, sort: [FAVOURITES_DESC], perPage: 15) {
+      edges { role node { name { full first last native alternative } image { medium } } }
+    }
+    reviews(sort: [RATING_DESC], perPage: 3) {
+      nodes { summary body rating ratingAmount score siteUrl }
+    }
+  }
+}
+"""
+
+RANDOM_QUERY = """
+query ($ids: [Int]) {
+  Page(perPage: 50) {
+    media(id_in: $ids, type: MANGA, isAdult: false, format_in: [MANGA, ONE_SHOT]) {
+      id popularity
+      relations { edges { relationType node { id type format } } }
+    }
+  }
+}
+"""
+
+
+# ----------------------------------------------------------------- io utils --
+def load_json(path, default):
+    if not os.path.exists(path):
+        return default
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_json(path, data):
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+    os.replace(tmp, path)
+
+
+def anilist(query, variables):
+    data = snap.post_graphql(query, variables)
+    time.sleep(snap.REQUEST_GAP_SECONDS)
+    return data
+
+
+def mangadex_get(path, params):
+    url = "https://api.mangadex.org" + path + "?" + urllib.parse.urlencode(params, doseq=True)
+    req = urllib.request.Request(url, headers={"User-Agent": "mangadle-builder/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            out = json.loads(resp.read().decode("utf-8"))
+    except (urllib.error.URLError, json.JSONDecodeError) as e:
+        print(f"  MangaDex lookup failed: {e}", file=sys.stderr)
+        return None
+    time.sleep(0.4)  # MangaDex allows ~5 req/s
+    return out
+
+
+# --------------------------------------------------------------- selection --
+def recent_ids(history, date, days=NO_REPEAT_DAYS):
+    """Ids played within `days` of date, in either direction (days built ahead count too)."""
+    out = set()
+    for entry in history:
+        d = dt.date.fromisoformat(entry["date"])
+        if d != date and abs((d - date).days) <= days:
+            out.update(entry["anilist_ids"])
+    return out
+
+
+def pick_random_id(rng, exclude, fetch=anilist, attempts=40):
+    """Fully random eligible title with no popularity floor: sample random ids 50 at a time."""
+    for _ in range(attempts):
+        ids = rng.sample(range(1, RANDOM_ID_MAX), 50)
+        hits = fetch(RANDOM_QUERY, {"ids": ids})["Page"]["media"]
+        hits = [m for m in hits if m["id"] not in exclude and not snap.is_spinoff(m)]
+        if hits:
+            return rng.choice(hits)["id"]
+    raise RuntimeError("could not find a random eligible title")
+
+
+def choose_titles(date, snapshot, history, suggestions, fetch=anilist):
+    """Returns (list of (anilist_id, source, tier)), remaining suggestions."""
+    rng = random.Random(f"mangadle-{date.isoformat()}")
+    exclude = recent_ids(history, date)
+    by_id = {r["anilist_id"]: r for r in snapshot}
+    picks, remaining = [], []
+
+    # 1. Suggestions first (oldest first). Ineligible-for-now ones stay queued.
+    for s in suggestions:
+        sid = s["anilist_id"]
+        if len(picks) < TITLES_PER_DAY and sid not in exclude and sid not in [p[0] for p in picks]:
+            tier = by_id[sid]["tier"] if sid in by_id else "random"
+            picks.append((sid, "suggestion", tier))
+        else:
+            remaining.append(s)
+
+    # 2. Fallback: cover any required tier the suggestions missed, then wildcards.
+    pools = {t: [r["anilist_id"] for r in snapshot if r["tier"] == t] for t in set(REQUIRED_TIERS)}
+    have = Counter(p[2] for p in picks)
+    needed = []
+    for t in REQUIRED_TIERS:
+        if have[t] > 0:
+            have[t] -= 1
+        else:
+            needed.append(t)
+    while len(picks) < TITLES_PER_DAY:
+        required = bool(needed)
+        tier = needed.pop(0) if needed else rng.choice(WILDCARD_CHOICES)
+        taken = exclude | {p[0] for p in picks}
+        options = [] if tier == "random" else [i for i in pools[tier] if i not in taken]
+        if tier != "random" and not options:
+            if required:
+                raise RuntimeError(f"tier {tier} has no unplayed titles left")
+            tier = "random"  # a wildcard whose tier ran dry goes fully random
+        pid = pick_random_id(rng, taken, fetch) if tier == "random" else rng.choice(options)
+        picks.append((pid, "fallback", tier))
+
+    # Easiest first so the day ramps up.
+    pop = {r["anilist_id"]: r["popularity"] for r in snapshot}
+    picks.sort(key=lambda p: -(pop.get(p[0]) or 0))
+    return picks, remaining
+
+
+# --------------------------------------------------------------- redaction --
+def clean_anilist_text(text):
+    """AniList description / review body -> plain text."""
+    if not text:
+        return ""
+    t = text
+    t = re.sub(r"~!.*?!~", " ", t, flags=re.S)                       # spoiler blocks
+    t = re.sub(r"(?i)<br\s*/?>", "\n", t)
+    t = re.sub(r"<[^>]+>", "", t)                                    # html tags
+    t = re.sub(r"(?i)\b(img|image|youtube|webm)\d*%?\s*\([^)]*\)", " ", t)   # AniList media embeds
+    t = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", t)                 # markdown links -> text
+    t = re.sub(r"~~~|__|\*\*|~~|^#+\s*", "", t, flags=re.M)
+    t = html.unescape(t)
+    t = re.sub(r"(?i)[\(\[]\s*(source|from|written by)\s*:[^)\]]*[\)\]]", "", t)   # "(Source: ...)"
+    t = re.sub(r"[ \t]+", " ", t)
+    t = re.sub(r"\n\s*\n+", "\n\n", t)
+    return t.strip()
+
+
+def character_names(chars):
+    names = set()
+    for c in chars:
+        n = c["name"]
+        for key in ("full", "first", "last"):
+            if n.get(key):
+                names.add(n[key].strip())
+        for alt in n.get("alternative") or []:
+            if alt:
+                names.add(alt.strip())
+        if n.get("full"):
+            names.update(part for part in n["full"].split() if part)
+    return names
+
+
+def build_redactor(title_names, char_names):
+    """Returns redact(text) -> (text, notes)."""
+    def usable(name):
+        return len(name) >= MIN_REDACT_NAME_LEN and name.lower() not in COMMON_WORDS
+
+    rules, skipped = [], []
+    for label, names in (("[title]", title_names), ("[character]", char_names)):
+        for n in names:
+            (rules if usable(n) else skipped).append((n, label))
+    rules.sort(key=lambda r: -len(r[0]))  # longest first so full names beat parts
+
+    def redact(text):
+        for name, label in rules:
+            text = re.sub(r"(?<!\w)" + re.escape(name) + r"(?!\w)", label, text, flags=re.I)
+        text = re.sub(r"(\[(title|character)\])('s)?(\s+\[(title|character)\]('s)?)+",
+                      lambda m: m.group(0).split()[-1], text)  # collapse "[character] [character]"
+        notes = sorted({n for n, _ in skipped if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", text, re.I)})
+        return text, notes
+
+    return redact
+
+
+# ------------------------------------------------------------------ details --
+def mangadex_aliases(record):
+    """Find the MangaDex entry whose AniList link matches; return (id, aliases)."""
+    query = record["title"]["romaji"] or record["title"]["english"]
+    if not query:
+        return None, []
+    res = mangadex_get("/manga", {"title": query, "limit": 10, "contentRating[]": ["safe", "suggestive", "erotica"]})
+    for m in (res or {}).get("data", []):
+        links = m["attributes"].get("links") or {}
+        if str(links.get("al")) == str(record["anilist_id"]):
+            names = []
+            for alt in m["attributes"].get("altTitles") or []:
+                for lang, name in alt.items():
+                    if lang in MANGADEX_ALIAS_LANGS and snap.is_latin_script(name):
+                        names.append(name.strip())
+            for lang, name in (m["attributes"].get("title") or {}).items():
+                if lang in MANGADEX_ALIAS_LANGS and snap.is_latin_script(name):
+                    names.append(name.strip())
+            return m["id"], names
+    return None, []
+
+
+def pick_tags(tags):
+    strong = [t for t in tags if t["rank"] > TAG_RANK_CUTOFF]
+    return strong if len(strong) >= MIN_TAGS else tags[:MIN_TAGS]
+
+
+def build_title(anilist_id, source, tier, raw_by_id, fetch=anilist, mangadex=mangadex_aliases):
+    m = fetch(DETAIL_QUERY, {"id": anilist_id})["Media"]
+    if m.get("isAdult"):
+        raise ValueError(f"{anilist_id} is adult")
+    lookup = dict(raw_by_id)
+    lookup[m["id"]] = m
+    base = snap.build_record(m, lookup)
+
+    mdx_id, mdx_names = mangadex(base)
+    aliases = list(dict.fromkeys(base["accepted_aliases"] + mdx_names))
+
+    main = [e for e in m["mainChars"]["edges"]][:MAX_CHARACTERS]
+    support = [e for e in m["supportChars"]["edges"]][:max(0, MAX_CHARACTERS - len(main))]
+    redact = build_redactor(aliases, character_names([e["node"] for e in main + support]))
+
+    summary, summary_notes = redact(clean_anilist_text(m.get("description")))
+
+    reviews, review_notes = [], []
+    for r in (m.get("reviews") or {}).get("nodes", [])[:REVIEW_COUNT]:
+        body = clean_anilist_text(r.get("body"))
+        excerpt = body[:REVIEW_EXCERPT_CHARS].rsplit(" ", 1)[0] + ("..." if len(body) > REVIEW_EXCERPT_CHARS else "")
+        s_text, n1 = redact(clean_anilist_text(r.get("summary")))
+        e_text, n2 = redact(excerpt)
+        reviews.append({"summary": s_text, "excerpt": e_text, "score": r.get("score"),
+                        "upvotes": r.get("rating"), "url": r.get("siteUrl")})
+        review_notes += n1 + n2
+
+    creators = []
+    for e in (m.get("staff") or {}).get("edges", []):
+        if CREATOR_ROLE.match(e.get("role") or ""):
+            creators.append({"name": e["node"]["name"]["full"], "native": e["node"]["name"].get("native"),
+                             "role": e["role"]})
+
+    def char_out(edges):
+        return [{"name": e["node"]["name"]["full"], "image": (e["node"].get("image") or {}).get("medium")} for e in edges]
+
+    year = base["start_year"]
+    if base["status"] == "RELEASING":
+        release = f"{year}, ongoing" if year else "ongoing"
+    elif base["end_year"] and base["end_year"] != year:
+        release = f"{year} to {base['end_year']}"
+    else:
+        release = str(year) if year else None
+
+    return {
+        "anilist_id": base["anilist_id"],
+        "source": source,
+        "tier": tier,
+        "revealed": {
+            "origin": base["origin"],
+            "format": base["format"],
+            "popularity": base["popularity"],
+            "average_score": base["average_score"],
+            "genres": base["genres"],
+            "demographic": base["demographic"],
+            "release": release,
+        },
+        "hints": {
+            "cover": {"cost": 50, "url": base["cover"]},
+            "summary": {"cost": 100, "text": summary or None},
+            "tags": {"cost": 75, "items": pick_tags(base["tags"]) or None},
+            "creators": {"cost": 50, "items": creators or None},
+            "characters": {"cost": 75, "main": char_out(main) or None, "supporting": char_out(support) or None},
+            "reviews": [{"cost": 50, **r} for r in reviews],
+        },
+        "answer": {
+            "title": base["title"]["english"] or base["title"]["romaji"],
+            "romaji": base["title"]["romaji"],
+            "native": base["title"]["native"],
+            "url": base["url"],
+            "cover": base["cover"],
+            "accepted_aliases": aliases,
+            "mangadex_id": mdx_id,
+        },
+        "review_notes": sorted(set(summary_notes + review_notes)),
+    }
+
+
+# --------------------------------------------------------------------- main --
+def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_aliases, days_dir=None):
+    days_dir = days_dir or os.path.join(data_dir, "days")
+    os.makedirs(days_dir, exist_ok=True)
+    out_path = os.path.join(days_dir, f"{date.isoformat()}.json")
+    hist_path = os.path.join(data_dir, "history.json")
+    sugg_path = os.path.join(data_dir, "suggestions.json")
+
+    history = load_json(hist_path, [])
+    if os.path.exists(out_path) and not force:
+        print(f"{date}: already built (use --force to rebuild)")
+        return out_path
+    history = [h for h in history if h["date"] != date.isoformat()]
+
+    snapshot = load_json(os.path.join(data_dir, "snapshot.json"), None)
+    if snapshot is None:
+        raise SystemExit("snapshot.json not found; run anilist_snapshot.py first")
+    raw_by_id = {m["id"]: m for m in load_json(os.path.join(data_dir, "raw_anilist.json"), [])}
+    suggestions = load_json(sugg_path, [])
+
+    picks, remaining = choose_titles(date, snapshot, history, suggestions, fetch)
+    titles = []
+    for pid, source, tier in picks:
+        print(f"{date}: building {pid} ({source}, {tier})", file=sys.stderr)
+        titles.append(build_title(pid, source, tier, raw_by_id, fetch, mangadex))
+
+    earlier = [h for h in history if h["date"] < date.isoformat()]
+    number = (max((h["number"] for h in earlier), default=0) + 1) if earlier else 1
+    day = {"date": date.isoformat(), "number": number, "reviewed": False,
+           "start_points": 1000, "titles": titles}
+
+    save_json(out_path, day)
+    history.append({"date": date.isoformat(), "number": number, "anilist_ids": [t["anilist_id"] for t in titles]})
+    history.sort(key=lambda h: h["date"])
+    save_json(hist_path, history)
+    save_json(sugg_path, remaining)
+
+    flagged = sum(1 for t in titles if t["review_notes"])
+    print(f"{date}: wrote {out_path} (#{number}); {flagged} title(s) have review notes")
+    return out_path
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--data", default="data", help="data folder (default: data)")
+    ap.add_argument("--date", help="YYYY-MM-DD (default: tomorrow)")
+    ap.add_argument("--ahead", type=int, help="build today and the next N-1 days, skipping any already built")
+    ap.add_argument("--force", action="store_true", help="rebuild even if the day exists")
+    ap.add_argument("--days-dir", help="where day files go (default: DATA/days); use docs/days for the site")
+    args = ap.parse_args()
+
+    if args.ahead:
+        today = dt.datetime.now(SITE_TZ).date()
+        for i in range(0, args.ahead):  # today plus the next N-1 days
+            build_day(today + dt.timedelta(days=i), args.data, force=False, days_dir=args.days_dir)
+    else:
+        date = dt.date.fromisoformat(args.date) if args.date else dt.datetime.now(SITE_TZ).date() + dt.timedelta(days=1)
+        build_day(date, args.data, force=args.force, days_dir=args.days_dir)
+
+
+if __name__ == "__main__":
+    main()

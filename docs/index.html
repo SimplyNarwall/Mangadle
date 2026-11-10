@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mangadle</title>
+  <meta name="description" content="A daily manga, manhwa, and manhua guessing game.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">manga<span class="accent">dle</span></span>
+      <span class="puzzle-meta" id="puzzle-meta"></span>
+    </div>
+    <div class="topbar-right">
+      <span class="total" id="total-score" title="Points so far today"></span>
+      <button class="icon-btn" id="help-btn" aria-label="How to play">?</button>
+    </div>
+  </header>
+
+  <nav class="title-nav" id="title-nav" aria-label="Titles"></nav>
+
+  <main id="app">
+    <p class="loading">Loading today's puzzle...</p>
+  </main>
+
+  <section class="panel suggest" id="suggest">
+    <h2>Suggest a title</h2>
+    <p class="muted">Paste an AniList manga link or ID. Suggestions are used before random picks.</p>
+    <form id="suggest-form" class="row">
+      <input id="suggest-input" type="text" placeholder="https://anilist.co/manga/30013" autocomplete="off">
+      <button type="submit" class="btn">Suggest</button>
+    </form>
+    <p class="muted small" id="suggest-status" role="status"></p>
+  </section>
+
+  <footer class="footer muted small">
+    Data from <a href="https://anilist.co" target="_blank" rel="noopener">AniList</a> and
+    <a href="https://mangadex.org" target="_blank" rel="noopener">MangaDex</a>.
+    Inspired by Catfishing and Moviewordle.
+  </footer>
+
+  <dialog id="help">
+    <h2>How to play</h2>
+    <p>Each day has 10 manga, manhwa, or manhua. Guess the title of each one.</p>
+    <ul>
+      <li>Every title starts at <b>1,000 points</b>. You can see its origin, format, popularity, score, genres, and release years for free.</li>
+      <li>Reveal hints to narrow it down. Each hint costs points: cover 50, summary 100, tags 75, author and artist 50, characters 75, each review 50.</li>
+      <li>You get <b>one guess</b> per title. A correct guess keeps the points you have left. A wrong guess scores 0.</li>
+      <li>Any English or romaji title works, and small typos are accepted automatically.</li>
+      <li>For sequels, the original series' name also counts.</li>
+    </ul>
+    <p>A new puzzle comes out every day at midnight Central time.</p>
+    <form method="dialog"><button class="btn">Got it</button></form>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
