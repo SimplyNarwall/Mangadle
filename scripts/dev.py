@@ -10,6 +10,7 @@ mangadle dev tools. Run from anywhere; paths default to this repo.
   python3 scripts/dev.py check 2026-11-11 --blind         same, but spoiler-free (counts only)
   python3 scripts/dev.py check 2026-11-11 --blind --fix   redact flagged words without showing them
   python3 scripts/dev.py approve 2026-11-11     mark a day "reviewed": true (optional; the site ignores it)
+  python3 scripts/dev.py shuffle --upcoming      mix up the title order of days not played yet
   python3 scripts/dev.py renumber               after changing LAUNCH_DATE in build_day.py
   python3 scripts/dev.py index                  rebuild the past days list
 
@@ -333,6 +334,28 @@ def cmd_approve(args):
     print(f"{args.date} marked reviewed")
 
 
+def cmd_shuffle(args):
+    """Randomly reorder each day's titles in place. Spoiler-free: prints nothing about them."""
+    import random
+    dates = list(args.dates)
+    if args.upcoming:
+        start = today() + dt.timedelta(days=0 if args.include_today else 1)
+        dates += [f[:-5] for f in sorted(os.listdir(DAYS))
+                  if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", f) and f[:-5] >= str(start)]
+    if not dates:
+        raise SystemExit("give dates, or --upcoming for every day after today")
+    for date in dict.fromkeys(dates):
+        day, path = load_day(date)
+        if date <= str(today()) and not args.force:
+            print(f"{date}: skipped (today or earlier; progress saved in browsers is tied to title order). "
+                  f"Use --force if nobody has played it yet.")
+            continue
+        random.shuffle(day["titles"])
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(day, f, ensure_ascii=False, indent=1)
+        print(f"{date}: shuffled")
+
+
 def cmd_renumber(args):
     import build_day as bd
     hist_path = os.path.join(args.data, "history.json")
@@ -398,6 +421,13 @@ def main():
     s = sub.add_parser("approve", help='set "reviewed": true on a day')
     s.add_argument("date")
     s.set_defaults(func=cmd_approve)
+
+    s = sub.add_parser("shuffle", help="randomly reorder titles within days (spoiler-free)")
+    s.add_argument("dates", nargs="*", help="YYYY-MM-DD dates to shuffle")
+    s.add_argument("--upcoming", action="store_true", help="every built day after today")
+    s.add_argument("--include-today", action="store_true", help="with --upcoming, include today")
+    s.add_argument("--force", action="store_true", help="allow today or earlier (only if nobody has played it)")
+    s.set_defaults(func=cmd_shuffle)
 
     s = sub.add_parser("renumber", help="recount puzzle numbers after changing LAUNCH_DATE")
     s.add_argument("--data", default=DATA)

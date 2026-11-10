@@ -223,9 +223,8 @@ def choose_titles(date, snapshot, history, suggestions, fetch=anilist):
         pid = pick_random_id(rng, taken, fetch) if tier == "random" else rng.choice(options)
         picks.append((pid, "fallback", tier))
 
-    # Easiest first so the day ramps up.
-    pop = {r["anilist_id"]: r["popularity"] for r in snapshot}
-    picks.sort(key=lambda p: -(pop.get(p[0]) or 0))
+    # Mix the tiers up (same order every rebuild of this date, since rng is seeded by date).
+    rng.shuffle(picks)
     return picks, remaining
 
 

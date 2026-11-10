@@ -111,6 +111,7 @@ python3 scripts/dev.py check 2026-11-11 --full       # also print every summary 
 python3 scripts/dev.py rebuild 2026-11-11 --same-titles   # same 10 titles, fresh hints/redaction
 python3 scripts/dev.py rebuild 2026-11-11            # new picks (uses the suggestion queue again)
 python3 scripts/dev.py approve 2026-11-11            # set "reviewed": true
+python3 scripts/dev.py shuffle --upcoming            # randomize title order in every day after today
 ```
 
 `check` flags any title words that still appear in a summary or review. Some are false alarms (a summary for *Tower of God* can say "tower"), so read them before editing. To fix one by hand, edit the text in `docs/days/<date>.json`; a `--same-titles` rebuild would overwrite your edits.
@@ -192,4 +193,4 @@ git add docs/days data && git commit -m "puzzles" && git push
 - The puzzle date follows `timezone` in `docs/js/config.js` (America/Chicago). `SITE_TZ` in `scripts/build_day.py` must match it.
 - Test any date with `?date=2026-11-11` in the URL.
 - Day files include the answers, so a player who opens the browser's network tab can see them. Fine for friends; a public version would need the worker to check guesses.
-- Cover blur strength is `--cover-blur` in `docs/css/style.css` (default 14px).
+- Cover blur strength is `--cover-blur` in `docs/css/style.css` (default 6px).
