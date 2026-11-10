@@ -123,6 +123,60 @@ npx wrangler d1 execute mangadle --local --file=schema.sql
 npx wrangler dev                             # http://localhost:8787
 ```
 
+### Local testing routine
+
+Run through this after changing the site, the scripts, or the worker, before pushing. None of it touches your real data or spoils real puzzles.
+
+**1. Site smoke test (offline, 2 minutes)**
+
+```
+python3 scripts/dev.py fake
+python3 scripts/dev.py serve
+```
+
+Open `http://localhost:8000/?date=2000-01-01&reset` and check:
+- [ ] Reveal a few hints; the points shown go down by each hint's cost. The cover is blurred.
+- [ ] A spoiler tag stays hidden until clicked.
+- [ ] Guess with a small typo (e.g. "moon rabit swordsman"); it's accepted.
+- [ ] Guess something wrong on another title; it scores 0 and shows the answer.
+- [ ] Use "Give up" on one title.
+- [ ] Reload the page; progress is kept.
+- [ ] Finish all 10; the results screen shows, and "Copy results" gives the right share text.
+- [ ] Past days page loads (the fake day isn't listed there; that's expected).
+- [ ] Narrow the browser window to phone width; nothing overlaps.
+
+The fake day's answers are printed by `dev.py fake`, so it's safe to use for testing.
+
+**2. Real-data test (needs internet, doesn't spoil anything)**
+
+Build a throwaway day far in the future, using a copy of `data/` so the real history and suggestion queue stay untouched:
+
+```
+cp -r data /tmp/mangadle-test-data
+python3 scripts/build_day.py --data /tmp/mangadle-test-data --days-dir docs/days --date 2099-01-01
+python3 scripts/dev.py check 2099-01-01 --blind
+```
+
+Play it at `http://localhost:8000/?date=2099-01-01&preview&reset`. These are real titles you might see again later, so stick to checking that hints load and look right (covers, summaries, tags, characters, reviews) rather than reading closely. Then clean up:
+
+```
+rm docs/days/2099-01-01.json
+python3 scripts/dev.py index
+rm -rf /tmp/mangadle-test-data
+```
+
+**3. Worker test (optional, only after changing `worker/`)**
+
+In one terminal: `cd worker && npx wrangler dev`. Then open `http://localhost:8000/?date=2000-01-01&reset&api=http://localhost:8787` and:
+- [ ] Finish all 10 titles; the results screen shows the "Everyone today" chart and table.
+- [ ] Submit a suggestion (any AniList manga link); it says it's in the queue.
+- [ ] Submit the same one again; it says it's already queued.
+
+**4. Before pushing**
+
+- [ ] `git status` shows no `docs/days/2000-01-01.json` or `2099-*` files (the fake day is gitignored; delete any test day).
+- [ ] `python3 scripts/dev.py check <date> --blind` is clean for every new day you're pushing.
+
 ## Daily routine
 
 ```
