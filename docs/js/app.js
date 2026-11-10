@@ -54,6 +54,13 @@ let current = 0;         // index of the title on screen, or "results"
 const params = new URLSearchParams(location.search);
 const date = params.get("date") || todayIn(CONFIG.timezone);
 const storageKey = `mangadle:day:${date}`;
+// Dev helpers: ?api=http://localhost:8787 uses a local worker; ?reset wipes this day's progress.
+const WORKER_URL = (params.has("api") ? params.get("api") : CONFIG.workerUrl || "").replace(/\/$/, "");
+if (params.has("reset")) {
+  localStorage.removeItem(storageKey);
+  params.delete("reset");
+  history.replaceState(null, "", location.pathname + (params.toString() ? `?${params}` : ""));
+}
 
 function freshState(n) {
   return {
@@ -327,8 +334,8 @@ function renderResults() {
     },
   }, "Copy results");
 
-  const statsBox = h("div", { class: "stats", id: "stats" }, h("p", { class: "muted" }, CONFIG.workerUrl ? "Loading everyone's results..." : "Shared stats aren't set up yet."));
-  if (CONFIG.workerUrl) loadStats(statsBox, total);
+  const statsBox = h("div", { class: "stats", id: "stats" }, h("p", { class: "muted" }, WORKER_URL ? "Loading everyone's results..." : "Shared stats aren't set up yet."));
+  if (WORKER_URL) loadStats(statsBox, total);
 
   return h("article", { class: "card" },
     h("div", { class: "card-head" },
@@ -341,9 +348,9 @@ function renderResults() {
 }
 
 async function submitResult() {
-  if (!CONFIG.workerUrl || state.submitted) return;
+  if (!WORKER_URL || state.submitted) return;
   try {
-    const res = await fetch(`${CONFIG.workerUrl}/result`, {
+    const res = await fetch(`${WORKER_URL}/result`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -359,7 +366,7 @@ async function submitResult() {
 async function loadStats(box, myTotal) {
   try {
     if (!state.submitted) await submitResult();
-    const res = await fetch(`${CONFIG.workerUrl}/stats?date=${date}`);
+    const res = await fetch(`${WORKER_URL}/stats?date=${date}`);
     if (!res.ok) throw new Error(res.status);
     const st = await res.json();
     box.replaceChildren(
@@ -429,7 +436,7 @@ function setupSuggestions() {
     const raw = $("#suggest-input").value.trim();
     const m = raw.match(/anilist\.co\/manga\/(\d+)/) || raw.match(/^(\d+)$/);
     if (!m) { status.textContent = "Paste an AniList manga link (anilist.co/manga/...) or its number."; return; }
-    if (!CONFIG.workerUrl) { status.textContent = "Suggestions aren't set up yet."; return; }
+    if (!WORKER_URL) { status.textContent = "Suggestions aren't set up yet."; return; }
     const id = Number(m[1]);
     status.textContent = "Checking AniList...";
     try {
@@ -440,7 +447,7 @@ function setupSuggestions() {
       if (media.isAdult) { status.textContent = "Adult titles aren't included in mangadle."; return; }
       if (media.format === "NOVEL") { status.textContent = "Light novels aren't included, only manga, manhwa, and manhua."; return; }
       const name = media.title.english || media.title.romaji;
-      const sres = await fetch(`${CONFIG.workerUrl}/suggest`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ anilistId: id }) });
+      const sres = await fetch(`${WORKER_URL}/suggest`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ anilistId: id }) });
       const out = await sres.json();
       status.textContent = out.queued ? `Thanks! “${name}” is in the queue.` : `“${name}” is already in the queue.`;
       $("#suggest-input").value = "";

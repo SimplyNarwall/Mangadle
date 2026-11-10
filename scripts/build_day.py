@@ -19,6 +19,7 @@ Usage (run from the folder that contains both scripts):
     python build_day.py --data data --ahead 7            # build the next 7 missing days
     python build_day.py --data data --date 2026-11-11 --force   # rebuild one day
     python build_day.py --data data --days-dir docs/days --ahead 7   # write straight into the site
+    python build_day.py --data data --date 2026-11-11 --same-titles  # same picks, fresh hints/redaction
 
 suggestions.json format (oldest first; used entries are removed):
     [ {"anilist_id": 30013, "by": "ethan"}, {"anilist_id": 105398} ]
@@ -371,7 +372,8 @@ def build_title(anilist_id, source, tier, raw_by_id, fetch=anilist, mangadex=man
 
 
 # --------------------------------------------------------------------- main --
-def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_aliases, days_dir=None):
+def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_aliases, days_dir=None,
+              same_titles=False):
     days_dir = days_dir or os.path.join(data_dir, "days")
     os.makedirs(days_dir, exist_ok=True)
     out_path = os.path.join(days_dir, f"{date.isoformat()}.json")
@@ -379,7 +381,10 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
     sugg_path = os.path.join(data_dir, "suggestions.json")
 
     history = load_json(hist_path, [])
-    if os.path.exists(out_path) and not force:
+    old_day = load_json(out_path, None) if same_titles else None
+    if same_titles and old_day is None:
+        raise SystemExit(f"{date}: --same-titles needs an existing day file at {out_path}")
+    if os.path.exists(out_path) and not (force or same_titles):
         print(f"{date}: already built (use --force to rebuild)")
         return out_path
     history = [h for h in history if h["date"] != date.isoformat()]
@@ -390,7 +395,12 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
     raw_by_id = {m["id"]: m for m in load_json(os.path.join(data_dir, "raw_anilist.json"), [])}
     suggestions = load_json(sugg_path, [])
 
-    picks, remaining = choose_titles(date, snapshot, history, suggestions, fetch)
+    if old_day:
+        # Re-fetch and re-redact the same titles; leave the suggestion queue alone.
+        picks = [(t["anilist_id"], t.get("source", "fallback"), t.get("tier", "random")) for t in old_day["titles"]]
+        remaining = suggestions
+    else:
+        picks, remaining = choose_titles(date, snapshot, history, suggestions, fetch)
     titles = []
     for pid, source, tier in picks:
         print(f"{date}: building {pid} ({source}, {tier})", file=sys.stderr)
@@ -398,6 +408,8 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
 
     earlier = [h for h in history if h["date"] < date.isoformat()]
     number = (max((h["number"] for h in earlier), default=0) + 1) if earlier else 1
+    if old_day:
+        number = old_day.get("number", number)
     day = {"date": date.isoformat(), "number": number, "reviewed": False,
            "start_points": 1000, "titles": titles}
 
@@ -418,6 +430,8 @@ def main():
     ap.add_argument("--date", help="YYYY-MM-DD (default: tomorrow)")
     ap.add_argument("--ahead", type=int, help="build today and the next N-1 days, skipping any already built")
     ap.add_argument("--force", action="store_true", help="rebuild even if the day exists")
+    ap.add_argument("--same-titles", action="store_true",
+                    help="rebuild --date with the titles it already has (refresh hints/redaction only)")
     ap.add_argument("--days-dir", help="where day files go (default: DATA/days); use docs/days for the site")
     args = ap.parse_args()
 
@@ -427,7 +441,7 @@ def main():
             build_day(today + dt.timedelta(days=i), args.data, force=False, days_dir=args.days_dir)
     else:
         date = dt.date.fromisoformat(args.date) if args.date else dt.datetime.now(SITE_TZ).date() + dt.timedelta(days=1)
-        build_day(date, args.data, force=args.force, days_dir=args.days_dir)
+        build_day(date, args.data, force=args.force, days_dir=args.days_dir, same_titles=args.same_titles)
 
 
 if __name__ == "__main__":

@@ -34,8 +34,8 @@ API_URL = "https://graphql.anilist.co"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36 mangadle-snapshot/1.0"
 MIN_POPULARITY = 1000
 PER_PAGE = 50
-REQUEST_GAP_SECONDS = 2.1          # ~28 requests/min, safe under the degraded limit
-BAND_SPLIT_THRESHOLD = 4500        # AniList stops paginating deep result sets; split big bands
+REQUEST_GAP_SECONDS = 2.1          # starts at ~28/min; raised to AniList's real limit after the first reply
+PAGES_PER_WINDOW = 40              # restart the query after this many pages (2,000 titles)
 
 # Difficulty tiers by AniList popularity (members with the title on their list).
 TIERS = [
@@ -103,6 +103,10 @@ def post_graphql(query, variables, max_retries=6):
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 payload = json.loads(resp.read().decode("utf-8"))
+                limit = resp.headers.get("X-RateLimit-Limit")
+                if limit and limit.isdigit() and int(limit) > 0:
+                    global REQUEST_GAP_SECONDS
+                    REQUEST_GAP_SECONDS = max(0.4, 60 / int(limit) * 1.1)  # 10% under the limit
                 remaining = resp.headers.get("X-RateLimit-Remaining")
                 if remaining is not None and int(remaining) <= 2:
                     time.sleep(30)
@@ -129,50 +133,41 @@ def post_graphql(query, variables, max_retries=6):
     raise RuntimeError("AniList request failed after retries")
 
 
-def fetch_band(fetch, pop_greater, pop_lesser):
-    """Fetch all media with pop_greater < popularity < pop_lesser (lesser may be None)."""
-    items, page = [], 1
-    while True:
-        variables = {"page": page, "perPage": PER_PAGE, "popGreater": pop_greater}
-        if pop_lesser is not None:
-            variables["popLesser"] = pop_lesser
-        data = fetch(QUERY, variables)
-        time.sleep(REQUEST_GAP_SECONDS)
-        page_data = data["Page"]
-        info = page_data["pageInfo"]
-        if page == 1:
-            total = info.get("total") or 0
-            hi = "max" if pop_lesser is None else pop_lesser
-            print(f"band popularity ({pop_greater}, {hi}): ~{total} titles", file=sys.stderr)
-            # Deep pagination is unreliable on AniList; split big bands in two.
-            if total >= BAND_SPLIT_THRESHOLD and pop_lesser is not None and pop_lesser - pop_greater > 2:
-                mid = (pop_greater + pop_lesser) // 2
-                return fetch_band(fetch, pop_greater, mid + 1) + fetch_band(fetch, mid, pop_lesser)
-        items.extend(page_data["media"])
-        if not info.get("hasNextPage"):
-            return items
-        page += 1
+def fetch_all(fetch=None):
+    """Page down the whole list, most popular first, using keyset pagination.
 
-
-# Bands chosen so each is small enough to paginate. Boundaries overlap by one
-# because popularity_greater / popularity_lesser are exclusive; dedupe by id later.
-BANDS = [
-    (50_000 - 1, None),
-    (20_000 - 1, 50_000),
-    (10_000 - 1, 20_000),
-    (5_000 - 1, 10_000),
-    (3_000 - 1, 5_000),
-    (2_000 - 1, 3_000),
-    (MIN_POPULARITY - 1, 2_000),
-]
-
-
-def fetch_all(fetch=post_graphql):
+    AniList's pageInfo.total is not reliable (it reports 5000 for anything over
+    one page), so we never look at it. We just follow hasNextPage. To avoid
+    paging very deep into one query, every PAGES_PER_WINDOW pages we start a
+    fresh query just below the lowest popularity seen so far. Titles that tie
+    at that popularity are fetched twice and de-duplicated by id.
+    """
+    fetch = fetch or post_graphql
     seen = {}
-    for lo, hi in BANDS:
-        for m in fetch_band(fetch, lo, hi):
-            seen[m["id"]] = m
-    return list(seen.values())
+    pop_lesser = None          # exclusive upper bound for the current window
+    started = time.time()
+    while True:
+        lowest = None
+        for page in range(1, PAGES_PER_WINDOW + 1):
+            variables = {"page": page, "perPage": PER_PAGE, "popGreater": MIN_POPULARITY - 1}
+            if pop_lesser is not None:
+                variables["popLesser"] = pop_lesser
+            data = fetch(QUERY, variables)
+            time.sleep(REQUEST_GAP_SECONDS)
+            page_data = data["Page"]
+            for m in page_data["media"]:
+                seen[m["id"]] = m
+                pop = m.get("popularity") or 0
+                lowest = pop if lowest is None else min(lowest, pop)
+            if not page_data["pageInfo"].get("hasNextPage"):
+                print(f"done: {len(seen)} titles in {time.time() - started:.0f}s", file=sys.stderr)
+                return list(seen.values())
+        print(f"  {len(seen):>6} titles so far, now at popularity {lowest:,} "
+              f"({time.time() - started:.0f}s)", file=sys.stderr)
+        next_lesser = lowest + 1  # +1 because popularity_lesser is exclusive: re-fetch the tie group
+        if pop_lesser is not None and next_lesser >= pop_lesser:
+            next_lesser = lowest  # a whole window was one popularity value; skip past it
+        pop_lesser = next_lesser
 
 
 # --------------------------------------------------------------------------- #

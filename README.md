@@ -64,12 +64,45 @@ python3 scripts/sync_suggestions.py --data data
 
 Run this before `build_day.py`. Suggested titles fill the next day's slots first; random picks cover whatever tiers are missing.
 
+## Testing locally
+
+```
+python3 scripts/dev.py fake                  # fake practice day for 2000-01-01, no internet needed
+python3 scripts/dev.py serve                 # site at http://localhost:8000, opens your browser
+```
+
+While serving, add these to the URL:
+- `?date=2026-11-11` plays any date (`?date=2000-01-01` for the fake day)
+- `&reset` wipes your progress for that date so you can replay it
+- `&api=http://localhost:8787` points at a local worker instead of the one in `config.js`
+
+Reviewing and fixing a day:
+
+```
+python3 scripts/dev.py check 2026-11-11              # hints per title, accepted answers, possible leaks
+python3 scripts/dev.py check 2026-11-11 --full       # also print every summary and review
+python3 scripts/dev.py rebuild 2026-11-11 --same-titles   # same 10 titles, fresh hints/redaction
+python3 scripts/dev.py rebuild 2026-11-11            # new picks (uses the suggestion queue again)
+python3 scripts/dev.py approve 2026-11-11            # set "reviewed": true
+```
+
+`check` flags any title words that still appear in a summary or review. Some are false alarms (a summary for *Tower of God* can say "tower"), so read them before editing. To fix one by hand, edit the text in `docs/days/<date>.json`; a `--same-titles` rebuild would overwrite your edits.
+
+Local worker (optional):
+
+```
+cd worker
+npx wrangler d1 execute mangadle --local --file=schema.sql
+npx wrangler dev                             # http://localhost:8787
+```
+
 ## Daily routine
 
 ```
 python3 scripts/sync_suggestions.py --data data
 python3 scripts/build_day.py --data data --days-dir docs/days --ahead 7
-# review the new day files, then:
+python3 scripts/dev.py check            # review today's file, then approve it
+# then:
 git add docs/days data && git commit -m "puzzles" && git push
 ```
 
