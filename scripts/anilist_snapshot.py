@@ -39,8 +39,8 @@ PAGES_PER_WINDOW = 40              # restart the query after this many pages (2,
 
 # Difficulty tiers by AniList popularity (members with the title on their list).
 TIERS = [
-    ("easy", 50_000, None),
-    ("medium", 10_000, 50_000),
+    ("easy", 25_000, None),
+    ("medium", 10_000, 25_000),
     ("hard", 1_000, 10_000),
 ]
 
@@ -175,14 +175,18 @@ def fetch_all(fetch=None):
 # --------------------------------------------------------------------------- #
 
 def is_latin_script(text):
-    """True if every letter in text is Latin (allows digits, punctuation, symbols)."""
-    has_letter = False
+    """True if every letter in text is Latin. Titles with no letters at all
+    (like "23:45" or "11336") count too, as long as they have a digit."""
+    has_letter = has_digit = False
     for ch in text:
-        if unicodedata.category(ch).startswith("L"):
+        cat = unicodedata.category(ch)
+        if cat.startswith("L"):
             has_letter = True
             if not unicodedata.name(ch, "").startswith("LATIN"):
                 return False
-    return has_letter
+        elif cat == "Nd":
+            has_digit = True
+    return has_letter or has_digit
 
 
 def titles_of(media):

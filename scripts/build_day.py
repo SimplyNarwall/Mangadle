@@ -187,7 +187,13 @@ def choose_titles(date, snapshot, history, suggestions, fetch=anilist):
             remaining.append(s)
 
     # 2. Fallback: cover any required tier the suggestions missed, then wildcards.
-    pools = {t: [r["anilist_id"] for r in snapshot if r["tier"] == t] for t in set(REQUIRED_TIERS)}
+    # Titles nobody could guess (no accepted answers) never get picked.
+    pools = {t: [r["anilist_id"] for r in snapshot if r["tier"] == t and r["accepted_aliases"]]
+             for t in set(REQUIRED_TIERS)}
+    last_played = {}
+    for entry in history:
+        for i in entry["anilist_ids"]:
+            last_played[i] = max(last_played.get(i, ""), entry["date"])
     have = Counter(p[2] for p in picks)
     needed = []
     for t in REQUIRED_TIERS:
@@ -202,8 +208,18 @@ def choose_titles(date, snapshot, history, suggestions, fetch=anilist):
         options = [] if tier == "random" else [i for i in pools[tier] if i not in taken]
         if tier != "random" and not options:
             if required:
-                raise RuntimeError(f"tier {tier} has no unplayed titles left")
-            tier = "random"  # a wildcard whose tier ran dry goes fully random
+                # Every title in this tier was played in the last NO_REPEAT_DAYS days:
+                # reuse whichever was played longest ago rather than failing.
+                today_ids = {p[0] for p in picks}
+                fallback = sorted((i for i in pools[tier] if i not in today_ids),
+                                  key=lambda i: last_played.get(i, ""))
+                if not fallback:
+                    raise RuntimeError(f"tier {tier} is empty")
+                print(f"  note: every {tier} title was played in the last {NO_REPEAT_DAYS} days; "
+                      f"repeating the oldest one", file=sys.stderr)
+                options = fallback[:1]
+            else:
+                tier = "random"  # a wildcard whose tier ran dry goes fully random
         pid = pick_random_id(rng, taken, fetch) if tier == "random" else rng.choice(options)
         picks.append((pid, "fallback", tier))
 
