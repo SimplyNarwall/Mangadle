@@ -77,13 +77,37 @@ class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
                 return dev
         return real
 
+    # Explicit types: if Python guesses wrong (e.g. text/plain for .css), browsers
+    # silently refuse to apply the stylesheet or run the scripts.
+    extensions_map = {
+        **http.server.SimpleHTTPRequestHandler.extensions_map,
+        ".html": "text/html; charset=utf-8",
+        ".css": "text/css; charset=utf-8",
+        ".js": "text/javascript; charset=utf-8",
+        ".json": "application/json; charset=utf-8",
+        ".svg": "image/svg+xml",
+        "": "application/octet-stream",
+    }
+
+    def guess_type(self, path):
+        ext = os.path.splitext(path)[1].lower()
+        return self.extensions_map.get(ext) or super().guess_type(path)
+
     def end_headers(self):
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
 
+    def log_request(self, code="-", size="-"):
+        code = int(code) if str(code).isdigit() else code
+        mark = "  " if isinstance(code, int) and code < 400 else "!!"
+        path = self.path.split("?", 1)[0]
+        ctype = ""
+        if path.endswith((".css", ".js", ".json", ".html")) or path.endswith("/"):
+            ctype = f"  ({self.guess_type(path if not path.endswith('/') else path + 'index.html').split(';')[0]})"
+        print(f"{mark} {code} {self.command} {self.path}{ctype}", flush=True)
+
     def log_message(self, fmt, *args):
-        if args and str(args[1]).startswith(("4", "5")):  # only log errors
-            super().log_message(fmt, *args)
+        pass  # log_request above covers everything useful
 
 
 def cmd_serve(args):
@@ -103,6 +127,7 @@ def cmd_serve(args):
     if not days and not dev_days:
         print("  no day files yet; try: python3 scripts/dev.py fake")
     print(f"  add &reset to any URL to wipe your progress for that day")
+    print("requests are logged below; lines marked !! are errors")
     if not args.no_open:
         webbrowser.open(base + (f"?date={args.date}" if args.date else ""))
     try:
