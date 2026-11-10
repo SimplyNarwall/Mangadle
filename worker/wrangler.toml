@@ -3,12 +3,12 @@ main = "src/index.js"
 compatibility_date = "2025-06-01"
 
 [vars]
-# Comma-separated list of origins allowed to call the API, e.g. "https://yourname.github.io"
+# Comma-separated list of origins allowed to call the API, e.g. "https://simplynarwall.github.io"
 ALLOWED_ORIGIN = "*"
 
 [[d1_databases]]
 binding = "DB"
 database_name = "mangadle"
-database_id = "PASTE_DATABASE_ID_FROM_wrangler_d1_create"
+database_id = "d1e67bf7-f020-435e-9024-2f29c4a3986e"
 
 # ADMIN_TOKEN is a secret, not a var: npx wrangler secret put ADMIN_TOKEN
