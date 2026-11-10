@@ -147,7 +147,8 @@ input[type="text"]:focus { outline: 2px solid var(--accent); outline-offset: 1px
   background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 14px;
   white-space: pre-wrap; font: 0.95rem/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; margin: 0 0 12px;
 }
-.stats { margin-top: 22px; }
+.stats { margin-top: 4px; margin-bottom: 22px; }
+.share-label { margin-top: 0; }
 .hist-wrap { margin-bottom: 14px; }
 .histogram { width: 100%; height: auto; }
 .histogram .bar-all { fill: #5b5680; }

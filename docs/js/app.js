@@ -370,9 +370,11 @@ function renderResults() {
     h("div", { class: "card-head" },
       h("div", {}, h("div", { class: "muted small" }, `mangadle #${day.number}`), h("h2", { class: "card-title" }, "Today's results")),
       h("div", { class: "worth" }, h("span", { class: "worth-num" }, fmt(total)), h("span", { class: "muted small" }, `of ${fmt(day.titles.length * START_POINTS)}`))),
+    statsBox,
+    // Share text last: it's long, and the stats are what you want to see first.
+    h("h3", { class: "section-label share-label" }, "Share"),
     h("pre", { class: "share" }, text),
     h("div", { class: "row" }, copyBtn, h("span", { class: "muted small", id: "countdown" }, countdownText())),
-    statsBox,
   );
 }
 
