@@ -93,7 +93,7 @@ python3 scripts/dev.py check 2026-11-11 --blind --fix   # redact flagged words i
 ## Testing locally
 
 ```
-python3 scripts/dev.py fake                  # fake practice day for 2000-01-01, no internet needed
+python3 scripts/dev.py fake                  # fake practice day for 2000-01-01 in .dev/, no internet needed
 python3 scripts/dev.py serve                 # site at http://localhost:8000, opens your browser
 ```
 
@@ -149,21 +149,21 @@ The fake day's answers are printed by `dev.py fake`, so it's safe to use for tes
 
 **2. Real-data test (needs internet, doesn't spoil anything)**
 
-Build a throwaway day far in the future, using a copy of `data/` so the real history and suggestion queue stay untouched:
+Build a throwaway day far in the future. It goes in `.dev/days` (ignored by git, but served by `dev.py serve`), and uses a copy of `data/` so the real history and suggestion queue stay untouched:
 
 ```
 cp -r data /tmp/mangadle-test-data
-python3 scripts/build_day.py --data /tmp/mangadle-test-data --days-dir docs/days --date 2099-01-01
+python3 scripts/build_day.py --data /tmp/mangadle-test-data --days-dir .dev/days --date 2099-01-01
 python3 scripts/dev.py check 2099-01-01 --blind
 ```
 
 Play it at `http://localhost:8000/?date=2099-01-01&preview&reset`. These are real titles you might see again later, so stick to checking that hints load and look right (covers, summaries, tags, characters, reviews) rather than reading closely. Then clean up:
 
 ```
-rm docs/days/2099-01-01.json
-python3 scripts/dev.py index
-rm -rf /tmp/mangadle-test-data
+rm -rf .dev /tmp/mangadle-test-data
 ```
+
+(Optional: leaving `.dev/` around is harmless since git ignores it.)
 
 **3. Worker test (optional, only after changing `worker/`)**
 
@@ -174,7 +174,7 @@ In one terminal: `cd worker && npx wrangler dev`. Then open `http://localhost:80
 
 **4. Before pushing**
 
-- [ ] `git status` shows no `docs/days/2000-01-01.json` or `2099-*` files (the fake day is gitignored; delete any test day).
+- [ ] `git status` shows only the changes you meant to make. Testing itself should change nothing: fake and test days live in `.dev/`, and caches and big data files are in `.gitignore`.
 - [ ] `python3 scripts/dev.py check <date> --blind` is clean for every new day you're pushing.
 
 ## Daily routine

@@ -1,0 +1,20 @@
+# Mac folder metadata
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# big, re-creatable AniList dumps (regenerate with scripts/anilist_snapshot.py)
+data/raw_anilist.json
+data/snapshot.json
+data/summary.txt
+
+# fake and test days from scripts/dev.py (never published)
+.dev/
+
+# worker
+worker/node_modules/
+worker/.wrangler/
+.dev.vars
+.env

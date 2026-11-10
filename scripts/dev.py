@@ -35,6 +35,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DOCS = os.path.join(ROOT, "docs")
 DAYS = os.path.join(DOCS, "days")
+# Fake and test days live here instead (gitignored). `serve` also serves them under /days/.
+DEV_DAYS = os.path.join(ROOT, ".dev", "days")
 DATA = os.path.join(ROOT, "data")
 SITE_TZ = ZoneInfo("America/Chicago")
 FAKE_DATE = "2000-01-01"
@@ -47,19 +49,33 @@ def today():
 
 
 def day_path(date):
-    return os.path.join(DAYS, f"{date}.json")
+    """The real day file if it exists, otherwise the dev/test copy."""
+    real = os.path.join(DAYS, f"{date}.json")
+    dev = os.path.join(DEV_DAYS, f"{date}.json")
+    return dev if not os.path.exists(real) and os.path.exists(dev) else real
 
 
 def load_day(date):
     path = day_path(date)
     if not os.path.exists(path):
-        raise SystemExit(f"no day file at {path}")
+        raise SystemExit(f"no day file for {date} in docs/days or .dev/days")
     with open(path, encoding="utf-8") as f:
         return json.load(f), path
 
 
 # --------------------------------------------------------------------- serve --
 class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
+    def translate_path(self, path):
+        # /days/<file> falls back to .dev/days/<file>, so fake and test days are
+        # playable locally without ever being written into docs/.
+        real = super().translate_path(path)
+        clean = path.split("?", 1)[0].split("#", 1)[0]
+        if clean.startswith("/days/") and not os.path.exists(real):
+            dev = os.path.join(DEV_DAYS, os.path.basename(clean))
+            if os.path.exists(dev):
+                return dev
+        return real
+
     def end_headers(self):
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
@@ -73,12 +89,17 @@ def cmd_serve(args):
     handler = functools.partial(NoCacheHandler, directory=DOCS)
     server = http.server.ThreadingHTTPServer(("127.0.0.1", args.port), handler)
     base = f"http://localhost:{args.port}/"
-    days = sorted(f[:-5] for f in os.listdir(DAYS) if f.endswith(".json")) if os.path.isdir(DAYS) else []
+    def list_days(folder):
+        return sorted(f[:-5] for f in os.listdir(folder) if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", f)) if os.path.isdir(folder) else []
+    days = list_days(DAYS)
+    dev_days = list_days(DEV_DAYS)
     print(f"serving docs/ at {base}  (Ctrl+C to stop)")
     print(f"  today ({today()}): {base}")
     for d in days[-8:]:
         print(f"  {d}: {base}?date={d}")
-    if not days:
+    for d in dev_days:
+        print(f"  {d} (dev/test): {base}?date={d}" + ("&preview" if d > str(today()) else ""))
+    if not days and not dev_days:
         print("  no day files yet; try: python3 scripts/dev.py fake")
     print(f"  add &reset to any URL to wipe your progress for that day")
     if not args.no_open:
@@ -117,7 +138,7 @@ def placeholder_cover(k, title):
 
 
 def cmd_fake(args):
-    os.makedirs(DAYS, exist_ok=True)
+    os.makedirs(DEV_DAYS, exist_ok=True)
     titles = []
     for k, (en, romaji, origin, tier, genres, demo) in enumerate(FAKE_TITLES):
         cover = placeholder_cover(k, en)
@@ -149,12 +170,13 @@ def cmd_fake(args):
             "review_notes": [],
         })
     day = {"date": FAKE_DATE, "number": 0, "reviewed": True, "start_points": 1000, "_fake": True, "titles": titles}
-    with open(day_path(FAKE_DATE), "w", encoding="utf-8") as f:
+    out = os.path.join(DEV_DAYS, f"{FAKE_DATE}.json")
+    with open(out, "w", encoding="utf-8") as f:
         json.dump(day, f, ensure_ascii=False, indent=1)
-    print(f"wrote {day_path(FAKE_DATE)}")
+    print(f"wrote {out}")
     print("answers:", ", ".join(t[0] for t in FAKE_TITLES))
     print(f"play it: python3 scripts/dev.py serve --date {FAKE_DATE}")
-    print("(docs/days/2000-01-01.json is in .gitignore so it never goes live)")
+    print("(it's in .dev/, which git ignores, so it never goes live)")
 
 
 # --------------------------------------------------------------------- check --
