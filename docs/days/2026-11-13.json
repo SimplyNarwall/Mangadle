@@ -5,6 +5,327 @@
  "start_points": 1000,
  "titles": [
   {
+   "anilist_id": 148466,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 1469,
+    "average_score": 65,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy"
+    ],
+    "demographic": [],
+    "release": "2022 to 2024"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx148466-OuXkwoHWUx6u.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Alvin is a young adventurer with an atrocious negative skill. In spite of his overwhelming strength, he's considered a nuisance by those around him and kicked out of his party.\n\nIn the throes of despair, he hears a rumor about a dungeon where one can obtain an item that erases skills and recklessly decides to solo the boss. That is, until he meets Cocoru, a cleric who has also long suffered from her own negative skill. However, when Alvin learns the effect of her skill, he can't help but think…\n\n\"Couldn't our skills work well together?\"\n\nThe negatives cancel each other out and become a positive! As their skills multiply together, nothing can stand in their way! This is the ultimate \"mutual support\" story for these unfortunate adventurers!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": null
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Hiromi Taihei",
+       "native": "太平洋海",
+       "role": "Story & Art"
+      },
+      {
+       "name": "Kosuzu Kiichi",
+       "native": "小鈴危一",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "How Four Negative Skills = Unrivaled Synergy",
+    "romaji": "Minus Skill Mochi Yonin ga Atsumattara, nanka Synergy Hakki shite Saikyou Party ga Dekita Ken",
+    "native": "マイナススキル持ち四人が集まったら、なんかシナジー発揮して最強パーティーができた件",
+    "url": "https://anilist.co/manga/148466",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx148466-OuXkwoHWUx6u.jpg",
+    "accepted_aliases": [
+     "How Four Negative Skills = Unrivaled Synergy",
+     "Minus Skill Mochi Yonin ga Atsumattara, nanka Synergy Hakki shite Saikyou Party ga Dekita Ken",
+     "The Chronicles of the Misfit Quartet and Their Unrivaled Synergy",
+     "Minus Skill: The Story of Four Nuisances That Once Gathered Together, Manifested a Synergy That Created the Strongest Party",
+     "Minus Skill-mochi Yonin ga Atsumattara, Nanka Synergy Hakki Shite Saikyou Party ga Dekita Ken"
+    ],
+    "mangadex_id": "a9e23d07-b293-4530-b592-e97880c8101f"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 56206,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 2019,
+    "average_score": 51,
+    "genres": [
+     "Ecchi",
+     "Horror",
+     "Mystery",
+     "Psychological",
+     "Supernatural"
+    ],
+    "demographic": [],
+    "release": "2010 to 2012"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b56206-vpnTGBsfDqLc.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "It happened after school one rainy day... A group of friends have stayed behind to prepare for the next day’s school festival. One moment they are idly telling ghost stories but the next an enormous earthquake strikes and the entire school seems to fall down around them. They awake to find themselves trapped in a parallel version of their school. As school abandoned and disheveled and whose calendar dates back to 1927. Can they find a way out of this nightmare or are they doomed to the same fate that befell the other victims whose corpses that lie numerous throughout the school?\n\nNote: Chapter counts contains an extra chapter and an origin chapter."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "School",
+       "rank": 50,
+       "spoiler": false
+      },
+      {
+       "name": "Crossdressing",
+       "rank": 40,
+       "spoiler": true
+      },
+      {
+       "name": "Demons",
+       "rank": 40,
+       "spoiler": false
+      },
+      {
+       "name": "Isekai",
+       "rank": 40,
+       "spoiler": false
+      },
+      {
+       "name": "Ghost",
+       "rank": 40,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Makoto Kedouin",
+       "native": "祁答院慎",
+       "role": "Story"
+      },
+      {
+       "name": "Mika Orie",
+       "native": "織衣美歌",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Yoshiki Kishinuma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b40286-mJAUnDE5XFAn.png"
+      },
+      {
+       "name": "Sachiko Shinozaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/61535.jpg"
+      },
+      {
+       "name": "Naomi Nakashima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40293.jpg"
+      },
+      {
+       "name": "Satoshi Mochida",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b40289-kXcWlUW55dX5.jpg"
+      },
+      {
+       "name": "Kou Kibiki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/78387.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Ayumi Shinozaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40290.jpg"
+      },
+      {
+       "name": "Yuka Mochida",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40287-llwi5TDXgoBj.jpg"
+      },
+      {
+       "name": "Naho Saenoki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/57683-xdd8cQ54AevZ.jpg"
+      },
+      {
+       "name": "Miyu Shinohara",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/63217.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Pretty good if you've played the PC-98 og. fanservice unneeded.",
+      "excerpt": "(This is my first review here and I don't write reviews often. I apologize if this is a weird mix of everything and not coherent. Wanted to get my thoughts out there.)\n\n[title] is a pretty odd entry in the Corpse Party series. Its a retelling of the original PC-98 Corpse Party, while having a few original elements and elements from Corpse Party: Blood Covered. For those who's only...",
+      "score": 75,
+      "upvotes": 5,
+      "url": "https://anilist.co/review/25370"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Corpse Party: Musume",
+    "romaji": "Corpse Party: Musume",
+    "native": "コープスパーティー娘",
+    "url": "https://anilist.co/manga/56206",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b56206-vpnTGBsfDqLc.jpg",
+    "accepted_aliases": [
+     "Corpse Party: Musume",
+     "Corpse Party Cemetery 0: Kaibyaku no Ars Moriendi",
+     "Corpse Party CEMETERY0",
+     "Corpse Party - Musume"
+    ],
+    "mangadex_id": "1c0d8638-6e0f-4c6c-ae95-7c472682b419"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 98489,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 2998,
+    "average_score": 75,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy",
+     "Mystery",
+     "Sci-Fi",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2017 to 2020"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b98489-pBwQAQBpxiMK.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "“So, who’s the kid?”\n\n“My name is…”\n\n××××× hesitated for a moment, turning slightly to look back along the road they were traveling. Beyond the red horizon, her homeland’s gates sank into the distance, never to be seen again.\nFacing forward once more, ××××× looked past [character]’s side to focus intently on the path ahead before answering.\n\n“My name is—”\n\n[character] travels with the trusty talking motorrad, [character]. The duo are always together, with [character] providing speed, and [character] providing balance. They stay in each country for no more than three days, as a rule—enough time to learn about each destination’s unique customs and people. And so [character] and [character] journey ever onward….\"\n\nNote : Includes four extra chapters."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Motorcycles",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Travel",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Philosophy",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Guns",
+       "rank": 20,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Keiichi Shigusawa",
+       "native": "時雨沢恵一",
+       "role": "Story"
+      },
+      {
+       "name": "Iruka Shiomiya",
+       "native": "シオミヤイルカ",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Kino",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b87-1sKGYKWY8EHQ.jpg"
+      },
+      {
+       "name": "Hermes",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n88-yhTNhq67e5U2.png"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Kino's Journey: The Beautiful World",
+    "romaji": "Kino no Tabi: the Beautiful World",
+    "native": "キノの旅 -the Beautiful World-",
+    "url": "https://anilist.co/manga/98489",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b98489-pBwQAQBpxiMK.png",
+    "accepted_aliases": [
+     "Kino's Journey: The Beautiful World",
+     "Kino no Tabi: the Beautiful World",
+     "Kino's Journey",
+     "Kino's Journey - the Beautiful World",
+     "Kino no Tabi - the Beautiful World (Shiomiya)"
+    ],
+    "mangadex_id": "3964ad51-a435-4bf4-a37d-650d19789edd"
+   },
+   "review_notes": []
+  },
+  {
    "anilist_id": 30028,
    "source": "fallback",
    "tier": "easy",
@@ -193,6 +514,534 @@
      "NANA"
     ],
     "mangadex_id": "7e2ddc4c-c07c-4163-bf48-2b7c45f7b7fb"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 100560,
+   "source": "fallback",
+   "tier": "medium",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 13693,
+    "average_score": 74,
+    "genres": [
+     "Comedy",
+     "Fantasy",
+     "Romance",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Josei"
+    ],
+    "release": "2017, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx100560-D12GhS1IRRu0.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "At the age of eight, [character], a girl of noble birth in another world, has an accident that unlocks her memories–of playing an [title] that’s exactly like the life she’s living now. There’s one problem: she realizes that she’s playing the role of the villainess, and only bad endings await her! What will it take for her to “break the game” and live a happy life?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 91,
+       "spoiler": false
+      },
+      {
+       "name": "Reincarnation",
+       "rank": 90,
+       "spoiler": true
+      },
+      {
+       "name": "Villainess",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Isekai",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Mixed Gender Harem",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Medieval",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Time Skip",
+       "rank": 72,
+       "spoiler": true
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Satoru Yamaguchi",
+       "native": "山口悟",
+       "role": "Original Story"
+      },
+      {
+       "name": "Nami Hidaka",
+       "native": "ひだかなみ",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Katarina Claes",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129137-jTXVGAICPfvX.png"
+      },
+      {
+       "name": "Alan Stuart",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129136-TD43peyVWvON.jpg"
+      },
+      {
+       "name": "Maria Campbell",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129141-UrYoTJeC9aNi.png"
+      },
+      {
+       "name": "Gerald Stuart",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129134-k5VKLftg6lk1.jpg"
+      },
+      {
+       "name": "Keith Claes",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129135-uqhFY8QlsNBe.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Sophia Ascart",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129140-CRjj8EuYvLHu.png"
+      },
+      {
+       "name": "Nicol Ascart",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129138-RPrD5nPakxZl.jpg"
+      },
+      {
+       "name": "Mary Hunt",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129139-o7zD077wZmC7.png"
+      },
+      {
+       "name": "Sirius Deek",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129142-npkf9wsVZ88m.png"
+      },
+      {
+       "name": "Sora Smiths",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b189314-Kusm0n6PFjpS.jpg"
+      },
+      {
+       "name": "Anne Shelly",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b162908-Nxj23ESWeY1i.png"
+      },
+      {
+       "name": "Susanna Randall",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b191067-uuEMpEZi8ePS.png"
+      },
+      {
+       "name": "Millidiana Claes",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b176883-cY696tJhb6oy.png"
+      },
+      {
+       "name": "Selena Berg",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b191068-rzWtjxyEDzVN.png"
+      },
+      {
+       "name": "Luigi Claes",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b175946-HnCEaLolGzSv.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "My Next Life as a Villainess: All Routes Lead to Doom!",
+    "romaji": "Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...",
+    "native": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…",
+    "url": "https://anilist.co/manga/100560",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx100560-D12GhS1IRRu0.png",
+    "accepted_aliases": [
+     "My Next Life as a Villainess: All Routes Lead to Doom!",
+     "Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...",
+     "I Reincarnated into an Otome Game as a Villainess With Only Destruction Flags...",
+     "Odrodzona jako czarny charakter w grze otome, gdzie wszystkie ścieżki prowadzą do złego zakończenia",
+     "Mi nueva vida como villana: ¡Todos los caminos me condenan!",
+     "My Next Life as a Villainess: Wie überlebe ich in einem Dating-Game?",
+     "Otome Game",
+     "Destruction Flag Otome",
+     "Otome Game no Hametsu Flag shika nai Akuyaku Reijou ni Tensei shite shimatta..."
+    ],
+    "mangadex_id": "c6bbbeca-f4fd-4595-9d4d-4ba31370d08c"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 52651,
+   "source": "fallback",
+   "tier": "medium",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 22991,
+    "average_score": 81,
+    "genres": [
+     "Action",
+     "Comedy",
+     "Drama",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2010 to 2015"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/22651.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "ATime has passed since the great confrontation at the Core Business tower. After Chun-[character] destroyed Si-woon's ki-center, depriving him of his ability to practice martial arts, Si-woon thinks his time with the Murim is done. But his status as the sole disciple of the Nine-Doors Dragon makes him a target for many clans eager for revenge! How will he cope now that he's deprived of his ki? Meanwhile, graffiti in praise of the Nine-Doors Dragon begins appearing all around the world for all to see, and the Murim Alliance must react quickly. The Soldiers Under Command are on the move; will it be possible to stop them before the destruction of the world as we know it?\n\nNote: Includes three extra chapters."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Martial Arts",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Gangs",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 55,
+       "spoiler": false
+      },
+      {
+       "name": "Terrorism",
+       "rank": 50,
+       "spoiler": true
+      },
+      {
+       "name": "Anti-Hero",
+       "rank": 46,
+       "spoiler": true
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Geuk-Jin Jeon",
+       "native": "전극진",
+       "role": "Story"
+      },
+      {
+       "name": "Jin-Hwan Park",
+       "native": "박진환",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Shi-Woon Yi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/21562.jpg"
+      },
+      {
+       "name": "Jin-le Kwon",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/37900.jpg"
+      },
+      {
+       "name": "Sera Kang",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b38953-YHGTNXwJeGCv.jpg"
+      },
+      {
+       "name": "Un-Wol",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38085.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Chun-U Han",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/21563.jpg"
+      },
+      {
+       "name": "Shi-Ho Lee",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n29296-IRQyT1vKHVn8.jpg"
+      },
+      {
+       "name": "Jae-kyu Kwon",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38081.jpg"
+      },
+      {
+       "name": "Kang-Sung",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b38083-i2kTCAdqU1bl.jpg"
+      },
+      {
+       "name": "Jeon Jang-Il",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/41165.jpg"
+      },
+      {
+       "name": "So-Chun Hyuk",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/29698.jpg"
+      },
+      {
+       "name": "So-Sul Woo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b29697-KnLqfGiZM83J.jpg"
+      },
+      {
+       "name": "Ji-Gum Yoo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b38239-1ngp2CKfM6xH.jpg"
+      },
+      {
+       "name": "Ha-ill Gang",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b41853-IjtInQYuPpHX.jpg"
+      },
+      {
+       "name": "Sae-Hie",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b29427-kyiHLRLtDTMV.jpg"
+      },
+      {
+       "name": "Alex",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38082.jpg"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "THE BREAKER - NEW WAVES",
+    "romaji": "The Breaker: New Waves",
+    "native": "브레이커NW",
+    "url": "https://anilist.co/manga/52651",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/22651.jpg",
+    "accepted_aliases": [
+     "THE BREAKER - NEW WAVES",
+     "The Breaker: New Waves",
+     "The Breaker 2",
+     "The Breaker: NW",
+     "The Breaker: Part 2",
+     "THE BREAKER",
+     "The Breaker - New Waves"
+    ],
+    "mangadex_id": "80185498-a09f-4534-925a-63cd554c075c"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 30102,
+   "source": "fallback",
+   "tier": "medium",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 35450,
+    "average_score": 85,
+    "genres": [
+     "Comedy",
+     "Drama",
+     "Psychological",
+     "Romance",
+     "Supernatural"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "1998 to 2006"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30102-MJuQ0e0k2CgU.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "After a family tragedy turns her life upside down, plucky high schooler [character] takes matters into her own hands and moves out...into a tent! Unfortunately for her, she pitches her new home on private land belonging to the mysterious Sohma clan, and it isn't long before the owners discover her secret. But, as Tohru quickly finds out when the family offers to take her in, the Sohmas have a secret of their own--when touched by the opposite sex, they turn into the animals of the Chinese Zodiac! \n\nNote: Volume 9 includes the bonus chapter \"Rain Shelter of Terror\"."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Mythology",
+       "rank": 89,
+       "spoiler": false
+      },
+      {
+       "name": "Animals",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 86,
+       "spoiler": true
+      },
+      {
+       "name": "Ensemble Cast",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Shapeshifting",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Rehabilitation",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Philosophy",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Found Family",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Reincarnation",
+       "rank": 77,
+       "spoiler": true
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Urban Fantasy",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Male Cast",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Natsuki Takaya",
+       "native": "高屋奈月",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Kyou Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b209-NOAbiLvJt1QA.png"
+      },
+      {
+       "name": "Tooru Honda",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b207-RQ4EUdTD0K62.png"
+      },
+      {
+       "name": "Yuki Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b208-5TmAqqh82wNe.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Hatsuharu Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b369-NDFi2A2BzqO6.png"
+      },
+      {
+       "name": "Momiji Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b367-Jc6wMVpL76Ib.png"
+      },
+      {
+       "name": "Saki Hanajima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b376-N55Tx44kdB42.jpg"
+      },
+      {
+       "name": "Shigure Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b206-4HokrxTIqu7L.jpg"
+      },
+      {
+       "name": "Hatori Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b368-zJEE8gpxBb5f.jpg"
+      },
+      {
+       "name": "Isuzu Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3892-Cv49n98SjFIE.png"
+      },
+      {
+       "name": "Ayame Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b370-cdEW33vBsXBL.png"
+      },
+      {
+       "name": "Arisa Uotani",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b375-RYqdBrPJL06c.jpg"
+      },
+      {
+       "name": "Akito Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b374-8BT4gMd8xyl5.png"
+      },
+      {
+       "name": "Kyouko Honda",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b9754-PGxNeo2JwGx9.jpg"
+      },
+      {
+       "name": "Machi Kuragi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b6571-H6JruBvnORjl.jpg"
+      },
+      {
+       "name": "Kisa Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b371-NHaNSFumvv2P.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Fruits Basket",
+    "romaji": "Fruits Basket",
+    "native": "フルーツバスケット",
+    "url": "https://anilist.co/manga/30102",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30102-MJuQ0e0k2CgU.png",
+    "accepted_aliases": [
+     "Fruits Basket",
+     "Furuba",
+     "Fruba"
+    ],
+    "mangadex_id": "e9b1d4ba-b8fb-48c3-8d52-5a4eefd05980"
    },
    "review_notes": []
   },
@@ -710,855 +1559,6 @@
      "Gantz/Osaka"
     ],
     "mangadex_id": "c196dcc8-d942-4abf-987f-bfa244650585"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 30102,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 35450,
-    "average_score": 85,
-    "genres": [
-     "Comedy",
-     "Drama",
-     "Psychological",
-     "Romance",
-     "Supernatural"
-    ],
-    "demographic": [
-     "Shoujo"
-    ],
-    "release": "1998 to 2006"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30102-MJuQ0e0k2CgU.png"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "After a family tragedy turns her life upside down, plucky high schooler [character] takes matters into her own hands and moves out...into a tent! Unfortunately for her, she pitches her new home on private land belonging to the mysterious Sohma clan, and it isn't long before the owners discover her secret. But, as Tohru quickly finds out when the family offers to take her in, the Sohmas have a secret of their own--when touched by the opposite sex, they turn into the animals of the Chinese Zodiac! \n\nNote: Volume 9 includes the bonus chapter \"Rain Shelter of Terror\"."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Mythology",
-       "rank": 89,
-       "spoiler": false
-      },
-      {
-       "name": "Animals",
-       "rank": 88,
-       "spoiler": false
-      },
-      {
-       "name": "Tragedy",
-       "rank": 86,
-       "spoiler": true
-      },
-      {
-       "name": "Ensemble Cast",
-       "rank": 86,
-       "spoiler": false
-      },
-      {
-       "name": "Shapeshifting",
-       "rank": 82,
-       "spoiler": false
-      },
-      {
-       "name": "Heterosexual",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Rehabilitation",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Philosophy",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Found Family",
-       "rank": 77,
-       "spoiler": false
-      },
-      {
-       "name": "Reincarnation",
-       "rank": 77,
-       "spoiler": true
-      },
-      {
-       "name": "Female Protagonist",
-       "rank": 75,
-       "spoiler": false
-      },
-      {
-       "name": "Urban Fantasy",
-       "rank": 75,
-       "spoiler": false
-      },
-      {
-       "name": "Primarily Male Cast",
-       "rank": 73,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Natsuki Takaya",
-       "native": "高屋奈月",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Kyou Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b209-NOAbiLvJt1QA.png"
-      },
-      {
-       "name": "Tooru Honda",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b207-RQ4EUdTD0K62.png"
-      },
-      {
-       "name": "Yuki Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b208-5TmAqqh82wNe.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Hatsuharu Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b369-NDFi2A2BzqO6.png"
-      },
-      {
-       "name": "Momiji Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b367-Jc6wMVpL76Ib.png"
-      },
-      {
-       "name": "Saki Hanajima",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b376-N55Tx44kdB42.jpg"
-      },
-      {
-       "name": "Shigure Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b206-4HokrxTIqu7L.jpg"
-      },
-      {
-       "name": "Hatori Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b368-zJEE8gpxBb5f.jpg"
-      },
-      {
-       "name": "Isuzu Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3892-Cv49n98SjFIE.png"
-      },
-      {
-       "name": "Ayame Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b370-cdEW33vBsXBL.png"
-      },
-      {
-       "name": "Arisa Uotani",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b375-RYqdBrPJL06c.jpg"
-      },
-      {
-       "name": "Akito Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b374-8BT4gMd8xyl5.png"
-      },
-      {
-       "name": "Kyouko Honda",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b9754-PGxNeo2JwGx9.jpg"
-      },
-      {
-       "name": "Machi Kuragi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b6571-H6JruBvnORjl.jpg"
-      },
-      {
-       "name": "Kisa Souma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b371-NHaNSFumvv2P.png"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Fruits Basket",
-    "romaji": "Fruits Basket",
-    "native": "フルーツバスケット",
-    "url": "https://anilist.co/manga/30102",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30102-MJuQ0e0k2CgU.png",
-    "accepted_aliases": [
-     "Fruits Basket",
-     "Furuba",
-     "Fruba"
-    ],
-    "mangadex_id": "e9b1d4ba-b8fb-48c3-8d52-5a4eefd05980"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 56206,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 2019,
-    "average_score": 51,
-    "genres": [
-     "Ecchi",
-     "Horror",
-     "Mystery",
-     "Psychological",
-     "Supernatural"
-    ],
-    "demographic": [],
-    "release": "2010 to 2012"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b56206-vpnTGBsfDqLc.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "It happened after school one rainy day... A group of friends have stayed behind to prepare for the next day’s school festival. One moment they are idly telling ghost stories but the next an enormous earthquake strikes and the entire school seems to fall down around them. They awake to find themselves trapped in a parallel version of their school. As school abandoned and disheveled and whose calendar dates back to 1927. Can they find a way out of this nightmare or are they doomed to the same fate that befell the other victims whose corpses that lie numerous throughout the school?\n\nNote: Chapter counts contains an extra chapter and an origin chapter."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "School",
-       "rank": 50,
-       "spoiler": false
-      },
-      {
-       "name": "Crossdressing",
-       "rank": 40,
-       "spoiler": true
-      },
-      {
-       "name": "Demons",
-       "rank": 40,
-       "spoiler": false
-      },
-      {
-       "name": "Isekai",
-       "rank": 40,
-       "spoiler": false
-      },
-      {
-       "name": "Ghost",
-       "rank": 40,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Makoto Kedouin",
-       "native": "祁答院慎",
-       "role": "Story"
-      },
-      {
-       "name": "Mika Orie",
-       "native": "織衣美歌",
-       "role": "Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Yoshiki Kishinuma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b40286-mJAUnDE5XFAn.png"
-      },
-      {
-       "name": "Sachiko Shinozaki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/61535.jpg"
-      },
-      {
-       "name": "Naomi Nakashima",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40293.jpg"
-      },
-      {
-       "name": "Satoshi Mochida",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b40289-kXcWlUW55dX5.jpg"
-      },
-      {
-       "name": "Kou Kibiki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/78387.jpg"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Ayumi Shinozaki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40290.jpg"
-      },
-      {
-       "name": "Yuka Mochida",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/40287-llwi5TDXgoBj.jpg"
-      },
-      {
-       "name": "Naho Saenoki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/57683-xdd8cQ54AevZ.jpg"
-      },
-      {
-       "name": "Miyu Shinohara",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/63217.jpg"
-      }
-     ]
-    },
-    "reviews": [
-     {
-      "cost": 50,
-      "summary": "Pretty good if you've played the PC-98 og. fanservice unneeded.",
-      "excerpt": "(This is my first review here and I don't write reviews often. I apologize if this is a weird mix of everything and not coherent. Wanted to get my thoughts out there.)\n\n[title] is a pretty odd entry in the Corpse Party series. Its a retelling of the original PC-98 Corpse Party, while having a few original elements and elements from Corpse Party: Blood Covered. For those who's only...",
-      "score": 75,
-      "upvotes": 5,
-      "url": "https://anilist.co/review/25370"
-     }
-    ]
-   },
-   "answer": {
-    "title": "Corpse Party: Musume",
-    "romaji": "Corpse Party: Musume",
-    "native": "コープスパーティー娘",
-    "url": "https://anilist.co/manga/56206",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b56206-vpnTGBsfDqLc.jpg",
-    "accepted_aliases": [
-     "Corpse Party: Musume",
-     "Corpse Party Cemetery 0: Kaibyaku no Ars Moriendi",
-     "Corpse Party CEMETERY0",
-     "Corpse Party - Musume"
-    ],
-    "mangadex_id": "1c0d8638-6e0f-4c6c-ae95-7c472682b419"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 98489,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 2998,
-    "average_score": 75,
-    "genres": [
-     "Action",
-     "Adventure",
-     "Fantasy",
-     "Mystery",
-     "Sci-Fi",
-     "Slice of Life"
-    ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "2017 to 2020"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b98489-pBwQAQBpxiMK.png"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "“So, who’s the kid?”\n\n“My name is…”\n\n××××× hesitated for a moment, turning slightly to look back along the road they were traveling. Beyond the red horizon, her homeland’s gates sank into the distance, never to be seen again.\nFacing forward once more, ××××× looked past [character]’s side to focus intently on the path ahead before answering.\n\n“My name is—”\n\n[character] travels with the trusty talking motorrad, [character]. The duo are always together, with [character] providing speed, and [character] providing balance. They stay in each country for no more than three days, as a rule—enough time to learn about each destination’s unique customs and people. And so [character] and [character] journey ever onward….\"\n\nNote : Includes four extra chapters."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Female Protagonist",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Motorcycles",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Travel",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Philosophy",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Guns",
-       "rank": 20,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Keiichi Shigusawa",
-       "native": "時雨沢恵一",
-       "role": "Story"
-      },
-      {
-       "name": "Iruka Shiomiya",
-       "native": "シオミヤイルカ",
-       "role": "Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Kino",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b87-1sKGYKWY8EHQ.jpg"
-      },
-      {
-       "name": "Hermes",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n88-yhTNhq67e5U2.png"
-      }
-     ],
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Kino's Journey: The Beautiful World",
-    "romaji": "Kino no Tabi: the Beautiful World",
-    "native": "キノの旅 -the Beautiful World-",
-    "url": "https://anilist.co/manga/98489",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b98489-pBwQAQBpxiMK.png",
-    "accepted_aliases": [
-     "Kino's Journey: The Beautiful World",
-     "Kino no Tabi: the Beautiful World",
-     "Kino's Journey",
-     "Kino's Journey - the Beautiful World",
-     "Kino no Tabi - the Beautiful World (Shiomiya)"
-    ],
-    "mangadex_id": "3964ad51-a435-4bf4-a37d-650d19789edd"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 52651,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manhwa",
-    "format": "series",
-    "popularity": 22991,
-    "average_score": 81,
-    "genres": [
-     "Action",
-     "Comedy",
-     "Drama",
-     "Romance"
-    ],
-    "demographic": [],
-    "release": "2010 to 2015"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/22651.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "ATime has passed since the great confrontation at the Core Business tower. After Chun-[character] destroyed Si-woon's ki-center, depriving him of his ability to practice martial arts, Si-woon thinks his time with the Murim is done. But his status as the sole disciple of the Nine-Doors Dragon makes him a target for many clans eager for revenge! How will he cope now that he's deprived of his ki? Meanwhile, graffiti in praise of the Nine-Doors Dragon begins appearing all around the world for all to see, and the Murim Alliance must react quickly. The Soldiers Under Command are on the move; will it be possible to stop them before the destruction of the world as we know it?\n\nNote: Includes three extra chapters."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Martial Arts",
-       "rank": 94,
-       "spoiler": false
-      },
-      {
-       "name": "Gangs",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 55,
-       "spoiler": false
-      },
-      {
-       "name": "Terrorism",
-       "rank": 50,
-       "spoiler": true
-      },
-      {
-       "name": "Anti-Hero",
-       "rank": 46,
-       "spoiler": true
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Geuk-Jin Jeon",
-       "native": "전극진",
-       "role": "Story"
-      },
-      {
-       "name": "Jin-Hwan Park",
-       "native": "박진환",
-       "role": "Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Shi-Woon Yi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/21562.jpg"
-      },
-      {
-       "name": "Jin-le Kwon",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/37900.jpg"
-      },
-      {
-       "name": "Sera Kang",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b38953-YHGTNXwJeGCv.jpg"
-      },
-      {
-       "name": "Un-Wol",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38085.jpg"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Chun-U Han",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/21563.jpg"
-      },
-      {
-       "name": "Shi-Ho Lee",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n29296-IRQyT1vKHVn8.jpg"
-      },
-      {
-       "name": "Jae-kyu Kwon",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38081.jpg"
-      },
-      {
-       "name": "Kang-Sung",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b38083-i2kTCAdqU1bl.jpg"
-      },
-      {
-       "name": "Jeon Jang-Il",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/41165.jpg"
-      },
-      {
-       "name": "So-Chun Hyuk",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/29698.jpg"
-      },
-      {
-       "name": "So-Sul Woo",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b29697-KnLqfGiZM83J.jpg"
-      },
-      {
-       "name": "Ji-Gum Yoo",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b38239-1ngp2CKfM6xH.jpg"
-      },
-      {
-       "name": "Ha-ill Gang",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b41853-IjtInQYuPpHX.jpg"
-      },
-      {
-       "name": "Sae-Hie",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b29427-kyiHLRLtDTMV.jpg"
-      },
-      {
-       "name": "Alex",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38082.jpg"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "THE BREAKER - NEW WAVES",
-    "romaji": "The Breaker: New Waves",
-    "native": "브레이커NW",
-    "url": "https://anilist.co/manga/52651",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/22651.jpg",
-    "accepted_aliases": [
-     "THE BREAKER - NEW WAVES",
-     "The Breaker: New Waves",
-     "The Breaker 2",
-     "The Breaker: NW",
-     "The Breaker: Part 2",
-     "THE BREAKER",
-     "The Breaker - New Waves"
-    ],
-    "mangadex_id": "80185498-a09f-4534-925a-63cd554c075c"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 148466,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 1469,
-    "average_score": 65,
-    "genres": [
-     "Action",
-     "Adventure",
-     "Fantasy"
-    ],
-    "demographic": [],
-    "release": "2022 to 2024"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx148466-OuXkwoHWUx6u.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "Alvin is a young adventurer with an atrocious negative skill. In spite of his overwhelming strength, he's considered a nuisance by those around him and kicked out of his party.\n\nIn the throes of despair, he hears a rumor about a dungeon where one can obtain an item that erases skills and recklessly decides to solo the boss. That is, until he meets Cocoru, a cleric who has also long suffered from her own negative skill. However, when Alvin learns the effect of her skill, he can't help but think…\n\n\"Couldn't our skills work well together?\"\n\nThe negatives cancel each other out and become a positive! As their skills multiply together, nothing can stand in their way! This is the ultimate \"mutual support\" story for these unfortunate adventurers!"
-    },
-    "tags": {
-     "cost": 75,
-     "items": null
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Hiromi Taihei",
-       "native": "太平洋海",
-       "role": "Story & Art"
-      },
-      {
-       "name": "Kosuzu Kiichi",
-       "native": "小鈴危一",
-       "role": "Original Story"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": null,
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "How Four Negative Skills = Unrivaled Synergy",
-    "romaji": "Minus Skill Mochi Yonin ga Atsumattara, nanka Synergy Hakki shite Saikyou Party ga Dekita Ken",
-    "native": "マイナススキル持ち四人が集まったら、なんかシナジー発揮して最強パーティーができた件",
-    "url": "https://anilist.co/manga/148466",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx148466-OuXkwoHWUx6u.jpg",
-    "accepted_aliases": [
-     "How Four Negative Skills = Unrivaled Synergy",
-     "Minus Skill Mochi Yonin ga Atsumattara, nanka Synergy Hakki shite Saikyou Party ga Dekita Ken",
-     "The Chronicles of the Misfit Quartet and Their Unrivaled Synergy",
-     "Minus Skill: The Story of Four Nuisances That Once Gathered Together, Manifested a Synergy That Created the Strongest Party",
-     "Minus Skill-mochi Yonin ga Atsumattara, Nanka Synergy Hakki Shite Saikyou Party ga Dekita Ken"
-    ],
-    "mangadex_id": "a9e23d07-b293-4530-b592-e97880c8101f"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 100560,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 13693,
-    "average_score": 74,
-    "genres": [
-     "Comedy",
-     "Fantasy",
-     "Romance",
-     "Slice of Life"
-    ],
-    "demographic": [
-     "Josei"
-    ],
-    "release": "2017, ongoing"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx100560-D12GhS1IRRu0.png"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "At the age of eight, [character], a girl of noble birth in another world, has an accident that unlocks her memories–of playing an [title] that’s exactly like the life she’s living now. There’s one problem: she realizes that she’s playing the role of the villainess, and only bad endings await her! What will it take for her to “break the game” and live a happy life?"
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Female Protagonist",
-       "rank": 91,
-       "spoiler": false
-      },
-      {
-       "name": "Reincarnation",
-       "rank": 90,
-       "spoiler": true
-      },
-      {
-       "name": "Villainess",
-       "rank": 90,
-       "spoiler": false
-      },
-      {
-       "name": "Isekai",
-       "rank": 82,
-       "spoiler": false
-      },
-      {
-       "name": "Mixed Gender Harem",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Medieval",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Time Skip",
-       "rank": 72,
-       "spoiler": true
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Satoru Yamaguchi",
-       "native": "山口悟",
-       "role": "Original Story"
-      },
-      {
-       "name": "Nami Hidaka",
-       "native": "ひだかなみ",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Katarina Claes",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129137-jTXVGAICPfvX.png"
-      },
-      {
-       "name": "Alan Stuart",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129136-TD43peyVWvON.jpg"
-      },
-      {
-       "name": "Maria Campbell",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129141-UrYoTJeC9aNi.png"
-      },
-      {
-       "name": "Gerald Stuart",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129134-k5VKLftg6lk1.jpg"
-      },
-      {
-       "name": "Keith Claes",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129135-uqhFY8QlsNBe.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Sophia Ascart",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129140-CRjj8EuYvLHu.png"
-      },
-      {
-       "name": "Nicol Ascart",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129138-RPrD5nPakxZl.jpg"
-      },
-      {
-       "name": "Mary Hunt",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129139-o7zD077wZmC7.png"
-      },
-      {
-       "name": "Sirius Deek",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b129142-npkf9wsVZ88m.png"
-      },
-      {
-       "name": "Sora Smiths",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b189314-Kusm0n6PFjpS.jpg"
-      },
-      {
-       "name": "Anne Shelly",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b162908-Nxj23ESWeY1i.png"
-      },
-      {
-       "name": "Susanna Randall",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b191067-uuEMpEZi8ePS.png"
-      },
-      {
-       "name": "Millidiana Claes",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b176883-cY696tJhb6oy.png"
-      },
-      {
-       "name": "Selena Berg",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b191068-rzWtjxyEDzVN.png"
-      },
-      {
-       "name": "Luigi Claes",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b175946-HnCEaLolGzSv.png"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "My Next Life as a Villainess: All Routes Lead to Doom!",
-    "romaji": "Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...",
-    "native": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…",
-    "url": "https://anilist.co/manga/100560",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx100560-D12GhS1IRRu0.png",
-    "accepted_aliases": [
-     "My Next Life as a Villainess: All Routes Lead to Doom!",
-     "Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...",
-     "I Reincarnated into an Otome Game as a Villainess With Only Destruction Flags...",
-     "Odrodzona jako czarny charakter w grze otome, gdzie wszystkie ścieżki prowadzą do złego zakończenia",
-     "Mi nueva vida como villana: ¡Todos los caminos me condenan!",
-     "My Next Life as a Villainess: Wie überlebe ich in einem Dating-Game?",
-     "Otome Game",
-     "Destruction Flag Otome",
-     "Otome Game no Hametsu Flag shika nai Akuyaku Reijou ni Tensei shite shimatta..."
-    ],
-    "mangadex_id": "c6bbbeca-f4fd-4595-9d4d-4ba31370d08c"
    },
    "review_notes": []
   },

@@ -5,6 +5,350 @@
  "start_points": 1000,
  "titles": [
   {
+   "anilist_id": 124676,
+   "source": "fallback",
+   "tier": "medium",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 13439,
+    "average_score": 68,
+    "genres": [
+     "Comedy",
+     "Ecchi",
+     "Romance"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2020, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124676-x5xApm3n1gHZ.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "When [character]’s sister died, leaving her young daughter all alone, [character] stepped up and took the child into her life. Now that her niece/adopted daughter is a teenager, a 30-something [character] can sense first love in the air. [character] teases her daughter about [character], their handsome and college-aged neighbor, who’s been tutoring her since she was young–could they be a blossoming couple, since he’s always beaming when he comes to their house? To [character]’s surprise, [character] isn’t interested in daughter dearest: he’s long had a crush on [character] herself! In this age gap romantic comedy, one young man is ready to bring a little sugar to the sexy mom next door."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "MILF",
+       "rank": 97,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 96,
+       "spoiler": false
+      },
+      {
+       "name": "Age Gap",
+       "rank": 93,
+       "spoiler": true
+      },
+      {
+       "name": "Large Breasts",
+       "rank": 85,
+       "spoiler": false
+      },
+      {
+       "name": "Adoption",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Love Triangle",
+       "rank": 79,
+       "spoiler": true
+      },
+      {
+       "name": "Family Life",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Adult Cast",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Kouta Nozomi",
+       "native": "望公太",
+       "role": "Original Story"
+      },
+      {
+       "name": "Tesshin Azuma",
+       "native": "東鉄神 ",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Ayako Katsuragi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196139-BD6WEHzfzJSW.png"
+      },
+      {
+       "name": "Miu Katsuragi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196142-uKZAil2t6mFm.png"
+      },
+      {
+       "name": "Takumi Aterazawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196138-tYwVZBT1fuSV.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Satoya Ringou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196140-VYbzgPJ4NSDW.png"
+      },
+      {
+       "name": "Yumemi Oinomori",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196141-D5WSAMMQNCYp.png"
+      },
+      {
+       "name": "Tomomi Aterazawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b270954-TfpWNDnjwv7u.jpg"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "You Like Me, Not My Daughter?!",
+    "romaji": "Musume ja Nakute Mama ga Suki nano!?",
+    "native": "娘じゃなくて私が好きなの!?",
+    "url": "https://anilist.co/manga/124676",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124676-x5xApm3n1gHZ.jpg",
+    "accepted_aliases": [
+     "You Like Me, Not My Daughter?!",
+     "Musume ja Nakute Mama ga Suki nano!?",
+     "You Like Me (Mama), Not My Daughter?!"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 30079,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 7526,
+    "average_score": 76,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Fantasy",
+     "Romance"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "1995 to 2002"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30079-7EBm14wL7QlD.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character], a pretty Japanese girl, is ecstatic after passing her college entrance exam and having her first kiss with her childhood friend-turned boyfriend. However, her luck soon changes. She starts to notice that water becomes agitated whenever she goes near it. One night, hands appear out of a puddle on the street and drag her into the water! Transported to an ancient village in the Middle East, she is then captured by armed troops and taken to the Queen's palace for a human sacrifice.\n\nNotes:\n\n- Winner of the 46th Shogakukan Manga Award in the shoujo category.\n\n- Includes three extra chapters."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Historical",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Foreign",
+       "rank": 85,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Time Manipulation",
+       "rank": 80,
+       "spoiler": true
+      },
+      {
+       "name": "Royal Affairs",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Assassins",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Kingdom Management",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Swordplay",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Politics",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Slavery",
+       "rank": 73,
+       "spoiler": false
+      },
+      {
+       "name": "Isekai",
+       "rank": 71,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Chie Shinohara",
+       "native": "篠原千絵",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Yuri Suzuki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8939-FaDciXjsFGA5.jpg"
+      },
+      {
+       "name": "Kail Mursili",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/4586.jpg"
+      },
+      {
+       "name": "Nakia",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133348-iB7aNmYPHLWu.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Usel Ramses",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/18034.jpg"
+      },
+      {
+       "name": "Zannanza Hattušili",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b398542-vvWH7KmoyBt2.jpg"
+      },
+      {
+       "name": "Kikkuri",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b35934-tXa8Wan1ynmO.jpg"
+      },
+      {
+       "name": "Il Bani",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/37092.jpg"
+      },
+      {
+       "name": "Hadi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51101-UmMzb7UmTrm3.jpg"
+      },
+      {
+       "name": "Rusafa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/51103.jpg"
+      },
+      {
+       "name": "Kash",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51105-SSSAbUWYXItY.jpg"
+      },
+      {
+       "name": "Ursula",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/51107.jpg"
+      },
+      {
+       "name": "Alexandra",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/51109.jpg"
+      },
+      {
+       "name": "Aslan",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/51111.jpg"
+      },
+      {
+       "name": "Mattiwaza",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b398543-qbhZO8WF1Lvt.jpg"
+      },
+      {
+       "name": "Urhi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b398544-cxUhjnt5PfQa.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Thank you so much [title]",
+      "excerpt": "Hey everybody, I recently read through [title] recently & I wanna talk about it. I’m not gonna really take an analytical approach to this series that I would normally try to take with a review, rather I just wanna share some thoughts on this series and hopefully you’ll be convinced to read it.\n\n[title] is a shoujo classic, it’s about this girl in (at the time) modern day Japan named [character]. She...",
+      "score": 90,
+      "upvotes": 16,
+      "url": "https://anilist.co/review/23669"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Red River",
+    "romaji": "Sora wa Akai Kawa no Hotori",
+    "native": "天は赤い河のほとり",
+    "url": "https://anilist.co/manga/30079",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30079-7EBm14wL7QlD.jpg",
+    "accepted_aliases": [
+     "Red River",
+     "Sora wa Akai Kawa no Hotori",
+     "Anatolia Story",
+     "Heaven by the Red River",
+     "Orontes Renka",
+     "Orontes Love Song",
+     "The Sky Is at the Banks of the Red River",
+     "The Sky Is Near the Red River"
+    ],
+    "mangadex_id": "9a901eb2-94f6-4761-97fe-de211050b344"
+   },
+   "review_notes": []
+  },
+  {
    "anilist_id": 100568,
    "source": "fallback",
    "tier": "easy",
@@ -212,54 +556,38 @@
    "review_notes": []
   },
   {
-   "anilist_id": 117883,
+   "anilist_id": 55288,
    "source": "fallback",
-   "tier": "hard",
+   "tier": "random",
    "revealed": {
     "origin": "manga",
     "format": "series",
-    "popularity": 2894,
-    "average_score": 66,
+    "popularity": 67,
+    "average_score": null,
     "genres": [
-     "Comedy",
-     "Romance",
-     "Slice of Life"
+     "Action",
+     "Adventure"
     ],
     "demographic": [
-     "Seinen"
+     "Shounen"
     ],
-    "release": "2020 to 2021"
+    "release": "2010 to 2013"
    },
    "hints": {
     "cover": {
      "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117883-khxbBzcTa74F.jpg"
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/25288.jpg"
     },
     "summary": {
      "cost": 100,
-     "text": "In the future, an app debuts that can simulate your romance with a partner of your choosing and calculate the compatibility score. Is this a way to have a romance that never fails? What is it that people look for in a romance anyway?\n\nAn engagement romcom manga about a pessimistic manga artist & his beautiful but mysterious assistant."
+     "text": "In 52 B.C., the Chieftain of the Arveni tribe, Vercingetorix, united the Gauls in a major revolt against the power of the Romans. This is his story, beginning with his rise to power. In one of the tribes, he rescues the 11 year old Taranis, the only son of a Gallic hero who was executed by the Romans. Taranis follows Vercingetorix as he raises his army to fight for the freedom of Gaul."
     },
     "tags": {
      "cost": 75,
      "items": [
       {
-       "name": "Artificial Intelligence",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Nudity",
-       "rank": 73,
-       "spoiler": false
-      },
-      {
-       "name": "Fashion",
-       "rank": 73,
-       "spoiler": false
-      },
-      {
-       "name": "Love Triangle",
-       "rank": 73,
+       "name": "Historical",
+       "rank": 50,
        "spoiler": false
       }
      ]
@@ -268,8 +596,8 @@
      "cost": 50,
      "items": [
       {
-       "name": "LEN[A-7]",
-       "native": "LEN[A-7]",
+       "name": "Tooru Uchimizu",
+       "native": "内水融",
        "role": "Story & Art"
       }
      ]
@@ -282,15 +610,268 @@
     "reviews": []
    },
    "answer": {
-    "title": "Love Score",
-    "romaji": "Love Score",
-    "native": "ラブスコア",
-    "url": "https://anilist.co/manga/117883",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117883-khxbBzcTa74F.jpg",
+    "title": "Agrippa",
+    "romaji": "Agrippa",
+    "native": "アグリッパ-AGRIPPA-",
+    "url": "https://anilist.co/manga/55288",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/25288.jpg",
     "accepted_aliases": [
-     "Love Score"
+     "Agrippa",
+     "-AGRIPPA-"
     ],
-    "mangadex_id": "12a94373-ef2c-4c07-8a8b-a29e631baf83"
+    "mangadex_id": "94ee119c-713d-42fc-bb5b-0859aa332dd2"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 34614,
+   "source": "fallback",
+   "tier": "hard",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 1258,
+    "average_score": 66,
+    "genres": [
+     "Action",
+     "Comedy",
+     "Drama",
+     "Ecchi",
+     "Mystery"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2003 to 2009"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx34614-OyoL7fC7Tluy.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Yataro [character], nicknamed [character], is an ace in the locksmith trade and is obsessed with girls. This (almost) average teenager is given a hardly ordinary mission which marks the beginning of his adventures!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Delinquents",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Nudity",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 20,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Naoki Serizawa",
+       "native": "芹沢直樹",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Yatarou Sarumaru",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b18278-3TY22X7PqOCW.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Yukiko Fukune",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19428.jpg"
+      },
+      {
+       "name": "Ritsuko",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19429.jpg"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Saru Lock",
+    "romaji": "Saru Lock",
+    "native": "猿ロック",
+    "url": "https://anilist.co/manga/34614",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx34614-OyoL7fC7Tluy.png",
+    "accepted_aliases": [
+     "Saru Lock"
+    ],
+    "mangadex_id": "9db28f3e-1295-4a23-b4c2-09ff81ac4b98"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 139339,
+   "source": "fallback",
+   "tier": "medium",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 15361,
+    "average_score": 74,
+    "genres": [
+     "Drama",
+     "Fantasy",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2021 to 2025"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139339-VnROu4poh9rw.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "When Princess Alisa is framed for a terrible crime, she is shocked to learn that her own family wants her executed. Feeling defeated, she finds herself reborn as the princess of a rival empire. And though her new family acts sweet and kind on the surface, she’s not sure they can be truly trusted. Luckily, with this new life comes new power. But what exactly is this mysterious magic that awakens in her? And more importantly, can she use it to get vengeance against those who once betrayed her?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Reincarnation",
+       "rank": 90,
+       "spoiler": true
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Magic",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Gods",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Revenge",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Yuya",
+       "native": "유야",
+       "role": "Story & Art"
+      },
+      {
+       "name": "Tikatika",
+       "native": "티카티카",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Aisha De Elmir",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b254002-T7cQ1UrPJvM8.png"
+      },
+      {
+       "name": "Ruminaseu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290083-W13E1rhzzFyl.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Isis Elmir",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290085-wyEQrwfdeZFE.png"
+      },
+      {
+       "name": "Bion Belteumoeo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290086-ibG18NaSIDAQ.png"
+      },
+      {
+       "name": "Iris Elmir",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290104-xK0l5Nh1TaIF.jpg"
+      },
+      {
+       "name": "Tirion Elmir",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290110-6lGGOVIuYUXu.png"
+      },
+      {
+       "name": "Areusen Roseutopeu Roseutopeu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290108-YJSdcxub6zkX.png"
+      },
+      {
+       "name": "Ru",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290109-I9sNHOr85wQR.png"
+      },
+      {
+       "name": "Marianne Idenbereu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290105-NwzktHwbonq3.png"
+      },
+      {
+       "name": "Rimie",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290084-zUVxYkigbeeO.png"
+      },
+      {
+       "name": "Rakiaseu Idenbereu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290087-W6aKUQLmZ4vf.jpg"
+      },
+      {
+       "name": "Aesyul-ri Rollang",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290103-9QJVav6RADIA.jpg"
+      },
+      {
+       "name": "Rojeu Beullaim",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290092-a71xXuPvm4UZ.jpg"
+      },
+      {
+       "name": "Reulleuseu Idenbereu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290097-2MXU7HZZaeii.png"
+      },
+      {
+       "name": "Rusel",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290099-CeTpL7ouo7M3.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Into the Light, Once Again",
+    "romaji": "Dasi Hanbeon, Bin Sogeuro",
+    "native": "다시 한번, 빛 속으로",
+    "url": "https://anilist.co/manga/139339",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139339-VnROu4poh9rw.png",
+    "accepted_aliases": [
+     "Into the Light, Once Again",
+     "Dasi Hanbeon, Bin Sogeuro",
+     "Once Again Into the Light, Alone",
+     "Dasi Han Beon, Bin Sogeuro",
+     "Once Again, Into the Light",
+     "Once Again Into the Light"
+    ],
+    "mangadex_id": "6cfc0541-41e2-4f77-8340-971fdc15bacc"
    },
    "review_notes": []
   },
@@ -523,432 +1104,6 @@
    "review_notes": []
   },
   {
-   "anilist_id": 55288,
-   "source": "fallback",
-   "tier": "random",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 67,
-    "average_score": null,
-    "genres": [
-     "Action",
-     "Adventure"
-    ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "2010 to 2013"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/25288.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "In 52 B.C., the Chieftain of the Arveni tribe, Vercingetorix, united the Gauls in a major revolt against the power of the Romans. This is his story, beginning with his rise to power. In one of the tribes, he rescues the 11 year old Taranis, the only son of a Gallic hero who was executed by the Romans. Taranis follows Vercingetorix as he raises his army to fight for the freedom of Gaul."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Historical",
-       "rank": 50,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Tooru Uchimizu",
-       "native": "内水融",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": null,
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Agrippa",
-    "romaji": "Agrippa",
-    "native": "アグリッパ-AGRIPPA-",
-    "url": "https://anilist.co/manga/55288",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/25288.jpg",
-    "accepted_aliases": [
-     "Agrippa",
-     "-AGRIPPA-"
-    ],
-    "mangadex_id": "94ee119c-713d-42fc-bb5b-0859aa332dd2"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 30079,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 7526,
-    "average_score": 76,
-    "genres": [
-     "Action",
-     "Adventure",
-     "Drama",
-     "Fantasy",
-     "Romance"
-    ],
-    "demographic": [
-     "Shoujo"
-    ],
-    "release": "1995 to 2002"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30079-7EBm14wL7QlD.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "[character], a pretty Japanese girl, is ecstatic after passing her college entrance exam and having her first kiss with her childhood friend-turned boyfriend. However, her luck soon changes. She starts to notice that water becomes agitated whenever she goes near it. One night, hands appear out of a puddle on the street and drag her into the water! Transported to an ancient village in the Middle East, she is then captured by armed troops and taken to the Queen's palace for a human sacrifice.\n\nNotes:\n\n- Winner of the 46th Shogakukan Manga Award in the shoujo category.\n\n- Includes three extra chapters."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Historical",
-       "rank": 90,
-       "spoiler": false
-      },
-      {
-       "name": "Foreign",
-       "rank": 85,
-       "spoiler": false
-      },
-      {
-       "name": "Female Protagonist",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Time Manipulation",
-       "rank": 80,
-       "spoiler": true
-      },
-      {
-       "name": "Royal Affairs",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Assassins",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Heterosexual",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Kingdom Management",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Swordplay",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Politics",
-       "rank": 75,
-       "spoiler": false
-      },
-      {
-       "name": "Slavery",
-       "rank": 73,
-       "spoiler": false
-      },
-      {
-       "name": "Isekai",
-       "rank": 71,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Chie Shinohara",
-       "native": "篠原千絵",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Yuri Suzuki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8939-FaDciXjsFGA5.jpg"
-      },
-      {
-       "name": "Kail Mursili",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/4586.jpg"
-      },
-      {
-       "name": "Nakia",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133348-iB7aNmYPHLWu.jpg"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Usel Ramses",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/18034.jpg"
-      },
-      {
-       "name": "Zannanza Hattušili",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b398542-vvWH7KmoyBt2.jpg"
-      },
-      {
-       "name": "Kikkuri",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b35934-tXa8Wan1ynmO.jpg"
-      },
-      {
-       "name": "Il Bani",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/37092.jpg"
-      },
-      {
-       "name": "Hadi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51101-UmMzb7UmTrm3.jpg"
-      },
-      {
-       "name": "Rusafa",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/51103.jpg"
-      },
-      {
-       "name": "Kash",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51105-SSSAbUWYXItY.jpg"
-      },
-      {
-       "name": "Ursula",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/51107.jpg"
-      },
-      {
-       "name": "Alexandra",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/51109.jpg"
-      },
-      {
-       "name": "Aslan",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/51111.jpg"
-      },
-      {
-       "name": "Mattiwaza",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b398543-qbhZO8WF1Lvt.jpg"
-      },
-      {
-       "name": "Urhi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b398544-cxUhjnt5PfQa.jpg"
-      }
-     ]
-    },
-    "reviews": [
-     {
-      "cost": 50,
-      "summary": "Thank you so much [title]",
-      "excerpt": "Hey everybody, I recently read through [title] recently & I wanna talk about it. I’m not gonna really take an analytical approach to this series that I would normally try to take with a review, rather I just wanna share some thoughts on this series and hopefully you’ll be convinced to read it.\n\n[title] is a shoujo classic, it’s about this girl in (at the time) modern day Japan named [character]. She...",
-      "score": 90,
-      "upvotes": 16,
-      "url": "https://anilist.co/review/23669"
-     }
-    ]
-   },
-   "answer": {
-    "title": "Red River",
-    "romaji": "Sora wa Akai Kawa no Hotori",
-    "native": "天は赤い河のほとり",
-    "url": "https://anilist.co/manga/30079",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30079-7EBm14wL7QlD.jpg",
-    "accepted_aliases": [
-     "Red River",
-     "Sora wa Akai Kawa no Hotori",
-     "Anatolia Story",
-     "Heaven by the Red River",
-     "Orontes Renka",
-     "Orontes Love Song",
-     "The Sky Is at the Banks of the Red River",
-     "The Sky Is Near the Red River"
-    ],
-    "mangadex_id": "9a901eb2-94f6-4761-97fe-de211050b344"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 34614,
-   "source": "fallback",
-   "tier": "hard",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 1258,
-    "average_score": 66,
-    "genres": [
-     "Action",
-     "Comedy",
-     "Drama",
-     "Ecchi",
-     "Mystery"
-    ],
-    "demographic": [
-     "Seinen"
-    ],
-    "release": "2003 to 2009"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx34614-OyoL7fC7Tluy.png"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "Yataro [character], nicknamed [character], is an ace in the locksmith trade and is obsessed with girls. This (almost) average teenager is given a hardly ordinary mission which marks the beginning of his adventures!"
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Delinquents",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "Nudity",
-       "rank": 60,
-       "spoiler": false
-      },
-      {
-       "name": "School",
-       "rank": 20,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Naoki Serizawa",
-       "native": "芹沢直樹",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Yatarou Sarumaru",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b18278-3TY22X7PqOCW.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Yukiko Fukune",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19428.jpg"
-      },
-      {
-       "name": "Ritsuko",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19429.jpg"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Saru Lock",
-    "romaji": "Saru Lock",
-    "native": "猿ロック",
-    "url": "https://anilist.co/manga/34614",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx34614-OyoL7fC7Tluy.png",
-    "accepted_aliases": [
-     "Saru Lock"
-    ],
-    "mangadex_id": "9db28f3e-1295-4a23-b4c2-09ff81ac4b98"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 139544,
-   "source": "fallback",
-   "tier": "random",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 69,
-    "average_score": null,
-    "genres": [
-     "Drama",
-     "Romance"
-    ],
-    "demographic": [
-     "Shoujo"
-    ],
-    "release": "2021, ongoing"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139544-XIgvAay3Hs7e.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": null
-    },
-    "tags": {
-     "cost": 75,
-     "items": null
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Kanan Minami",
-       "native": "風南水波",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": null,
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Kaeru Ie ni wa Koi ga Inai",
-    "romaji": "Kaeru Ie ni wa Koi ga Inai",
-    "native": "帰る家には恋がいない",
-    "url": "https://anilist.co/manga/139544",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139544-XIgvAay3Hs7e.jpg",
-    "accepted_aliases": [
-     "Kaeru Ie ni wa Koi ga Inai"
-    ],
-    "mangadex_id": null
-   },
-   "review_notes": []
-  },
-  {
    "anilist_id": 86218,
    "source": "fallback",
    "tier": "easy",
@@ -1147,236 +1302,114 @@
    "review_notes": []
   },
   {
-   "anilist_id": 139339,
+   "anilist_id": 139544,
    "source": "fallback",
-   "tier": "medium",
+   "tier": "random",
    "revealed": {
-    "origin": "manhwa",
+    "origin": "manga",
     "format": "series",
-    "popularity": 15361,
-    "average_score": 74,
+    "popularity": 69,
+    "average_score": null,
     "genres": [
      "Drama",
-     "Fantasy",
      "Romance"
     ],
-    "demographic": [],
-    "release": "2021 to 2025"
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2021, ongoing"
    },
    "hints": {
     "cover": {
      "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139339-VnROu4poh9rw.png"
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139544-XIgvAay3Hs7e.jpg"
     },
     "summary": {
      "cost": 100,
-     "text": "When Princess Alisa is framed for a terrible crime, she is shocked to learn that her own family wants her executed. Feeling defeated, she finds herself reborn as the princess of a rival empire. And though her new family acts sweet and kind on the surface, she’s not sure they can be truly trusted. Luckily, with this new life comes new power. But what exactly is this mysterious magic that awakens in her? And more importantly, can she use it to get vengeance against those who once betrayed her?"
+     "text": null
     },
     "tags": {
      "cost": 75,
-     "items": [
-      {
-       "name": "Reincarnation",
-       "rank": 90,
-       "spoiler": true
-      },
-      {
-       "name": "Female Protagonist",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Magic",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Gods",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Revenge",
-       "rank": 73,
-       "spoiler": false
-      }
-     ]
+     "items": null
     },
     "creators": {
      "cost": 50,
      "items": [
       {
-       "name": "Yuya",
-       "native": "유야",
+       "name": "Kanan Minami",
+       "native": "風南水波",
        "role": "Story & Art"
-      },
-      {
-       "name": "Tikatika",
-       "native": "티카티카",
-       "role": "Original Story"
       }
      ]
     },
     "characters": {
      "cost": 75,
-     "main": [
-      {
-       "name": "Aisha De Elmir",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b254002-T7cQ1UrPJvM8.png"
-      },
-      {
-       "name": "Ruminaseu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290083-W13E1rhzzFyl.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Isis Elmir",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290085-wyEQrwfdeZFE.png"
-      },
-      {
-       "name": "Bion Belteumoeo",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290086-ibG18NaSIDAQ.png"
-      },
-      {
-       "name": "Iris Elmir",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290104-xK0l5Nh1TaIF.jpg"
-      },
-      {
-       "name": "Tirion Elmir",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290110-6lGGOVIuYUXu.png"
-      },
-      {
-       "name": "Areusen Roseutopeu Roseutopeu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290108-YJSdcxub6zkX.png"
-      },
-      {
-       "name": "Ru",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290109-I9sNHOr85wQR.png"
-      },
-      {
-       "name": "Marianne Idenbereu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290105-NwzktHwbonq3.png"
-      },
-      {
-       "name": "Rimie",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290084-zUVxYkigbeeO.png"
-      },
-      {
-       "name": "Rakiaseu Idenbereu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290087-W6aKUQLmZ4vf.jpg"
-      },
-      {
-       "name": "Aesyul-ri Rollang",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290103-9QJVav6RADIA.jpg"
-      },
-      {
-       "name": "Rojeu Beullaim",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290092-a71xXuPvm4UZ.jpg"
-      },
-      {
-       "name": "Reulleuseu Idenbereu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290097-2MXU7HZZaeii.png"
-      },
-      {
-       "name": "Rusel",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290099-CeTpL7ouo7M3.png"
-      }
-     ]
+     "main": null,
+     "supporting": null
     },
     "reviews": []
    },
    "answer": {
-    "title": "Into the Light, Once Again",
-    "romaji": "Dasi Hanbeon, Bin Sogeuro",
-    "native": "다시 한번, 빛 속으로",
-    "url": "https://anilist.co/manga/139339",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139339-VnROu4poh9rw.png",
+    "title": "Kaeru Ie ni wa Koi ga Inai",
+    "romaji": "Kaeru Ie ni wa Koi ga Inai",
+    "native": "帰る家には恋がいない",
+    "url": "https://anilist.co/manga/139544",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139544-XIgvAay3Hs7e.jpg",
     "accepted_aliases": [
-     "Into the Light, Once Again",
-     "Dasi Hanbeon, Bin Sogeuro",
-     "Once Again Into the Light, Alone",
-     "Dasi Han Beon, Bin Sogeuro",
-     "Once Again, Into the Light",
-     "Once Again Into the Light"
+     "Kaeru Ie ni wa Koi ga Inai"
     ],
-    "mangadex_id": "6cfc0541-41e2-4f77-8340-971fdc15bacc"
+    "mangadex_id": null
    },
    "review_notes": []
   },
   {
-   "anilist_id": 124676,
+   "anilist_id": 117883,
    "source": "fallback",
-   "tier": "medium",
+   "tier": "hard",
    "revealed": {
     "origin": "manga",
     "format": "series",
-    "popularity": 13439,
-    "average_score": 68,
+    "popularity": 2894,
+    "average_score": 66,
     "genres": [
      "Comedy",
-     "Ecchi",
-     "Romance"
+     "Romance",
+     "Slice of Life"
     ],
     "demographic": [
      "Seinen"
     ],
-    "release": "2020, ongoing"
+    "release": "2020 to 2021"
    },
    "hints": {
     "cover": {
      "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124676-x5xApm3n1gHZ.jpg"
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117883-khxbBzcTa74F.jpg"
     },
     "summary": {
      "cost": 100,
-     "text": "When [character]’s sister died, leaving her young daughter all alone, [character] stepped up and took the child into her life. Now that her niece/adopted daughter is a teenager, a 30-something [character] can sense first love in the air. [character] teases her daughter about [character], their handsome and college-aged neighbor, who’s been tutoring her since she was young–could they be a blossoming couple, since he’s always beaming when he comes to their house? To [character]’s surprise, [character] isn’t interested in daughter dearest: he’s long had a crush on [character] herself! In this age gap romantic comedy, one young man is ready to bring a little sugar to the sexy mom next door."
+     "text": "In the future, an app debuts that can simulate your romance with a partner of your choosing and calculate the compatibility score. Is this a way to have a romance that never fails? What is it that people look for in a romance anyway?\n\nAn engagement romcom manga about a pessimistic manga artist & his beautiful but mysterious assistant."
     },
     "tags": {
      "cost": 75,
      "items": [
       {
-       "name": "MILF",
-       "rank": 97,
+       "name": "Artificial Intelligence",
+       "rank": 79,
        "spoiler": false
       },
       {
-       "name": "Heterosexual",
-       "rank": 96,
+       "name": "Nudity",
+       "rank": 73,
        "spoiler": false
       },
       {
-       "name": "Age Gap",
-       "rank": 93,
-       "spoiler": true
-      },
-      {
-       "name": "Large Breasts",
-       "rank": 85,
-       "spoiler": false
-      },
-      {
-       "name": "Adoption",
-       "rank": 84,
-       "spoiler": false
-      },
-      {
-       "name": "Coming of Age",
-       "rank": 80,
+       "name": "Fashion",
+       "rank": 73,
        "spoiler": false
       },
       {
        "name": "Love Triangle",
-       "rank": 79,
-       "spoiler": true
-      },
-      {
-       "name": "Family Life",
-       "rank": 75,
-       "spoiler": false
-      },
-      {
-       "name": "Primarily Adult Cast",
        "rank": 73,
        "spoiler": false
       }
@@ -1386,62 +1419,29 @@
      "cost": 50,
      "items": [
       {
-       "name": "Kouta Nozomi",
-       "native": "望公太",
-       "role": "Original Story"
-      },
-      {
-       "name": "Tesshin Azuma",
-       "native": "東鉄神 ",
+       "name": "LEN[A-7]",
+       "native": "LEN[A-7]",
        "role": "Story & Art"
       }
      ]
     },
     "characters": {
      "cost": 75,
-     "main": [
-      {
-       "name": "Ayako Katsuragi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196139-BD6WEHzfzJSW.png"
-      },
-      {
-       "name": "Miu Katsuragi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196142-uKZAil2t6mFm.png"
-      },
-      {
-       "name": "Takumi Aterazawa",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196138-tYwVZBT1fuSV.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Satoya Ringou",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196140-VYbzgPJ4NSDW.png"
-      },
-      {
-       "name": "Yumemi Oinomori",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b196141-D5WSAMMQNCYp.png"
-      },
-      {
-       "name": "Tomomi Aterazawa",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b270954-TfpWNDnjwv7u.jpg"
-      }
-     ]
+     "main": null,
+     "supporting": null
     },
     "reviews": []
    },
    "answer": {
-    "title": "You Like Me, Not My Daughter?!",
-    "romaji": "Musume ja Nakute Mama ga Suki nano!?",
-    "native": "娘じゃなくて私が好きなの!?",
-    "url": "https://anilist.co/manga/124676",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx124676-x5xApm3n1gHZ.jpg",
+    "title": "Love Score",
+    "romaji": "Love Score",
+    "native": "ラブスコア",
+    "url": "https://anilist.co/manga/117883",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117883-khxbBzcTa74F.jpg",
     "accepted_aliases": [
-     "You Like Me, Not My Daughter?!",
-     "Musume ja Nakute Mama ga Suki nano!?",
-     "You Like Me (Mama), Not My Daughter?!"
+     "Love Score"
     ],
-    "mangadex_id": null
+    "mangadex_id": "12a94373-ef2c-4c07-8a8b-a29e631baf83"
    },
    "review_notes": []
   }
