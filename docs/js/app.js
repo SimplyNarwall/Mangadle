@@ -70,12 +70,17 @@ function freshState(n) {
   };
 }
 
+// Identifies which titles a day file holds, so progress resets if the day gets rebuilt.
+const dayFingerprint = () => day.titles.map((t) => t.anilist_id).join(",");
+
 function loadState() {
   try {
     const s = JSON.parse(localStorage.getItem(storageKey));
-    if (s && s.titles && s.titles.length === day.titles.length) return s;
+    const sameDay = s && s.titles && s.titles.length === day.titles.length &&
+      (!s.fingerprint || s.fingerprint === dayFingerprint());
+    if (sameDay) return { ...s, fingerprint: dayFingerprint() };
   } catch { /* fall through */ }
-  return freshState(day.titles.length);
+  return { ...freshState(day.titles.length), fingerprint: dayFingerprint() };
 }
 
 function saveState() {

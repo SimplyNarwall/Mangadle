@@ -133,11 +133,12 @@ python3 scripts/dev.py check 2026-11-11
 python3 scripts/dev.py check 2026-11-11 --full
 python3 scripts/dev.py rebuild 2026-11-11 --same-titles
 python3 scripts/dev.py rebuild 2026-11-11
+python3 scripts/dev.py reset-stats 2026-11-11
 python3 scripts/dev.py approve 2026-11-11
 python3 scripts/dev.py shuffle --upcoming
 ```
 
-In order: show each title's hints, answers, and possible leaks; the same plus every summary and review; rebuild with the same 10 titles (fresh hints and redaction); rebuild with new picks; mark a day reviewed; randomize the title order of every day after today.
+In order: show each title's hints, answers, and possible leaks; the same plus every summary and review; rebuild with the same 10 titles (fresh hints and redaction); rebuild with new picks, which also clears that day's shared stats on the worker (needs `MANGADLE_WORKER` and `MANGADLE_TOKEN` set); clear a day's stats by hand; mark a day reviewed; randomize the title order of every day after today.
 
 `check` flags any title words that still appear in a summary or review. Some are false alarms (a summary for *Tower of God* can say "tower"), so read them before editing. To fix one by hand, edit the text in `docs/days/<date>.json`; a `--same-titles` rebuild would overwrite your edits.
 
@@ -207,6 +208,8 @@ In one terminal: `cd worker && npx wrangler dev`. Then open `http://localhost:80
 
 ## Gameplay notes
 
+- Each day has at least 3 easy, 3 medium, and 2 hard titles, plus 2 wildcards (easy, medium, hard, or fully random with equal odds). Change it with `REQUIRED_TIERS` in `scripts/build_day.py`.
+- If a day gets rebuilt with new titles, players' saved progress for it resets automatically.
 - Titles unlock in order: the next one opens once the current one is answered or given up.
 - After a wrong guess, "My guess was close enough" gives 250 points (honor system, like Catfishing). It shows as 🤏 in the share text and counts as correct in the stats.
 - Redaction treats romanization variants of a character's name as the same name ("Yuuri", "Yuri", "Yūri"; "Hae-In", "Haein").

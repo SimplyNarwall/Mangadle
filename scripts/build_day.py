@@ -60,7 +60,9 @@ LAUNCH_DATE = dt.date(2026, 11, 11)
 TITLES_PER_DAY = 10
 NO_REPEAT_DAYS = 50
 MIN_SUGGESTION_AGE_DAYS = 7         # a suggestion can't be played until a week after it was sent
-REQUIRED_TIERS = ["easy", "easy", "medium", "medium", "hard", "hard"]  # minimum per tier
+# Each day's mix: at least 3 easy, 3 medium, 2 hard. The other TITLES_PER_DAY - len(REQUIRED_TIERS) = 2
+# slots are wildcards: each picks easy, medium, hard, or fully random (no popularity floor) with equal odds.
+REQUIRED_TIERS = ["easy", "easy", "easy", "medium", "medium", "medium", "hard", "hard"]
 WILDCARD_CHOICES = ["easy", "medium", "hard", "random"]
 TAG_RANK_CUTOFF = 70
 MIN_TAGS = 5
@@ -176,9 +178,11 @@ def pick_random_id(rng, exclude, fetch=anilist, attempts=40):
     raise RuntimeError("could not find a random eligible title")
 
 
-def choose_titles(date, snapshot, history, suggestions, fetch=anilist, avoid=()):
+def choose_titles(date, snapshot, history, suggestions, fetch=anilist, avoid=(), reroll=0):
     """Returns (list of (anilist_id, source, tier)), remaining suggestions."""
-    rng = random.Random(f"mangadle-{date.isoformat()}")
+    # Seeded by date so a build is reproducible; each full rebuild bumps `reroll` so it
+    # re-rolls the tier mix and picks instead of repeating them.
+    rng = random.Random(f"mangadle-{date.isoformat()}" + (f"-r{reroll}" if reroll else ""))
     exclude = recent_ids(history, date) | set(avoid)
     by_id = {r["anilist_id"]: r for r in snapshot}
     picks, remaining = [], []
@@ -489,6 +493,7 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
     # so a day you've seen (or spoiled) comes back with 10 different titles.
     previous = load_json(out_path, None) if (force and not same_titles) else None
     avoid = {t["anilist_id"] for t in previous["titles"]} if previous else set()
+    reroll = (previous.get("rebuilds", 0) + 1) if previous else 0
     history = [h for h in history if h["date"] != date.isoformat()]
 
     snapshot = load_json(os.path.join(data_dir, "snapshot.json"), None)
@@ -502,14 +507,15 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
         picks = [(t["anilist_id"], t.get("source", "fallback"), t.get("tier", "random")) for t in old_day["titles"]]
         remaining = suggestions
     else:
-        picks, remaining = choose_titles(date, snapshot, history, suggestions, fetch, avoid=avoid)
+        picks, remaining = choose_titles(date, snapshot, history, suggestions, fetch, avoid=avoid, reroll=reroll)
     titles = []
     for pid, source, tier in picks:
         print(f"{date}: building {pid} ({source}, {tier})", file=sys.stderr)
         titles.append(build_title(pid, source, tier, raw_by_id, fetch, mangadex))
 
     number = puzzle_number(date)
-    day = {"date": date.isoformat(), "number": number, "reviewed": False,
+    rebuilds = old_day.get("rebuilds", 0) if old_day else (reroll if previous else 0)
+    day = {"date": date.isoformat(), "number": number, "reviewed": False, "rebuilds": rebuilds,
            "start_points": 1000, "titles": titles}
 
     save_json(out_path, day)

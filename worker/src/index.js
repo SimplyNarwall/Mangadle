@@ -5,6 +5,7 @@
 //   POST /suggest           { anilistId, note? }                                 queue a title suggestion
 //   GET  /suggestions       (Authorization: Bearer ADMIN_TOKEN) unused suggestions, oldest first
 //   POST /suggestions/used  (Authorization: Bearer ADMIN_TOKEN) { ids: [int] }   mark suggestions as used
+//   POST /results/reset     (Authorization: Bearer ADMIN_TOKEN) { date }         clear a day's stats (after a rebuild)
 
 const MAX_TITLES = 20;
 const POINTS_PER_TITLE = 1000;
@@ -23,6 +24,7 @@ export default {
       else if (url.pathname === "/suggest" && request.method === "POST") res = await postSuggest(request, env);
       else if (url.pathname === "/suggestions" && request.method === "GET") res = await getSuggestions(request, env);
       else if (url.pathname === "/suggestions/used" && request.method === "POST") res = await markUsed(request, env);
+      else if (url.pathname === "/results/reset" && request.method === "POST") res = await resetResults(request, env);
       else res = json({ error: "not found" }, 404);
       for (const [k, v] of Object.entries(cors)) res.headers.set(k, v);
       return res;
@@ -173,4 +175,12 @@ async function markUsed(request, env) {
     await env.DB.prepare("UPDATE suggestions SET used = 1 WHERE id = ?").bind(id).run();
   }
   return json({ ok: true, marked: ids.length });
+}
+
+async function resetResults(request, env) {
+  requireAdmin(request, env);
+  const body = await readJson(request);
+  const date = checkDate(body.date);
+  const result = await env.DB.prepare("DELETE FROM results WHERE date = ?").bind(date).run();
+  return json({ ok: true, date, deleted: (result.meta && result.meta.changes) || 0 });
 }

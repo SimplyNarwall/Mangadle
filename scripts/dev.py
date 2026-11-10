@@ -5,7 +5,7 @@ mangadle dev tools. Run from anywhere; paths default to this repo.
   python3 scripts/dev.py serve                  run the site at http://localhost:8000
   python3 scripts/dev.py fake                   make a fake practice day (no internet needed)
   python3 scripts/dev.py check 2026-11-11       review a day: hints, leaks, review notes
-  python3 scripts/dev.py rebuild 2026-11-11     re-pick and rebuild a day
+  python3 scripts/dev.py rebuild 2026-11-11     re-pick and rebuild a day (also clears its shared stats)
   python3 scripts/dev.py rebuild 2026-11-11 --same-titles   keep the picks, refresh hints/redaction
   python3 scripts/dev.py check 2026-11-11 --blind         same, but spoiler-free (counts only)
   python3 scripts/dev.py check 2026-11-11 --blind --fix   redact flagged words without showing them
@@ -446,10 +446,40 @@ def cmd_index(args):
 
 
 # ------------------------------------------------------------------- rebuild --
+def reset_remote_stats(date):
+    """Clear a day's shared stats on the worker. Needs MANGADLE_WORKER and MANGADLE_TOKEN."""
+    import urllib.request
+    worker, token = os.environ.get("MANGADLE_WORKER"), os.environ.get("MANGADLE_TOKEN")
+    if not worker or not token:
+        print(f"  stats not reset: set MANGADLE_WORKER and MANGADLE_TOKEN, then run "
+              f"python3 scripts/dev.py reset-stats {date}")
+        return False
+    req = urllib.request.Request(
+        worker.rstrip("/") + "/results/reset", data=json.dumps({"date": str(date)}).encode(),
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
+                 "User-Agent": "mangadle-dev/1.0"}, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            out = json.loads(r.read().decode())
+        print(f"  stats reset for {date} ({out.get('deleted', 0)} result(s) cleared)")
+        return True
+    except Exception as e:  # noqa: BLE001
+        print(f"  stats not reset ({e}); retry with: python3 scripts/dev.py reset-stats {date}")
+        return False
+
+
+def cmd_reset_stats(args):
+    reset_remote_stats(dt.date.fromisoformat(args.date))
+
+
 def cmd_rebuild(args):
     import build_day
     date = dt.date.fromisoformat(args.date)
     build_day.build_day(date, args.data, force=True, days_dir=DAYS, same_titles=args.same_titles)
+    if not args.same_titles:
+        # New titles: old results for this date no longer mean anything. (Players' saved
+        # progress resets on its own; the site notices the titles changed.)
+        reset_remote_stats(date)
     print(f"\ncheck it: python3 scripts/dev.py check {date}")
     print(f"play it:  http://localhost:8000/?date={date}&reset" + ("&preview" if date > today() else ""))
 
@@ -496,6 +526,10 @@ def main():
 
     s = sub.add_parser("index", help="regenerate docs/days/index.json")
     s.set_defaults(func=cmd_index)
+
+    s = sub.add_parser("reset-stats", help="clear a day's shared stats on the worker")
+    s.add_argument("date")
+    s.set_defaults(func=cmd_reset_stats)
 
     s = sub.add_parser("rebuild", help="rebuild one day (overwrites it)")
     s.add_argument("date")
