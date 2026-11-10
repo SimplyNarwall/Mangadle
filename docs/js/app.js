@@ -3,6 +3,7 @@ import CONFIG from "./config.js";
 
 // ------------------------------------------------------------------ setup --
 const START_POINTS = 1000;
+const CLOSE_ENOUGH_POINTS = 250;
 const NUMBER_EMOJI = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"];
 const HINTS = [
   { key: "cover", label: "Cover", emoji: "🖼️", cost: 50 },
@@ -82,6 +83,9 @@ function saveState() {
 }
 
 const isDone = (i) => state.titles[i].correct !== null;
+// Titles unlock in order: you can revisit answered ones and play the first unanswered one.
+const firstOpen = () => { const k = state.titles.findIndex((s) => s.correct === null); return k === -1 ? state.titles.length : k; };
+const isLocked = (i) => i > firstOpen();
 const allDone = () => state.titles.every((_, i) => isDone(i));
 
 // ------------------------------------------------------------------ hints --
@@ -134,6 +138,7 @@ function render() {
   renderTopbar();
   renderNav();
   const app = $("#app");
+  if (current !== "results" && isLocked(current)) current = firstOpen();
   app.replaceChildren(current === "results" ? renderResults() : renderTitle(current));
 }
 
@@ -149,9 +154,12 @@ function renderNav() {
     ...day.titles.map((_, i) => {
       const s = state.titles[i];
       const status = s.correct === true ? "right" : s.correct === false ? "wrong" : "";
+      const locked = isLocked(i);
       return h("button", {
-        class: `nav-pill ${status} ${current === i ? "active" : ""}`,
-        "aria-label": `Title ${i + 1}`,
+        class: `nav-pill ${status} ${current === i ? "active" : ""} ${locked ? "locked" : ""}`,
+        "aria-label": locked ? `Title ${i + 1} (locked until you answer title ${firstOpen() + 1})` : `Title ${i + 1}`,
+        title: locked ? "Answer the current title first" : null,
+        disabled: locked,
         onclick: () => { current = i; render(); },
       }, s.correct === true ? "✓" : s.correct === false ? "✗" : String(i + 1));
     }),
@@ -160,7 +168,7 @@ function renderNav() {
       disabled: !allDone(),
       title: allDone() ? "Results" : "Finish all titles to see results",
       onclick: () => { current = "results"; render(); },
-    }, "Results"),
+    }, h("span", { class: "long" }, "Results"), h("span", { class: "short", "aria-hidden": "true" }, "🏆")),
   );
 }
 
@@ -258,7 +266,7 @@ function renderHint(i, key) {
 }
 
 function renderGuessForm(i) {
-  const input = h("input", { type: "text", placeholder: "Type the title (English or romaji)", autocomplete: "off", "aria-label": "Your guess" });
+  const input = h("input", { type: "text", placeholder: "Guess the title", autocomplete: "off", "aria-label": "Your guess" });
   const form = h("form", {
     class: "guess-form",
     onsubmit: (e) => {
@@ -271,7 +279,7 @@ function renderGuessForm(i) {
   h("div", { class: "row" }, input, h("button", { type: "submit", class: "btn primary" }, "Guess")),
   h("div", { class: "row spread small" },
     h("span", { class: "muted" }, "One guess only. Small typos are fine."),
-    h("button", { type: "button", class: "link-btn", onclick: () => { if (confirm("Give up on this title? It will score 0.")) submitGuess(i, null, true); } }, "Give up")),
+    h("button", { type: "button", class: "link-btn", onclick: () => submitGuess(i, null, true) }, "Give up")),
   );
   setTimeout(() => input.focus({ preventScroll: true }), 0);
   return form;
@@ -281,9 +289,16 @@ function renderAnswer(i) {
   const t = day.titles[i];
   const s = state.titles[i];
   const a = t.answer;
-  const next = nextUnfinished(i);
+  const next = nextUnfinished();
   return h("div", { class: `answer ${s.correct ? "right" : "wrong"}` },
-    h("div", { class: "answer-banner" }, s.correct ? `Correct! +${fmt(s.points)}` : s.guess ? `Not quite. You guessed “${s.guess}”.` : "You gave up on this one."),
+    h("div", { class: "answer-banner" },
+      s.closeEnough ? `Close enough! +${fmt(s.points)}` : s.correct ? `Correct! +${fmt(s.points)}`
+        : s.guess ? `Not quite. You guessed “${s.guess}”.` : "You gave up on this one."),
+    // Honor system, like Catfishing: if your guess was basically right, claim partial credit.
+    !s.correct && s.guess ? h("button", {
+      class: "btn close-enough-btn",
+      onclick: () => claimCloseEnough(i),
+    }, `My guess was close enough (+${CLOSE_ENOUGH_POINTS})`) : null,
     h("div", { class: "answer-body" },
       a.cover ? h("img", { class: "answer-cover", src: a.cover, alt: `Cover of ${displayTitle(t)}` }) : null,
       h("div", {},
@@ -300,13 +315,21 @@ function renderAnswer(i) {
   );
 }
 
-function nextUnfinished(from) {
-  const n = day.titles.length;
-  for (let k = 1; k <= n; k++) {
-    const j = (from + k) % n;
-    if (!isDone(j)) return j;
-  }
-  return null;
+function claimCloseEnough(i) {
+  const s = state.titles[i];
+  if (s.correct || !s.guess) return;
+  s.correct = true;
+  s.closeEnough = true;
+  s.points = CLOSE_ENOUGH_POINTS;
+  state.submitted = false;  // results may already be sent; send the updated ones
+  saveState();
+  if (allDone()) submitResult();
+  render();
+}
+
+function nextUnfinished() {
+  const k = firstOpen();
+  return k < day.titles.length ? k : null;
 }
 
 // ----------------------------------------------------------------- results --
@@ -316,7 +339,8 @@ function shareText() {
   state.titles.forEach((s, i) => {
     const used = HINTS.filter((hd) => s.revealed.includes(hd.key)).map((hd) => hd.emoji).join("");
     const label = NUMBER_EMOJI[i] || `${i + 1}.`;
-    lines.push(s.correct ? `${label} ✅ ${fmt(s.points)}${used ? "  " + used : ""}` : `${label} ❌`);
+    const mark = s.closeEnough ? "🤏" : "✅";
+    lines.push(s.correct ? `${label} ${mark} ${fmt(s.points)}${used ? "  " + used : ""}` : `${label} ❌`);
   });
   lines.push(CONFIG.siteUrl || location.origin + location.pathname);
   return lines.join("\n");
@@ -449,7 +473,7 @@ function setupSuggestions() {
       const name = media.title.english || media.title.romaji;
       const sres = await fetch(`${WORKER_URL}/suggest`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ anilistId: id }) });
       const out = await sres.json();
-      status.textContent = out.queued ? `Thanks! “${name}” is in the queue.` : `“${name}” is already in the queue.`;
+      status.textContent = out.queued ? `Thanks! “${name}” is in the queue. Suggestions show up a week or more after they're sent.` : `“${name}” is already in the queue.`;
       $("#suggest-input").value = "";
     } catch {
       status.textContent = "Something went wrong. Try again later.";

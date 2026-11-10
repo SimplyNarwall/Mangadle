@@ -21,8 +21,10 @@ Usage (run from the folder that contains both scripts):
     python build_day.py --data data --days-dir docs/days --ahead 7   # write straight into the site
     python build_day.py --data data --date 2026-11-11 --same-titles  # same picks, fresh hints/redaction
 
-suggestions.json format (oldest first; used entries are removed):
-    [ {"anilist_id": 30013, "by": "ethan"}, {"anilist_id": 105398} ]
+suggestions.json format (oldest first; used entries are removed; duplicates ignored):
+    [ {"anilist_id": 30013, "by": "ethan", "suggested_at": "2026-11-10"}, {"anilist_id": 105398} ]
+A suggestion plays no sooner than MIN_SUGGESTION_AGE_DAYS (7) after suggested_at.
+Entries without suggested_at (e.g. added by hand) can play right away.
 
 Every built day has "reviewed": false. Read its "review_notes" (names that were
 not auto-redacted but appear in the text) and fix anything that leaks, then
@@ -40,6 +42,7 @@ import random
 import re
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -56,6 +59,7 @@ SITE_TZ = ZoneInfo("America/Chicago")   # must match docs/js/config.js timezone
 LAUNCH_DATE = dt.date(2026, 11, 11)
 TITLES_PER_DAY = 10
 NO_REPEAT_DAYS = 50
+MIN_SUGGESTION_AGE_DAYS = 7         # a suggestion can't be played until a week after it was sent
 REQUIRED_TIERS = ["easy", "easy", "medium", "medium", "hard", "hard"]  # minimum per tier
 WILDCARD_CHOICES = ["easy", "medium", "hard", "random"]
 TAG_RANK_CUTOFF = 70
@@ -179,10 +183,18 @@ def choose_titles(date, snapshot, history, suggestions, fetch=anilist, avoid=())
     by_id = {r["anilist_id"]: r for r in snapshot}
     picks, remaining = [], []
 
-    # 1. Suggestions first (oldest first). Ineligible-for-now ones stay queued.
+    # 1. Suggestions first (oldest first). Ones that can't play yet stay queued:
+    #    too new (under MIN_SUGGESTION_AGE_DAYS before this date), played recently, or the day is full.
+    #    Duplicate entries for the same title are dropped, keeping the oldest.
+    seen = set()
     for s in suggestions:
         sid = s["anilist_id"]
-        if len(picks) < TITLES_PER_DAY and sid not in exclude and sid not in [p[0] for p in picks]:
+        if sid in seen:
+            continue
+        seen.add(sid)
+        sent = s.get("suggested_at")
+        old_enough = not sent or (date - dt.date.fromisoformat(str(sent)[:10])).days >= MIN_SUGGESTION_AGE_DAYS
+        if len(picks) < TITLES_PER_DAY and old_enough and sid not in exclude:
             tier = by_id[sid]["tier"] if sid in by_id else "random"
             picks.append((sid, "suggestion", tier))
         else:
@@ -264,23 +276,66 @@ def character_names(chars):
     return names
 
 
+# Romanization variants: "Yuuri", "Yuri", "Yūri" and "Yuurii" are the same name, as are
+# "Ohno"/"Ono"/"Ōno" and "Hae-In"/"Haein". Names are reduced to a skeleton (long vowels
+# collapsed, accents stripped), then matched with a pattern that allows any of those
+# spellings. Only vowel length and separators vary, so ordinary words aren't caught.
+_VOWEL_PATTERNS = {
+    "a": "(?:aa|a|ā|â)",
+    "i": "(?:ii|i|ī|î)",
+    "u": "(?:uu|u|ū|û)",
+    "e": "(?:ee|e|ē|ê)",
+    "o": "(?:ou|oo|oh(?![aeiou])|o|ō|ô)",
+}
+
+
+def name_skeleton(name):
+    t = unicodedata.normalize("NFKD", name.lower())
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    t = re.sub(r"[\s\-'’‐.]+", " ", t).strip()
+    t = re.sub(r"ou|oo|oh(?![aeiou])", "o", t)
+    for v in "aiue":
+        t = re.sub(v + "+", v, t)
+    t = re.sub("o+", "o", t)
+    return t
+
+
+def name_pattern(name):
+    """Regex matching any common romanization of name, as a whole word."""
+    out = []
+    for ch in name_skeleton(name):
+        if ch in _VOWEL_PATTERNS:
+            out.append(_VOWEL_PATTERNS[ch])
+        elif ch == " ":
+            out.append(r"[\s\-'’‐]?")   # "Hae-In", "Hae In", "HaeIn"
+        else:
+            out.append(re.escape(ch))
+    return re.compile(r"(?<!\w)" + "".join(out) + r"(?!\w)", re.I)
+
+
 def build_redactor(title_names, char_names):
     """Returns redact(text) -> (text, notes)."""
     def usable(name):
-        return len(name) >= MIN_REDACT_NAME_LEN and name.lower() not in COMMON_WORDS
+        return (len(name) >= MIN_REDACT_NAME_LEN and name.lower() not in COMMON_WORDS
+                and name_skeleton(name) not in COMMON_WORDS)
 
     rules, skipped = [], []
     for label, names in (("[title]", title_names), ("[character]", char_names)):
         for n in names:
-            (rules if usable(n) else skipped).append((n, label))
-    rules.sort(key=lambda r: -len(r[0]))  # longest first so full names beat parts
+            if usable(n):
+                # titles match exactly; character names also match romanization variants
+                pat = name_pattern(n) if label == "[character]" else re.compile(r"(?<!\w)" + re.escape(n) + r"(?!\w)", re.I)
+                rules.append((len(n), pat, label))
+            else:
+                skipped.append(n)
+    rules.sort(key=lambda r: -r[0])  # longest first so full names beat parts
 
     def redact(text):
-        for name, label in rules:
-            text = re.sub(r"(?<!\w)" + re.escape(name) + r"(?!\w)", label, text, flags=re.I)
+        for _, pat, label in rules:
+            text = pat.sub(label, text)
         text = re.sub(r"(\[(title|character)\])('s)?(\s+\[(title|character)\]('s)?)+",
                       lambda m: m.group(0).split()[-1], text)  # collapse "[character] [character]"
-        notes = sorted({n for n, _ in skipped if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", text, re.I)})
+        notes = sorted({n for n in skipped if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", text, re.I)})
         return text, notes
 
     return redact

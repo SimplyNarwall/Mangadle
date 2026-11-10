@@ -1,6 +1,6 @@
 // mangadle API (Cloudflare Worker + D1)
 //
-//   POST /result            { date, playerId, scores: [int], correct: [bool] }   one result per player per day
+//   POST /result            { date, playerId, scores: [int], correct: [bool] }   one result per player per day (resubmits replace)
 //   GET  /stats?date=...    per-title % correct and average points, plus a histogram of day totals
 //   POST /suggest           { anilistId, note? }                                 queue a title suggestion
 //   GET  /suggestions       (Authorization: Bearer ADMIN_TOKEN) unused suggestions, oldest first
@@ -94,8 +94,10 @@ async function postResult(request, env) {
   });
   const total = scores.reduce((a, b) => a + b, 0);
 
+  // One row per player per day; a resubmission (e.g. after claiming "close enough") replaces it.
   const result = await env.DB.prepare(
-    "INSERT OR IGNORE INTO results (date, player_id, total, scores, correct, created_at) VALUES (?, ?, ?, ?, ?, ?)"
+    `INSERT INTO results (date, player_id, total, scores, correct, created_at) VALUES (?, ?, ?, ?, ?, ?)
+     ON CONFLICT (date, player_id) DO UPDATE SET total = excluded.total, scores = excluded.scores, correct = excluded.correct`
   ).bind(date, playerId, total, JSON.stringify(scores), JSON.stringify(correct), new Date().toISOString()).run();
 
   const recorded = (result.meta && result.meta.changes) > 0;

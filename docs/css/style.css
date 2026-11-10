@@ -28,7 +28,8 @@ h2, h3, h4 { margin: 0; }
 .accent { color: var(--accent); }
 
 /* layout */
-.topbar, .title-nav, main, .suggest, .footer { max-width: 760px; margin-inline: auto; padding-inline: 16px; }
+.topbar, .title-nav, main, .footer { max-width: 760px; margin-inline: auto; padding-inline: 16px; }
+.suggest { width: calc(100% - 32px); max-width: 728px; margin-inline: auto; }
 .topbar { display: flex; align-items: center; justify-content: space-between; padding-block: 18px 10px; }
 .brand { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .logo { font-weight: 800; font-size: 1.7rem; letter-spacing: -0.02em; }
@@ -55,7 +56,9 @@ h2, h3, h4 { margin: 0; }
 .nav-pill.right { background: color-mix(in srgb, var(--right) 22%, var(--panel)); border-color: var(--right); }
 .nav-pill.wrong { background: color-mix(in srgb, var(--wrong) 20%, var(--panel)); border-color: var(--wrong); }
 .nav-pill:disabled { opacity: 0.45; cursor: not-allowed; }
+.nav-pill.locked { opacity: 0.35; border-style: dashed; }
 .results-pill { margin-left: auto; }
+.results-pill .short { display: none; }
 
 /* cards */
 .card, .panel {
@@ -129,6 +132,8 @@ input[type="text"]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 .answer.right .answer-banner { color: var(--right); }
 .answer.wrong .answer-banner { color: var(--wrong); }
 .answer-body { display: flex; gap: 16px; align-items: flex-start; }
+.close-enough-btn { margin: -2px 0 14px; font-size: 0.9rem; padding: 8px 14px; background: transparent; border-style: dashed; }
+.close-enough-btn:hover { border-color: var(--accent-2); color: var(--accent-2); }
 .answer-cover { width: 130px; border-radius: 10px; flex-shrink: 0; }
 .answer-title { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; }
 .next-btn { margin-top: 16px; width: 100%; }
@@ -172,6 +177,22 @@ dialog ul { padding-left: 18px; }
 dialog li { margin-bottom: 6px; }
 
 @media (max-width: 560px) {
+  /* all 10 titles + results on one row */
+  .title-nav { display: grid; grid-template-columns: repeat(11, 1fr); gap: 4px; }
+  .nav-pill { min-width: 0; height: 34px; padding: 0; font-size: 0.85rem; border-radius: 8px; }
+  .results-pill { margin-left: 0; }
+  .results-pill .long { display: none; }
+  .results-pill .short { display: inline; }
+  /* two hint buttons per row so the guess box stays close */
+  .hint-buttons { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .hint-btn { padding: 9px 10px; font-size: 0.88rem; gap: 4px; }
+  .info-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .info-item { padding: 7px 10px; }
+  .card-head { margin-bottom: 12px; }
+  .cover { max-height: 300px; }
+  .suggest { width: calc(100% - 32px); }
+  .text-btn { padding: 6px 10px; font-size: 0.82rem; }
+  .topbar-right { gap: 8px; }
   .brand { flex-direction: column; gap: 0; }
   .topbar { align-items: flex-start; }
   .card, .panel { padding: 16px; }

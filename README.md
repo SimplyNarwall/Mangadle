@@ -64,7 +64,7 @@ export MANGADLE_TOKEN=<your ADMIN_TOKEN>
 python3 scripts/sync_suggestions.py --data data
 ```
 
-Run this before `build_day.py`. Suggested titles fill the next day's slots first; random picks cover whatever tiers are missing.
+Run this before `build_day.py`. Suggested titles fill a day's slots first; random picks cover whatever tiers are missing. Each title is queued once (no repeats), the date it was sent is kept as `suggested_at`, and a suggestion only plays on days at least a week after it was sent (`MIN_SUGGESTION_AGE_DAYS` in `build_day.py`), so new suggestions don't all land at once.
 
 ## Re-processing the snapshot
 
@@ -82,6 +82,7 @@ Filtering rules (in `scripts/anilist_snapshot.py`):
 - No spin-offs or side stories: anything AniList links to a parent (manga, light novel, or anime), plus titles named "X: Something" when X is a more popular series (catches spin-offs AniList only links through their novel).
 - No sequels: an entry is skipped if an earlier entry of its series is in the pool. If the only earlier entry is too obscure to be in the pool, or came out later (a prequel written afterwards), the entry stays and its answers also accept that entry's names.
 - Alternative versions (e.g. different manga adaptations of the same game): only the most popular is picked, and it accepts every version's names.
+- No prequels written after the original (Fairy Tail Zero, Psycho-Pass: Inspector Shinya Kogami): an entry is skipped if it leads into an earlier, more popular entry that's in the pool.
 - Answers also accept the main title before a colon ("Kino's Journey" for "Kino's Journey: The Beautiful World") and the source light novel's names.
 
 ## Launch date and puzzle numbers
@@ -203,6 +204,12 @@ In one terminal: `cd worker && npx wrangler dev`. Then open `http://localhost:80
 
 - [ ] `git status` shows only the changes you meant to make. Testing itself should change nothing: fake and test days live in `.dev/`, and caches and big data files are in `.gitignore`.
 - [ ] `python3 scripts/dev.py check <date> --blind` is clean for every new day you're pushing.
+
+## Gameplay notes
+
+- Titles unlock in order: the next one opens once the current one is answered or given up.
+- After a wrong guess, "My guess was close enough" gives 250 points (honor system, like Catfishing). It shows as 🤏 in the share text and counts as correct in the stats.
+- Redaction treats romanization variants of a character's name as the same name ("Yuuri", "Yuri", "Yūri"; "Hae-In", "Haein").
 
 ## Daily routine
 

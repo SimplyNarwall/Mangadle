@@ -42,8 +42,12 @@ def main():
     have = {q["anilist_id"] for q in queue}
     added = 0
     for s in new:
-        if s["anilist_id"] not in have:
-            queue.append({"anilist_id": s["anilist_id"], "by": s.get("note") or "player"})
+        if s["anilist_id"] not in have:   # no repeats: one queue entry per title
+            queue.append({
+                "anilist_id": s["anilist_id"],
+                "by": s.get("note") or "player",
+                "suggested_at": (s.get("created_at") or "")[:10] or None,  # plays no sooner than a week after this
+            })
             have.add(s["anilist_id"])
             added += 1
     os.makedirs(args.data, exist_ok=True)

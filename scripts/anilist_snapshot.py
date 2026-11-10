@@ -257,6 +257,28 @@ def is_sequel(media, by_id=None):
     return False
 
 
+def is_later_prequel(media, by_id):
+    """A prequel written after the series it leads into: it has a SEQUEL in the pool that
+    came out earlier (e.g. Psycho-Pass: Inspector Shinya Kogami, 2014, leads into
+    Inspector Akane Tsunemori, 2012). The original must also be more popular, so two
+    hit series AniList happens to link (e.g. a shared universe) both stay."""
+    year = (media.get("startDate") or {}).get("year")
+    pop = media.get("popularity") or 0
+    for n in edges(media, "SEQUEL"):
+        if n.get("format") == "NOVEL":
+            continue
+        full = by_id.get(n["id"])
+        if full is None:
+            continue
+        s_year = (full.get("startDate") or {}).get("year")
+        if year is None or s_year is None:
+            continue
+        # the original came out first and is the better-known one
+        if s_year <= year and (full.get("popularity") or 0) > pop:
+            return True
+    return False
+
+
 def _norm_title(t):
     return re.sub(r"\s+", " ", re.sub(r"[^\w]+", " ", (t or "").lower())).strip()
 
@@ -413,6 +435,9 @@ def process(raw):
             continue
         if is_sequel(m, by_id):
             excluded["sequel (only first entries are picked)"] += 1
+            continue
+        if is_later_prequel(m, by_id):
+            excluded["prequel written after the original"] += 1
             continue
         if is_lesser_alternative(m, by_id):
             excluded["alternative version of a more popular entry"] += 1
