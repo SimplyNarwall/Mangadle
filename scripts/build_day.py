@@ -51,6 +51,9 @@ import anilist_snapshot as snap  # noqa: E402
 
 # ----------------------------------------------------------------- settings --
 SITE_TZ = ZoneInfo("America/Chicago")   # must match docs/js/config.js timezone
+# Puzzle #1 is this date; every later day's number is counted from it. To move
+# the launch, change this and run: python3 scripts/dev.py renumber
+LAUNCH_DATE = dt.date(2026, 11, 11)
 TITLES_PER_DAY = 10
 NO_REPEAT_DAYS = 50
 REQUIRED_TIERS = ["easy", "easy", "medium", "medium", "hard", "hard"]  # minimum per tier
@@ -313,7 +316,10 @@ def build_title(anilist_id, source, tier, raw_by_id, fetch=anilist, mangadex=man
     reviews, review_notes = [], []
     for r in (m.get("reviews") or {}).get("nodes", [])[:REVIEW_COUNT]:
         body = clean_anilist_text(r.get("body"))
-        excerpt = body[:REVIEW_EXCERPT_CHARS].rsplit(" ", 1)[0] + ("..." if len(body) > REVIEW_EXCERPT_CHARS else "")
+        if len(body) > REVIEW_EXCERPT_CHARS:
+            excerpt = body[:REVIEW_EXCERPT_CHARS].rsplit(" ", 1)[0] + "..."  # cut at a word boundary
+        else:
+            excerpt = body
         s_text, n1 = redact(clean_anilist_text(r.get("summary")))
         e_text, n2 = redact(excerpt)
         reviews.append({"summary": s_text, "excerpt": e_text, "score": r.get("score"),
@@ -371,6 +377,26 @@ def build_title(anilist_id, source, tier, raw_by_id, fetch=anilist, mangadex=man
     }
 
 
+def puzzle_number(date):
+    return (date - LAUNCH_DATE).days + 1
+
+
+def write_index(days_dir):
+    """docs/days/index.json: every real day from launch onward, for the past days page."""
+    entries = []
+    for name in sorted(os.listdir(days_dir)):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", name):
+            continue
+        day = load_json(os.path.join(days_dir, name), {})
+        d = dt.date.fromisoformat(name[:-5])
+        if day.get("_fake") or d < LAUNCH_DATE:
+            continue
+        entries.append({"date": d.isoformat(), "number": day.get("number", puzzle_number(d)),
+                        "titles": len(day.get("titles", []))})
+    save_json(os.path.join(days_dir, "index.json"), entries)
+    return entries
+
+
 # --------------------------------------------------------------------- main --
 def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_aliases, days_dir=None,
               same_titles=False):
@@ -406,14 +432,12 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
         print(f"{date}: building {pid} ({source}, {tier})", file=sys.stderr)
         titles.append(build_title(pid, source, tier, raw_by_id, fetch, mangadex))
 
-    earlier = [h for h in history if h["date"] < date.isoformat()]
-    number = (max((h["number"] for h in earlier), default=0) + 1) if earlier else 1
-    if old_day:
-        number = old_day.get("number", number)
+    number = puzzle_number(date)
     day = {"date": date.isoformat(), "number": number, "reviewed": False,
            "start_points": 1000, "titles": titles}
 
     save_json(out_path, day)
+    write_index(days_dir)
     history.append({"date": date.isoformat(), "number": number, "anilist_ids": [t["anilist_id"] for t in titles]})
     history.sort(key=lambda h: h["date"])
     save_json(hist_path, history)

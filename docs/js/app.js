@@ -466,12 +466,17 @@ async function boot() {
   }
   setupSuggestions();
 
+  if (date > todayIn(CONFIG.timezone) && !params.has("preview")) {
+    $("#app").replaceChildren(h("div", { class: "card empty" }, h("h2", {}, "Not out yet"),
+      h("p", { class: "muted" }, `The puzzle for ${date} isn't out yet. `, h("a", { href: "./" }, "Play today's puzzle"), ".")));
+    return;
+  }
   try {
     const res = await fetch(`days/${date}.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(res.status);
     day = await res.json();
   } catch {
-    $("#app").replaceChildren(h("div", { class: "card empty" }, h("h2", {}, "No puzzle yet"), h("p", { class: "muted" }, `There's no puzzle for ${date}. Check back soon.`)));
+    $("#app").replaceChildren(h("div", { class: "card empty" }, h("h2", {}, "No puzzle yet"), h("p", { class: "muted" }, `There's no puzzle for ${date}. `, h("a", { href: "archive.html" }, "See past days"), ".")));
     return;
   }
   state = loadState();

@@ -7,11 +7,16 @@ mangadle dev tools. Run from anywhere; paths default to this repo.
   python3 scripts/dev.py check 2026-11-11       review a day: hints, leaks, review notes
   python3 scripts/dev.py rebuild 2026-11-11     re-pick and rebuild a day
   python3 scripts/dev.py rebuild 2026-11-11 --same-titles   keep the picks, refresh hints/redaction
-  python3 scripts/dev.py approve 2026-11-11     mark a day "reviewed": true
+  python3 scripts/dev.py check 2026-11-11 --blind         same, but spoiler-free (counts only)
+  python3 scripts/dev.py check 2026-11-11 --blind --fix   redact flagged words without showing them
+  python3 scripts/dev.py approve 2026-11-11     mark a day "reviewed": true (optional; the site ignores it)
+  python3 scripts/dev.py renumber               after changing LAUNCH_DATE in build_day.py
+  python3 scripts/dev.py index                  rebuild the past days list
 
 Browser helpers (add to the URL while serving):
   ?date=2026-11-11       play any date
   ?reset                 wipe your progress for that date and start over
+  ?preview               allow playing a date that hasn't happened yet
   ?api=http://localhost:8787   use a local worker (npx wrangler dev) instead of config.js
 """
 
@@ -168,6 +173,7 @@ def norm(text):
 def leak_scan(text, aliases):
     """Words or phrases from the answer's aliases that still appear in hint text."""
     found = set()
+    text = re.sub(r"\[(title|character|spoiler)\]", " ", text or "")  # our own placeholders aren't leaks
     nt = f" {norm(text)} "
     for a in aliases:
         na = norm(a)
@@ -179,9 +185,33 @@ def leak_scan(text, aliases):
     return sorted(found)
 
 
+def hint_texts(t):
+    """(label, getter, setter) for every redactable text field in a title's hints."""
+    hn = t["hints"]
+    out = []
+    if (hn.get("summary") or {}).get("text"):
+        out.append(("summary", hn["summary"], "text"))
+    for n, r in enumerate(hn.get("reviews") or [], 1):
+        for field in ("summary", "excerpt"):
+            if r.get(field):
+                out.append((f"review {n}", r, field))
+    return out
+
+
+def redact_words(text, words, label):
+    for w in sorted(words, key=len, reverse=True):
+        text = re.sub(r"(?<!\w)" + re.escape(w) + r"(?!\w)", label, text, flags=re.I)
+    return text
+
+
 def cmd_check(args):
     date = args.date or str(today())
     day, path = load_day(date)
+    if args.fix and not args.blind:
+        raise SystemExit("--fix only works with --blind (without --blind, read the leaks and edit by hand)")
+    if args.blind:
+        return check_blind(day, path, date, args.fix)
+
     problems = 0
     print(f"{path}\n#{day.get('number')}  {day['date']}  reviewed={day.get('reviewed')}  titles={len(day['titles'])}\n")
     if len(day["titles"]) != 10:
@@ -232,6 +262,47 @@ def cmd_check(args):
         print(f"When it looks good: python3 scripts/dev.py approve {date}")
 
 
+def check_blind(day, path, date, fix):
+    """Spoiler-free check: counts only, never prints titles, names, or text."""
+    print(f"#{day.get('number')}  {date}  ({len(day['titles'])} titles)  spoiler-free check\n")
+    total = fixed = 0
+    for i, t in enumerate(day["titles"], 1):
+        aliases = t["answer"]["accepted_aliases"]
+        notes = t.get("review_notes") or []
+        issues = []
+        for label, holder, field in hint_texts(t):
+            leaks = leak_scan(holder[field], aliases)
+            note_hits = [n for n in notes if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", holder[field])]
+            if leaks or note_hits:
+                issues.append(f"{label} ({len(leaks) + len(note_hits)})")
+                if fix:
+                    holder[field] = redact_words(holder[field], leaks, "[title]")
+                    # names skipped by auto-redaction: only replace capitalized uses, so "hope" the word survives
+                    for n in note_hits:
+                        holder[field] = re.sub(r"(?<!\w)" + re.escape(n) + r"(?!\w)", "[character]", holder[field])
+                    fixed += 1
+        if not t["answer"]["accepted_aliases"]:
+            issues.append("no accepted answers (unguessable)")
+        missing = [k for k in ("cover", "summary", "tags", "creators", "characters")
+                   if not (t["hints"].get(k) and (t["hints"][k].get("url") or t["hints"][k].get("text")
+                           or t["hints"][k].get("items") or t["hints"][k].get("main") or t["hints"][k].get("supporting")))]
+        extra = f"   (no {', '.join(missing)})" if missing else ""
+        status = "possible leaks in " + ", ".join(issues) if issues else "ok"
+        print(f"  title {i:>2} [{t.get('tier', '?')}]: {status}{extra}")
+        total += len(issues)
+    if fix and fixed:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(day, f, ensure_ascii=False, indent=1)
+        print(f"\nredacted {fixed} field(s) in place. Some fixes may be over-eager (a common word that's also")
+        print("in the title), which only makes that hint a little vaguer.")
+    elif total:
+        print(f"\n{total} field(s) may give an answer away. Options:")
+        print(f"  python3 scripts/dev.py check {date} --blind --fix     redact them automatically, unseen")
+        print(f"  python3 scripts/dev.py rebuild {date}                 re-pick the whole day")
+    else:
+        print("\nnothing flagged.")
+
+
 def cmd_approve(args):
     day, path = load_day(args.date)
     day["reviewed"] = True
@@ -240,13 +311,46 @@ def cmd_approve(args):
     print(f"{args.date} marked reviewed")
 
 
+def cmd_renumber(args):
+    import build_day as bd
+    hist_path = os.path.join(args.data, "history.json")
+    history = bd.load_json(hist_path, [])
+    for h in history:
+        h["number"] = bd.puzzle_number(dt.date.fromisoformat(h["date"]))
+    if history:
+        bd.save_json(hist_path, history)
+    changed = 0
+    for name in sorted(os.listdir(DAYS)):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", name):
+            continue
+        p = os.path.join(DAYS, name)
+        day = bd.load_json(p, {})
+        if day.get("_fake"):
+            continue
+        n = bd.puzzle_number(dt.date.fromisoformat(name[:-5]))
+        if day.get("number") != n:
+            day["number"] = n
+            bd.save_json(p, day)
+            changed += 1
+    entries = bd.write_index(DAYS)
+    print(f"launch date {bd.LAUNCH_DATE}: renumbered {changed} day file(s); {len(entries)} day(s) listed on the past days page")
+    early = [e for e in sorted(os.listdir(DAYS)) if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", e) and e[:10] < str(bd.LAUNCH_DATE) and e != f"{FAKE_DATE}.json"]
+    if early:
+        print(f"{len(early)} day file(s) are before launch: hidden from past days, but still playable by URL. Delete them if unwanted.")
+
+
+def cmd_index(args):
+    import build_day as bd
+    print(f"{len(bd.write_index(DAYS))} day(s) in docs/days/index.json")
+
+
 # ------------------------------------------------------------------- rebuild --
 def cmd_rebuild(args):
     import build_day
     date = dt.date.fromisoformat(args.date)
     build_day.build_day(date, args.data, force=True, days_dir=DAYS, same_titles=args.same_titles)
     print(f"\ncheck it: python3 scripts/dev.py check {date}")
-    print(f"play it:  http://localhost:8000/?date={date}&reset")
+    print(f"play it:  http://localhost:8000/?date={date}&reset" + ("&preview" if date > today() else ""))
 
 
 def main():
@@ -265,11 +369,20 @@ def main():
     s = sub.add_parser("check", help="review a day file")
     s.add_argument("date", nargs="?", help="YYYY-MM-DD (default: today)")
     s.add_argument("--full", action="store_true", help="print every summary and review")
+    s.add_argument("--blind", action="store_true", help="spoiler-free: counts only, no titles or text")
+    s.add_argument("--fix", action="store_true", help="with --blind: redact flagged words in place")
     s.set_defaults(func=cmd_check)
 
     s = sub.add_parser("approve", help='set "reviewed": true on a day')
     s.add_argument("date")
     s.set_defaults(func=cmd_approve)
+
+    s = sub.add_parser("renumber", help="recount puzzle numbers after changing LAUNCH_DATE")
+    s.add_argument("--data", default=DATA)
+    s.set_defaults(func=cmd_renumber)
+
+    s = sub.add_parser("index", help="regenerate docs/days/index.json")
+    s.set_defaults(func=cmd_index)
 
     s = sub.add_parser("rebuild", help="rebuild one day (overwrites it)")
     s.add_argument("date")
