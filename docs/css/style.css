@@ -132,8 +132,12 @@ input[type="text"]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 .answer.right .answer-banner { color: var(--right); }
 .answer.wrong .answer-banner { color: var(--wrong); }
 .answer-body { display: flex; gap: 16px; align-items: flex-start; }
-.close-enough-btn { margin: -2px 0 14px; font-size: 0.9rem; padding: 8px 14px; background: transparent; border-style: dashed; }
-.close-enough-btn:hover { border-color: var(--accent-2); color: var(--accent-2); }
+.close-enough-btn {
+  margin: -2px 0 14px; font-size: 0.9rem; padding: 8px 14px;
+  background: color-mix(in srgb, var(--accent-2) 10%, transparent);
+  border: 1.5px solid var(--accent-2); color: var(--accent-2);
+}
+.close-enough-btn:hover { background: color-mix(in srgb, var(--accent-2) 22%, transparent); }
 .answer-cover { width: 130px; border-radius: 10px; flex-shrink: 0; }
 .answer-title { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; }
 .next-btn { margin-top: 16px; width: 100%; }
