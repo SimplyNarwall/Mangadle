@@ -208,10 +208,13 @@ In one terminal: `cd worker && npx wrangler dev`. Then open `http://localhost:80
 
 ## Gameplay notes
 
-- Each day has at least 3 easy, 3 medium, and 2 hard titles, plus 2 wildcards (easy, medium, hard, or fully random with equal odds). Change it with `REQUIRED_TIERS` in `scripts/build_day.py`.
+- 3 guesses per title (`MAX_GUESSES` in `docs/js/app.js`). A wrong guess only uses a guess; points come from hints alone. Repeating a guess doesn't count. A correct answer after more than one guess shows as e.g. `(2/3)` in the share text.
+- Matching ignores "the", "a", "an", "of", and "in" (`IGNORED_WORDS` in `docs/js/match.js`).
+- The answer is shown in English whenever AniList or MangaDex has an English title.
+- Each day has 7 "possible" titles (AniList popularity 10,000+), 2 "not possible" (1,000 to 10,000), and 1 fully random (no floor). The mix is `REQUIRED_TIERS` in `scripts/build_day.py`; the cutoffs are `TIERS` in `scripts/anilist_snapshot.py`, and the builder applies them from popularity directly, so changing them needs no snapshot re-run.
 - If a day gets rebuilt with new titles, players' saved progress for it resets automatically.
 - Titles unlock in order: the next one opens once the current one is answered or given up.
-- After a wrong guess, "My guess was close enough" gives 250 points (honor system, like Catfishing). It shows as 🤏 in the share text and counts as correct in the stats.
+- After running out of guesses (or giving up after a wrong guess), "My guess was close enough" gives 250 points (honor system, like Catfishing). It shows as 🤏 in the share text and counts as correct in the stats.
 - Redaction treats romanization variants of a character's name as the same name ("Yuuri", "Yuri", "Yūri"; "Hae-In", "Haein").
 
 ## Daily routine

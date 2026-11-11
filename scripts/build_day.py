@@ -60,10 +60,11 @@ LAUNCH_DATE = dt.date(2026, 11, 11)
 TITLES_PER_DAY = 10
 NO_REPEAT_DAYS = 50
 MIN_SUGGESTION_AGE_DAYS = 7         # a suggestion can't be played until a week after it was sent
-# Each day's mix: at least 3 easy, 3 medium, 2 hard. The other TITLES_PER_DAY - len(REQUIRED_TIERS) = 2
-# slots are wildcards: each picks easy, medium, hard, or fully random (no popularity floor) with equal odds.
-REQUIRED_TIERS = ["easy", "easy", "easy", "medium", "medium", "medium", "hard", "hard"]
-WILDCARD_CHOICES = ["easy", "medium", "hard", "random"]
+# Each day's mix: 7 "possible" (10k+ popularity), 2 "not possible" (1k to 10k), 1 fully random
+# (no popularity floor). Tier cutoffs live in anilist_snapshot.TIERS. Any slots beyond this list
+# (TITLES_PER_DAY - len(REQUIRED_TIERS)) would be wildcards drawn from WILDCARD_CHOICES.
+REQUIRED_TIERS = ["possible"] * 7 + ["not_possible"] * 2 + ["random"]
+WILDCARD_CHOICES = ["possible", "not_possible", "random"]
 TAG_RANK_CUTOFF = 70
 MIN_TAGS = 5
 MAX_CHARACTERS = 15
@@ -185,6 +186,7 @@ def choose_titles(date, snapshot, history, suggestions, fetch=anilist, avoid=(),
     rng = random.Random(f"mangadle-{date.isoformat()}" + (f"-r{reroll}" if reroll else ""))
     exclude = recent_ids(history, date) | set(avoid)
     by_id = {r["anilist_id"]: r for r in snapshot}
+    tier_of = {r["anilist_id"]: snap.tier_for(r.get("popularity") or 0) for r in snapshot}
     picks, remaining = [], []
 
     # 1. Suggestions first (oldest first). Ones that can't play yet stay queued:
@@ -199,15 +201,17 @@ def choose_titles(date, snapshot, history, suggestions, fetch=anilist, avoid=(),
         sent = s.get("suggested_at")
         old_enough = not sent or (date - dt.date.fromisoformat(str(sent)[:10])).days >= MIN_SUGGESTION_AGE_DAYS
         if len(picks) < TITLES_PER_DAY and old_enough and sid not in exclude:
-            tier = by_id[sid]["tier"] if sid in by_id else "random"
+            tier = tier_of[sid] if sid in by_id else "random"
             picks.append((sid, "suggestion", tier))
         else:
             remaining.append(s)
 
     # 2. Fallback: cover any required tier the suggestions missed, then wildcards.
-    # Titles nobody could guess (no accepted answers) never get picked.
-    pools = {t: [r["anilist_id"] for r in snapshot if r["tier"] == t and r["accepted_aliases"]]
-             for t in set(REQUIRED_TIERS)}
+    # Tiers come from popularity using the current anilist_snapshot.TIERS, so tier changes
+    # apply without re-running the snapshot. Titles nobody could guess (no accepted answers)
+    # never get picked.
+    pools = {t: [r["anilist_id"] for r in snapshot if tier_of[r["anilist_id"]] == t and r["accepted_aliases"]]
+             for t in set(REQUIRED_TIERS) | set(WILDCARD_CHOICES)}
     last_played = {}
     for entry in history:
         for i in entry["anilist_ids"]:
@@ -347,24 +351,28 @@ def build_redactor(title_names, char_names):
 
 # ------------------------------------------------------------------ details --
 def mangadex_aliases(record):
-    """Find the MangaDex entry whose AniList link matches; return (id, aliases)."""
+    """Find the MangaDex entry whose AniList link matches; return (id, aliases, english_title)."""
     query = record["title"]["romaji"] or record["title"]["english"]
     if not query:
-        return None, []
+        return None, [], None
     res = mangadex_get("/manga", {"title": query, "limit": 10, "contentRating[]": ["safe", "suggestive", "erotica"]})
     for m in (res or {}).get("data", []):
         links = m["attributes"].get("links") or {}
         if str(links.get("al")) == str(record["anilist_id"]):
-            names = []
+            names, english = [], None
+            for lang, name in (m["attributes"].get("title") or {}).items():
+                if lang in MANGADEX_ALIAS_LANGS and snap.is_latin_script(name):
+                    names.append(name.strip())
+                    if lang == "en":
+                        english = english or name.strip()
             for alt in m["attributes"].get("altTitles") or []:
                 for lang, name in alt.items():
                     if lang in MANGADEX_ALIAS_LANGS and snap.is_latin_script(name):
                         names.append(name.strip())
-            for lang, name in (m["attributes"].get("title") or {}).items():
-                if lang in MANGADEX_ALIAS_LANGS and snap.is_latin_script(name):
-                    names.append(name.strip())
-            return m["id"], names
-    return None, []
+                        if lang == "en":
+                            english = english or name.strip()
+            return m["id"], names, english
+    return None, [], None
 
 
 def pick_tags(tags):
@@ -380,7 +388,9 @@ def build_title(anilist_id, source, tier, raw_by_id, fetch=anilist, mangadex=man
     lookup[m["id"]] = m
     base = snap.build_record(m, lookup)
 
-    mdx_id, mdx_names = mangadex(base)
+    mdx = mangadex(base)
+    mdx_id, mdx_names = mdx[0], mdx[1]
+    mdx_english = mdx[2] if len(mdx) > 2 else None
     aliases = list(dict.fromkeys(base["accepted_aliases"] + mdx_names))
 
     main = [e for e in m["mainChars"]["edges"]][:MAX_CHARACTERS]
@@ -441,7 +451,8 @@ def build_title(anilist_id, source, tier, raw_by_id, fetch=anilist, mangadex=man
             "reviews": [{"cost": 50, **r} for r in reviews],
         },
         "answer": {
-            "title": base["title"]["english"] or base["title"]["romaji"],
+            # Shown when the title is revealed: English whenever any source has one.
+            "title": base["title"]["english"] or mdx_english or base["title"]["romaji"],
             "romaji": base["title"]["romaji"],
             "native": base["title"]["native"],
             "url": base["url"],

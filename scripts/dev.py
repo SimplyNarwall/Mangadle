@@ -139,15 +139,15 @@ def cmd_serve(args):
 
 # ---------------------------------------------------------------------- fake --
 FAKE_TITLES = [
-    ("Moon Rabbit Swordsman", "Tsuki Usagi no Kenshi", "manga", "easy", ["Action", "Fantasy"], "Shounen"),
-    ("The Tower Climber's Ledger", "Tap Deungban Jangbu", "manhwa", "easy", ["Action", "Adventure"], None),
-    ("Bakery at the End of the World", "Sekai no Hate no Pan-ya", "manga", "medium", ["Slice of Life", "Drama"], "Seinen"),
-    ("Return of the 9th Mercenary", "Gubeonjjae Yongbyeong-ui Gwihwan", "manhwa", "medium", ["Action", "Fantasy"], None),
-    ("Paper Crane Detective", "Orizuru Tantei", "manga", "hard", ["Mystery"], "Josei"),
-    ("Jade Pavilion Cultivator", "Yu Ge Xiu Shi", "manhua", "hard", ["Action", "Fantasy"], None),
-    ("Last Train to Nowhere", "Shuuden no Saki", "manga", "medium", ["Psychological", "Drama"], "Seinen"),
+    ("Moon Rabbit Swordsman", "Tsuki Usagi no Kenshi", "manga", "possible", ["Action", "Fantasy"], "Shounen"),
+    ("The Tower Climber's Ledger", "Tap Deungban Jangbu", "manhwa", "possible", ["Action", "Adventure"], None),
+    ("Bakery at the End of the World", "Sekai no Hate no Pan-ya", "manga", "possible", ["Slice of Life", "Drama"], "Seinen"),
+    ("Return of the 9th Mercenary", "Gubeonjjae Yongbyeong-ui Gwihwan", "manhwa", "possible", ["Action", "Fantasy"], None),
+    ("Paper Crane Detective", "Orizuru Tantei", "manga", "not_possible", ["Mystery"], "Josei"),
+    ("Jade Pavilion Cultivator", "Yu Ge Xiu Shi", "manhua", "not_possible", ["Action", "Fantasy"], None),
+    ("Last Train to Nowhere", "Shuuden no Saki", "manga", "possible", ["Psychological", "Drama"], "Seinen"),
     ("My Rival Is a Vending Machine", "Raibaru wa Jihanki", "manga", "random", ["Comedy", "Romance"], None),
-    ("Kaiju Club No. 3", "Kaijuu-bu San-gou", "manga", "easy", ["Comedy", "Sci-Fi"], "Shounen"),
+    ("Kaiju Club No. 3", "Kaijuu-bu San-gou", "manga", "possible", ["Comedy", "Sci-Fi"], "Shounen"),
     ("One Summer Afternoon", "Aru Natsu no Gogo", "manga", "random", ["Drama"], None),
 ]
 
@@ -187,7 +187,7 @@ def cmd_fake(args):
                 "creators": {"cost": 50, "items": [{"name": f"Author {k + 1}", "native": None, "role": "Story & Art"}]},
                 "characters": None if k == 4 else {"cost": 75, "main": [{"name": f"Hero {k + 1}", "image": None}, {"name": f"Rival {k + 1}", "image": None}],
                                                    "supporting": [{"name": f"Friend {k + 1}", "image": None}]},
-                "reviews": [] if tier in ("hard", "random") else [
+                "reviews": [] if tier in ("not_possible", "random") else [
                     {"cost": 50, "summary": "A slow start that pays off", "excerpt": "I almost dropped [title] after the first arc, but [character] grows on you...", "score": 85, "upvotes": 40, "url": None},
                     {"cost": 50, "summary": "Overrated", "excerpt": "The art is great but the pacing in the middle is rough.", "score": 60, "upvotes": 12, "url": None},
                 ],

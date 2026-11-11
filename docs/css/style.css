@@ -123,6 +123,13 @@ input[type="text"]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: #1a0d14; }
 .btn.small-btn { padding: 6px 12px; font-size: 0.9rem; margin-top: 10px; }
+.past-guesses { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.past-guess {
+  padding: 4px 10px; border-radius: 999px; font-size: 0.88rem;
+  border: 1px solid color-mix(in srgb, var(--wrong) 60%, transparent);
+  color: color-mix(in srgb, var(--wrong) 85%, var(--text));
+  background: color-mix(in srgb, var(--wrong) 8%, transparent);
+}
 .link-btn { background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font: inherit; }
 
 .answer { border-radius: 12px; padding: 16px; border: 1px solid; }

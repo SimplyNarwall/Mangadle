@@ -38,11 +38,11 @@ PER_PAGE = 50
 REQUEST_GAP_SECONDS = 2.1          # starts at ~28/min; raised to AniList's real limit after the first reply
 PAGES_PER_WINDOW = 40              # restart the query after this many pages (2,000 titles)
 
-# Difficulty tiers by AniList popularity (members with the title on their list).
+# Tiers by AniList popularity (members with the title on their list). build_day.py
+# re-derives tiers from popularity with these, so changing them needs no snapshot re-run.
 TIERS = [
-    ("easy", 25_000, None),
-    ("medium", 10_000, 25_000),
-    ("hard", 1_000, 10_000),
+    ("possible", 10_000, None),       # a player has a real shot at knowing it
+    ("not_possible", 1_000, 10_000),  # deep cuts
 ]
 
 ORIGIN_NAMES = {"JP": "manga", "KR": "manhwa", "CN": "manhua", "TW": "manhua"}
@@ -473,12 +473,13 @@ def summarize(records, excluded):
     for k, v in excluded.most_common():
         lines.append(f"  {k}: {v}")
     lines.append("")
-    lines.append("top 10 easy:")
-    for r in [r for r in records if r["tier"] == "easy"][:10]:
+    top, bottom = TIERS[0][0], TIERS[-1][0]
+    lines.append(f"top 10 {top}:")
+    for r in [r for r in records if r["tier"] == top][:10]:
         lines.append(f"  {r['popularity']:>8,}  {r['title']['english'] or r['title']['romaji']}")
     lines.append("")
-    lines.append("hard tier sample (popularity just over 1,000):")
-    for r in [r for r in records if r["tier"] == "hard"][-10:]:
+    lines.append(f"{bottom} tier sample (popularity just over {MIN_POPULARITY:,}):")
+    for r in [r for r in records if r["tier"] == bottom][-10:]:
         lines.append(f"  {r['popularity']:>8,}  {r['title']['english'] or r['title']['romaji']}  ({r['origin']}, {r['format']})")
     return "\n".join(lines)
 

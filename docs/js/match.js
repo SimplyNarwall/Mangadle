@@ -1,17 +1,23 @@
 // Fuzzy title matching, per the spec:
-//   - normalize: lowercase, strip accents, symbols -> spaces, collapse spaces
+//   - normalize: lowercase, strip accents, symbols -> spaces, drop "the/a/an/of/in", collapse spaces
 //   - edit distance counts insert / delete / substitute / adjacent swap
 //   - an alias allows floor(length / 4) edits, so aliases under 4 chars need an exact match
 //   - a close-enough guess is simply accepted (no "did you mean" prompt)
 
+// Small words that don't count when matching: "Promised Neverland" = "The Promised Neverland".
+const IGNORED_WORDS = new Set(["the", "a", "an", "of", "in"]);
+
 export function normalize(text) {
-  return String(text || "")
+  const words = String(text || "")
     .normalize("NFKD")
     .replace(/[̀-ͯ]/g, "")        // accents and macrons: ō -> o
     .toLowerCase()
     .replace(/[^\p{L}\p{N}]+/gu, " ")       // every symbol becomes a space
-    .replace(/\s+/g, " ")
-    .trim();
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  const kept = words.filter((w) => !IGNORED_WORDS.has(w));
+  return (kept.length ? kept : words).join(" "); // a title made only of small words keeps them
 }
 
 // Optimal string alignment distance (Damerau-Levenshtein with adjacent swaps).

@@ -2,676 +2,320 @@
  "date": "2026-11-11",
  "number": 1,
  "reviewed": false,
+ "rebuilds": 1,
  "start_points": 1000,
  "titles": [
   {
-   "anilist_id": 126755,
+   "anilist_id": 86797,
    "source": "fallback",
-   "tier": "hard",
+   "tier": "possible",
    "revealed": {
     "origin": "manga",
     "format": "series",
-    "popularity": 2468,
-    "average_score": 72,
+    "popularity": 13025,
+    "average_score": 62,
     "genres": [
-     "Action",
-     "Adventure",
-     "Mahou Shoujo",
-     "Mystery",
-     "Psychological"
-    ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "2021 to 2024"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx126755-diCxQ8GWeMMg.png"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "The elementary schooler unlike any other, [character], is searching for \"useful pawns\" in order to achieve his own ambitions, comes to learn of [character], a magician with the title \"[character].\" [character] had left the Kingdom of Magic through the Gate, chasing after her father, a great mage called both \"a God\" and \"a Demon.\" An unpredictable and unchained magical tale!\n\nNote: The serialized chapters 16 and 17 were merged into one chapter in volume 5."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Magic",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Time Manipulation",
-       "rank": 79,
-       "spoiler": true
-      },
-      {
-       "name": "Witch",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Philosophy",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Anti-Hero",
-       "rank": 79,
-       "spoiler": true
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Nao Emoto",
-       "native": "絵本奈央",
-       "role": "Story & Art"
-      },
-      {
-       "name": "NISIOISIN",
-       "native": "西尾維新",
-       "role": "Original Story"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Risuka Mizukura",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b149921-uL8Zk4VJFY3h.png"
-      },
-      {
-       "name": "Kizutaka Kugi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b168966-lxOBCjnY0Wks.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Haki Mizukura",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b247502-RUmGhkuLyCpb.jpg"
-      },
-      {
-       "name": "Tsunagi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b252688-OEinWg7Q5i7q.jpg"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Shin Honkaku Mahou Shoujo Risuka",
-    "romaji": "Shin Honkaku Mahou Shoujo Risuka",
-    "native": "新本格魔法少女りすか",
-    "url": "https://anilist.co/manga/126755",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx126755-diCxQ8GWeMMg.png",
-    "accepted_aliases": [
-     "Shin Honkaku Mahou Shoujo Risuka",
-     "New Authentic Magical Girl Risuka",
-     "Shin Honkaku Magical Girl Risuka",
-     "Risuka, la nueva y auténtica chica mágica",
-     "Mahou Shoujo Risuka",
-     "Risuka Series"
-    ],
-    "mangadex_id": "90728818-cf2d-4f31-be1b-0dde6a46ccf1"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 30664,
-   "source": "fallback",
-   "tier": "easy",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 47930,
-    "average_score": 84,
-    "genres": [
-     "Action",
+     "Drama",
      "Horror",
      "Psychological",
-     "Sci-Fi"
-    ],
-    "demographic": [
-     "Seinen"
-    ],
-    "release": "1982 to 1990"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30664-JJq9tosQvlpW.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "Welcome to Neo-Tokyo, built on the ashes of a Tokyo annihilated by a blast of unknown origin that triggered World War III. The lives of two streetwise teenage friends, [character] and [character], change forever when paranormal abilities begin to waken in [character], making him a target for a shadowy agency that will stop at nothing to prevent another catastrophe like the one that leveled Tokyo. At the core of the agency's motivation is a raw, all-consuming fear of an unthinkable, monstrous power known only as [title]."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Dystopian",
-       "rank": 98,
-       "spoiler": false
-      },
-      {
-       "name": "Cyberpunk",
-       "rank": 96,
-       "spoiler": false
-      },
-      {
-       "name": "Military",
-       "rank": 93,
-       "spoiler": false
-      },
-      {
-       "name": "Post-Apocalyptic",
-       "rank": 92,
-       "spoiler": false
-      },
-      {
-       "name": "Tragedy",
-       "rank": 88,
-       "spoiler": true
-      },
-      {
-       "name": "Super Power",
-       "rank": 86,
-       "spoiler": false
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 84,
-       "spoiler": false
-      },
-      {
-       "name": "Body Horror",
-       "rank": 80,
-       "spoiler": true
-      },
-      {
-       "name": "Survival",
-       "rank": 79,
-       "spoiler": true
-      },
-      {
-       "name": "Gore",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Delinquents",
-       "rank": 78,
-       "spoiler": false
-      },
-      {
-       "name": "Philosophy",
-       "rank": 78,
-       "spoiler": false
-      },
-      {
-       "name": "Drugs",
-       "rank": 76,
-       "spoiler": false
-      },
-      {
-       "name": "War",
-       "rank": 72,
-       "spoiler": false
-      },
-      {
-       "name": "Anti-Hero",
-       "rank": 72,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Katsuhiro Ootomo",
-       "native": "大友克洋",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Shoutarou Kaneda",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2588-OfACKXYm2lkV.png"
-      },
-      {
-       "name": "Tetsuo Shima",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2589-HR4oPhkLGq6q.png"
-      },
-      {
-       "name": "Kei",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b9875-8eHWcOTvtTQB.png"
-      },
-      {
-       "name": "Akira",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b24735-OvEvnQqenWxa.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Shikishima Taisa",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b16288-fCbFrPrvtlvC.jpg"
-      },
-      {
-       "name": "Kai",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b28166-PWEGEtQwsrGG.jpg"
-      },
-      {
-       "name": "Kaori",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b16289-1PsWTr11jxQg.png"
-      },
-      {
-       "name": "Chiyoko",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b223559-7JPMwsRBUCQD.jpg"
-      },
-      {
-       "name": "Yamagata",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b20463-wa6RVPshbPZC.png"
-      },
-      {
-       "name": "Takashi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b88237-sArZTw9J3eol.png"
-      },
-      {
-       "name": "Miyako",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b142840-zAC5gjvWPu6i.png"
-      },
-      {
-       "name": "Kiyoko",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b88236-3uo82FeXbi6r.jpg"
-      },
-      {
-       "name": "Masaru",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b88238-8rfoiDmv4w09.jpg"
-      },
-      {
-       "name": "Ryuusaku",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b142837-0Bb59MXUbxb5.png"
-      },
-      {
-       "name": "Resistance Member",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b18439-qsVwHTTHbq3k.png"
-      }
-     ]
-    },
-    "reviews": [
-     {
-      "cost": 50,
-      "summary": "An Incredible manga that everyone should read",
-      "excerpt": "From the first Volume 1 could tell this was a much better story than was presented in the Movie. Enhanced greatly not only by the amount of detail in the story and world, but also the incredible coloring done in the version I was reading by Steve Oliff. For the version I decided to read the Epic Comics version of the manga. While some might have issues with it being mirrored for a US audience, I...",
-      "score": 90,
-      "upvotes": 45,
-      "url": "https://anilist.co/review/5036"
-     },
-     {
-      "cost": 50,
-      "summary": "Through its fast pacing at first, the [title] manga is a thorough story that shows the amazing themes of tragedy.",
-      "excerpt": "Heya there! This is my review of the [title] manga, which I’ve read after I watched the movie to make comparisons and such. _This manga is much more gruesome and includes nudity, drug abuse, blood and death, so please read by your discretion._ Of course, it’s totally alright to not like this review at all, but regardless I do hope you enjoy it! //TW + CW: death mentions, blood, spoilers\n\nThe [title]...",
-      "score": 90,
-      "upvotes": 44,
-      "url": "https://anilist.co/review/8345"
-     },
-     {
-      "cost": 50,
-      "summary": "[title]'s beautiful chaos makes it one of Otomo's most breathtaking works",
-      "excerpt": "I'm not sure I could give a proper review of [title] without mentioning the impact it has had, but I did my best to not let that get in the way of my opinion. I had come into the manga already knowing the importance of [title] in the field of manga and science fiction, and I had already seen the movie once, so I knew I was in for something big. Despite knowing all that, the manga still came up with...",
-      "score": 94,
-      "upvotes": 34,
-      "url": "https://anilist.co/review/32838"
-     }
-    ]
-   },
-   "answer": {
-    "title": "Akira",
-    "romaji": "AKIRA",
-    "native": "AKIRA",
-    "url": "https://anilist.co/manga/30664",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30664-JJq9tosQvlpW.jpg",
-    "accepted_aliases": [
-     "Akira"
-    ],
-    "mangadex_id": "175cf215-2122-4656-9fac-37ac092438af"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 141958,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manhwa",
-    "format": "series",
-    "popularity": 22388,
-    "average_score": 75,
-    "genres": [
-     "Action",
-     "Adventure",
-     "Fantasy"
-    ],
-    "demographic": [],
-    "release": "2021, ongoing"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141958-y46ASozodVNW.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "[character] is an F-ranker overshadowed by his little brother, an S-ranker. All he does is get in his brother’s way, causing trouble wherever he goes. When a seemingly routine dungeon raid goes wrong and costs [character] his brother’s life, [character] decides to use the wish granted by clearing the dungeon to reset his timeline. The plan was to lead a quiet life from now on… but now it turns out he can help other people become S-rankers?! Maybe this is [character]'s chance at building his own entourage of powerful metahumans… but it may be easier said than done."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Found Family",
-       "rank": 94,
-       "spoiler": false
-      },
-      {
-       "name": "Urban Fantasy",
-       "rank": 85,
-       "spoiler": false
-      },
-      {
-       "name": "Dungeon",
-       "rank": 84,
-       "spoiler": false
-      },
-      {
-       "name": "Time Manipulation",
-       "rank": 82,
-       "spoiler": true
-      },
-      {
-       "name": "Full Color",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Age Regression",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Super Power",
-       "rank": 73,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "seri",
-       "native": "seri",
-       "role": "Story"
-      },
-      {
-       "name": "Biwan",
-       "native": "비완 ",
-       "role": "Art"
-      },
-      {
-       "name": "Geun-Seo",
-       "native": "근서",
-       "role": "Original Story"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Yu-Jin Han",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b272851-JdFI7qtzfbUP.jpg"
-      },
-      {
-       "name": "Yu-Hyeon Han",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b272852-cnxQyAlwFwO0.jpg"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Hyeon-Je Seong",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b294434-5WM2d27k5BEE.jpg"
-      },
-      {
-       "name": "Peace",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b272855-OgaYply10SP4.png"
-      },
-      {
-       "name": "Ye-Rim Park",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b272853-97VXOPdIslOY.jpg"
-      },
-      {
-       "name": "Myeong-U Yu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b272854-0UYS2PQmcfmd.jpg"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "My S-Class Hunters",
-    "romaji": "Naega Kiun S-Geupdeul",
-    "native": "내가 키운 S급들",
-    "url": "https://anilist.co/manga/141958",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141958-y46ASozodVNW.jpg",
-    "accepted_aliases": [
-     "My S-Class Hunters",
-     "Naega Kiun S-Geupdeul",
-     "The S-Classes That I Raised",
-     "The S-Grades I Raised",
-     "Los clase S que crié"
-    ],
-    "mangadex_id": null
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 103203,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 12695,
-    "average_score": 68,
-    "genres": [
-     "Action",
-     "Adventure",
-     "Fantasy"
-    ],
-    "demographic": [
-     "Seinen"
-    ],
-    "release": "2018, ongoing"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103203-Wl64V7gMY1NR.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "A tragedy wipes out Hiroto Amamiya’s whole class. A god suddenly appears and says he will give all of them special protection and skills before reincarnating them in a new world. But when the god makes a mistake, Hiroto goes into his new life without anything at all."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Magic",
-       "rank": 93,
-       "spoiler": false
-      },
-      {
-       "name": "Isekai",
-       "rank": 90,
-       "spoiler": false
-      },
-      {
-       "name": "Reincarnation",
-       "rank": 82,
-       "spoiler": true
-      },
-      {
-       "name": "Revenge",
-       "rank": 80,
-       "spoiler": true
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Skeleton",
-       "rank": 75,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Takehiro Kojima",
-       "native": "児嶋建洋",
-       "role": "Story & Art"
-      },
-      {
-       "name": "Densuke",
-       "native": "デンスケ",
-       "role": "Original Story"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Vandalieu",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b274306-gNHVbaA0UUsB.png"
-      },
-      {
-       "name": "Darcia",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b274307-1Xm7z9MK1TZ5.png"
-      }
-     ],
-     "supporting": null
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "The Death Mage",
-    "romaji": "Yondome wa Iyana Shi Zokusei Majutsushi",
-    "native": "四度目は嫌な死属性魔術師",
-    "url": "https://anilist.co/manga/103203",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103203-Wl64V7gMY1NR.jpg",
-    "accepted_aliases": [
-     "The Death Mage",
-     "Yondome wa Iyana Shi Zokusei Majutsushi",
-     "The Death Mage Who Doesn't Want a Fourth Time",
-     "Death Attribute Magician",
-     "The Death Mage that doesn't want a fourth time"
-    ],
-    "mangadex_id": null
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 143719,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 13706,
-    "average_score": 77,
-    "genres": [
-     "Comedy",
-     "Romance"
+     "Romance",
+     "Thriller"
     ],
     "demographic": [
      "Shounen"
     ],
-    "release": "2021, ongoing"
+    "release": "2015 to 2019"
    },
    "hints": {
     "cover": {
      "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143719-u5c2HrIY4ITW.jpg"
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86797-5TBNyG7IilZ5.jpg"
     },
     "summary": {
      "cost": 100,
-     "text": "Though [character] is the son of a renowned and talented actress, he is below average in anything he does. He is entrusted to live under the care of his mother's friend and later discovers that he will also be rooming with the three sisters from his school who possess both beauty and talent. Though [character] thought that an understanding would be impossible to reach between an ordinary person and those blessed with talent, the three sisters are surprisingly...?!"
+     "text": "“I want to kill you.” [character]’s crush on [character] had always been one sided, until one fateful day, his feelings turn into murderous impulse instead … You won’t be able to predict what each new page will bring!"
     },
     "tags": {
      "cost": 75,
      "items": [
+      {
+       "name": "Pandemic",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Super Power",
+       "rank": 88,
+       "spoiler": false
+      },
       {
        "name": "Male Protagonist",
        "rank": 83,
        "spoiler": false
       },
       {
-       "name": "Heterosexual",
+       "name": "Gore",
        "rank": 82,
        "spoiler": false
       },
       {
-       "name": "Female Harem",
+       "name": "Urban",
        "rank": 80,
        "spoiler": false
       },
       {
-       "name": "Primarily Teen Cast",
+       "name": "Heterosexual",
        "rank": 79,
        "spoiler": false
       },
       {
-       "name": "Coming of Age",
+       "name": "School",
+       "rank": 75,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Majuro Kaname",
+       "native": "要マジュロ",
+       "role": "Story"
+      },
+      {
+       "name": "Sousou Sakakibara",
+       "native": "榊原宗々",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Taku Kamishiro",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/124970-1m1mqGkDAGXb.jpg"
+      },
+      {
+       "name": "Mika Hanazono",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b219786-A7z3mT5B2Znb.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Neibu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b219788-XigRVRRlcKez.jpg"
+      },
+      {
+       "name": "Ryouko Etou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b219791-ZlFpJ6FVFPY3.jpg"
+      },
+      {
+       "name": "Yuuna Hayashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b219785-MYXlBO96rpSr.png"
+      },
+      {
+       "name": "Akito Nishibashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b218198-Saq5eBdC4eBf.png"
+      },
+      {
+       "name": "Keito Taruka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b219789-MX5O7Jrl3w8R.jpg"
+      },
+      {
+       "name": "Tatsuya Kawamura",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b219790-LC0MxkNXo6mX.jpg"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Can You Just Die, My Darling?",
+    "romaji": "Konya wa Tsuki ga Kirei desu ga, Toriaezu Shine",
+    "native": "今夜は月が綺麗ですが、とりあえず死ね",
+    "url": "https://anilist.co/manga/86797",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86797-5TBNyG7IilZ5.jpg",
+    "accepted_aliases": [
+     "Can You Just Die, My Darling?",
+     "Konya wa Tsuki ga Kirei desu ga, Toriaezu Shine",
+     "I love you so I kill you.",
+     "The moon is beautiful tonight, but first, die.",
+     "Die for me, my Darling",
+     "Ti amo, ma fatti ammazzare",
+     "Kon'ya wa Tsuki ga Kirei desu ga, Toriaezu Shine",
+     "The Moon Is Beautiful Tonight, But First, Die"
+    ],
+    "mangadex_id": "e643e249-5630-41bb-8881-9f5c03734fcb"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 114521,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 2690,
+    "average_score": 58,
+    "genres": [
+     "Drama",
+     "Fantasy",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2019 to 2021"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114521-yM5a0taf7X2b.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "From the moment she woke up in a foreign land with no memories of her past, Dia knew she was fated for misery. Taken in by a baron but beaten and abused for four long years, her only friend was the eldest son of House Knolls. Everything changed when the sadistic Emperor Caire, notorious for having a macabre hobby, barged into the mansion and gazed deeply into Dia’s eyes. Soon she is whisked away to his opulent castle, where gothic nightmare of blood and lust unfolds. Could the bloodthirsty emperor hold the key to unlocking Dia’s past?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Vampire",
+       "rank": 90,
+       "spoiler": true
+      },
+      {
+       "name": "Yandere",
        "rank": 79,
        "spoiler": false
       },
       {
-       "name": "Found Family",
+       "name": "Tragedy",
+       "rank": 79,
+       "spoiler": true
+      },
+      {
+       "name": "Royal Affairs",
        "rank": 79,
        "spoiler": false
       },
       {
-       "name": "Cohabitation",
+       "name": "Full Color",
+       "rank": 76,
+       "spoiler": false
+      },
+      {
+       "name": "Amnesia",
+       "rank": 75,
+       "spoiler": true
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 72,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Su-O Kim",
+       "native": "김수오",
+       "role": "Story"
+      },
+      {
+       "name": "Chiwa",
+       "native": "치와",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "A Tyrant's First Love",
+    "romaji": "Pokgunhangjeui Jeotsarang",
+    "native": "폭군황제의 첫사랑",
+    "url": "https://anilist.co/manga/114521",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114521-yM5a0taf7X2b.jpg",
+    "accepted_aliases": [
+     "A Tyrant's First Love",
+     "Pokgunhangjeui Jeotsarang",
+     "The Tyrant's First Love",
+     "Poggun Hwangje-ui Cheos-salang"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 123739,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 18720,
+    "average_score": 74,
+    "genres": [
+     "Drama",
+     "Fantasy",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2020, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx123739-qDrNrU0ZD6UX.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "A flawless love story of the flawed.\nStuttering lady [character] is forced into a marriage with Sir [character], but he leaves on a campaign after their wedding night. 3 years later, he triumphantly returns, ready to cherish her. As life with her husband finally begins, she only has one question — does she deserve this love and happiness?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Adult Cast",
        "rank": 79,
        "spoiler": false
       },
       {
-       "name": "Tomboy",
-       "rank": 77,
+       "name": "Marriage",
+       "rank": 79,
        "spoiler": false
       },
       {
-       "name": "Food",
+       "name": "Arranged Marriage",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Medieval",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Disability",
        "rank": 73,
        "spoiler": false
       }
@@ -681,9 +325,19 @@
      "cost": 50,
      "items": [
       {
-       "name": "Aya Hirakawa",
-       "native": "ひらかわあや",
-       "role": "Story & Art"
+       "name": "Namu",
+       "native": "나무 ",
+       "role": "Story"
+      },
+      {
+       "name": "P",
+       "native": null,
+       "role": "Art"
+      },
+      {
+       "name": "Su-Ji Kim",
+       "native": "김수지",
+       "role": "Original Story"
       }
      ]
     },
@@ -691,20 +345,12 @@
      "cost": 75,
      "main": [
       {
-       "name": "Niko Mikadono",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b335932-n4op2sDH9Rjv.png"
+       "name": "Riftan Calypse",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b192077-Ih0DrtM8hj6b.jpg"
       },
       {
-       "name": "Miwa Mikadono",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b335930-RsINV9fAIfD1.png"
-      },
-      {
-       "name": "Kazuki Mikadono",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b335931-2p23TyZMr5J2.png"
-      },
-      {
-       "name": "Yuu Ayase",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b335929-EKSocBFbcG62.jpg"
+       "name": "Maximilian Calypse",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b192079-yvpGZUmuuvCJ.jpg"
       }
      ],
      "supporting": null
@@ -712,262 +358,102 @@
     "reviews": [
      {
       "cost": 50,
-      "summary": "The best romcom of all time",
-      "excerpt": "(Sorry for typos and/or weird drafting, this is my first ever review and english is not my first language)\n\nWhile the title summary is actually misleading, since i cannot confidently say that this visual novel is the BEST of all time, i think its really really good.\n\nThe art is beautiful, with a few double page spreads which look great and a unique artstyle that reminds me of the old school...",
-      "score": 95,
-      "upvotes": 41,
-      "url": "https://anilist.co/review/22714"
+      "summary": "A Speech Impediment is Not a Character Trait.",
+      "excerpt": "CAUTION: REVIEW MAY CONTAIN SPOILERS. READ AT YOUR OWN RISK.\n\nSigh. After the prior wave of sick-lit that was made popular by books such as \"The Fault in Our Stars,\" it seems now the new trend is to write sloppy characters who either have some kind of mental disorder or disability, around which the whole story revolves, but doesn't even bother to address seriously. It's a little disturbing to see...",
+      "score": 10,
+      "upvotes": 67,
+      "url": "https://anilist.co/review/9192"
      }
     ]
    },
    "answer": {
-    "title": "Dealing with Mikadono Sisters Is a Breeze",
-    "romaji": "Mikadono Sanshimai wa Angai, Choroi.",
-    "native": "帝乃三姉妹は案外、チョロい。",
-    "url": "https://anilist.co/manga/143719",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143719-u5c2HrIY4ITW.jpg",
+    "title": "Under the Oak Tree",
+    "romaji": "Sangsurinamu Arae",
+    "native": "상수리나무 아래",
+    "url": "https://anilist.co/manga/123739",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx123739-qDrNrU0ZD6UX.jpg",
     "accepted_aliases": [
-     "Dealing with Mikadono Sisters Is a Breeze",
-     "Mikadono Sanshimai wa Angai, Choroi.",
-     "The Mikadono sisters are surprisingly easy to deal with.",
-     "Lidiar con las hermanas Mikadono es pan comido",
-     "Dealing with Mikadono Sisters is a Breeze"
+     "Under the Oak Tree",
+     "Sangsurinamu Arae",
+     "Debajo del roble",
+     "Sous le vieux chêne",
+     "Ooku no Ki no Shita"
     ],
-    "mangadex_id": "04c892b3-a202-46f5-ad11-0d433e712ab8"
+    "mangadex_id": "c9a891f6-9f4b-487d-8b62-7abb0e3f59c8"
    },
    "review_notes": []
   },
   {
-   "anilist_id": 38586,
+   "anilist_id": 110462,
    "source": "fallback",
-   "tier": "easy",
+   "tier": "possible",
    "revealed": {
     "origin": "manhwa",
     "format": "series",
-    "popularity": 40163,
-    "average_score": 80,
-    "genres": [
-     "Action",
-     "Comedy",
-     "Drama"
-    ],
-    "demographic": [],
-    "release": "2007 to 2010"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx38586-F697FlJkHF9z.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "The story of [title] follows [character], a timid high school student who becomes the disciple of Chun-[character], a martial artist who is an enemy to the secret martial arts society known as the Murim. However, [character] is nave and unaware of his master's shady past and the unseen underbelly of the society. How will Chun-[character] manage to teach [character] and help him survive in the world of the Murim?"
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Martial Arts",
-       "rank": 100,
-       "spoiler": false
-      },
-      {
-       "name": "Revenge",
-       "rank": 90,
-       "spoiler": true
-      },
-      {
-       "name": "Nudity",
-       "rank": 84,
-       "spoiler": true
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 75,
-       "spoiler": false
-      },
-      {
-       "name": "Gangs",
-       "rank": 74,
-       "spoiler": false
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Geuk-Jin Jeon",
-       "native": "전극진",
-       "role": "Story"
-      },
-      {
-       "name": "Jin-Hwan Park",
-       "native": "박진환",
-       "role": "Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Chun-U Han",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/21563.jpg"
-      },
-      {
-       "name": "Shi-Woon Yi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/21562.jpg"
-      },
-      {
-       "name": "Shi-Ho Lee",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n29296-IRQyT1vKHVn8.jpg"
-      },
-      {
-       "name": "Un-Wol",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38085.jpg"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Kang-Sung",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b38083-i2kTCAdqU1bl.jpg"
-      },
-      {
-       "name": "So-Chun Hyuk",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/29698.jpg"
-      },
-      {
-       "name": "So-Sul Woo",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b29697-KnLqfGiZM83J.jpg"
-      },
-      {
-       "name": "Sae-Hie",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b29427-kyiHLRLtDTMV.jpg"
-      },
-      {
-       "name": "Alex",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38082.jpg"
-      },
-      {
-       "name": "Won-Jae Hyun",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/34222.jpg"
-      },
-      {
-       "name": "Mrs Yi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/41114.jpg"
-      },
-      {
-       "name": "Chang-Ho",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/29431.jpg"
-      },
-      {
-       "name": "Ji-Shi Yoon",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/default.jpg"
-      },
-      {
-       "name": "Mun-Gi Man",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b38080-Yv08IwnIQb0H.jpg"
-      },
-      {
-       "name": "Joon-Ho Jang",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38084.jpg"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "THE BREAKER",
-    "romaji": "The Breaker",
-    "native": "브레이커",
-    "url": "https://anilist.co/manga/38586",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx38586-F697FlJkHF9z.jpg",
-    "accepted_aliases": [
-     "THE BREAKER",
-     "Breaker",
-     "The Breaker"
-    ],
-    "mangadex_id": "67c6df9e-280f-476c-b13c-cecf6b2eb3c7"
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 30042,
-   "source": "fallback",
-   "tier": "easy",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 54974,
-    "average_score": 84,
+    "popularity": 37820,
+    "average_score": 73,
     "genres": [
      "Action",
      "Adventure",
-     "Comedy",
-     "Fantasy",
-     "Sci-Fi",
-     "Supernatural"
+     "Fantasy"
     ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "1984 to 1995"
+    "demographic": [],
+    "release": "2019 to 2023"
    },
    "hints": {
     "cover": {
      "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30042-4SetGiEbGc9x.jpg"
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx110462-okQFIoSFvb4L.jpg"
     },
     "summary": {
      "cost": 100,
-     "text": "[title] follows the adventures of [character] from his childhood through adulthood as he trains in martial arts and explores the world in search of the seven mystical orbs known as the Dragon Balls, which can summon a wish-granting dragon when gathered. Along his journey, [character] makes several friends and battles a wide variety of villains, many of whom also seek the Dragon Balls for their own desires. Along the way becoming the strongest warrior in the universe.\n\nPart II of [title] is also known as \"[title]\" in North America.\n\nNote: Includes one extra chapter."
+     "text": "Mysterious tombs appeared all over the world one day, each containing a relic which grants its owner supernatural abilities. Joo-Heon Suh is a tomb explorer, excavator, and raider. Betrayed by his employer, he's about to die at the hands of a powerful new relic when he suddenly finds himself 15 years in the past, before any relics or tombs made their debut. Driven by feelings of revenge, how will Joo-Heon use his knowledge of the future to become the [title]? \n\nNote: Includes 14 extra chapters."
     },
     "tags": {
      "cost": 75,
      "items": [
       {
-       "name": "Martial Arts",
-       "rank": 96,
-       "spoiler": false
-      },
-      {
-       "name": "Travel",
-       "rank": 95,
-       "spoiler": false
-      },
-      {
-       "name": "Super Power",
-       "rank": 90,
-       "spoiler": false
-      },
-      {
        "name": "Male Protagonist",
-       "rank": 90,
+       "rank": 98,
        "spoiler": false
       },
       {
-       "name": "Cultivation",
+       "name": "Anti-Hero",
+       "rank": 87,
+       "spoiler": false
+      },
+      {
+       "name": "Full Color",
        "rank": 85,
        "spoiler": false
       },
       {
-       "name": "Henshin",
-       "rank": 80,
+       "name": "Time Manipulation",
+       "rank": 85,
        "spoiler": true
       },
       {
-       "name": "Aliens",
-       "rank": 77,
+       "name": "Mythology",
+       "rank": 85,
        "spoiler": false
       },
       {
-       "name": "Time Skip",
-       "rank": 77,
+       "name": "Revenge",
+       "rank": 81,
        "spoiler": true
       },
       {
-       "name": "Coming of Age",
+       "name": "Time Skip",
+       "rank": 75,
+       "spoiler": true
+      },
+      {
+       "name": "Age Regression",
+       "rank": 72,
+       "spoiler": false
+      },
+      {
+       "name": "Dungeon",
        "rank": 71,
        "spoiler": false
       }
@@ -977,9 +463,19 @@
      "cost": 50,
      "items": [
       {
-       "name": "Akira Toriyama",
-       "native": "鳥山明",
-       "role": "Story & Art"
+       "name": "Yoonz",
+       "native": "윤쓰",
+       "role": "Story"
+      },
+      {
+       "name": "3B2S",
+       "native": "쓰리비투에스",
+       "role": "Art"
+      },
+      {
+       "name": "Sanjijiksong",
+       "native": "산지직송",
+       "role": "Original Story"
       }
      ]
     },
@@ -987,212 +483,165 @@
      "cost": 75,
      "main": [
       {
-       "name": "Gokuu Son",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/246-wsRRr6z1kii8.png"
+       "name": "Ju-Heon Seo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b141875-YxUiyxknS16n.png"
       },
       {
-       "name": "Vegeta",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b913-NIFkKazWM8VO.png"
+       "name": "Irene  Holton",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b187029-dzi7JIAfPrVz.jpg"
       },
       {
-       "name": "Gohan Son",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2093-kdFZhqcNSsqW.png"
+       "name": "Jae-Ha Yu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b187178-COovUjQPR7lr.png"
       },
       {
-       "name": "Piccolo",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b914-KuS8AWjqBrqa.jpg"
+       "name": "Crow",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b295963-Y9tcqVmexOkz.png"
       },
       {
-       "name": "Bulma",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b678-2YCe13F0tFos.jpg"
+       "name": "Seol-A Lee",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b187176-cIFczOA24i0B.png"
       },
       {
-       "name": "Kuririn",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2159-qtEuMYyOUkwY.jpg"
+       "name": "Chloe Laurent",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b214289-gxzHWPLKXqLM.png"
+      },
+      {
+       "name": "Julian Miller",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b187179-TM70djXpAEKR.png"
+      },
+      {
+       "name": "Ilya Volgof",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b266168-idydXLkRrodq.png"
       }
      ],
      "supporting": [
       {
-       "name": "Trunks",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2707-YKWmn4q87oF8.png"
+       "name": "Chae-Won Jin",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b295962-wKMSKxoQ97Ux.png"
       },
       {
-       "name": "Freeza",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3694-bDfOdSSdFfPv.png"
+       "name": "Hae-Jin Im",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b214288-kgq7BgLki6q3.png"
       },
       {
-       "name": "Jinzouningen 18-gou",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b4318-HfIy9rOIOZXM.png"
+       "name": "Edward",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b214286-JmpVq2BRP98B.jpg"
       },
       {
-       "name": "Cell",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/3908.jpg"
-      },
-      {
-       "name": "Muten Roushi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b6167-aMPt1bHf5YbV.jpg"
-      },
-      {
-       "name": "Bardock",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b6122-N8XCxV2YPd1r.png"
-      },
-      {
-       "name": "Majin Boo",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/1012.jpg"
-      },
-      {
-       "name": "Videl",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2111-9XqkV0tpjRPB.png"
-      },
-      {
-       "name": "Goten Son",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/2551.jpg"
+       "name": "Tae-Jun Kwon",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b214287-jDirVcCBMTLh.png"
       }
      ]
     },
     "reviews": [
      {
       "cost": 50,
-      "summary": "A manga that changed everything.",
-      "excerpt": "This review is spoiler free.\n\nA boy with a staff riding a cloud. With just those few words a very specific image appears in your head regardless if you’ve even experienced this series. The word “iconic” is often thrown around rather casually to the point where it starts to feel as if the word has lost its meaning. When it comes to “[title]” though it not only is iconic, it has reached a level...",
-      "score": 85,
-      "upvotes": 112,
-      "url": "https://anilist.co/review/6887"
+      "summary": "Quick recap of my thoughts, from chapter 314 to the epilogue!",
+      "excerpt": "So, I just caught up on the latest 90~ chapters and WOO IT WAS SO WORTH IT!\n\nTo start off with. I left off around chapter 314 (so spoilers for all of that onwards), just about to enter the Great Prison. Of course we love our anti-hero duping Pandora at every turn HAHA.\n\nI loved the Great Prison arc, although I was confused when it seemed there were only two levels to it (the first, city-like...",
+      "score": 100,
+      "upvotes": 11,
+      "url": "https://anilist.co/review/20474"
      },
      {
       "cost": 50,
-      "summary": "Either you've never read this work or you've read it at least 20 times!",
-      "excerpt": "[title],\nA manga that says something to everyone, yet surprisingly few people have read it these days. \n\nMost of the criticism of this work comes either from the very badly aged anime adaptation \"[title]\", where the characters scream at each other for several minutes just to change their hair color, or from the more recent spin-off \"[title] Super\", where a new transformation occurs...",
-      "score": 99,
-      "upvotes": 48,
-      "url": "https://anilist.co/review/23398"
-     },
-     {
-      "cost": 50,
-      "summary": "an elite classic that shaped shōnen and continues to define it.",
-      "excerpt": "[title] is a cornerstone of the battle shonen genre, often sparking passionate debates among fans. Some adore it, while others find it a relic of their childhood. Regardless of personal preference, it’s undeniable that Akira Toriyama’s manga laid the foundation for countless subsequent series.\n\nInitially, [title] doesn’t immediately come to mind when people think of shonen. It started as...",
-      "score": 90,
-      "upvotes": 36,
-      "url": "https://anilist.co/review/30771"
+      "summary": "My opinion on [title]",
+      "excerpt": "Tomb raider is a good series but i actually found it a little boring and rushed. For one thing there is no emotional connection between the reader and the characters, not even with the main character, [character].\n\n[character] is always portrayed as a smart, overpowered mc with OP powers and it prioritizes showing his \"cool and cold side\" which i think was a total waste considering he had a lot...",
+      "score": 55,
+      "upvotes": 9,
+      "url": "https://anilist.co/review/25589"
      }
     ]
    },
    "answer": {
-    "title": "Dragon Ball",
-    "romaji": "Dragon Ball",
-    "native": "ドラゴンボール",
-    "url": "https://anilist.co/manga/30042",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30042-4SetGiEbGc9x.jpg",
+    "title": "Tomb Raider King",
+    "romaji": "Dogul Wang",
+    "native": "도굴왕",
+    "url": "https://anilist.co/manga/110462",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx110462-okQFIoSFvb4L.jpg",
     "accepted_aliases": [
-     "Dragon Ball",
-     "Dragonball",
-     "Dragon Ball Z",
-     "Dragonball Z",
-     "Bola de Drac",
-     "Dragon Ball - 7 Viên Ngọc Rồng",
-     "Jaco the Galactic Patrolman",
-     "Ginga Patrol Jaco",
-     "Galactic Patrol Jako",
-     "Jaco: O Patrulheiro Galáctico",
-     "Jaco z Galaktycznego Patrolu",
-     "Neko Majin",
-     "Nekomajin Z",
-     "Nekomajin",
-     "Nekomajin: El Gato Mágico",
-     "Dragon Ball SD",
-     "Dragonball SD",
-     "Dragon Ball: That Time I Got Reincarnated as Yamcha!",
-     "Dragon Ball Gaiden: Tensei-shitara Yamcha Datta Ken",
-     "Dragon Ball Side Story: The Case of Being Reincarnated as Yamcha",
-     "Dragon Ball Side Story - Reborn as Yamcha",
-     "Dragon Ball Gaiden",
-     "Dragon Ball Side Stories: Wiedergeboren als Yamchu",
-     "Dragon Ball: Odrodzony jako Yamcha",
-     "Dragon Ball Spin-off - Aquella vez que me reencarné en Yamcha",
-     "Dragon Ball Gaiden: Aquela Vez Que Reencarnei Como Yamcha",
-     "Dragon Boy",
-     "The Adventure of Tongpoo",
-     "Tongpoo no Daibouken",
-     "Tongpoos großes Abenteuer",
-     "Tongpoos grosses Abenteuer",
-     "Jaco",
-     "Dragon Ball Side Story",
-     "Dragon Ball Side Stories",
-     "Dragon Ball Spin-off"
+     "Tomb Raider King",
+     "Dogul Wang",
+     "Der König der Grabräuber",
+     "El rey saqueador de tumbas",
+     "The Return of the Disaster-Class Hero",
+     "Jaeanggeup Yeongungnimi Gwihwanhasyeotda",
+     "A Disaster-Class Hero Has Returned",
+     "King of Excavation",
+     "Grave Robber - King"
     ],
-    "mangadex_id": "40bc649f-7b49-4645-859e-6cd94136e722"
+    "mangadex_id": "16e1767d-a8d5-4173-b87f-f7023f6c4578"
    },
    "review_notes": []
   },
   {
-   "anilist_id": 87347,
+   "anilist_id": 102047,
    "source": "fallback",
-   "tier": "easy",
+   "tier": "possible",
    "revealed": {
     "origin": "manga",
     "format": "series",
-    "popularity": 41323,
-    "average_score": 84,
+    "popularity": 13889,
+    "average_score": 68,
     "genres": [
      "Drama",
-     "Music",
      "Romance",
      "Slice of Life"
     ],
     "demographic": [],
-    "release": "2013 to 2023"
+    "release": "2018"
    },
    "hints": {
     "cover": {
      "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87347-GOCU76cl37dK.png"
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx102047-wdH5eEKLyEM9.png"
     },
     "summary": {
      "cost": 100,
-     "text": "[character] is bored with it all—with school, with his basketball club, and even with his one true passion: playing guitar. That is, until the day he finds his favorite hidden napping spot occupied by a strange boy cradling a broken-stringed guitar. At first, [character] is nonplussed by [character] and his slightly odd behavior, but when, on a whim, he asks [character] to sing, the power of that song pierces him to the core."
+     "text": "[character], a young professional woman in Japan, is tired of fending off her parents' questions about her being single. They want her to marry a man and settle down, and they'll insist on nitpicking her choice of groom to death. In an unexpected move, another woman in the office - who has a crush on her - offers to be her wife in a sham marriage, which might make her parents back off. But this \"fake\" marriage could unearth something very real!\n\nNote: Includes the extra chapters \"[title]\" and \"Fake Married Life\"."
     },
     "tags": {
      "cost": 75,
      "items": [
       {
-       "name": "Boys' Love",
-       "rank": 91,
+       "name": "Primarily Female Cast",
+       "rank": 100,
        "spoiler": false
       },
       {
-       "name": "Band",
-       "rank": 90,
+       "name": "Marriage",
+       "rank": 100,
+       "spoiler": false
+      },
+      {
+       "name": "Yuri",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Adult Cast",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Cohabitation",
+       "rank": 79,
        "spoiler": false
       },
       {
        "name": "LGBTQ+ Themes",
-       "rank": 82,
+       "rank": 78,
        "spoiler": false
       },
       {
-       "name": "Rehabilitation",
-       "rank": 81,
+       "name": "Office Lady",
+       "rank": 77,
        "spoiler": false
-      },
-      {
-       "name": "Primarily Male Cast",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Coming of Age",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Ensemble Cast",
-       "rank": 79,
-       "spoiler": false
-      },
-      {
-       "name": "Tragedy",
-       "rank": 76,
-       "spoiler": true
       }
      ]
     },
@@ -1200,8 +649,8 @@
      "cost": 50,
      "items": [
       {
-       "name": "Natsuki Kizu",
-       "native": "キヅナツキ",
+       "name": "Naoko Kodama",
+       "native": "コダマナオコ",
        "role": "Story & Art"
       }
      ]
@@ -1210,136 +659,633 @@
      "cost": 75,
      "main": [
       {
-       "name": "Mafuyu Satou",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b136844-UoqciaLvz5Jf.png"
+       "name": "Hana Agaya",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b151018-Uaw6erAjVT9G.jpg"
       },
       {
-       "name": "Ritsuka Uenoyama",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b136843-z6IjhOi636WT.png"
+       "name": "Machi Morimoto",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b151019-ZzBipDNqkYq0.jpg"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "A short, sweet, down-to-earth yuri manga that doesn't overstay its welcome, though could have had more meat to it.",
+      "excerpt": "No, your eyes do not deceive you, _I Married My Best Friend To Shut My Parents Up_ is the actual title of this fairly short yuri manga. And I really do mean short, as it's only about three chapters long. Yes, really. But what's it about, you might ask? All her life, [character] has lived for the sole purpose of meeting her parents' very high expectations and doing everything they tell her to...",
+      "score": 75,
+      "upvotes": 9,
+      "url": "https://anilist.co/review/24631"
+     }
+    ]
+   },
+   "answer": {
+    "title": "I Married My Best Friend to Shut My Parents Up",
+    "romaji": "Oya ga Urusai node Kouhai (♀) to Gisou Kekkon shitemita.",
+    "native": "親がうるさいので後輩（♀）と偽装結婚してみた。",
+    "url": "https://anilist.co/manga/102047",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx102047-wdH5eEKLyEM9.png",
+    "accepted_aliases": [
+     "I Married My Best Friend to Shut My Parents Up",
+     "Oya ga Urusai node Kouhai (♀) to Gisou Kekkon shitemita.",
+     "I decided to fake a marriage with my junior (♀️) to shut my parents up",
+     "I Decided to Fake a Marriage with My Junior to Shut My Parents Up",
+     "Me Casei Com Uma Colega Para Calar os Meus Pais",
+     "Oya ga Urusai node Kouhai (♀) to Gisou Kekkon Shitemita.",
+     "My Parents Were Being Annoying, So I Sham-Married My Junior (♀) To Satisfy Them.",
+     "I Decided to Fake a Marriage with My Junior (♀) to Shut My Parents Up.",
+     "Musanso Ren'ai",
+     "Anaerobic Love"
+    ],
+    "mangadex_id": "f6fe221d-5e3c-488f-99c8-e18f5444b253"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 109828,
+   "source": "fallback",
+   "tier": "random",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 243,
+    "average_score": 61,
+    "genres": [
+     "Comedy",
+     "Mystery",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2018"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109828-VOKWd4c6j8J1.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Hakone asks out his classmate Nekomiya who he fell in love at first sight with, only for Nekomiya to admit to being a cross-dresser, but is Nekomiya telling the truth?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "School",
+       "rank": 79,
+       "spoiler": false
       },
       {
-       "name": "Haruki Nakayama",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b136845-4jHomiPMsJ6n.png"
+       "name": "Crossdressing",
+       "rank": 60,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Kutsugaeru",
+       "native": "くつがえる",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Schrodinger's Nekomiya-san",
+    "romaji": "Schrodinger no Nekomiya-san",
+    "native": "シュレディンガーの猫宮さん",
+    "url": "https://anilist.co/manga/109828",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109828-VOKWd4c6j8J1.jpg",
+    "accepted_aliases": [
+     "Schrodinger no Nekomiya-san",
+     "Schrodinger's Nekomiya-san"
+    ],
+    "mangadex_id": "a2f193fe-5499-41f3-be15-cec64885ef92"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 129574,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 12874,
+    "average_score": 83,
+    "genres": [
+     "Comedy"
+    ],
+    "demographic": [],
+    "release": "2021"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129574-knBGx96XqrCR.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "A Twitter comic by Ishida Sui about a [character] living his last day."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Time Skip",
+       "rank": 100,
+       "spoiler": true
       },
       {
-       "name": "Akihiko Kaji",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b136842-Ip5LDrd7qwE1.png"
+       "name": "Meta",
+       "rank": 97,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 96,
+       "spoiler": true
+      },
+      {
+       "name": "Animals",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Philosophy",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Death Game",
+       "rank": 93,
+       "spoiler": true
+      },
+      {
+       "name": "Cosmic Horror",
+       "rank": 91,
+       "spoiler": false
+      },
+      {
+       "name": "Body Horror",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Animal Cast",
+       "rank": 85,
+       "spoiler": false
+      },
+      {
+       "name": "Family Life",
+       "rank": 83,
+       "spoiler": false
+      },
+      {
+       "name": "Full Color",
+       "rank": 75,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Sui Ishida",
+       "native": "石田スイ",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Gorilla",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b208213-TWST6ATE4Dor.jpg"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Life, death, and the suddenness of it all. An honest review of \"[title].\"",
+      "excerpt": "This is my first manga review, so please go easy on me. Spoilers ahead, but you can honestly finish this manga in less than a minute, and I recommend you do.\n\nWhat can I say about this tragic masterpiece, comprised of only thirteen words? It is an obvious parody on the similar \"１００-日後に死ぬワニ\" or This Crocidile will Die in 100 Days. However, it only took the mangaka 1/50th of the time to make a...",
+      "score": 100,
+      "upvotes": 1176,
+      "url": "https://anilist.co/review/9542"
+     },
+     {
+      "cost": 50,
+      "summary": "A Monke Review No One Asked For",
+      "excerpt": "[title]: _Monke_ fication as Human Growth\n\n---\n\nFor whatever reason, there is something about human beings (and perhaps life, in general) which seems to be incomplete. There's always a new item to buy or another goal to be accomplished. It's almost as if we are all beautifully broken bodies, breathing air and attempting to grasp whatever we think is going to satisfy us or...",
+      "score": 99,
+      "upvotes": 416,
+      "url": "https://anilist.co/review/9558"
+     },
+     {
+      "cost": 50,
+      "summary": "Overall this Manga is an absolute masterpiece and will go on into the Hall of fame in literature. Thank you.",
+      "excerpt": "(CONTASINS SPOILERS!!!)\n I cannot even begin to describe the genius that was put into this masterpiece of art. Scholars century's from now will look upon this piece of art and think to themselves \"My God, I am utterly grateful to have the opportunity to witness such an amazing piece of literature.\"\n\n_(panel 1)_ Where do I start. On day 1 In the first panel the sheer emotion that is being...",
+      "score": 100,
+      "upvotes": 52,
+      "url": "https://anilist.co/review/9665"
+     }
+    ]
+   },
+   "answer": {
+    "title": "This Gorilla Will Die In 1 Day",
+    "romaji": "1-nichi Go ni Shinu Gorilla",
+    "native": "1日後に死ぬゴリラ",
+    "url": "https://anilist.co/manga/129574",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129574-knBGx96XqrCR.jpg",
+    "accepted_aliases": [
+     "1-nichi Go ni Shinu Gorilla",
+     "This Gorilla Will Die In 1 Day",
+     "1-nichigo ni Shinu Gorilla",
+     "xing xinh ming tiang huai shi"
+    ],
+    "mangadex_id": "a3f91d0b-02f5-4a3d-a2d0-f0bde7152370"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 85198,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 18375,
+    "average_score": 77,
+    "genres": [
+     "Drama",
+     "Horror",
+     "Psychological",
+     "Supernatural",
+     "Thriller"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2013 to 2018"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx85198-OB2axp07LQJd.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[title]'s face is so hideous, you couldn't bear to look twice at her—and her ugliness has forced her to walk a harsh path in life. But her mother left her something: a tube of lipstick. The power of this lipstick will change everything about her downtrodden life.\n\nNote: Nominated for the 8th Manga Taishou Award."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Shapeshifting",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Acting",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Body Swapping",
+       "rank": 93,
+       "spoiler": true
+      },
+      {
+       "name": "Tragedy",
+       "rank": 91,
+       "spoiler": true
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Revenge",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Anti-Hero",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Bullying",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Denpa",
+       "rank": 79,
+       "spoiler": true
+      },
+      {
+       "name": "Crime",
+       "rank": 76,
+       "spoiler": true
+      },
+      {
+       "name": "Urban Fantasy",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Rehabilitation",
+       "rank": 73,
+       "spoiler": true
+      },
+      {
+       "name": "Torture",
+       "rank": 72,
+       "spoiler": true
+      },
+      {
+       "name": "Disability",
+       "rank": 72,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Daruma Matsuura",
+       "native": "松浦だるま",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Kasane Fuchi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b141626-FfDQLZarSWuc.png"
       }
      ],
      "supporting": [
       {
-       "name": "Ugetsu Murata",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b146260-nvHPDaD6FvTM.png"
+       "name": "Nogiku",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b149483-7XmHjy1RFinA.png"
       },
       {
-       "name": "Yuki Yoshida",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b153048-d65bbkAu6lHs.png"
+       "name": "Kingo Habuta",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b149479-Xfrf8UzuDELM.png"
       },
       {
-       "name": "Hiiragi Kashima",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b167930-kCMVGt4tsgPK.png"
+       "name": "Nobuhiko Uno",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b161207-asQHqpnFlTRt.jpg"
       },
       {
-       "name": "Shizusumi Yagi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b167938-xCeUpyJ62cIF.png"
+       "name": "Iku Igarashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b216696-lQHhA29p126E.png"
       },
       {
-       "name": "Koji Yatake",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b174907-owS1iNCIh6u3.png"
-      },
-      {
-       "name": "Shougo Itaya",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b148932-XjyLHoJTICTU.png"
-      },
-      {
-       "name": "Yayoi Uenoyama",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b167937-w3v89aWaTiMH.png"
-      },
-      {
-       "name": "Ryou Ueki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b174694-mVns0DNRXEGR.jpg"
-      },
-      {
-       "name": "Ayano Kasai",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b174693-O7KOKeNq6mub.jpg"
+       "name": "Neena Tanzawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b216697-zQEN14QC9Opx.png"
       }
      ]
     },
     "reviews": [
      {
       "cost": 50,
-      "summary": "Pretty okay, but that's it and nothing else. [title] and its problems. Nah, not a masterpiece",
-      "excerpt": "I am ready to receive all the slops for this review. I like [title], but to say it is a masterpiece of realistic BL, I don't think so. These are BL standards and the level is so low and weak that compared to others, [title] looks like a masterpiece. But let's start from the beginning.\n\nThe main couple is fine. [character] is quite okay as a character. I like him, but his boyfriend ... he's such a dull,...",
-      "score": 53,
-      "upvotes": 55,
-      "url": "https://anilist.co/review/10653"
-     },
-     {
-      "cost": 50,
-      "summary": "[title], and it's way to deal with mourning and more.",
-      "excerpt": "[title] is a drama story about a boy-band, their relationship with each other and all the problems that they go through.\n\nMy first experience with [title] was watching the anime, I quickly became a fan of the characters and the story, so I decided to buy some volumes of the manga because i was pretty much interested. And God what knows how it was a good choice. [title] offers such a good representation...",
+      "summary": "Beware the darkness surrounding the spotlight... lest it consumes you whole.",
+      "excerpt": "[title] is a drama manga by Daruma Matsuura. Right out of the gate I need to state that after a certain point, I remember I started crying, and found myself unable to stop until I finished the rest of the manga. It is of course because of how deeply of a chord this manga struck within me that I am going to *attempt* to go through this entire review with _little to no spoilers whatsoever beyond the...",
       "score": 100,
-      "upvotes": 25,
-      "url": "https://anilist.co/review/19651"
+      "upvotes": 111,
+      "url": "https://anilist.co/review/5360"
      },
      {
       "cost": 50,
-      "summary": "The emotions that [title] expresses",
-      "excerpt": "[title] | My review/opinion on it \n\nI started reading this manga cause I had watched the anime and I absolutely loved it. The music was beautiful, I loved how the characters’ stories were told, the way they grew in such a short amount of time, but what really hooked me into the story was the emotions that the anime conveyed. Their grief, their sadness, their angriness, it was all layed out so...",
+      "summary": "Haunted by the desire of being beautiful.",
+      "excerpt": "- Minor spoilers ahead;\n- The score is merely ilustrative.\n\nBeauty is a characteristic that is capable of captivating those who observe it. It is a manifestation of the splendor of being that can provoke satisfaction. Even if it is relative, what is beautiful tends to be contemplated. People who are blessed with this attribute are revered and exalted. It is following these aspects that the manga...",
       "score": 90,
-      "upvotes": 17,
-      "url": "https://anilist.co/review/23760"
+      "upvotes": 44,
+      "url": "https://anilist.co/review/14375"
      }
     ]
    },
    "answer": {
-    "title": "Given",
-    "romaji": "Given",
-    "native": "ギヴン",
-    "url": "https://anilist.co/manga/87347",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87347-GOCU76cl37dK.png",
+    "title": "Kasane",
+    "romaji": "Kasane",
+    "native": "累－かさね－",
+    "url": "https://anilist.co/manga/85198",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx85198-OB2axp07LQJd.jpg",
     "accepted_aliases": [
-     "Given"
+     "Kasane",
+     "Rui",
+     "Rui -Kasane-",
+     "Kasane - La voleuse de visage"
     ],
-    "mangadex_id": "039d717e-9690-47fd-944d-93161b97fbac"
+    "mangadex_id": "9c17a414-4df0-402a-9c62-820b1aee888c"
    },
    "review_notes": []
   },
   {
-   "anilist_id": 202784,
+   "anilist_id": 103854,
    "source": "fallback",
-   "tier": "hard",
+   "tier": "possible",
    "revealed": {
-    "origin": "manhua",
+    "origin": "manhwa",
     "format": "series",
-    "popularity": 2422,
-    "average_score": 66,
+    "popularity": 11776,
+    "average_score": 77,
     "genres": [
-     "Action",
-     "Fantasy"
+     "Drama",
+     "Fantasy",
+     "Romance"
     ],
     "demographic": [],
-    "release": "2025, ongoing"
+    "release": "2016 to 2019"
    },
    "hints": {
     "cover": {
      "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx202784-reiyZuh4tKPM.png"
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx103854-kqOb6lSugEam.jpg"
     },
     "summary": {
      "cost": 100,
-     "text": "What’s the first thing Rhys Valdez does after being reborn into the recent past, realizing he has a second chance to correct any past mistakes? He breaks up with his girlfriend, setting up for a romantic saga of star-crossed lovers... until, that is, a mysterious System awakens and reveals that Earth’s impending Spiritual Energy Revival is merely one short year away from triggering the apocalypse. With the knowledge of the past and power of the future, can Rhys ascend the Realms of Cultivation in time to save humanity?"
+     "text": "It’s a rude insult when lowly and headstrong servant [character] comes to marry Duke [character], instead of the noble daughter he expected. But the ambitious maid hides an even bigger secret behind her obvious ruse – one that could change the kingdom’s very history. Can the two find freedom, redemption – and love – without drawing their swords on each other? Based on the hit novels."
     },
     "tags": {
      "cost": 75,
      "items": [
       {
-       "name": "Full Color",
-       "rank": 20,
+       "name": "Female Protagonist",
+       "rank": 92,
        "spoiler": false
       },
       {
-       "name": "Long Strip",
+       "name": "Fugitive",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Politics",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Royal Affairs",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Crossdressing",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Swordplay",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Full Color",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Hee Won",
+       "native": "희원",
+       "role": "Art"
+      },
+      {
+       "name": "Hyang Ryu",
+       "native": "류향",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Edna",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b181257-cOcF4hDqGSwl.jpg"
+      },
+      {
+       "name": "Eli",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b181256-wmW5QRRH7lpH.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Chris",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b220778-9Q8brbReYSGz.png"
+      },
+      {
+       "name": "Ria",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b220788-InAZ17vzucXQ.png"
+      },
+      {
+       "name": "Kian",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b220779-wblWHHj0e0Zz.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Light and Shadow",
+    "romaji": "Bitgwa Geurimja",
+    "native": "빛과 그림자",
+    "url": "https://anilist.co/manga/103854",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx103854-kqOb6lSugEam.jpg",
+    "accepted_aliases": [
+     "Light and Shadow",
+     "Bitgwa Geurimja",
+     "Luz y sombra",
+     "Licht und Schatten",
+     "Ombres et Lumières",
+     "Light & Shadow"
+    ],
+    "mangadex_id": "50705061-6fb6-4155-a4aa-f12c3d167f08"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 130498,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 1176,
+    "average_score": 56,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Comedy",
+     "Drama",
+     "Fantasy",
+     "Romance"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2020 to 2023"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx130498-qUQvdBnQtoK6.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Ragna, \"Master of Sword\", used to be the strongest swordsman. He ventured alone into the mysterious Heavenfell Tower and reached where no man had stepped before, the seventh floor... only to find the limit of his growth. \n\nHowever, his story is far from over. He gets reincarnated and returns to level 1...while keeping all of his level 99 stats?!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Male Protagonist",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Reincarnation",
+       "rank": 50,
+       "spoiler": true
+      },
+      {
+       "name": "Swordplay",
+       "rank": 40,
+       "spoiler": false
+      },
+      {
+       "name": "Magic",
        "rank": 20,
        "spoiler": false
       }
@@ -1349,18 +1295,13 @@
      "cost": 50,
      "items": [
       {
-       "name": "Kuang Cao Bu Zhi",
-       "native": "狂草不止",
-       "role": "Story"
+       "name": "Yami Satsuki",
+       "native": "五月やみ",
+       "role": "Story & Art"
       },
       {
-       "name": "A Qi",
-       "native": "阿琪",
-       "role": "Art"
-      },
-      {
-       "name": "Chun Yeji Jiu",
-       "native": "春夜祭酒",
+       "name": "Mugichatarou Nenjuu",
+       "native": "年中麦茶太郎",
        "role": "Original Story"
       }
      ]
@@ -1373,190 +1314,18 @@
     "reviews": []
    },
    "answer": {
-    "title": "Dumped... Then I Became a Martial God",
-    "romaji": "Bei Xiaohua Fenshou Hou, Wo Zhijie Wudao Tong Shen",
-    "native": "被校花分手后，我直接武道通神",
-    "url": "https://anilist.co/manga/202784",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx202784-reiyZuh4tKPM.png",
+    "title": "Strongest Swordsman’s Magic Training: Reincarnated with Level 99 Stats, He Gets to Start Over from Level 1",
+    "romaji": "Saikyou Kensei no Mahou Shugyou: Level 99 no Status wo Tamotta Mama Level 1 kara Yarinaosu",
+    "native": "最強剣聖の魔法修行　～レベル９９のステータスを保ったままレベル１からやり直す～",
+    "url": "https://anilist.co/manga/130498",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx130498-qUQvdBnQtoK6.jpg",
     "accepted_aliases": [
-     "Dumped... Then I Became a Martial God",
-     "Bei Xiaohua Fenshou Hou, Wo Zhijie Wudao Tong Shen",
-     "Dumped by My Girlfriend, I Turned to Martial Arts"
+     "Strongest Swordsman’s Magic Training: Reincarnated with Level 99 Stats, He Gets to Start Over from Level 1",
+     "Saikyou Kensei no Mahou Shugyou: Level 99 no Status wo Tamotta Mama Level 1 kara Yarinaosu",
+     "Strongest Swordsman’s Magic Training",
+     "Saikyou Kensei no Mahou Shugyou"
     ],
-    "mangadex_id": null
-   },
-   "review_notes": []
-  },
-  {
-   "anilist_id": 31061,
-   "source": "fallback",
-   "tier": "medium",
-   "revealed": {
-    "origin": "manga",
-    "format": "series",
-    "popularity": 18453,
-    "average_score": 83,
-    "genres": [
-     "Adventure",
-     "Comedy",
-     "Mystery",
-     "Romance"
-    ],
-    "demographic": [
-     "Shounen"
-    ],
-    "release": "1994, ongoing"
-   },
-   "hints": {
-    "cover": {
-     "cost": 50,
-     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31061-SJQb7931MG7m.jpg"
-    },
-    "summary": {
-     "cost": 100,
-     "text": "Precocious high school student [character] uses his keen powers of observation and astute intuition to solve mysteries that have left law enforcement officials baffled. Hot on the trail of a suspect, Jimmy is accosted from behind and fed a strange chemical which physically transforms him into a grade schooler! Taking on the pseudonym [character], he attempts to track down the people who did this to him. But until he finds a cure for his bizarre condition, Jimmy continues to help the police solve their toughest cases. Can you crack the case before [character] does?\n\nNote: Won the 46th Shogakukan Manga Award in the shounen category in 2001."
-    },
-    "tags": {
-     "cost": 75,
-     "items": [
-      {
-       "name": "Detective",
-       "rank": 100,
-       "spoiler": false
-      },
-      {
-       "name": "Crime",
-       "rank": 100,
-       "spoiler": false
-      },
-      {
-       "name": "Age Regression",
-       "rank": 89,
-       "spoiler": false
-      },
-      {
-       "name": "Police",
-       "rank": 87,
-       "spoiler": false
-      },
-      {
-       "name": "Male Protagonist",
-       "rank": 86,
-       "spoiler": false
-      },
-      {
-       "name": "Episodic",
-       "rank": 80,
-       "spoiler": false
-      },
-      {
-       "name": "Conspiracy",
-       "rank": 80,
-       "spoiler": true
-      },
-      {
-       "name": "Tragedy",
-       "rank": 79,
-       "spoiler": true
-      }
-     ]
-    },
-    "creators": {
-     "cost": 50,
-     "items": [
-      {
-       "name": "Goushou Aoyama",
-       "native": "青山剛昌",
-       "role": "Story & Art"
-      }
-     ]
-    },
-    "characters": {
-     "cost": 75,
-     "main": [
-      {
-       "name": "Conan Edogawa",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1742-NiV278NBFOvZ.png"
-      },
-      {
-       "name": "Ran Mouri",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1748-j3PdfbQruuOV.png"
-      },
-      {
-       "name": "Kogorou Mouri",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1746-5I4sBSeXvCKP.png"
-      }
-     ],
-     "supporting": [
-      {
-       "name": "Kaito Kuroba",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1747-LYyYIvIZIdnE.jpg"
-      },
-      {
-       "name": "Ai Haibara",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1743-yw1FloPUI7jO.png"
-      },
-      {
-       "name": "Heiji Hattori",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1745-EleoviDvO7qh.jpg"
-      },
-      {
-       "name": "Shuuichi Akai",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b12051-DZE2V53eMi5d.png"
-      },
-      {
-       "name": "Tooru Amuro",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b62041-VVi8KARP1bVE.png"
-      },
-      {
-       "name": "Vermouth",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b6307-enm7W6Cus3FF.jpg"
-      },
-      {
-       "name": "Gin",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b6305-Oz8cBjsAE3Ae.jpg"
-      },
-      {
-       "name": "Masumi Sera",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b41833-h5eU0760M5Sj.png"
-      },
-      {
-       "name": "Kazuha Tooyama",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3198-h08Pt1lqU5Po.png"
-      },
-      {
-       "name": "Wataru Takagi",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b9421-q1USRmSvw7BF.jpg"
-      },
-      {
-       "name": "Miwako Satou",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b13975-0vSVf8z18ghU.png"
-      },
-      {
-       "name": "Eri Kisaki",
-       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b1744-otjI6lcPBAzf.png"
-      }
-     ]
-    },
-    "reviews": []
-   },
-   "answer": {
-    "title": "Detective Conan",
-    "romaji": "Meitantei Conan",
-    "native": "名探偵コナン",
-    "url": "https://anilist.co/manga/31061",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31061-SJQb7931MG7m.jpg",
-    "accepted_aliases": [
-     "Detective Conan",
-     "Meitantei Conan",
-     "Case Closed",
-     "Detectiu Conan",
-     "Detektif Conan",
-     "Mesterdetektiven Conan",
-     "Mästerdetektiven Conan",
-     "Salapoliisi Conan"
-    ],
-    "mangadex_id": "7f30dfc3-0b80-4dcc-a3b9-0cd746fac005"
+    "mangadex_id": "c0e3b5a0-e3f6-4f61-ade2-829737e8bf78"
    },
    "review_notes": []
   }

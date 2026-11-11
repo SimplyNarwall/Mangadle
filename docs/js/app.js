@@ -1,9 +1,10 @@
-import { checkGuess } from "./match.js";
+import { checkGuess, normalize } from "./match.js";
 import CONFIG from "./config.js";
 
 // ------------------------------------------------------------------ setup --
 const START_POINTS = 1000;
 const CLOSE_ENOUGH_POINTS = 250;
+const MAX_GUESSES = 3;
 const NUMBER_EMOJI = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"];
 const HINTS = [
   { key: "cover", label: "Cover", emoji: "🖼️", cost: 50 },
@@ -65,7 +66,7 @@ if (params.has("reset")) {
 
 function freshState(n) {
   return {
-    titles: Array.from({ length: n }, () => ({ revealed: [], spoilers: [], guess: null, correct: null, points: null })),
+    titles: Array.from({ length: n }, () => ({ revealed: [], spoilers: [], guesses: [], guess: null, correct: null, points: null })),
     submitted: false,
   };
 }
@@ -125,17 +126,34 @@ function revealHint(i, key) {
 }
 
 // ---------------------------------------------------------------- guessing --
+// Up to MAX_GUESSES guesses per title. A wrong guess only uses up a guess; points come
+// from hints alone. Out of guesses (or giving up) ends the title at 0.
+// Returns a message for the guess form, or null when the title is finished.
 function submitGuess(i, guess, giveUp = false) {
   const s = state.titles[i];
-  if (isDone(i)) return;
-  const t = day.titles[i];
-  const result = giveUp ? { correct: false } : checkGuess(guess, t.answer.accepted_aliases);
-  s.guess = giveUp ? null : guess;
-  s.correct = !!result.correct;
-  s.points = result.correct ? pointsLeft(i) : 0;
+  if (isDone(i)) return null;
+  s.guesses = s.guesses || [];
+  if (giveUp) {
+    s.correct = false;
+    s.points = 0;
+  } else {
+    const n = normalize(guess);
+    if (s.guesses.some((g) => normalize(g) === n)) return `You already guessed “${guess}”.`;
+    const result = checkGuess(guess, day.titles[i].answer.accepted_aliases);
+    s.guesses.push(guess);
+    s.guess = guess;
+    if (result.correct) {
+      s.correct = true;
+      s.points = pointsLeft(i);
+    } else if (s.guesses.length >= MAX_GUESSES) {
+      s.correct = false;
+      s.points = 0;
+    }
+  }
   saveState();
   if (allDone()) submitResult();
   render();
+  return null;
 }
 
 // ---------------------------------------------------------------- rendering --
@@ -271,19 +289,26 @@ function renderHint(i, key) {
 }
 
 function renderGuessForm(i) {
+  const s = state.titles[i];
+  const used = (s.guesses || []).length;
+  const left = MAX_GUESSES - used;
   const input = h("input", { type: "text", placeholder: "Guess the title", autocomplete: "off", "aria-label": "Your guess" });
+  const note = h("span", { class: "muted", role: "status" },
+    `${left} ${left === 1 ? "guess" : "guesses"} left. Wrong guesses don't cost points. Small typos are fine.`);
   const form = h("form", {
     class: "guess-form",
     onsubmit: (e) => {
       e.preventDefault();
       const g = input.value.trim();
       if (!g) { input.focus(); return; }
-      submitGuess(i, g);
+      const msg = submitGuess(i, g);
+      if (msg) { note.textContent = msg; input.select(); }
     },
   },
+  used ? h("div", { class: "past-guesses" }, (s.guesses || []).map((g) => h("span", { class: "past-guess" }, `✗ ${g}`))) : null,
   h("div", { class: "row" }, input, h("button", { type: "submit", class: "btn primary" }, "Guess")),
   h("div", { class: "row spread small" },
-    h("span", { class: "muted" }, "One guess only. Small typos are fine."),
+    note,
     h("button", { type: "button", class: "link-btn", onclick: () => submitGuess(i, null, true) }, "Give up")),
   );
   setTimeout(() => input.focus({ preventScroll: true }), 0);
@@ -297,8 +322,10 @@ function renderAnswer(i) {
   const next = nextUnfinished();
   return h("div", { class: `answer ${s.correct ? "right" : "wrong"}` },
     h("div", { class: "answer-banner" },
-      s.closeEnough ? `Close enough! +${fmt(s.points)}` : s.correct ? `Correct! +${fmt(s.points)}`
-        : s.guess ? `Not quite. You guessed “${s.guess}”.` : "You gave up on this one."),
+      s.closeEnough ? `Close enough! +${fmt(s.points)}`
+        : s.correct ? `Correct${(s.guesses || []).length > 1 ? ` on guess ${s.guesses.length}` : ""}! +${fmt(s.points)}`
+        : (s.guesses || []).length >= MAX_GUESSES ? `Out of guesses. Last guess: “${s.guess}”.`
+        : s.guess ? `You gave up. Last guess: “${s.guess}”.` : "You gave up on this one."),
     // Honor system, like Catfishing: if your guess was basically right, claim partial credit.
     !s.correct && s.guess ? h("button", {
       class: "btn close-enough-btn",
@@ -345,7 +372,9 @@ function shareText() {
     const used = HINTS.filter((hd) => s.revealed.includes(hd.key)).map((hd) => hd.emoji).join("");
     const label = NUMBER_EMOJI[i] || `${i + 1}.`;
     const mark = s.closeEnough ? "🤏" : "✅";
-    lines.push(s.correct ? `${label} ${mark} ${fmt(s.points)}${used ? "  " + used : ""}` : `${label} ❌`);
+    const tries = (s.guesses || []).length;
+    const tryNote = s.correct && !s.closeEnough && tries > 1 ? ` (${tries}/${MAX_GUESSES})` : "";
+    lines.push(s.correct ? `${label} ${mark} ${fmt(s.points)}${tryNote}${used ? "  " + used : ""}` : `${label} ❌`);
   });
   lines.push(CONFIG.siteUrl || location.origin + location.pathname);
   return lines.join("\n");
