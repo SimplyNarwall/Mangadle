@@ -76,9 +76,9 @@ const dayFingerprint = () => day.titles.map((t) => t.anilist_id).join(",");
 function loadState() {
   try {
     const s = JSON.parse(localStorage.getItem(storageKey));
-    const sameDay = s && s.titles && s.titles.length === day.titles.length &&
-      (!s.fingerprint || s.fingerprint === dayFingerprint());
-    if (sameDay) return { ...s, fingerprint: dayFingerprint() };
+    // Progress only carries over if it was saved for exactly these titles. Progress saved
+    // before fingerprints existed can't be checked, so it starts over once.
+    if (s && s.titles && s.fingerprint === dayFingerprint()) return s;
   } catch { /* fall through */ }
   return { ...freshState(day.titles.length), fingerprint: dayFingerprint() };
 }
@@ -513,6 +513,7 @@ async function boot() {
     return;
   }
   state = loadState();
+  saveState();  // persist the fingerprint right away, so a later rebuild is always detected
   const first = state.titles.findIndex((s) => s.correct === null);
   current = first === -1 ? "results" : first;
   if (allDone() && !state.submitted) submitResult();
