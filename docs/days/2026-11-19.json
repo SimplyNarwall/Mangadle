@@ -1,0 +1,1477 @@
+{
+ "date": "2026-11-19",
+ "number": 9,
+ "reviewed": false,
+ "rebuilds": 0,
+ "start_points": 1000,
+ "titles": [
+  {
+   "anilist_id": 151194,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "oneshot",
+    "popularity": 19622,
+    "average_score": 70,
+    "genres": [
+     "Comedy",
+     "Romance",
+     "Supernatural"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2022"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx151194-sP36vxnvOUGQ.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "A student presents his crush with a love song that he wrote, recorded himself performing, and uploaded to YouTube, and he tells her to watch it before giving him a reply. When he returns to school the next day, he finds that the girl has shown the video to the entire class over LINE. Amid the jeering of his classmates, she snidely apologizes to him and explains that his video was hilarious enough to warrant sharing.\n\nHowever, his decision to remove the upload is curbed after a ghost is spotted within the video, and a classmate advises against its deletion. His YouTube post eventually gains popularity as the growing audience discovers more anomalies, all intent on deciphering the hidden messages that its very uploader had not even intended.\n\nA unique one-shot from the mad genius behind Chainsaw Man and the rising star of To Strip the Flesh."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Meta",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Satire",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 73,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Teen Cast",
+       "rank": 68,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Tatsuki Fujimoto",
+       "native": "藤本タツキ",
+       "role": "Story"
+      },
+      {
+       "name": "Oto Tooda",
+       "native": "遠田おと",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "No need to draw back the curtain when its all in the text.",
+      "excerpt": "Fujimoto simply does not disappoint with his one-shots he always has something interesting to say. By creating an initially charming romantic plot and deconstructing it into a much broader and thought-provoking discussion on the nature of creation itself Fujimoto's storytelling chops are once again front and center in a much condensed one shot.\n\n'[title]' seems to be a critique of...",
+      "score": 80,
+      "upvotes": 81,
+      "url": "https://anilist.co/review/17416"
+     },
+     {
+      "cost": 50,
+      "summary": "Esta review vai diretamente contra o ponto desse oneshot.",
+      "excerpt": "Fuutsu ni Kiite Kure ([title], vou abreviar pra JJTTS pra simplificar), é o novo one-shot de Tatsuki Fujimoto, desenhado pelo artista Oto Tooda, que tem como enredo a declaração inortodoxa de um estudante japones por um vídeo no youtube que rapidamente escala devido a presença de um fantasma em um momento do vídeo, resultando em pessoas procurando desesperadamente por simbologias...",
+      "score": 75,
+      "upvotes": 19,
+      "url": "https://anilist.co/review/17419"
+     },
+     {
+      "cost": 50,
+      "summary": "Every interpretation is worthy of respect",
+      "excerpt": "Just a little imaginary analysis on the last pages (needless to say, it's spoilers)\n\n[title] is a twenty-page manga written by Fujimoto (ChainSaw Man) about the developments of a high school love confession.\n\nThe main character posts a song on Youtube dedicated to the girl he likes, after which the boy is rejected and the video becomes a school meme; meanwhile, the Internet begins...",
+      "score": 80,
+      "upvotes": 9,
+      "url": "https://anilist.co/review/17830"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Just Listen to the Song",
+    "romaji": "Futsuu ni Kiite Kure",
+    "native": "フツーに聞いてくれ",
+    "url": "https://anilist.co/manga/151194",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx151194-sP36vxnvOUGQ.jpg",
+    "accepted_aliases": [
+     "Just Listen to the Song",
+     "Futsuu ni Kiite Kure",
+     "Solamente Escúchala"
+    ],
+    "mangadex_id": "9ded1dbf-495b-43a2-a65c-6d220a67fc0e"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 101038,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 2526,
+    "average_score": 65,
+    "genres": [
+     "Comedy",
+     "Romance",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2016 to 2018"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx101038-Ag5HnVv0dCtD.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character], a serious first year student attending Okuma East High School, joins the photography club but one of it's members, a second year student named [character], constantly distracts him with her embarrassing ideas and activities. How can he deal with such an uninhibited person?!\n\nNote: Includes two extras."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "School",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "School Club",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Photography",
+       "rank": 60,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Onio",
+       "native": "おにお",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Kazuki Shindou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b280036-KrTSJhukhr59.png"
+      },
+      {
+       "name": "Ayato Sanada",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b280033-YQzTml77vQXT.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Keiko Onodera",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b280034-DLouSDsqtmp7.png"
+      },
+      {
+       "name": "Yukiko Sanada",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b280035-Ue9wzP4UWFOo.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Two People's Time",
+    "romaji": "Futari no Jikan",
+    "native": "ふたりのじかん",
+    "url": "https://anilist.co/manga/101038",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx101038-Ag5HnVv0dCtD.jpg",
+    "accepted_aliases": [
+     "Futari no Jikan",
+     "Two People's Time"
+    ],
+    "mangadex_id": "1f4df95f-2946-40c9-9b00-fad72b5f0ae3"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 31075,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 11461,
+    "average_score": 82,
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Horror",
+     "Mystery",
+     "Psychological",
+     "Romance",
+     "Sci-Fi"
+    ],
+    "demographic": [
+     "Josei"
+    ],
+    "release": "2001 to 2017"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31075-0sTogC04TmSi.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Scientists had predicted this disaster, and in response, the leaders of every country met to develop a plan for human survival before the meteor hit. The [title] project was developed out of this meeting. Each country froze a number of young healthy people, which allowed them to survive the meteor. After the computer determined that Earth was once again safe for human life, it released them into the world.\n\nThe Japanese government created five groups of survivors: Winter group, Spring group, Summer group A, Summer group B, and Fall group. Each group consisted of seven members and one guide. The guide carried small tubes of poison on their necks to allow them to end their lives if their situation became unbearable. The Japanese government prepared seven \"Fuji\" as refuges for the groups. In each Fuji, the group would find seeds and numerous books instructing them on survival in the wilderness.\n\nNotes:\n\n- Winner of the 52th Shogakukan Manga Award in the shoujo category in 2006."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Ensemble Cast",
+       "rank": 100,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Survival",
+       "rank": 91,
+       "spoiler": false
+      },
+      {
+       "name": "Post-Apocalyptic",
+       "rank": 89,
+       "spoiler": false
+      },
+      {
+       "name": "Time Skip",
+       "rank": 87,
+       "spoiler": true
+      },
+      {
+       "name": "Anti-Hero",
+       "rank": 86,
+       "spoiler": true
+      },
+      {
+       "name": "Tragedy",
+       "rank": 82,
+       "spoiler": true
+      },
+      {
+       "name": "Primarily Teen Cast",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Travel",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Wilderness",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 76,
+       "spoiler": false
+      },
+      {
+       "name": "Outdoor Activities",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Yumi Tamura",
+       "native": "田村由美",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Natsu Iwashimizu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/14601.jpg"
+      },
+      {
+       "name": "Hana Suguruno",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/13627.jpg"
+      },
+      {
+       "name": "Takahiro Aramaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19130.jpg"
+      },
+      {
+       "name": "Arashi Aota",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b14602-sg6yTq1jCENd.png"
+      },
+      {
+       "name": "Ango",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b19123-lCAcgf9qKBoF.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Semimaru Asai",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/14603.jpg"
+      },
+      {
+       "name": "Ryou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b19125-3oDK7WJbyQFx.jpg"
+      },
+      {
+       "name": "Haru Yukima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19132.jpg"
+      },
+      {
+       "name": "Botan Saotome",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19134.jpg"
+      },
+      {
+       "name": "Ayu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19122.jpg"
+      },
+      {
+       "name": "Koruri",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19124.jpg"
+      },
+      {
+       "name": "Gengoro",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19126.jpg"
+      },
+      {
+       "name": "Ban",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19127.jpg"
+      },
+      {
+       "name": "Nijiko",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b19128-NUuAoml5RYSq.jpg"
+      },
+      {
+       "name": "Matsuri Tendou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/19137.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "[title] is a masterpiece of apocalypse fiction",
+      "excerpt": "I've contemplated back and forth on whether I wanted to write a review on this series. It's storytelling and world building is so complex and intricate that I've felt overwhelmed by how I could even begin to describe my love for this manga. However I'll try my best, since I really feel the need to convey what a special series this is.\n\n[title] is nothing short of a masterpiece, interweaving...",
+      "score": 100,
+      "upvotes": 58,
+      "url": "https://anilist.co/review/13806"
+     },
+     {
+      "cost": 50,
+      "summary": "A team survival-adventure flavored coalesce of love, hardship, philosophical thought, and psychological seasoning. ´◡`",
+      "excerpt": "INTRODUCTION (NO SPOILERS)\n\nIn 2007, this manga received a Shogakukan Manga Award. I believe it was well deserved. It's an outstanding story that covers a lot of ground. For all of the ground it covers it also answers a lot of questions and I bet most readers would be satisfied by the end of reading it, and if not, you can read [title] Gaiden for a little bit more closure. I was and still am sated...",
+      "score": 100,
+      "upvotes": 38,
+      "url": "https://anilist.co/review/5086"
+     },
+     {
+      "cost": 50,
+      "summary": "Human characterization and unflinching themes bring [title] close to its full potential",
+      "excerpt": "I believe [title] is a manga that can be easily misunderstood based on your expectations when you read it. Initially, it might appear cluttered or even disheartening due to its approach as a regular survival tale with a leading protagonist, a definite plot of action, and scenes that seem to fulfill in a simple manner. However, when you delve deeper and truly engage with its intent, it becomes much...",
+      "score": 88,
+      "upvotes": 12,
+      "url": "https://anilist.co/review/31086"
+     }
+    ]
+   },
+   "answer": {
+    "title": "7 Seeds",
+    "romaji": "7SEEDS",
+    "native": "７ＳＥＥＤＳ",
+    "url": "https://anilist.co/manga/31075",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31075-0sTogC04TmSi.jpg",
+    "accepted_aliases": [
+     "7SEEDS",
+     "Seven Seeds",
+     "7 Seeds",
+     "7SEEDS Bangai-hen: Memories - Sorezore no Natsu",
+     "7 Seeds: Memories - The Summer of Many",
+     "7Seeds Side Chapter",
+     "Extra Chapter",
+     "7SEEDS Bangai-hen",
+     "7SEEDS Bangai-hen: Memories",
+     "7 Seeds: Memories"
+    ],
+    "mangadex_id": "ce47b821-988c-4abf-a8dd-864cef84585a"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 120768,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 12341,
+    "average_score": 73,
+    "genres": [
+     "Comedy",
+     "Romance"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2020 to 2022"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120768-5msBc2sxVuXA.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "His rule: No sexual relations until age 18! Her rule: No rules.\n\nFree-spirited [character] and straitlaced [character] have fallen in love. But his elite political family—which has produced a long line of prime ministers—does not allow male descendants to engage in any sexual relations until they are 18. Can the physically affectionate [character] and rule-abiding [character] keep their relationship strictly chaste?\n\n[character] and [character] have gotten to know each other on their daily commute to their respective high schools. [character] makes a passionate love confession to [character], and he feels the same! As a new couple, [character] rushes in to kiss her new boyfriend, but...!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Gyaru",
+       "rank": 73,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 72,
+       "spoiler": false
+      },
+      {
+       "name": "Kuudere",
+       "rank": 72,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Aki Kusaka",
+       "native": "日下あき",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Yuuri Hasegawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b212826-VZyssqrDbCFw.jpg"
+      },
+      {
+       "name": "Keiichiro Katsuragi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b212825-cHLnLVTiDytp.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Shinobu Kasuga",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b392855-i3iIu90QWcUo.jpg"
+      },
+      {
+       "name": "Shoutarou Katsuragi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b392856-af2d1saYEytd.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Goofy, tender, and full of charm and heart, this is rom-com at its best!",
+      "excerpt": "LOVE THIS SERIES SO MUCH!! \n\nAt the heart of it is [character], our whirlwind of a heroine: bold, hilarious, and deeply sincere. From the moment she blurts out her love for [character] on the train, her passion is infectious. She’s impulsive, refreshingly direct about her feelings, and always charging forward with this endearing blend of vulnerability and confidence. [character] radiates authentic...",
+      "score": 100,
+      "upvotes": 10,
+      "url": "https://anilist.co/review/28514"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Let's Do It Already!",
+    "romaji": "Hayaku Shitai Futari",
+    "native": "はやくしたいふたり",
+    "url": "https://anilist.co/manga/120768",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120768-5msBc2sxVuXA.jpg",
+    "accepted_aliases": [
+     "Let's Do It Already!",
+     "Hayaku Shitai Futari",
+     "Pourquoi attendre?",
+     "Warum warten?"
+    ],
+    "mangadex_id": "d620c533-73ce-40a3-93d8-0d7a96768cc9"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 154221,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 1230,
+    "average_score": 56,
+    "genres": [
+     "Comedy",
+     "Ecchi",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2022 to 2025"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx154221-linNq5YKUNxN.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Corporate drone Kazama Masato just wants to get his work done and go home, but there’s a new employee who’s making things hard for him. Inami Nagisa is friendly, competent, a fast learner…and even kind of cute. But she annoys the heck out of Masato, especially with all her teasing and flirting. As the senpai, he should be above it all, but her words and actions are especially grating. It can’t possibly be that he’s into her, though…can it?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Office Lady",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Female Harem",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 73,
+       "spoiler": false
+      },
+      {
+       "name": "Work",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Bunga",
+       "native": "文雅",
+       "role": "Story & Art"
+      },
+      {
+       "name": "Eco Nagiki",
+       "native": "凪木エコ",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "The Clingy New Hire Keeps Asking Me Out",
+    "romaji": "Kamatte Shinsotsu-chan ga Maikai Sasotte Kuru",
+    "native": "かまって新卒ちゃんが毎回誘ってくる",
+    "url": "https://anilist.co/manga/154221",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx154221-linNq5YKUNxN.jpg",
+    "accepted_aliases": [
+     "The Clingy New Hire Keeps Asking Me Out",
+     "Kamatte Shinsotsu-chan ga Maikai Sasotte Kuru",
+     "Kamatte Shinsotsu-chan ga Maikai Sasotte Kuru: Nee Senpai, Shigoto mo Koi mo Kyouiku Shite Moratte Ii desu ka?"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 30001,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 109264,
+    "average_score": 90,
+    "genres": [
+     "Drama",
+     "Mystery",
+     "Psychological",
+     "Thriller"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "1994 to 2001"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30001-Knby7l1jevE7.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Everyone faces uncertainty at some point in their lives. Even a brilliant surgeon like [character] is no exception. But there’s no way he could have known that his decision to stop chasing professional success and instead concentrate on his oath to save peoples’ lives would result in the birth of an abomination. The questions of good and evil now take on a terrifyingly real dimension.\n\nYears later, in Germany during the tumultuous post-reunification period, middle-aged childless couples are being killed one after another. The serial killer’s identity is known. The reasons why he kills are not. Dr. [character] sets out on a journey to find the killer’s twin sister, who may hold some clues to solving the enigma of the “[title].”"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Crime",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "Philosophy",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "Conspiracy",
+       "rank": 92,
+       "spoiler": true
+      },
+      {
+       "name": "Amnesia",
+       "rank": 89,
+       "spoiler": true
+      },
+      {
+       "name": "Tragedy",
+       "rank": 89,
+       "spoiler": true
+      },
+      {
+       "name": "Twins",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Fugitive",
+       "rank": 87,
+       "spoiler": true
+      },
+      {
+       "name": "Noir",
+       "rank": 87,
+       "spoiler": false
+      },
+      {
+       "name": "Foreign",
+       "rank": 85,
+       "spoiler": false
+      },
+      {
+       "name": "Historical",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Memory Manipulation",
+       "rank": 84,
+       "spoiler": true
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 83,
+       "spoiler": false
+      },
+      {
+       "name": "Detective",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Ensemble Cast",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Adult Cast",
+       "rank": 81,
+       "spoiler": false
+      },
+      {
+       "name": "Police",
+       "rank": 75,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Naoki Urasawa",
+       "native": "浦沢直樹",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Johan Liebert",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b719-y984mDWyGf5n.jpg"
+      },
+      {
+       "name": "Kenzou Tenma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b718-b6ZZVp822lw0.png"
+      },
+      {
+       "name": "Heinrich Runge",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b721-VSOxZHBedxtD.png"
+      },
+      {
+       "name": "Anna Liebert",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b720-VFo5SzZsVfzl.png"
+      },
+      {
+       "name": "Eva Heinemann",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b6123-kLLVgdI8Elv4.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Wolfgang Grimmer",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3096-qCXXA8G0J8rk.png"
+      },
+      {
+       "name": "Dieter",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b6329-1EP0t4paLi3y.jpg"
+      },
+      {
+       "name": "Martin Reest",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b12117-bIHpLFAb9fiD.png"
+      },
+      {
+       "name": "Julius Reichwein",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/11080-QZxwmy36GaQH.jpg"
+      },
+      {
+       "name": "Franz Bonaparta",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8615-8eOPwbeu9jZh.png"
+      },
+      {
+       "name": "Richard Braun",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/36223.jpg"
+      },
+      {
+       "name": "Rudy-Ulrich Gillen",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/8617.jpg"
+      },
+      {
+       "name": "Roberto",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/8611.jpg"
+      },
+      {
+       "name": "Jan Suk",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/8618.jpg"
+      },
+      {
+       "name": "Otto Heckel",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b8624-Ui2NPXiWXV3B.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "\"the only thing humans are equal in is death\"- [title]: a masterpiece of thriller and delves deeply in human philosopy",
+      "excerpt": "SPOILERS AHEAD\n\none of the first ever mangas i read, and boy was it a fucking ride, kept me at the edge of my seat the whole time and always wanting to know what is gonna happen next. amazing and complex masterfully written characters and probably one of the greatest antagonists in animanga, its not often you see a story where it revolves more around the villian rather than the main character,...",
+      "score": 100,
+      "upvotes": 123,
+      "url": "https://anilist.co/review/14741"
+     },
+     {
+      "cost": 50,
+      "summary": "The shallow look on the hidden aspect of morality in Naoki Urasawa's \"[title]",
+      "excerpt": "“[title] and the second value” \nThe thing I like the most (among many of them) about Naoki Urasawa's \"[title]\" definitely is the inner fight between the ideologies of [character] and [character]. To Be more specific I am talking about the contrast of the subjective, caused and imposed morality. I can’t even describe how much time I have spent thinking about it and discussing it with other people. Being...",
+      "score": 95,
+      "upvotes": 95,
+      "url": "https://anilist.co/review/15240"
+     },
+     {
+      "cost": 50,
+      "summary": "[title] sets the standard for not just Animanga, but for all of Mystery and Crime Fiction.",
+      "excerpt": "Introduction\n_\n[title] is a unique and special series. It is highly regarded as one of the best pieces of fiction ever created, with its reputation largely contributed to its incredible cast of characters, enveloping mystery and fascinating story, and I agree. The cast are detailed and strong constructs. The mystery has you hooked from the moment that [character] returns 9 years later from the original...",
+      "score": 100,
+      "upvotes": 90,
+      "url": "https://anilist.co/review/17967"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Monster",
+    "romaji": "MONSTER",
+    "native": "MONSTER",
+    "url": "https://anilist.co/manga/30001",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30001-Knby7l1jevE7.jpg",
+    "accepted_aliases": [
+     "Monster"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 149544,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 54795,
+    "average_score": 82,
+    "genres": [
+     "Music",
+     "Romance"
+    ],
+    "demographic": [
+     "Josei"
+    ],
+    "release": "2022, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149544-466pXfETA8oP.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Fashionable and upbeat high schooler [character] falls head over heels for an employee at a local CD shop. He's got an air of mystery about him, great style, and an impeccable music taste. Little does she know—this supposedly male employee is actually her female classmate [character]! [character] generally keeps to herself, but since her seat is right next to [character]'s, she can't help but be extremely aware of the other's crush. Revealing the truth is out of the question for [character]—but perhaps getting closer to [character] wouldn't be so bad..."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Yuri",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "LGBTQ+ Themes",
+       "rank": 93,
+       "spoiler": false
+      },
+      {
+       "name": "Rock Music",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Tomboy",
+       "rank": 83,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Teen Cast",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Short-Form Chapter",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Gyaru",
+       "rank": 78,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Female Cast",
+       "rank": 76,
+       "spoiler": false
+      },
+      {
+       "name": "Work",
+       "rank": 71,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 71,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Sumiko Arai",
+       "native": "新井すみこ",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Mitsuki Koga",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b282094-vAr5cHPwyCIY.jpg"
+      },
+      {
+       "name": "Aya Oosawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b282093-KSj41LnAwawO.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Joe",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b305502-a81MGAca1Fm7.jpg"
+      },
+      {
+       "name": "Kanna",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b306725-RgYxyr0AwMCf.png"
+      },
+      {
+       "name": "Megumu Narita",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b290483-EVqyEXBljmyi.jpg"
+      },
+      {
+       "name": "Chizuru",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b321137-fIWVsse3KRPr.png"
+      },
+      {
+       "name": "Mao",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b321136-sxvxNDFWIlAX.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "The Power of Loving someone through linked interest",
+      "excerpt": "*\n_How do two people fall in love?_\n\nIt's a question that seemed easy to answer due to its quantifiable results from people's experiences. People would often say that the first reason they fell in love with a person was a combination of the person’s attractiveness and/or determination to do their work. While these traits are justifiable for falling for someone, it is not generally a realistic...",
+      "score": 90,
+      "upvotes": 102,
+      "url": "https://anilist.co/review/25052"
+     },
+     {
+      "cost": 50,
+      "summary": "Why green yuri could only be green",
+      "excerpt": ">foreword \nSmall thesis I originally wrote for a translation and localization uni seminar. It somehow got graded without ever actually being read lol, so I'd rather not let it go completely to waste and publish it somewhere.\nIt is definitely closer to a short essay/analysis than a proper review, but I thought anilist would still be a fitting place for it.\nAlso, other than translating it from...",
+      "score": 85,
+      "upvotes": 25,
+      "url": "https://anilist.co/review/33116"
+     }
+    ]
+   },
+   "answer": {
+    "title": "The Guy She Was Interested In Wasn't a Guy at All",
+    "romaji": "Ki ni Natteru Hito ga Otoko ja Nakatta",
+    "native": "気になってる人が男じゃなかった",
+    "url": "https://anilist.co/manga/149544",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149544-466pXfETA8oP.jpg",
+    "accepted_aliases": [
+     "The Guy She Was Interested In Wasn't a Guy at All",
+     "Ki ni Natteru Hito ga Otoko ja Nakatta",
+     "The Person She Fell For Wasn't A Boy",
+     "La persona che mi piace non è un ragazzo",
+     "Chłopak, który jej się spodobał wcale nie jest chłopakiem",
+     "O cara que estou a fim não é um cara?!",
+     "She Wasn't a Guy",
+     "El chico que me gusta no es un chico",
+     "TGSWIIWAGAA",
+     "KiniOto",
+     "Người tôi để ý không phải là con trai",
+     "Wǒ zàiyì de rén bùshì yìxìng",
+     "The Guy She Was Interested in Wasn't a Guy at All",
+     "The Green Yuri"
+    ],
+    "mangadex_id": "9d3d3403-1a87-4737-9803-bc3d99db1424"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 53324,
+   "source": "fallback",
+   "tier": "random",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 8,
+    "average_score": null,
+    "genres": [
+     "Comedy"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2007"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/23324.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": null
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "School",
+       "rank": 50,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Sato Tamaru",
+       "native": "田丸さと",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Dazzling - Dreaming ☆Highschool 4 Koma",
+    "romaji": "Mekurumeku",
+    "native": "めくるめく",
+    "url": "https://anilist.co/manga/53324",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/23324.jpg",
+    "accepted_aliases": [
+     "Mekurumeku",
+     "Mekurumeku - Dreaming ☆Highschool 4 Koma",
+     "Dazzling - Dreaming ☆Highschool 4 Koma"
+    ],
+    "mangadex_id": "d7653061-88a7-4a19-a483-c592c95d3f97"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 41327,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 12623,
+    "average_score": 83,
+    "genres": [
+     "Psychological",
+     "Sports"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "1998 to 2009"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx41327-ayO3EwG9Hcgk.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "The story begins when [character], the star batter of the fictional Lycaons in Japan's Pacific League, heads to the southern Japanese island of Okinawa to train and bring himself out of a slump. There, he meet [character], a 134-kmph (83 miles per hour) pitcher and the undisputed king of a gambling form of baseball called \"One Out.\" At [character]'s urging, [character] signs up with the Lycaons under an unusual contract: he gets 5,000,000 yen (about US$46,000) for every out he pitches, but loses 50,000,000 yen (US$460,000) for every point he gives up. \n\nNotes: \n\n - The main story was completed in 168 chapters with 19 volumes on 2006-10-19. An additional side story Giwaku no All Star Sen Hen (疑惑のオールスター戦編) was serialized from 2008-2009 and published as volume 20 of the series.\n\n - Chapter count includes an additional chapter included in the 7th volume."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Baseball",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Gambling",
+       "rank": 83,
+       "spoiler": false
+      },
+      {
+       "name": "Anti-Hero",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Adult Cast",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Male Cast",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Philosophy",
+       "rank": 79,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Shinobu Kaitani",
+       "native": "甲斐谷忍",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Toua Tokuchi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b16589-5V20DgoFpGRH.png"
+      },
+      {
+       "name": "Satoshi Ideguchi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b18597-6gHsjPqi6WcG.png"
+      },
+      {
+       "name": "Hiromichi Kojima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b16727-OLjhNPCa7fGk.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Itsuki Takami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b18602-ZPfi1diBf3qf.png"
+      },
+      {
+       "name": "Big Mama",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b39678-PlbCH91bQLtQ.png"
+      },
+      {
+       "name": "Mitsuo Oikawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b39872-lUHqE31jja1D.png"
+      },
+      {
+       "name": "Dennis Johnson",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/18603.jpg"
+      },
+      {
+       "name": "Tsuneo Saikawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/28494.jpg"
+      },
+      {
+       "name": "Junichi Kawanaka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b39683-csZ7GiSMmv8s.png"
+      },
+      {
+       "name": "Yuuzaburou Mihara",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/39869.jpg"
+      },
+      {
+       "name": "John Muruwaka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b18598-BQ5QEJbN1gHa.png"
+      },
+      {
+       "name": "Brooklyn",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b39679-gC7hFLCnQnF9.png"
+      },
+      {
+       "name": "Imai",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b39681-xB56D3eepl5Y.png"
+      },
+      {
+       "name": "Tomas",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/39879.jpg"
+      },
+      {
+       "name": "Yoshida",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/39880.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "An absolute Homerun when it comes to Sports Manga",
+      "excerpt": "[title], a Psychological Masterpiece\n\nGeneral Thoughts:\n\n[title] is a Sports Manga that is alot different then other Sports Manga, It is about the Sport of Baseball but it differs in the aspect of how the manga displays this Sport and how it connects all to the Topic of Gambling. It isnt any get stronger and win more Series it is all about Making Money through the Game of Baseball while also...",
+      "score": 95,
+      "upvotes": 46,
+      "url": "https://anilist.co/review/17976"
+     },
+     {
+      "cost": 50,
+      "summary": "Enter [character], One of the most cunning characters in ani/manga ever.",
+      "excerpt": "I'll start off by saying that this is a criminally under-popular manga even though it belongs in the sports genre and generally sports anime/manga are more on the popular side. I've personally never seen or cared for Baseball and the only reason I decided to read this is because of two things.\n1. I found the name \"[title]\" extremely cool (I mean, it definitely is a cool name for a series)\n2. I...",
+      "score": 90,
+      "upvotes": 26,
+      "url": "https://anilist.co/review/23092"
+     },
+     {
+      "cost": 50,
+      "summary": "A brainy take on baseball with a great start and mediocre ending.",
+      "excerpt": "[title] is a sports manga focusing completely on psychological battles. In it, the main character, [character], has almost no true athletic ability but stands out as a “gambler”, a person that has full confidence in his abilities to read the opponent’s intentions and uses this skill to win entire games either as a pitcher or as a coach for the entire team.\n\nEarly on, these abilities are used in...",
+      "score": 77,
+      "upvotes": 9,
+      "url": "https://anilist.co/review/27411"
+     }
+    ]
+   },
+   "answer": {
+    "title": "One Outs",
+    "romaji": "One Outs",
+    "native": "ワンナウツ",
+    "url": "https://anilist.co/manga/41327",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx41327-ayO3EwG9Hcgk.png",
+    "accepted_aliases": [
+     "One Outs",
+     "ONE OUTS Nobody wins, but I!"
+    ],
+    "mangadex_id": "3791477a-a18c-48a7-bccd-2dadd8337832"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 86036,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 12778,
+    "average_score": 83,
+    "genres": [
+     "Comedy",
+     "Drama",
+     "Music"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2013, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86036-DoupTOnfjQSg.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character] was once a guitarist in a light music club in high school, but her first live performance was dashed when her brother ran away from home with a lot of debt to become a musician in Tokyo.\n\nA decade later, [character] is now a high school teacher, leading a boring, uneventful life and paying off the debt... till she runs into the ghost of none other than a famous guitarist Jim-you-know-who.\n\nA story of a 27-year-old woman on her way to a music legend begins here."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Band",
+       "rank": 97,
+       "spoiler": false
+      },
+      {
+       "name": "Ghost",
+       "rank": 93,
+       "spoiler": false
+      },
+      {
+       "name": "School Club",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Teacher",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 76,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Yuukou Osada",
+       "native": "長田悠幸",
+       "role": "Story & Art"
+      },
+      {
+       "name": "Kazuya Machida",
+       "native": "町田一八 ",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Shiori Honda",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b140029-l2jvcrREyVZA.jpg"
+      },
+      {
+       "name": "Jimi Hendrix",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b140030-bUDneb9XfhO0.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Kurt Cobain",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b140031-js3uJBWvipG2.jpg"
+      },
+      {
+       "name": "Satsuki Meguro",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b182000-oOKwcvroxXnU.jpg"
+      },
+      {
+       "name": "Neon Mitsuoka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b204205-oAqybqax3nXZ.jpg"
+      },
+      {
+       "name": "Shinobu Kawasaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b182002-n2adQZYHPrG6.png"
+      },
+      {
+       "name": "Akane Isuzu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b181999-lS1wRPzLMBKX.png"
+      },
+      {
+       "name": "Aoshima Subaru",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b186917-CgrTzW6N1a17.png"
+      },
+      {
+       "name": "Shigeru Hachioji",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b182001-1hGX7G9qNHRh.png"
+      },
+      {
+       "name": "Hatsunori Daiba",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b182003-VbEAHNKMQcSH.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "An Amazing story... For the first half at least.",
+      "excerpt": "I randomly found this story and decided on a hunch to read this and push all my other Manga I was planning to read back so I can read this now. The first maybe 15 or so chapter I really love. I being someone born in 99, I don't really know much of some Legendary musicians. [character] is an artist I've heard and have listened to on occasion before. But for the most part, I'd only hear his songs...",
+      "score": 74,
+      "upvotes": 12,
+      "url": "https://anilist.co/review/3523"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Shiori Experience: My Plain Self and an Odd Old Man",
+    "romaji": "SHIORI EXPERIENCE: Jimi na Watashi to Hen na Ojisan",
+    "native": "SHIORI EXPERIENCE ~ジミなわたしとヘンなおじさん~",
+    "url": "https://anilist.co/manga/86036",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86036-DoupTOnfjQSg.png",
+    "accepted_aliases": [
+     "SHIORI EXPERIENCE: Jimi na Watashi to Hen na Ojisan",
+     "SHIORI EXPERIENCE",
+     "Shiori Experience: Jimi na Watashi to Hen na Ojisan",
+     "Shiori Experience: My Plain Self and an Odd Old Man"
+    ],
+    "mangadex_id": "d58abdf4-9268-41d8-9920-f8fe8858a173"
+   },
+   "review_notes": []
+  }
+ ]
+}
