@@ -1,0 +1,1467 @@
+{
+ "date": "2026-11-26",
+ "number": 16,
+ "reviewed": false,
+ "rebuilds": 0,
+ "start_points": 1000,
+ "titles": [
+  {
+   "anilist_id": 57231,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 23405,
+    "average_score": 77,
+    "genres": [
+     "Comedy",
+     "Drama",
+     "Romance",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2011 to 2014"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx57231-EBobSNzMi3iV.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "After arriving in Tokyo to live with her uncle, [character] collapses in a nearby park where she had once seen a shooting star during the day. A handsome stranger brings her to her new home and tells her they’ll meet again. [character] starts her first day at her new high school sitting next to a boy who blushes furiously at her touch. And her homeroom teacher is none other than the handsome stranger!\n\nNotes:\n\n- Includes three extra chapters.\n\n- Includes the one-shot \"[title] (クッキーガール クリームボーイ)\".\n\n- Includes the one-shot \"[title] (ツユカオル, [title])\".\n\n- Includes the one-shot \"[title] (ヒロインの流星, [title])\".\n\n- Includes the one-shot \"[title] (モア ザン ワーズ)\"\n\n- Includes the one-shot \"[title] (日々流星－すずめのパラレル高校日記－, [title])\"."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Love Triangle",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 85,
+       "spoiler": false
+      },
+      {
+       "name": "Age Gap",
+       "rank": 84,
+       "spoiler": true
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Teacher",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 79,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Mika Yamamori",
+       "native": "やまもり三香",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Daiki Mamura",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b73073-e3Hg82KgQRyT.jpg"
+      },
+      {
+       "name": "Satsuki Shishio",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b71259-r4GHlwim4B3S.jpg"
+      },
+      {
+       "name": "Suzume Yosano",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b64209-PgUKrY8ghPA5.jpg"
+      },
+      {
+       "name": "Yuyuka Nekota",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b64211-H0UFWTrnTHcG.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Tsurutani",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b70385-oRSuQCD0NBfj.jpg"
+      },
+      {
+       "name": "Yukichi Kumamoto",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b70383-0KaVfgyWNjfH.png"
+      },
+      {
+       "name": "Nana Kameyoshi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b70387-f3z4CrEiHQG4.jpg"
+      },
+      {
+       "name": "Togyuu Minagawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b327274-zw7GBqZr2CmX.png"
+      },
+      {
+       "name": "Kotetsu Sarumaru",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b327275-4WDVVJLxWOw1.png"
+      },
+      {
+       "name": "Inukai Manabu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b70389-RO68pVoWMhg6.png"
+      },
+      {
+       "name": "Samejima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b327272-EsINbSlAGXj7.png"
+      },
+      {
+       "name": "Tsubomi Kashima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b327273-eKthe7HhaF7C.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "The difference between [character] and [character].",
+      "excerpt": "The thing is that, when it came to [character], [character] _did_ actually love him and longed for him, but she was constantly battling with how to act around him and just wanted to truly get her feelings across. With [character], he _did_ love [character] as well and longed for her, but the other part of himself was battling between what was right and what was wrong as his duty was to be her guide and support as...",
+      "score": 85,
+      "upvotes": 30,
+      "url": "https://anilist.co/review/16388"
+     },
+     {
+      "cost": 50,
+      "summary": "A controversial yet bittersweet romance",
+      "excerpt": "[title]: A controversial yet bittersweet romance\n\n✧\n\n✧\n\n*Just a heads up: this review will contain spoilers as I will be navigating through the main character’s relationships throughout the entire manga* \n\nI will devide this review into two sections, because where the story starts to get faulty and have gaps is in the second part (hence the second section).\nThe first one being from...",
+      "score": 67,
+      "upvotes": 21,
+      "url": "https://anilist.co/review/19623"
+     },
+     {
+      "cost": 50,
+      "summary": "TLDR: Good series. Enjoyable with some weakpoints here and there but gets the message across. 7/10",
+      "excerpt": "This is the story of a country bumpkin moving to the city, or in this case tokyo. She moves in with her uncle because of course this is a manga, her parents are unavailable (in this case in Germany). In tokyo she gains some new friends, falls in love, feels the pain of loss all that shit every japenese person that hasn't been isekaid yet goes through i believe. She's also stuck in between her...",
+      "score": 70,
+      "upvotes": 12,
+      "url": "https://anilist.co/review/11261"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Daytime Shooting Star",
+    "romaji": "Hirunaka no Ryuusei",
+    "native": "ひるなかの流星",
+    "url": "https://anilist.co/manga/57231",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx57231-EBobSNzMi3iV.jpg",
+    "accepted_aliases": [
+     "Daytime Shooting Star",
+     "Hirunaka no Ryuusei",
+     "Hirunaka no Ryusei",
+     "Cookie Girl Cream Boy",
+     "Tsuyu Kaoru",
+     "A Love Story in Moist Rainy Days",
+     "Heroine no Ryuusei",
+     "Heroine's Shooting Star",
+     "More than Words",
+     "Hibi Ryuusei: Suzume no Parallel Koukou Nikki",
+     "Daily Shooting Star: Suzume's Parallel School Diary",
+     "Gwiazda spadająca za dnia",
+     "Sao băng ban ngày",
+     "Hibi Ryuusei",
+     "Daily Shooting Star"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 85793,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 25269,
+    "average_score": 75,
+    "genres": [
+     "Drama",
+     "Mystery",
+     "Psychological"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2014, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85793-PvROauRZl0VB.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Hyakkaou Private Academy. An institution for the privileged with a very peculiar curriculum. You see, when you're the sons and daughters of the wealthiest of the wealthy, it's not athletic prowess or book smarts that keep you ahead. It's reading your opponent-the art of the deal. What better way to hone those skills than with a rigorous curriculum of gambling?\n\nAt Hyakkaou Private Academy, the winners live like kings, and the losers are put through the wringer. But when [character] enrolls, she's gonna teach these kids what a high roller really looks like!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Gambling",
+       "rank": 98,
+       "spoiler": false
+      },
+      {
+       "name": "Card Battle",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 87,
+       "spoiler": false
+      },
+      {
+       "name": "LGBTQ+ Themes",
+       "rank": 85,
+       "spoiler": true
+      },
+      {
+       "name": "Anti-Hero",
+       "rank": 85,
+       "spoiler": false
+      },
+      {
+       "name": "Poker",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Female Cast",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Death Game",
+       "rank": 80,
+       "spoiler": true
+      },
+      {
+       "name": "Villainess",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Drugs",
+       "rank": 79,
+       "spoiler": true
+      },
+      {
+       "name": "Primarily Teen Cast",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Twins",
+       "rank": 75,
+       "spoiler": true
+      },
+      {
+       "name": "School Club",
+       "rank": 73,
+       "spoiler": false
+      },
+      {
+       "name": "Ojou-sama",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Homura Kawamoto",
+       "native": "河本ほむら",
+       "role": "Story"
+      },
+      {
+       "name": "Tooru Naomura",
+       "native": "尚村透",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Yumeko Jabami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b121889-ABsurpy5SjOW.png"
+      },
+      {
+       "name": "Mary Saotome",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122687-jl1wk9rjO57e.png"
+      },
+      {
+       "name": "Ryouta Suzui",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122688-DdMMQtWRdchY.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Midari Ikishima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122691-ze4qKEiCv2Lz.jpg"
+      },
+      {
+       "name": "Kirari Momobami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122693-qg2NIaq5h1VD.png"
+      },
+      {
+       "name": "Ririka Momobami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122777-pdh3z3WbnvlL.png"
+      },
+      {
+       "name": "Runa Yomozuki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/122698-8UvXcLs1LGYY.jpg"
+      },
+      {
+       "name": "Yumemi Yumemite",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122778-8WnPScfIvFfT.jpg"
+      },
+      {
+       "name": "Itsuki Sumeragi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122696-Ap3xm4l14BPQ.jpg"
+      },
+      {
+       "name": "Kaede Manyuda",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122692-R27bMvrrWUAW.jpg"
+      },
+      {
+       "name": "Sayaka Igarashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b122690-BgoAty3EQ2GW.png"
+      },
+      {
+       "name": "Sachiko  Juraku",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b136618-s502xe0mUNNJ.jpg"
+      },
+      {
+       "name": "Erimi  Mushibami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b136601-1hDQMiBZgyui.jpg"
+      },
+      {
+       "name": "Miroslava Honebami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b136598-IgLINsrYFJ4t.jpg"
+      },
+      {
+       "name": "Ibara Obami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b136627-CPH6Y5j8SUL2.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Billed as a quirky, psychotic gambling manga. Well, it's definitely quirky.",
+      "excerpt": "I finished an absolutely incredible manga called Usogui, and after that, I was itching to read another gambling manga. [title] is one of the most popular out there, so I gave it a shot.\nI was pretty damn disappointed. It's not a terrible manga, but it's overall mediocre, and when it does shine it's mostly through characters that aren't the focus.\n\n[title] follows the rich kiddos attending a...",
+      "score": 41,
+      "upvotes": 24,
+      "url": "https://anilist.co/review/18486"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Kakegurui - Compulsive Gambler -",
+    "romaji": "Kakegurui",
+    "native": "賭ケグルイ",
+    "url": "https://anilist.co/manga/85793",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85793-PvROauRZl0VB.png",
+    "accepted_aliases": [
+     "Kakegurui - Compulsive Gambler -",
+     "Kakegurui",
+     "Kakegurui - Szał hazardu",
+     "Kakegurui – Das Leben ist ein Spiel",
+     "Gambling School",
+     "Kakegurui: Jugadores dementes",
+     "Kakegurui Twin",
+     "Compulsive Gambler Twin",
+     "Gambling School Twin",
+     "Kakegurui Twin: Jugadores dementes",
+     "Gambling Maniac"
+    ],
+    "mangadex_id": "0951feea-ba41-4ad0-9cb0-edadc77eae73"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 41904,
+   "source": "fallback",
+   "tier": "random",
+   "revealed": {
+    "origin": "manga",
+    "format": "oneshot",
+    "popularity": 318,
+    "average_score": 62,
+    "genres": [
+     "Fantasy",
+     "Romance"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2008"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx41904-k0RIoaZFqjFa.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character] used to be a very sickly girl when she was young. One time, she was on the verge of death after contracting a high fever, but then her fever magically disappeared, leaving behind a star-shape mark on her forehead with the color of the ocean. Now a sixteen-year-old girl, [character] dreams of finding love and having a boyfriend like many other girls her age. There's one guy at school whom she's really interested in, but things don't really go the way she wants them to, with another guy showing up out of nowhere... Not to mention, that guy isn't just your average guy."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Demons",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Magic",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Unrequited Love",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Urban Fantasy",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 73,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Sakura Tsukuba",
+       "native": "筑波さくら",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Neo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/30789.jpg"
+      },
+      {
+       "name": "Umi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/30790.jpg"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Hitomi kara Destiny",
+    "romaji": "Hitomi kara Destiny",
+    "native": "瞳からディスティニー",
+    "url": "https://anilist.co/manga/41904",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx41904-k0RIoaZFqjFa.jpg",
+    "accepted_aliases": [
+     "Hitomi kara Destiny",
+     "Destiny from the Eyes"
+    ],
+    "mangadex_id": "0fcabed7-7e5a-403e-a4d8-270efc133ad8"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 135981,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 12330,
+    "average_score": 62,
+    "genres": [
+     "Action",
+     "Fantasy"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2021"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx135981-Xpm9OrtEHHcq.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "The winner of the 14th Gold Future Cup rookie manga competition now launches as a full series! Unique art captures the unfolding battle between hunters and werewolves. Who will win this battle to the death, man or beast? This grim fantasy tale with tons of style begins the hunt in Shonen Jump!\n\nNote: Chapter count includes two extra chapters and the following one shots:\n\n- \"[title]\"\n\n- \"[title]\"\n\n- \"[title],\" the pilot chapter"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Werewolf",
+       "rank": 98,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Meta",
+       "rank": 83,
+       "spoiler": true
+      },
+      {
+       "name": "Fairy Tale",
+       "rank": 81,
+       "spoiler": false
+      },
+      {
+       "name": "Magic",
+       "rank": 70,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Yuuki Kawaguchi",
+       "native": "川口勇貴",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Grimm",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b239465-wxdBQnKoLD1r.png"
+      },
+      {
+       "name": "Velou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b239458-pvvRPgGagjho.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Debonair",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b245362-YTKpvYSIz0xo.png"
+      },
+      {
+       "name": "Mylty",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b244048-jPiZvvEAJCWj.png"
+      },
+      {
+       "name": "Merriopios",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b248526-Vdol5zMWwIcY.png"
+      },
+      {
+       "name": "Tylty",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b244047-NaCxVCqYPU7S.jpg"
+      },
+      {
+       "name": "Sonchou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b245293-mM2i71a8Hdrm.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "A Straw House With Strong Foundations Will Still Fall Over When A Werewolf Comes Knocking",
+      "excerpt": "“Werewolves are the same as humans. They must eat, or they will starve and die. There’s nothing 'good' or 'evil' about it.”\n\n- [character], Chapter 1\n\n_Red Hood_ is an interesting case of a manga that had a strong core but quickly lost sight of what it was trying to say. This led to an unfocused and chaotic series that ended up privileging style over story and suffering for it. If it had a more...",
+      "score": 33,
+      "upvotes": 17,
+      "url": "https://anilist.co/review/15076"
+     },
+     {
+      "cost": 50,
+      "summary": "“Un manga breve shonen tan interesante como los más grandes”",
+      "excerpt": "[title] – Reseña\n\nIntroducción:\n\nEl Nekketsu es un subgénero del manga shōnen centrado en protagonistas jóvenes, crecimiento personal y combates progresivos. Obras como Naruto, Dragon Ball o My Hero Academia se enmarcan dentro de este estilo, generalmente en formatos de larga duración.\n\nLa obra analizada pertenece a una propuesta más breve dentro del mismo género, con una reinterpretación de...",
+      "score": 70,
+      "upvotes": 10,
+      "url": "https://anilist.co/review/29230"
+     },
+     {
+      "cost": 50,
+      "summary": "A strong premise held back by amateur mistakes, with an incredibly fun train wreck of an ending",
+      "excerpt": "This review contains spoilers.\nI will start by saying that [title] probably doesn't deserve as high of a score as I have it at. The series is very clearly created by a newbie mangaka, and being Kawaguchi's first series, has a bunch of flaws that he hopefully learned from and won't have in his next series. However, the series is just plain fun for me. Mileage may vary.\n\n[title] is set in a high...",
+      "score": 82,
+      "upvotes": 9,
+      "url": "https://anilist.co/review/17960"
+     }
+    ]
+   },
+   "answer": {
+    "title": "The Hunters Guild: Red Hood",
+    "romaji": "Red Hood",
+    "native": "レッドフード",
+    "url": "https://anilist.co/manga/135981",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx135981-Xpm9OrtEHHcq.jpg",
+    "accepted_aliases": [
+     "The Hunters Guild: Red Hood",
+     "Red Hood",
+     "El gremio de cazadores: red hood",
+     "Yadokari no Kuni",
+     "Myakunashi",
+     "The Hunters Guild",
+     "El gremio de cazadores",
+     "The Hunter's Guild: Red Hood"
+    ],
+    "mangadex_id": "7ce4a6a6-6e57-41fa-a8b2-d54f901dc6a6"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 168928,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 2100,
+    "average_score": 71,
+    "genres": [
+     "Action",
+     "Drama"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2023, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx168928-c7feONOMZafA.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "An ex-pro gamer of the FPS genre (♂) reincarnated in a fantasy world filled with magic... Only to learn that what greeted him was not a scene from one's dreams, but a muddy battlefield full of bullets flying to and fro! Moreover, he's now an orphan girl named [character]?!\n\nAfter her aptitude for healing magic was discovered, she decided to volunteer in the army as a second-class medic, all to raise money for the orphanage where she was born and raised. However, without even getting magic training, she was attached to an assault squad, repeatedly fighting on the most cruel battlefields of the \"Western Front.\"\n\nThe mission given to her was to become the personal medic of the frontline's ace, [character], and not let him die at any cost. But he turned out to be the worst commander, who will try to get results whatever the cost, even if it means the death of his subordinates!\n\nOn the battlefield, mired in unreasonable orders and violence, [character]'s fierce battle for survival continues..."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "War",
+       "rank": 100,
+       "spoiler": false
+      },
+      {
+       "name": "Military",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 80,
+       "spoiler": true
+      },
+      {
+       "name": "Isekai",
+       "rank": 71,
+       "spoiler": false
+      },
+      {
+       "name": "Magic",
+       "rank": 66,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Tama Masaki",
+       "native": "まさきたま",
+       "role": "Original Story"
+      },
+      {
+       "name": "Mimishiki",
+       "native": "耳式",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Touri Noel",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b314386-1JDsYADjWdvm.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Garback",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b314387-wjAuYGWCqpXT.jpg"
+      },
+      {
+       "name": "Salsa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b314388-OTCcWdF2cNNE.jpg"
+      },
+      {
+       "name": "Gale",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b314384-vH4NV8idS0S7.jpg"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Genderswapped Medic's Battlefield Diary",
+    "romaji": "TS Eiseihei-san no Senjou Nikki",
+    "native": "TS衛生兵さんの戦場日記",
+    "url": "https://anilist.co/manga/168928",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx168928-c7feONOMZafA.jpg",
+    "accepted_aliases": [
+     "TS Eiseihei-san no Senjou Nikki",
+     "Genderswapped Medic's Battlefield Diary",
+     "TS Medic's Battlefield Diary",
+     "Miss Medic's Diary at War"
+    ],
+    "mangadex_id": "56dec7d4-9d44-4689-a748-1434c6dfd17f"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 100567,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 1197,
+    "average_score": 73,
+    "genres": [
+     "Drama"
+    ],
+    "demographic": [],
+    "release": "2009 to 2011"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx100567-mxrcdpsBfBHA.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "After losing everything in an instant, a glint of hope amidst the deep despair presents her with a new life."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Tragedy",
+       "rank": 95,
+       "spoiler": true
+      },
+      {
+       "name": "Full Color",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Rape",
+       "rank": 50,
+       "spoiler": true
+      },
+      {
+       "name": "Bullying",
+       "rank": 50,
+       "spoiler": true
+      },
+      {
+       "name": "Twins",
+       "rank": 50,
+       "spoiler": true
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Ji-Hun Jeong",
+       "native": "정지훈",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "A story about flowers of hope blooming in the harshest of winters",
+      "excerpt": "*[title]* is a collection of interweaving stories about people who've suffered greatly, and ended up hating themselves in some way because of it, and their path towards finding happiness through their relationships with others. It's very touching story, with heart wrenching moments that I couldn't even begin to do justice to by simply describing them or the emotions they...",
+      "score": 76,
+      "upvotes": 6,
+      "url": "https://anilist.co/review/22963"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Neoege Hago Sip-eun Mal",
+    "romaji": "Neoege Hago Sipeun Mal",
+    "native": "너에게 하고 싶은 말",
+    "url": "https://anilist.co/manga/100567",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx100567-mxrcdpsBfBHA.png",
+    "accepted_aliases": [
+     "Neoege Hago Sipeun Mal",
+     "Ce que j'ai à te dire",
+     "I Have Something to Tell You",
+     "What I Want to Tell You",
+     "Neoege Hago Sip-eun Mal"
+    ],
+    "mangadex_id": "d9a44ef7-91a3-43a2-a1f1-ec0fb296c3c0"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 35293,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 19426,
+    "average_score": 62,
+    "genres": [
+     "Horror",
+     "Mystery",
+     "Psychological",
+     "Thriller"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2007 to 2009"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx35293-1KqB165Zz7w5.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[title]-a mobile phone game-has taken Japan by storm. In it, players are rabbits who must uncover the wolf in rabbit's clothing before falling prey to its mistrust-sowing wiles...as well as its teeth. When a group of teen players decides to meet offline for fun, the last thing they expect is to lose consciousness and wake up trapped in an abandoned building, mysterious bar codes tattooed on their bodies, and a corpse strung up in front of them. To stay alive and find a way out, they have but one option-to sniff out the lying wolf in their midst. Will these virtual acquaintances be able to pull it together in the real world and figure out what's going on in time to avoid ending up as the wolf's dinner?\n\nNote:\n Chapter count includes a special chapter."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Death Game",
+       "rank": 89,
+       "spoiler": false
+      },
+      {
+       "name": "Revenge",
+       "rank": 84,
+       "spoiler": true
+      },
+      {
+       "name": "Crime",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 80,
+       "spoiler": true
+      },
+      {
+       "name": "Gore",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 76,
+       "spoiler": false
+      },
+      {
+       "name": "Yandere",
+       "rank": 74,
+       "spoiler": true
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Yoshiki Tonogai",
+       "native": "外海良基",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Rei Hazama",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b10656-xJvSwVIwZikc.png"
+      },
+      {
+       "name": "Hajime Komaba",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b10651-4t6rXPKSpJJe.png"
+      },
+      {
+       "name": "Eiji Hoshi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b10654-gET5O9YAIotp.png"
+      },
+      {
+       "name": "Yuu Aikawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/12600.jpg"
+      },
+      {
+       "name": "Mitsuki Houyama",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b13772-mQSlE0PtnSWC.png"
+      },
+      {
+       "name": "Haruka Akechi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/10653.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Keiko",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b65487-m2beF8vRnjao.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Doubt",
+    "romaji": "Doubt",
+    "native": "Doubt",
+    "url": "https://anilist.co/manga/35293",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx35293-1KqB165Zz7w5.png",
+    "accepted_aliases": [
+     "Doubt",
+     "Rabbit Doubt"
+    ],
+    "mangadex_id": "a30563ce-6d29-4638-b3a8-947b03d599c2"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 86898,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 12309,
+    "average_score": 77,
+    "genres": [
+     "Comedy",
+     "Fantasy",
+     "Supernatural"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2014 to 2022"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86898-lIrpjlQqzVhc.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Call them “demis”! … Vampires, dullahans, succubi, snow women. These are just a few of those beings once known as “demi-humans,” and high school Biology teacher Testsuo [character] has always wanted to meet them. He gets his chance when the new term starts, and there are four “demis” in his school! Join the caring, bumbling [character] in his quest to get to know these adorable monster girls, while helping them navigate the highs and lows of high school!\n\nNotes:\n\n- Placed second in the Tsugimanga 2016 Award in the Print Manga Category.\n\n- Includes five extra chapters."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Monster Girl",
+       "rank": 100,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Dullahan",
+       "rank": 81,
+       "spoiler": false
+      },
+      {
+       "name": "Mythology",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Educational",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Teacher",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Urban Fantasy",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Vampire",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Succubus",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Petosu",
+       "native": "ペトス ",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Hikari Takanashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b120924-UVmyrREglBoK.jpg"
+      },
+      {
+       "name": "Sakie Satou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b120928-qtz2NcVou1o6.jpg"
+      },
+      {
+       "name": "Kyouko Machi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/120925-GqT2h1hOoc75.png"
+      },
+      {
+       "name": "Tetsuo Takahashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n120923-2aNbRX4FEI2b.png"
+      },
+      {
+       "name": "Yuki Kusakabe",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b120926-JipA1jnaWsZ7.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Himari Takanashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/120927-fOwlFwf1P6db.jpg"
+      },
+      {
+       "name": "Kaoru Higa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b326409-k4qprLxOr18S.jpg"
+      },
+      {
+       "name": "Kurz",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b159080-pqzxJuf0h55s.png"
+      },
+      {
+       "name": "Ugaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b186383-YuOrW3BZQwgz.png"
+      },
+      {
+       "name": "Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b187150-ZP1eOAre3J1I.png"
+      },
+      {
+       "name": "Yoko Takahashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b326410-DElUHlNf3nkd.png"
+      },
+      {
+       "name": "Zashiko",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b326411-oZHZzBK1SvwS.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "[title]",
+      "excerpt": "[title] (Ou [title])\n\nType : Manga\nStatut : Publication\nPremière publication : 5 Septembre 2014\nGenres : Comédie, Fantaisie, Lycée, Seinen\nAuteurs : Petosu (Art et Histoire)\nSérie : Young Magazine the 3rd\n_\nSynopsis : L'histoire se déroule à une époque où les demis-humains, plus connus sous le nom de « demis », ont commencé lentement à être acceptés dans la...",
+      "score": 80,
+      "upvotes": 13,
+      "url": "https://anilist.co/review/13153"
+     },
+     {
+      "cost": 50,
+      "summary": "An phenomenally creative slice of life about monster girls integrating into society!",
+      "excerpt": "When I first became an active seasonal watcher in 2017, this was one of the first series that I watched and really liked. Since that time, I followed the manga with its yearly volume release and loved it more and more. Now that it’s finished, I can conclude this series is a masterpiece.\n\nThis series is very special in its execution of the typical monsters vs. humans plot. The story is a...",
+      "score": 100,
+      "upvotes": 10,
+      "url": "https://anilist.co/review/22922"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Interviews with Monster Girls",
+    "romaji": "Demi-chan wa Kataritai",
+    "native": "亜人ちゃんは語りたい",
+    "url": "https://anilist.co/manga/86898",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86898-lIrpjlQqzVhc.png",
+    "accepted_aliases": [
+     "Interviews with Monster Girls",
+     "Demi-chan wa Kataritai",
+     "Ajin-chan wa Kataritai",
+     "Interviews mit Monster-Mädchen",
+     "Freaky Girls",
+     "Interviews With Monster Girls",
+     "Demi-chan Wants to Talk",
+     "Demi-chans Want To Tell"
+    ],
+    "mangadex_id": "afc939f8-fea2-4d46-baa3-dd00520abc73"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 111970,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 11522,
+    "average_score": 79,
+    "genres": [
+     "Drama",
+     "Romance",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2018 to 2020"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111970-hpmPgZprtvI4.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "England, the early 1900s. [character], a young noblewoman, has a Japanese maid named [character] working in her household. The two have a fairly typical relationship…until the day [character] begs [character] to kill her. As [character] tries to figure out why her mistress would make such a terrible request, she and [character] grow closer until an entirely new feeling begins to blossom between them.\n\nNote: Chapter count includes an extra Intermission chapter in vol. 2."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Maids",
+       "rank": 98,
+       "spoiler": false
+      },
+      {
+       "name": "Historical",
+       "rank": 96,
+       "spoiler": false
+      },
+      {
+       "name": "Yuri",
+       "rank": 96,
+       "spoiler": false
+      },
+      {
+       "name": "Ojou-sama",
+       "rank": 96,
+       "spoiler": false
+      },
+      {
+       "name": "Foreign",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "LGBTQ+ Themes",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 81,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Female Cast",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Writing",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Dr. Pepperco",
+       "native": "毒田ペパ子",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Hanako Kujo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b232236-4fT9RzkWnfjj.png"
+      },
+      {
+       "name": "Alice Douglas",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b232235-H8Yh0w51QigB.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Edward",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b304395-JUp8ehc0G3fo.jpg"
+      },
+      {
+       "name": "Eliza McGovern",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b308955-gUDoKIWQnJMT.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "A very sweet, riveting, and well-researched manga that's a treat for both historical fiction and yuri fans!",
+      "excerpt": "One genre of media that I've never really gravitated towards was romance, namely because many of the plots for romance were always very melodramatic or formulaic. It wasn't that I inherently hated romance as a genre, I just never found any romance media that really appealed to me. That would get rectified later in my life as I began to read and watch more things. I'm also not really into yaoi or...",
+      "score": 89,
+      "upvotes": 46,
+      "url": "https://anilist.co/review/15130"
+     },
+     {
+      "cost": 50,
+      "summary": "\"[title]\" is a classic \"forbidden\" romance story.",
+      "excerpt": "This book read like poetry. I've learned a lot of new words, although I have already forgotten most of them. English is difficult\n\nAs [character] found herself losing confidence and helpless as she wasn't able to help her student, she found peace in reading, namely by Victor Franks. A bookworm she is, she decided to venture to London to meet her favourite author Franks — as well as she is trying to...",
+      "score": 80,
+      "upvotes": 32,
+      "url": "https://anilist.co/review/16326"
+     },
+     {
+      "cost": 50,
+      "summary": "[title] a very cute and heartwarming story",
+      "excerpt": "One day I was looking though a list of yuri manga that a friend sent me. The title \"[title]\" it grabbed my attention somehow and got me hooked. The cover art looks gorgeous and the title sounds beautiful and poetic. I had nothing else to read so I started reading it and it didn't take long for me to get invested in the manga and its story.\n\nStory\nThe story takes place in 1900's Great...",
+      "score": 100,
+      "upvotes": 18,
+      "url": "https://anilist.co/review/20745"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Goodbye, My Rose Garden",
+    "romaji": "Sayonara Rose Garden",
+    "native": "さよならローズガーデン",
+    "url": "https://anilist.co/manga/111970",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111970-hpmPgZprtvI4.jpg",
+    "accepted_aliases": [
+     "Goodbye, My Rose Garden",
+     "Sayonara Rose Garden",
+     "Tạm biệt Vườn hồng",
+     "Leb wohl, mein Rosengarten",
+     "Sbohem, má růžová zahrado",
+     "Adeus, meu jardim de rosas",
+     "Yǒngbiéle qiángwēi huāyuán"
+    ],
+    "mangadex_id": "3e7cd288-b982-45c5-bcae-f9fa7e902c4d"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 125636,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 32389,
+    "average_score": 71,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy"
+    ],
+    "demographic": [],
+    "release": "2020, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125636-g0gkyLZbo3Tz.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Struck by an enemy’s arrow, the powerless Prince Davey O’Rowane falls into a coma. His soul travels to a place where the greatest of the great gather—the honorable Hall of Heroes. There a thousand years pass as Davey undergoes excruciating training under their watchful eyes to become a hero too strong for his own good. Now back to his timeline and his kingdom, he’s wide awake and the enemies hiding in the king’s court better be prepared. The prince they had dismissed is now their biggest threat!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Male Protagonist",
+       "rank": 93,
+       "spoiler": false
+      },
+      {
+       "name": "Politics",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Full Color",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Magic",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Conspiracy",
+       "rank": 79,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Yudo",
+       "native": "유도",
+       "role": "Story & Art"
+      },
+      {
+       "name": "Angmakkori",
+       "native": "악마꼬리",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Davy Al Raun",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b220162-L46O7d8Az40R.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Perserk von Palan",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b220163-omfegmAzxiXG.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "The Max Level Hero Strikes Back!",
+    "romaji": "Mallep Yeongungnim Kkeseo Gwihwan Hasinda!",
+    "native": "만렙 영웅님 께서 귀환 하신다!",
+    "url": "https://anilist.co/manga/125636",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125636-g0gkyLZbo3Tz.png",
+    "accepted_aliases": [
+     "The Max Level Hero Strikes Back!",
+     "Mallep Yeongungnim Kkeseo Gwihwan Hasinda!",
+     "Max Level Hero is Making a Comeback!",
+     "The Max Level Hero has Returned!",
+     "Max Level Hero",
+     "Saishuu Level Eiyuu no go Kikan"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  }
+ ]
+}
