@@ -1463,5 +1463,42 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 41904,
+   "n": "Hitomi kara Destiny",
+   "p": 318,
+   "y": 2008,
+   "o": "manga",
+   "a": [
+    "Destiny from the Eyes"
+   ]
+  },
+  {
+   "i": 168928,
+   "n": "Genderswapped Medic's Battlefield Diary",
+   "p": 2100,
+   "y": 2023,
+   "o": "manga",
+   "r": "TS Eiseihei-san no Senjou Nikki",
+   "a": [
+    "TS Medic's Battlefield Diary",
+    "Miss Medic's Diary at War"
+   ]
+  },
+  {
+   "i": 100567,
+   "n": "Neoege Hago Sip-eun Mal",
+   "p": 1197,
+   "y": 2009,
+   "o": "manhwa",
+   "r": "Neoege Hago Sipeun Mal",
+   "a": [
+    "Ce que j'ai à te dire",
+    "I Have Something to Tell You",
+    "What I Want to Tell You"
+   ]
+  }
  ]
 }

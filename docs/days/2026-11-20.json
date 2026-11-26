@@ -1544,5 +1544,39 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 87067,
+   "n": "Occultic;Nine",
+   "p": 385,
+   "y": 2015,
+   "o": "manga",
+   "a": [
+    "Occultic9"
+   ]
+  },
+  {
+   "i": 31748,
+   "n": "Tokimeki Tonight",
+   "p": 1344,
+   "y": 1982,
+   "o": "manga",
+   "a": [
+    "Tokimeki Tonight: Etou Mouri no Kakeochi",
+    "Exciting Tonight"
+   ]
+  },
+  {
+   "i": 126603,
+   "n": "We Won't Have Children",
+   "p": 3706,
+   "y": 2020,
+   "o": "manga",
+   "r": "Bokutachi wa Hanshoku wo Yameta",
+   "a": [
+    "We Stopped Breeding"
+   ]
+  }
  ]
 }

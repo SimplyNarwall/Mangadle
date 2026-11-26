@@ -1363,5 +1363,32 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 192835,
+   "n": "Doomsday Wonderland",
+   "p": 52,
+   "y": 2021,
+   "o": "manhua",
+   "r": "Mori Leyuan",
+   "a": [
+    "Doomsday Paradise"
+   ]
+  },
+  {
+   "i": 110267,
+   "n": "SINoALICE",
+   "p": 1425,
+   "y": 2019,
+   "o": "manga"
+  },
+  {
+   "i": 45318,
+   "n": "Door to Heaven",
+   "p": 1171,
+   "y": 2001,
+   "o": "manga"
+  }
  ]
 }

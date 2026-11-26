@@ -1367,5 +1367,40 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 194228,
+   "n": "The Three Realms Online Shop",
+   "p": 45,
+   "y": 2019,
+   "o": "manhua",
+   "r": "San Jie Taobao Dian",
+   "a": [
+    "Three Realms Taobao Store"
+   ]
+  },
+  {
+   "i": 212619,
+   "n": "The Sword God's Livestream",
+   "p": 1803,
+   "y": 2026,
+   "o": "manhwa",
+   "r": "Geomsul Goinmurui Game Bangsong",
+   "a": [
+    "The Veteran Swordmaster’s Stream",
+    "Sword God's Livestream",
+    "The Veteran Swordmaster's Stream",
+    "Swordmanship Veteran's Game Stream",
+    "Master Swordsman's Stream"
+   ]
+  },
+  {
+   "i": 109443,
+   "n": "My Fair Footman",
+   "p": 2910,
+   "y": 2018,
+   "o": "manhwa"
+  }
  ]
 }

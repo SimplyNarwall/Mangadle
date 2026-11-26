@@ -12,6 +12,7 @@ mangadle dev tools. Run from anywhere; paths default to this repo.
   python3 scripts/dev.py approve 2026-11-11     mark a day "reviewed": true (optional; the site ignores it)
   python3 scripts/dev.py shuffle --upcoming      mix up the title order of days not played yet
   python3 scripts/dev.py audit                  after re-processing the snapshot: find days to rebuild
+  python3 scripts/dev.py choices                (re)write the guess dropdown data for all built days
   python3 scripts/dev.py renumber               after changing LAUNCH_DATE in build_day.py
   python3 scripts/dev.py index                  rebuild the past days list
 
@@ -412,6 +413,25 @@ def cmd_audit(args):
         print("\nall good.")
 
 
+def cmd_choices(args):
+    """Add the guess dropdown's data to built days (no titles change, nothing spoiled)."""
+    import build_day as bd
+    snapshot = bd.load_json(os.path.join(args.data, "snapshot.json"), None)
+    if snapshot is None:
+        raise SystemExit("no snapshot; run anilist_snapshot.py first")
+    path, n = bd.write_title_list(snapshot, DOCS)
+    print(f"wrote {os.path.relpath(path, ROOT)} ({n} titles)")
+    names = sorted(f for f in os.listdir(DAYS) if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", f))
+    if not args.all:
+        names = [f for f in names if f[:10] in set(args.dates)] if args.dates else names
+    for name in names:
+        p = os.path.join(DAYS, name)
+        day = bd.load_json(p, {})
+        day["choices"] = bd.day_choices(day, snapshot)
+        bd.save_json(p, day)
+        print(f"  {name[:10]}: dropdown choices updated")
+
+
 def cmd_renumber(args):
     import build_day as bd
     hist_path = os.path.join(args.data, "history.json")
@@ -519,6 +539,12 @@ def main():
     s.add_argument("--data", default=DATA)
     s.add_argument("--all", action="store_true", help="include past days too")
     s.set_defaults(func=cmd_audit)
+
+    s = sub.add_parser("choices", help="write docs/titles.json and each day's dropdown choices")
+    s.add_argument("dates", nargs="*", help="only these dates (default: every built day)")
+    s.add_argument("--all", action="store_true", help="every built day")
+    s.add_argument("--data", default=DATA)
+    s.set_defaults(func=cmd_choices)
 
     s = sub.add_parser("renumber", help="recount puzzle numbers after changing LAUNCH_DATE")
     s.add_argument("--data", default=DATA)

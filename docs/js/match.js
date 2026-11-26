@@ -2,7 +2,7 @@
 //   - normalize: lowercase, strip accents, symbols -> spaces, drop "the/a/an/of/in", collapse spaces
 //   - edit distance counts insert / delete / substitute / adjacent swap
 //   - an alias allows floor(length / 4) edits, so aliases under 4 chars need an exact match
-//   - a close-enough guess is simply accepted (no "did you mean" prompt)
+//   (Guesses are now picked from a dropdown; normalize() is used by the search in picker.js.)
 
 // Small words that don't count when matching: "Promised Neverland" = "The Promised Neverland".
 const IGNORED_WORDS = new Set(["the", "a", "an", "of", "in"]);

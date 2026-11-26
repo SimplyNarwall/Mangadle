@@ -1603,5 +1603,40 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 116422,
+   "n": "Forty Millenniums of Cultivation",
+   "p": 1584,
+   "y": null,
+   "o": "manhua",
+   "r": "Xiuzhen Siwan Nian",
+   "a": [
+    "40,000 Cultivation Era Preamble",
+    "Forty Millennia of Cultivation"
+   ]
+  },
+  {
+   "i": 95264,
+   "n": "Nakahara-kun's Overprotective Sister",
+   "p": 929,
+   "y": 2014,
+   "o": "manga",
+   "r": "Nakahara-kun no Kahogo na Imouto"
+  },
+  {
+   "i": 123164,
+   "n": "Doujima-kun wa Doujinai",
+   "p": 9646,
+   "y": 2020,
+   "o": "manga",
+   "a": [
+    "Doujima-Kun Won't Be Disturbed",
+    "＜IF Route Bi NTR-kan?＞Himewaka ga Neteru Aida ni Itazura Sareru",
+    "Doujima-kun ha Doujinai",
+    "Doujima-kun Won't Be Disturbed"
+   ]
+  }
  ]
 }

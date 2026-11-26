@@ -464,6 +464,66 @@ def build_title(anilist_id, source, tier, raw_by_id, fetch=anilist, mangadex=man
     }
 
 
+# ------------------------------------------------------------ answer list --
+# The site's guess box picks from a list instead of free text: every "possible" title
+# (docs/titles.json, shared by all days) plus each day's own "choices": its titles from
+# outside the possible pool (its not-possible and random picks).
+TITLE_LIST_TIER = "possible"
+
+
+def choice_from_record(r):
+    """Compact list entry for a snapshot record."""
+    name = r["title"]["english"] or r["title"]["romaji"]
+    romaji = r["title"]["romaji"] if r["title"]["romaji"] and r["title"]["romaji"] != name else None
+    aliases = [a for a in r["accepted_aliases"] if a not in (name, romaji)]
+    e = {"i": r["anilist_id"], "n": name, "p": r.get("popularity") or 0, "y": r.get("start_year"), "o": r.get("origin")}
+    if romaji:
+        e["r"] = romaji
+    if aliases:
+        e["a"] = aliases
+    return e
+
+
+def choice_from_day_title(t):
+    """List entry for one of a day's titles, from its answer data."""
+    a = t["answer"]
+    name = a.get("title") or a.get("romaji")
+    romaji = a.get("romaji") if a.get("romaji") and a.get("romaji") != name else None
+    aliases = [x for x in a.get("accepted_aliases", []) if x not in (name, romaji)]
+    rel = t.get("revealed", {})
+    year = None
+    if rel.get("release"):
+        m = re.match(r"(\d{4})", str(rel["release"]))
+        year = int(m.group(1)) if m else None
+    e = {"i": t["anilist_id"], "n": name, "p": rel.get("popularity") or 0, "y": year, "o": rel.get("origin")}
+    if romaji:
+        e["r"] = romaji
+    if aliases:
+        e["a"] = aliases
+    return e
+
+
+def list_pool(snapshot):
+    return [r for r in snapshot if r["accepted_aliases"]
+            and snap.tier_for(r.get("popularity") or 0) == TITLE_LIST_TIER]
+
+
+def write_title_list(snapshot, site_dir):
+    """docs/titles.json: every possible-pool title, the base of the guess dropdown."""
+    entries = sorted((choice_from_record(r) for r in list_pool(snapshot)), key=lambda e: -e["p"])
+    os.makedirs(site_dir, exist_ok=True)
+    path = os.path.join(site_dir, "titles.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(entries, f, ensure_ascii=False, separators=(",", ":"))
+    return path, len(entries)
+
+
+def day_choices(day, snapshot):
+    """A day's own dropdown entries: its titles outside the possible pool."""
+    listed = {r["anilist_id"] for r in list_pool(snapshot)}
+    return [choice_from_day_title(t) for t in day["titles"] if t["anilist_id"] not in listed]
+
+
 def puzzle_number(date):
     return (date - LAUNCH_DATE).days + 1
 
@@ -529,8 +589,10 @@ def build_day(date, data_dir, force=False, fetch=anilist, mangadex=mangadex_alia
     day = {"date": date.isoformat(), "number": number, "reviewed": False, "rebuilds": rebuilds,
            "start_points": 1000, "titles": titles}
 
+    day["choices"] = day_choices(day, snapshot)
     save_json(out_path, day)
     write_index(days_dir)
+    write_title_list(snapshot, os.path.dirname(os.path.abspath(days_dir)))
     history.append({"date": date.isoformat(), "number": number, "anilist_ids": [t["anilist_id"] for t in titles]})
     history.sort(key=lambda h: h["date"])
     save_json(hist_path, history)

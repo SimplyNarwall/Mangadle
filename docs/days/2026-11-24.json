@@ -1353,5 +1353,48 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 124409,
+   "n": "The War of Greedy Witches",
+   "p": 5059,
+   "y": 2020,
+   "o": "manga",
+   "r": "Majo Taisen: 32-nin no Isai no Majo wa Koroshiau",
+   "a": [
+    "Witches' War",
+    "Majo Taisen: Guerra de brujas",
+    "Witches war: La gran guerra entre brujas",
+    "Majo Taisen",
+    "Witches war",
+    "Majo Taisen - 32-nin no Isai no Majo wa Koroshiau"
+   ]
+  },
+  {
+   "i": 132284,
+   "n": "Candy Flurry",
+   "p": 5127,
+   "y": 2021,
+   "o": "manga",
+   "r": "Ame no Furu",
+   "a": [
+    "Uchuusen Minamo-gou",
+    "Seiken no Yuusha no Goei"
+   ]
+  },
+  {
+   "i": 111089,
+   "n": "From Betrayed Hero to Invincible Demon King",
+   "p": 2271,
+   "y": 2018,
+   "o": "manga",
+   "r": "Saikyou Yuusha wa Oharai Hako → Maou ni Nattara Zutto Ore no Musou Return",
+   "a": [
+    "From Mightiest Hero to Demon King",
+    "Saikyou Yuusha wa Oharai Hako: Maou ni Nattara Zutto Ore no Musou Return",
+    "Saikyō Yūsha wa Oharaibako ￫ Maō ni Nattara Zutto Ore no Musō Turn"
+   ]
+  }
  ]
 }

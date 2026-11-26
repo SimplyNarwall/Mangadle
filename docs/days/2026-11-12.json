@@ -1471,5 +1471,42 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 174553,
+   "n": "Gimme Some Love!",
+   "p": 1444,
+   "y": 2023,
+   "o": "manhwa",
+   "r": "Gwansim Jom Kkeonae Jwo",
+   "a": [
+    "Give Me Some Attention"
+   ]
+  },
+  {
+   "i": 128430,
+   "n": "My Lucky Star",
+   "p": 1770,
+   "y": 2020,
+   "o": "manhua",
+   "r": "Xingchen Yu Wo",
+   "a": [
+    "My Star and I",
+    "More than All the Stars",
+    "The Stars and I",
+    "Xīngchén yú Wǒ",
+    "My Star",
+    "The Star and I",
+    "Under The Starlight"
+   ]
+  },
+  {
+   "i": 179157,
+   "n": "Kamiyu + 12",
+   "p": 27,
+   "y": 2024,
+   "o": "manga"
+  }
  ]
 }

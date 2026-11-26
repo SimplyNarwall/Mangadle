@@ -1500,5 +1500,39 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 64651,
+   "n": "Enma no Hanayome to Kimetsukerareta Fukou na Ore no Jinsei Keikaku",
+   "p": 1013,
+   "y": 2011,
+   "o": "manga",
+   "a": [
+    "Enma no Hanayome",
+    "Bride of Enma",
+    "Istri Enma"
+   ]
+  },
+  {
+   "i": 181741,
+   "n": "The Reincarnated Devil’s Plot for Raising the Ultimate Hero",
+   "p": 2734,
+   "y": 2023,
+   "o": "manga",
+   "r": "Tensei Akuma no Saikyou Yuusha Ikusei Keikaku",
+   "a": [
+    "Reincarnated Devil's Plan for Raising the Strongest Hero",
+    "Reincarnated Devil’s Plan for Raising the Strongest Hero"
+   ]
+  },
+  {
+   "i": 194407,
+   "n": "Hades and Persephone",
+   "p": 68,
+   "y": 2024,
+   "o": "manga",
+   "r": "Hades to Persephone"
+  }
  ]
 }

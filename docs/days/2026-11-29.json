@@ -1,0 +1,1370 @@
+{
+ "date": "2026-11-29",
+ "number": 19,
+ "reviewed": false,
+ "rebuilds": 0,
+ "start_points": 1000,
+ "titles": [
+  {
+   "anilist_id": 159930,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 43211,
+    "average_score": 79,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Fantasy"
+    ],
+    "demographic": [],
+    "release": "2022, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159930-qK1P4BNQL0zG.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "After Sirone was abandoned in a stable, he was found by a family of hunters and raised in a loving home. Despite the hardships of the peasant life, he learned how to read from a young age and became obsessed with books, especially ones on the history of magic. One day, he has an unlikely encounter with a mage and learns how to enter the \"spirit zone,\" the first step to learning how to use magic. Although they say only nobles can be mages, will Sirone be able to prove his infinite potential?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Magic",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 83,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 77,
+       "spoiler": false
+      },
+      {
+       "name": "Full Color",
+       "rank": 72,
+       "spoiler": false
+      },
+      {
+       "name": "Bullying",
+       "rank": 72,
+       "spoiler": true
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "kiraz",
+       "native": null,
+       "role": "Story"
+      },
+      {
+       "name": "Themis",
+       "native": "테미스",
+       "role": "Art"
+      },
+      {
+       "name": "Chi-U Kim",
+       "native": "김치우",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Shirone Arian",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b304076-s5hlaPMbwJKO.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Amy Karmis",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b304075-USXMZVmRSley.jpg"
+      },
+      {
+       "name": "Reina Ogent",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b304077-eUDIsjg10Caw.jpg"
+      },
+      {
+       "name": "Rian Ogent",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b304074-pNWDhUdU8gkU.jpg"
+      },
+      {
+       "name": "Siena Olifer",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320471-ILdlydQafoNi.png"
+      },
+      {
+       "name": "Alpeas Milch",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320473-1N5bYinoWXHD.png"
+      },
+      {
+       "name": "Etella Romi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320472-76vbMPs8oa5b.png"
+      },
+      {
+       "name": "Cerielle Portris",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320478-9q9cc62U5HdF.png"
+      },
+      {
+       "name": "Iruki Mercodain",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b411757-yXaPYADzKAXU.png"
+      },
+      {
+       "name": "Vincent Arian",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320467-Drgt2vG9GobQ.png"
+      },
+      {
+       "name": "Klump Ogent",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320476-cwPwHFSLf3E0.png"
+      },
+      {
+       "name": "Thad",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320474-4kVHFwVLv7rJ.png"
+      },
+      {
+       "name": "Guy Ogent",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320482-MPJgMgDlgHGf.png"
+      },
+      {
+       "name": "Olina Arian",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320466-TnfhRCB37PzN.png"
+      },
+      {
+       "name": "Jake Ardius",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b320468-G3BHjiSiaxuJ.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "[title] is interesting, profound, brilliant and yet dissapointing at times",
+      "excerpt": "This review is spoiler free\n\nIf you do not want to read the whole review and just wants to know if its worth reading then Yes it is definitely worth reading but do not go with much expectations, It's one of the most enjoyable and entertaining manwhas i've ever read. if you love action sequences then sorry but there isn't much action in the first 50-60ish chapters, if you love a emotional story or...",
+      "score": 83,
+      "upvotes": 19,
+      "url": "https://anilist.co/review/27548"
+     },
+     {
+      "cost": 50,
+      "summary": "Easy to enjoy, Hard to recommend. In a nutshell \"Wait 60 chapters it will get better\"",
+      "excerpt": "This is my very first review, so please bear with me.\n\nBefore we start: should you read [title]? The answer is a big fat no—unless you’re absolutely fixated on finishing the story no matter what.\n\nNot gonna lie, the story started off pretty childish. It felt like a 90s kids’ anime, and not in a good way. They tried to make it comedic but ended up creating some weird Frankenstein blend of...",
+      "score": 70,
+      "upvotes": 8,
+      "url": "https://anilist.co/review/29221"
+     }
+    ]
+   },
+   "answer": {
+    "title": "The Infinite Mage",
+    "romaji": "Muhanui Mabeopsa",
+    "native": "무한의 마법사",
+    "url": "https://anilist.co/manga/159930",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx159930-qK1P4BNQL0zG.jpg",
+    "accepted_aliases": [
+     "The Infinite Mage",
+     "Muhanui Mabeopsa",
+     "Infinite Mage",
+     "Infinite Wizard"
+    ],
+    "mangadex_id": "4d97b35d-2d9f-4369-964f-3b0ce2c7fbbc"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 129122,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 1073,
+    "average_score": 53,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Comedy",
+     "Ecchi",
+     "Fantasy"
+    ],
+    "demographic": [],
+    "release": "2020, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129122-wuYAwUjYT1kg.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "In a world where everyone is blessed by the goddess with a special skill at age 15, the poor orphan Mel receives a common \"Reveal\" skill. However, his skill is ranked…EX?! With a skill beyond even S rank, nicknamed the \"God's Eye,\" he can practically read the minds of the people he examines! Mel sets out on a journey to his homeland together with his childhood friend Silphy, an elven princess who has lost her memory, and the tiger beastwoman Clara!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Harem",
+       "rank": 20,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Shou Ryuuga",
+       "native": "龍牙翔 ",
+       "role": "Story & Art"
+      },
+      {
+       "name": "Sai Sumimori",
+       "native": "澄守彩",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "My Reveal Skill is OP! -Taking from Legendary Heroes to Become the Strongest-",
+    "romaji": "Ore no \"Kantei\" Skill ga Cheat Sugite: Densetsu no Yuusha wo Yomi \"Tori\" Saikyou e",
+    "native": "俺の『鑑定』スキルがチートすぎて　～伝説の勇者を読み“盗り”最強へ～",
+    "url": "https://anilist.co/manga/129122",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129122-wuYAwUjYT1kg.jpg",
+    "accepted_aliases": [
+     "My Reveal Skill is OP! -Taking from Legendary Heroes to Become the Strongest-",
+     "Ore no \"Kantei\" Skill ga Cheat Sugite: Densetsu no Yuusha wo Yomi \"Tori\" Saikyou e",
+     "My \"Kantei\" S-kill is too much",
+     "Ore no \"Kantei\" Skill ga Cheat Sugite",
+     "Ore no \"Kantei\" Skill ga Cheat Sugite ~Densetsu no Yuusha wo Yomi \"Tori\" Saikyou e~",
+     "Ore no \"Kantei\" Skill ga Cheat Sugite ~Densetsu no Yuusha o Yomi \"Tori\" Saikyou e~",
+     "My Reveal Skill is OP!: Taking from Legendary Heroes to Become the Strongest",
+     "My \"Appraisal\" Skill is Too Overpowered: Reading and Stealing the Legendary Hero's Skills to Become the Strongest"
+    ],
+    "mangadex_id": "c96fd0f0-603b-4a09-a589-32a7e14e0936"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 30583,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 67836,
+    "average_score": 81,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy",
+     "Horror"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2001 to 2014"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30583-Ysqwu8uryIUX.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "In a world where monsters called Yoma prey on humans and live among them in disguise, humanity’s only hope is a new breed of warrior known as Claymores. Half-human, half-monster, these silver-eyed slayers possess supernatural strength but are condemned to fight their savage impulses—or lose their humanity completely.\n\nNote: Includes four extra chapters."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Demons",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Female Cast",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Super Power",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 93,
+       "spoiler": false
+      },
+      {
+       "name": "Monster Girl",
+       "rank": 91,
+       "spoiler": false
+      },
+      {
+       "name": "Swordplay",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Gore",
+       "rank": 87,
+       "spoiler": false
+      },
+      {
+       "name": "Revenge",
+       "rank": 87,
+       "spoiler": true
+      },
+      {
+       "name": "Shapeshifting",
+       "rank": 85,
+       "spoiler": true
+      },
+      {
+       "name": "Dystopian",
+       "rank": 85,
+       "spoiler": true
+      },
+      {
+       "name": "Youkai",
+       "rank": 83,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 83,
+       "spoiler": true
+      },
+      {
+       "name": "Body Horror",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Orphan",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Ensemble Cast",
+       "rank": 80,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Norihiro Yagi",
+       "native": "八木教広",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Clare",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2188-yjGSCtaC06Yh.png"
+      },
+      {
+       "name": "Miria",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2702-VPTwNJWL3ZXF.png"
+      },
+      {
+       "name": "Helen",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2732-5VWqCclHaR11.png"
+      },
+      {
+       "name": "Raki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/2208.jpg"
+      },
+      {
+       "name": "Deneve",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2731-WrDFQ5ptu62q.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Teresa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2398-6SjGbti0dhaE.jpg"
+      },
+      {
+       "name": "Galatea",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2771-6dxfEck03vTC.png"
+      },
+      {
+       "name": "Irene",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2623-OA6RnqAZY85B.png"
+      },
+      {
+       "name": "Riful",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/2622.jpg"
+      },
+      {
+       "name": "Priscilla",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/2624.jpg"
+      },
+      {
+       "name": "Jean",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3197-rfjKi2zvnpZT.png"
+      },
+      {
+       "name": "Isley",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3339-tNSwpBUeUVhX.png"
+      },
+      {
+       "name": "Ophelia",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b2939-JpA9XBZWQMUH.png"
+      },
+      {
+       "name": "Flora",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3332-nhCwgZFlmRBt.png"
+      },
+      {
+       "name": "Clarice",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b3336-xCYwoAmhAKzr.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "A manga which surprisingly tackles leadership, love and trauma thoroughly while also having bad-ass action.",
+      "excerpt": "THIS REVIEW CONTAINS SLIGHT SPOILERS.\n\n*[title]* by Norihiro Yagi is an awesome experience. What could be catalogued as a simple underdog-becomes-overpowered story has so many touching matters and heartfelt moments in-between. It blows my mind how in 160 chapters, a story could have such amazing characters, such tense plot and stellar artwork.\n\nOne of the reasons I picked on this manga initially...",
+      "score": 88,
+      "upvotes": 66,
+      "url": "https://anilist.co/review/12660"
+     },
+     {
+      "cost": 50,
+      "summary": "Tears can flow from Silver Eyes a retrospective on [title]",
+      "excerpt": "Synospis of [title]\n\njust in case for a light synopsis [title] is about female warrior hunters who hunt yoma who are creatures that can transform into humans and devour them hiding among them in towns and cities secretly feasting whilst maintaining perfect disguise the Claymores are females infused with youma making them hybrids and eployed to hunt Youma\n\n Intro\n\n[title] appeared in my life...",
+      "score": 0,
+      "upvotes": 60,
+      "url": "https://anilist.co/review/14907"
+     },
+     {
+      "cost": 50,
+      "summary": "\"[title] what is a [title] ? \" That's what you probably ask .",
+      "excerpt": "\"[title] what is a [title] ? \" That's what you probably ask . \n[title] is a group of womans half human half demon who hunts demons for money . Anyways let's start the review .\nI will try to not spoil.\n\nI friend of mine recommended to me [title] even i was curious about this series a year ago . Anyways Thank you friend i will tag you when the reviews is complete .\n\nThe Story...",
+      "score": 100,
+      "upvotes": 43,
+      "url": "https://anilist.co/review/12231"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Claymore",
+    "romaji": "CLAYMORE",
+    "native": "CLAYMORE",
+    "url": "https://anilist.co/manga/30583",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30583-Ysqwu8uryIUX.png",
+    "accepted_aliases": [
+     "Claymore",
+     "CLAYMORE"
+    ],
+    "mangadex_id": "be8fe64b-37da-4fba-b14d-603aba19be1f"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 188964,
+   "source": "fallback",
+   "tier": "random",
+   "revealed": {
+    "origin": "manga",
+    "format": "oneshot",
+    "popularity": 69,
+    "average_score": null,
+    "genres": [
+     "Action",
+     "Drama",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2018"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx188964-hFECW8XGr8Sr.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Fujinoki, an ordinary office worker, finds unexpected joy in the irregular calls from his elementary school classmate, Akaiwa. After 20 years without seeing each other, Fujinoki has no clue about Akaiwa's whereabouts or occupation. However, their peculiar phone-only friendship takes an unexpected turn!\n\nNote: Published in Afternoon May 2018 issue."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Male Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Male Cast",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Adult Cast",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Time Skip",
+       "rank": 40,
+       "spoiler": true
+      },
+      {
+       "name": "Police",
+       "rank": 40,
+       "spoiler": true
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Honda",
+       "native": "本田",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Tatta Hitotsu no Koto shika Shiranai",
+    "romaji": "Tatta Hitotsu no Koto shika Shiranai",
+    "native": "たったひとつのことしか知らない",
+    "url": "https://anilist.co/manga/188964",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx188964-hFECW8XGr8Sr.jpg",
+    "accepted_aliases": [
+     "Tatta Hitotsu no Koto shika Shiranai",
+     "The One Thing I Don’t Know About You",
+     "The Secret You Kept From Me"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 98171,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 13036,
+    "average_score": 73,
+    "genres": [
+     "Action",
+     "Adventure",
+     "Comedy",
+     "Fantasy",
+     "Psychological",
+     "Romance"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2017, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98171-H2x8ZR5B4WKo.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "\"O, Hero!\" With that cliched line, [character] found himself summoned to another world and his adventure--did not begin. After he presents his plan to strengthen the country economically and militarily, the king cedes the throne to him and [character] finds himself saddled with ruling the nation! What's more, he's betrothed to the king's daughter now...?! In order to get the country back on its feet, [character] calls the wise, the talented, and the gifted to his side. Five people gather before the newly crowned [character]. Just what are the many talents and abilities they possess...?! What path will his outlook as a realist take [character] and the people of his country down? A revolutionary transferred-to-another-world administrative fantasy series starts here!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Isekai",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "Economics",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Politics",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Female Harem",
+       "rank": 66,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Satoshi Ueda",
+       "native": "上田悟司",
+       "role": "Story & Art"
+      },
+      {
+       "name": "Dozeumaru",
+       "native": "どぜう丸",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Liscia Elfrieden",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133336-lB9x2ceRcDfp.jpg"
+      },
+      {
+       "name": "Kazuya Souma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133333-53OfUScBG41p.png"
+      },
+      {
+       "name": "Juna Doma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133337-EPxGDgelQBlI.png"
+      },
+      {
+       "name": "Aisha Udgard",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133334-PKS9Bt9CeQpL.jpg"
+      },
+      {
+       "name": "Roroa Amidonia",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133342-pJC7sUq7cmn3.png"
+      },
+      {
+       "name": "Tomoe Inui",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133338-boVMSdhJ8qrG.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Hakuya Kwonmin",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133335-8UW3OkykJmFL.jpg"
+      },
+      {
+       "name": "Jeanne Euphoria",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133340-KomdNl7C72cy.png"
+      },
+      {
+       "name": "Elisha Elfrieden",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b133339-fbwbEqZaYGhX.png"
+      },
+      {
+       "name": "Kaede Foxia",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b240243-StNWGsZtsKCM.png"
+      },
+      {
+       "name": "Georg Carmine",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/n133341-NmGIzUwoTgiv.png"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "How a Realist Hero Rebuilt the Kingdom",
+    "romaji": "Genjitsu Shugi Yuusha no Oukoku Saikenki",
+    "native": "現実主義勇者の王国再建記",
+    "url": "https://anilist.co/manga/98171",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98171-H2x8ZR5B4WKo.jpg",
+    "accepted_aliases": [
+     "How a Realist Hero Rebuilt the Kingdom",
+     "Genjitsu Shugi Yuusha no Oukoku Saikenki",
+     "Genjitsushugisha no Oukoku Kaizouki",
+     "Genjitsushugi Yuusha no Oukoku Saikenki",
+     "A Realist Hero's Kingdom Restoration Chronicle"
+    ],
+    "mangadex_id": "1ef6ddce-7930-45ae-a335-9a45604b99f7"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 35802,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 1916,
+    "average_score": 56,
+    "genres": [
+     "Psychological",
+     "Thriller"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2008"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/5802.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "A very smart student called Hirama [character], the chairman of the student council, was used to always getting the top results in his school. One day, he walked past a group of bullies, asked them to leave, and they decided to teach him a lesson: they decided to beat up a couple of guys and push the blame onto him by reporting it to the teachers. Hirama became enraged by it and decided to attain some power that could allow him to change the world to a world that he wanted: one without such pathetic people who hide from responsibilities and look for shelter from others when in trouble. Coincidentally, his vice-chairperson called him and asked if he was fine with her inviting a hypnotist for some event at school to hype up the school population. He thought it might be THE ability that he was looking for, so he agreed to it. With his newfound knowledge Hirama plans to shape the world."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Anti-Hero",
+       "rank": 60,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 20,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 20,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Tsuzuku Yabuno",
+       "native": "藪野続久",
+       "role": "Story"
+      },
+      {
+       "name": "Akira Ootani",
+       "native": "大谷アキラ",
+       "role": "Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Ren Hiyama",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/16620.jpg"
+      },
+      {
+       "name": "Itsuki Kuonji",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/16621.jpg"
+      },
+      {
+       "name": "Haruhide Shitara",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/28343.jpg"
+      },
+      {
+       "name": "Mizuki Sonoyama",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/28344.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Yuka Takagi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/16635.jpg"
+      },
+      {
+       "name": "Oosawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/23705.jpg"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "LOST + BRAIN",
+    "romaji": "LOST+BRAIN",
+    "native": "LOST+BRAIN",
+    "url": "https://anilist.co/manga/35802",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/5802.jpg",
+    "accepted_aliases": [
+     "LOST+BRAIN",
+     "Lost Brain",
+     "LOST + BRAIN"
+    ],
+    "mangadex_id": "d965b757-0205-45c2-a80c-1398e6572bf2"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 54098,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 17809,
+    "average_score": 71,
+    "genres": [
+     "Horror",
+     "Mystery",
+     "Supernatural",
+     "Thriller"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2010 to 2011"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx54098-NZ21m9i1lZOs.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "In the spring of 1998, [character] transfers into Class 3-3 at Yomiyama North Middle School. But little does he know...his new class has a horrible secret. When he takes his seat in class for the first day of school, [character] is unsettled by his fearful classmates. Despite this atmosphere and warnings from fellow students, [character] is drawn to the beautiful, distant [character], [title] classmate. But the closer he tries to get to her, the more mysterious she and their class become. And when a fellow student dies a disturbing death - the first of a long chain of deaths - [character] seeks to learn the truth behind the curse of Class 3-3. But can he get answers before the curse kills him?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Tragedy",
+       "rank": 93,
+       "spoiler": true
+      },
+      {
+       "name": "School",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Memory Manipulation",
+       "rank": 79,
+       "spoiler": true
+      },
+      {
+       "name": "Primarily Teen Cast",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Denpa",
+       "rank": 79,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Yukito Ayatsuji",
+       "native": "綾辻行人",
+       "role": "Original Story"
+      },
+      {
+       "name": "Hiro Kiyohara",
+       "native": "清原紘",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Mei Misaki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b41402-uMQLbpd8uwKH.png"
+      },
+      {
+       "name": "Kouichi Sakakibara",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b41400-R2RzXzBtXOfJ.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Izumi Akazawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51585-Sp3l5TRdrULa.jpg"
+      },
+      {
+       "name": "Naoya Teshigawara",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51587-Pw1kxIJNb6Sm.png"
+      },
+      {
+       "name": "Yuuya Mochizuki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51595-WONJEojLs7jf.png"
+      },
+      {
+       "name": "Yukari Sakuragi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51589-b4fNO04kZuA1.png"
+      },
+      {
+       "name": "Tatsuji Chibiki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b55011-rexhpHhJbreS.png"
+      },
+      {
+       "name": "Sanae Mizuno",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51591-ZrDpEONukSOq.png"
+      },
+      {
+       "name": "Reiko Mikami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b51593-4DuJdXIhmz4d.png"
+      },
+      {
+       "name": "Tomohiko Kazami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b53225-SxEKv3jPnsrS.png"
+      },
+      {
+       "name": "Ikuo Takabayashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b55015-Dob3KzeG2jyj.png"
+      },
+      {
+       "name": "Katsumi Matsunaga",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b58861-cmaMkSIeUuwu.png"
+      },
+      {
+       "name": "Kazue Satou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b58843-hoWLcsRQSUAv.png"
+      },
+      {
+       "name": "Makoto Ouji",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b58865-f8LnQuODV3xH.png"
+      },
+      {
+       "name": "Sayuri Kakinuma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b58855-uglQSSmGRZ3R.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Un buen planteamiento del misterio... pero poco más.",
+      "excerpt": "Después de varios años viendo el opening de este anime en los quiz que realizaba con mis amigos por fin decidí verme [title] (y en Halloween, para hacerlo más épico), pero me terminé encontrando con un anime que cerraba con un final absurdo y muy alejado de lo que esta serie había sido en un inicio, por lo que investigué para descubrir si había realizado cambios a la fuente original y,...",
+      "score": 60,
+      "upvotes": 3,
+      "url": "https://anilist.co/review/26001"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Another",
+    "romaji": "Another",
+    "native": "アナザー",
+    "url": "https://anilist.co/manga/54098",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx54098-NZ21m9i1lZOs.jpg",
+    "accepted_aliases": [
+     "Another",
+     "Another 0",
+     "Another Zero"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 176812,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 13367,
+    "average_score": 73,
+    "genres": [
+     "Action",
+     "Fantasy"
+    ],
+    "demographic": [],
+    "release": "2024, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx176812-fXxJHqdO5Koo.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "In a world where humans enslave non-human species, the powerful wizard Leppenhardt creates an empire to safeguard these beings. However, his reign ends when he's defeated by the brutally strong Tesron, the \"King of Fists.\" But death isn’t the end, because Leppenhardt awakens in Tesron's young body! Now armed with incredible strength and a new identity, he sets off to free the non-human races again. Can the new King of Fists reshape the world for all, or will his second chance slip away?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Heterosexual",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Politics",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Kingdom Management",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Cultivation",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Full Color",
+       "rank": 60,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Pun-Dal Na",
+       "native": "나푼달",
+       "role": "Story"
+      },
+      {
+       "name": "Kyeong-Il Yang",
+       "native": "양경일",
+       "role": "Art"
+      },
+      {
+       "name": "Gyeong-Bae Im",
+       "native": "임경배",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "The Reincarnated King of Fists",
+    "romaji": "Gwonwangjeonsaeng",
+    "native": "권왕전생",
+    "url": "https://anilist.co/manga/176812",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx176812-fXxJHqdO5Koo.png",
+    "accepted_aliases": [
+     "The Reincarnated King of Fists",
+     "Gwonwangjeonsaeng",
+     "The Indomitable Martial King",
+     "Time Slip of the Fist King"
+    ],
+    "mangadex_id": "00296c8d-a815-4fdd-b4b8-c79c550ee875"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 88577,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 10169,
+    "average_score": 67,
+    "genres": [
+     "Horror",
+     "Supernatural"
+    ],
+    "demographic": [
+     "Josei"
+    ],
+    "release": "2013 to 2014"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx88577-mAUJqUUoj7NY.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "A pair of twisted siblings-Yuuma, a young man obsessed with the devil, and Chizumi, the worst little sister in recorded history-cause all sorts of tragic and terrifying things to happen wherever they go. These scary short stories will shock you with a literal interpretation of the ills that plague modern society."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Body Horror",
+       "rank": 93,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "Demons",
+       "rank": 84,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 80,
+       "spoiler": true
+      },
+      {
+       "name": "Mythology",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Junji Itou",
+       "native": "伊藤潤二",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Probably one of his whackiest manga hands down. Beware of Satan's brain melting electromagnetic waves.",
+      "excerpt": "I will say this in every single review I do of Junji Ito's stuff. The man draws whatever the fuck he wants, whenever the fuck he wants. When you have the urge to just draw a bunch of people melting horrifically into gigantic liquid piles of fleshy ooze, then you may as well as just follow that urge. That's how Junji Ito's [title] came into existence.\n\nJunji Ito felt like drawing...",
+      "score": 60,
+      "upvotes": 44,
+      "url": "https://anilist.co/review/2298"
+     },
+     {
+      "cost": 50,
+      "summary": "The combination of the art, grotesque imagery, and disturbing nature of their situations left me aghast",
+      "excerpt": "I had no idea what I was getting myself into when I was given this manga. The front depicts a pale boy, and a fiendish looking girl beside him standing in a classroom of what appears to be melted bodies. Being a fan of horror manga, the cover made me even more enticed to start it ASAP. Because even if a horror manga doesn’t manage to make me wet myself, I can always appreciate the art, or sheer...",
+      "score": 100,
+      "upvotes": 3,
+      "url": "https://anilist.co/review/24322"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Dissolving Classroom",
+    "romaji": "Youkai Kyoushitsu",
+    "native": "溶解教室",
+    "url": "https://anilist.co/manga/88577",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx88577-mAUJqUUoj7NY.jpg",
+    "accepted_aliases": [
+     "Dissolving Classroom",
+     "Youkai Kyoushitsu",
+     "Supernatural Classroom",
+     "Dissolving Series",
+     "Youkai Bijo",
+     "Youkai Apartment",
+     "Chizumi no Koi",
+     "Akuma no Kaiken",
+     "Daichi no Ko",
+     "Aula demoníaca",
+     "A Sala de Aula que Derreteu",
+     "L'École décomposée"
+    ],
+    "mangadex_id": "ca131ef8-e35d-4afc-9b8e-8aac806895f3"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 166154,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 17883,
+    "average_score": 76,
+    "genres": [
+     "Action",
+     "Fantasy"
+    ],
+    "demographic": [],
+    "release": "2023, ongoing"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx166154-m65LKgDdfe8p.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "The real world is suddenly ambushed by rifts that threaten to spill out monsters from the VR game “Chronicles of Arcana.” These rifts can only be closed by “players,” people who have awakened as their in-game characters with all the same stats and skills. Unfortunately for protagonist [character], his awakening is the opposite of cool as his avatar happens to be the one he made during the height of his awkward phase in middle school, giving him all the mannerisms and speech of an absolute cringelord. Just how will he go on to become the hero humanity needs most?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Magic",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Dissociative Identities",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Demons",
+       "rank": 68,
+       "spoiler": false
+      },
+      {
+       "name": "Full Color",
+       "rank": 66,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Gaechaban",
+       "native": "개차반",
+       "role": "Story"
+      },
+      {
+       "name": "Binukki",
+       "native": "비누끼",
+       "role": "Art"
+      },
+      {
+       "name": "Bedes",
+       "native": "베데스",
+       "role": "Original Story"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Ho-Yeol Lee",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b353341-80uysy4mFYpM.jpg"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "The Player Hides His Past",
+    "romaji": "Player-ga Gwageoreul Sumgim",
+    "native": "플레이어가 과거를 숨김",
+    "url": "https://anilist.co/manga/166154",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx166154-m65LKgDdfe8p.jpg",
+    "accepted_aliases": [
+     "The Player Hides His Past",
+     "Player-ga Gwageoreul Sumgim",
+     "Le Player cache son passé",
+     "Player ga Gwageoreul Sung-gim",
+     "The Player Hiding His Past"
+    ],
+    "mangadex_id": "4dfb6202-8f0d-4b79-8e8f-4798306d7513"
+   },
+   "review_notes": []
+  }
+ ],
+ "choices": [
+  {
+   "i": 129122,
+   "n": "My Reveal Skill is OP! -Taking from Legendary Heroes to Become the Strongest-",
+   "p": 1073,
+   "y": 2020,
+   "o": "manga",
+   "r": "Ore no \"Kantei\" Skill ga Cheat Sugite: Densetsu no Yuusha wo Yomi \"Tori\" Saikyou e",
+   "a": [
+    "My \"Kantei\" S-kill is too much",
+    "Ore no \"Kantei\" Skill ga Cheat Sugite",
+    "Ore no \"Kantei\" Skill ga Cheat Sugite ~Densetsu no Yuusha wo Yomi \"Tori\" Saikyou e~",
+    "Ore no \"Kantei\" Skill ga Cheat Sugite ~Densetsu no Yuusha o Yomi \"Tori\" Saikyou e~",
+    "My Reveal Skill is OP!: Taking from Legendary Heroes to Become the Strongest",
+    "My \"Appraisal\" Skill is Too Overpowered: Reading and Stealing the Legendary Hero's Skills to Become the Strongest"
+   ]
+  },
+  {
+   "i": 188964,
+   "n": "Tatta Hitotsu no Koto shika Shiranai",
+   "p": 69,
+   "y": 2018,
+   "o": "manga",
+   "a": [
+    "The One Thing I Don’t Know About You",
+    "The Secret You Kept From Me"
+   ]
+  },
+  {
+   "i": 35802,
+   "n": "LOST + BRAIN",
+   "p": 1916,
+   "y": 2008,
+   "o": "manga",
+   "r": "LOST+BRAIN",
+   "a": [
+    "Lost Brain"
+   ]
+  }
+ ]
+}

@@ -1365,5 +1365,42 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 111355,
+   "n": "ID:Invaded #Brake-Broken",
+   "p": 2968,
+   "y": 2019,
+   "o": "manga",
+   "r": "ID: INVADED #BRAKE BROKEN",
+   "a": [
+    "ID:INVADED #BRAKE BROKEN",
+    "ID: INVADED Ido: Invueideddo #BRAKE BROKEN"
+   ]
+  },
+  {
+   "i": 196971,
+   "n": "Onmitsu Otsubone: Anata no Honne Mietemasu",
+   "p": 1,
+   "y": 2022,
+   "o": "manga",
+   "a": [
+    "Onmitsu Otsubone"
+   ]
+  },
+  {
+   "i": 187568,
+   "n": "Lord of Fate: When Mutation Strikes",
+   "p": 1425,
+   "y": 2024,
+   "o": "manhua",
+   "r": "Ming Lun Zhi Zhu! Dang Yibian Jiang Lin Renjian",
+   "a": [
+    "The Lord of the Wheel of Destiny",
+    "Lord of the Wheel of Fortune! When Changes Come to the World",
+    "Lord of Fate"
+   ]
+  }
  ]
 }

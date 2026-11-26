@@ -1,9 +1,8 @@
-import { checkGuess, normalize } from "./match.js";
+import { loadTitleList, buildIndex, search, MAX_RESULTS, MIN_QUERY_LENGTH } from "./picker.js";
 import CONFIG from "./config.js";
 
 // ------------------------------------------------------------------ setup --
 const START_POINTS = 1000;
-const CLOSE_ENOUGH_POINTS = 250;
 const MAX_GUESSES = 3;
 const NUMBER_EMOJI = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"];
 const HINTS = [
@@ -51,6 +50,7 @@ function playerId() {
 
 // ------------------------------------------------------------------ state --
 let day = null;          // the day file
+let titleIndex = [];     // searchable answer list for the guess dropdown
 let state = null;        // the player's progress for that day
 let current = 0;         // index of the title on screen, or "results"
 const params = new URLSearchParams(location.search);
@@ -129,20 +129,21 @@ function revealHint(i, key) {
 // Up to MAX_GUESSES guesses per title. A wrong guess only uses up a guess; points come
 // from hints alone. Out of guesses (or giving up) ends the title at 0.
 // Returns a message for the guess form, or null when the title is finished.
-function submitGuess(i, guess, giveUp = false) {
+// pick = { id, name } chosen from the dropdown. A guess is right when it's the same AniList entry.
+function submitGuess(i, pick, giveUp = false) {
   const s = state.titles[i];
   if (isDone(i)) return null;
   s.guesses = s.guesses || [];
+  s.guessIds = s.guessIds || [];
   if (giveUp) {
     s.correct = false;
     s.points = 0;
   } else {
-    const n = normalize(guess);
-    if (s.guesses.some((g) => normalize(g) === n)) return `You already guessed “${guess}”.`;
-    const result = checkGuess(guess, day.titles[i].answer.accepted_aliases);
-    s.guesses.push(guess);
-    s.guess = guess;
-    if (result.correct) {
+    if (s.guessIds.includes(pick.id)) return `You already guessed “${pick.name}”.`;
+    s.guesses.push(pick.name);
+    s.guessIds.push(pick.id);
+    s.guess = pick.name;
+    if (pick.id === day.titles[i].anilist_id) {
       s.correct = true;
       s.points = pointsLeft(i);
     } else if (s.guesses.length >= MAX_GUESSES) {
@@ -288,25 +289,90 @@ function renderHint(i, key) {
   return box();
 }
 
+const ORIGIN_SHORT = { manga: "Manga", manhwa: "Manhwa", manhua: "Manhua" };
+
+// Guess box: type part of a title, pick it from the dropdown, then press Guess.
+// Only titles in the list can be guessed, so there's no typo matching to worry about.
 function renderGuessForm(i) {
   const s = state.titles[i];
   const used = (s.guesses || []).length;
   const left = MAX_GUESSES - used;
-  const input = h("input", { type: "text", placeholder: "Guess the title", autocomplete: "off", "aria-label": "Your guess" });
+  let selected = null;       // { id, name }
+  let results = [];
+  let active = -1;           // highlighted row for keyboard use
+
+  const listId = `guess-list-${i}`;
+  const input = h("input", {
+    type: "text", placeholder: "Search for a title", autocomplete: "off", spellcheck: "false",
+    "aria-label": "Search for a title", role: "combobox", "aria-autocomplete": "list",
+    "aria-controls": listId, "aria-expanded": "false",
+  });
+  const list = h("ul", { class: "picker-list", id: listId, role: "listbox", hidden: true });
+  const guessBtn = h("button", { type: "submit", class: "btn primary", disabled: true }, "Guess");
   const note = h("span", { class: "muted", role: "status" },
-    `${left} ${left === 1 ? "guess" : "guesses"} left. Wrong guesses don't cost points. Small typos are fine.`);
+    `${left} ${left === 1 ? "guess" : "guesses"} left. Wrong guesses don't cost points.`);
+
+  const choose = (k) => {
+    const hit = results[k];
+    if (!hit) return;
+    selected = { id: hit.entry.i, name: hit.entry.n };
+    input.value = hit.entry.n;
+    guessBtn.disabled = false;
+    closeList();
+  };
+  const closeList = () => { list.hidden = true; input.setAttribute("aria-expanded", "false"); active = -1; };
+  const highlight = (k) => {
+    active = k;
+    [...list.children].forEach((li, n) => li.classList.toggle("active", n === k));
+    const li = list.children[k];
+    if (li) { input.setAttribute("aria-activedescendant", li.id); li.scrollIntoView({ block: "nearest" }); }
+  };
+  const showResults = () => {
+    const q = input.value;
+    results = search(titleIndex, q, MAX_RESULTS);
+    active = -1;
+    if (q.trim().length < MIN_QUERY_LENGTH) { closeList(); return; }
+    list.replaceChildren(...(results.length ? results.map((hit, k) => {
+      const e = hit.entry;
+      const sub = [
+        e.r && e.r !== e.n ? e.r : null,
+        hit.matched && hit.matched !== e.n && hit.matched !== e.r ? `aka ${hit.matched}` : null,
+      ].filter(Boolean).join(" · ");
+      const meta = [ORIGIN_SHORT[e.o], e.y].filter(Boolean).join(", ");
+      return h("li", {
+        id: `${listId}-${k}`, role: "option", class: "picker-item",
+        onmousedown: (ev) => { ev.preventDefault(); choose(k); },
+      },
+      h("div", { class: "picker-name" }, e.n, meta ? h("span", { class: "picker-meta" }, ` ${meta}`) : null),
+      sub ? h("div", { class: "picker-sub" }, sub) : null);
+    }) : [h("li", { class: "picker-empty" }, "No matching titles")]));
+    list.hidden = false;
+    input.setAttribute("aria-expanded", "true");
+  };
+
+  input.addEventListener("input", () => { selected = null; guessBtn.disabled = true; showResults(); });
+  input.addEventListener("focus", () => { if (!selected && input.value.trim()) showResults(); });
+  // close on blur, unless focus came straight back (e.g. typing again right after pressing Guess)
+  input.addEventListener("blur", () => setTimeout(() => { if (document.activeElement !== input) closeList(); }, 100));
+  input.addEventListener("keydown", (e) => {
+    if (list.hidden || !results.length) return;
+    if (e.key === "ArrowDown") { e.preventDefault(); highlight(Math.min(results.length - 1, active + 1)); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); highlight(Math.max(0, active - 1)); }
+    else if (e.key === "Enter") { e.preventDefault(); choose(active >= 0 ? active : 0); }
+    else if (e.key === "Escape") { closeList(); }
+  });
+
   const form = h("form", {
     class: "guess-form",
     onsubmit: (e) => {
       e.preventDefault();
-      const g = input.value.trim();
-      if (!g) { input.focus(); return; }
-      const msg = submitGuess(i, g);
+      if (!selected) { note.textContent = "Pick a title from the list first."; input.focus(); return; }
+      const msg = submitGuess(i, selected);
       if (msg) { note.textContent = msg; input.select(); }
     },
   },
   used ? h("div", { class: "past-guesses" }, (s.guesses || []).map((g) => h("span", { class: "past-guess" }, `✗ ${g}`))) : null,
-  h("div", { class: "row" }, input, h("button", { type: "submit", class: "btn primary" }, "Guess")),
+  h("div", { class: "picker" }, h("div", { class: "row" }, input, guessBtn), list),
   h("div", { class: "row spread small" },
     note,
     h("button", { type: "button", class: "link-btn", onclick: () => submitGuess(i, null, true) }, "Give up")),
@@ -322,15 +388,9 @@ function renderAnswer(i) {
   const next = nextUnfinished();
   return h("div", { class: `answer ${s.correct ? "right" : "wrong"}` },
     h("div", { class: "answer-banner" },
-      s.closeEnough ? `Close enough! +${fmt(s.points)}`
-        : s.correct ? `Correct${(s.guesses || []).length > 1 ? ` on guess ${s.guesses.length}` : ""}! +${fmt(s.points)}`
+      s.correct ? `Correct${(s.guesses || []).length > 1 ? ` on guess ${s.guesses.length}` : ""}! +${fmt(s.points)}`
         : (s.guesses || []).length >= MAX_GUESSES ? `Out of guesses. Last guess: “${s.guess}”.`
         : s.guess ? `You gave up. Last guess: “${s.guess}”.` : "You gave up on this one."),
-    // Honor system, like Catfishing: if your guess was basically right, claim partial credit.
-    !s.correct && s.guess ? h("button", {
-      class: "btn close-enough-btn",
-      onclick: () => claimCloseEnough(i),
-    }, `My guess was close enough (+${CLOSE_ENOUGH_POINTS})`) : null,
     h("div", { class: "answer-body" },
       a.cover ? h("img", { class: "answer-cover", src: a.cover, alt: `Cover of ${displayTitle(t)}` }) : null,
       h("div", {},
@@ -347,18 +407,6 @@ function renderAnswer(i) {
   );
 }
 
-function claimCloseEnough(i) {
-  const s = state.titles[i];
-  if (s.correct || !s.guess) return;
-  s.correct = true;
-  s.closeEnough = true;
-  s.points = CLOSE_ENOUGH_POINTS;
-  state.submitted = false;  // results may already be sent; send the updated ones
-  saveState();
-  if (allDone()) submitResult();
-  render();
-}
-
 function nextUnfinished() {
   const k = firstOpen();
   return k < day.titles.length ? k : null;
@@ -371,9 +419,9 @@ function shareText() {
   state.titles.forEach((s, i) => {
     const used = HINTS.filter((hd) => s.revealed.includes(hd.key)).map((hd) => hd.emoji).join("");
     const label = NUMBER_EMOJI[i] || `${i + 1}.`;
-    const mark = s.closeEnough ? "🤏" : "✅";
+    const mark = "✅";
     const tries = (s.guesses || []).length;
-    const tryNote = s.correct && !s.closeEnough && tries > 1 ? ` (${tries}/${MAX_GUESSES})` : "";
+    const tryNote = s.correct && tries > 1 ? ` (${tries}/${MAX_GUESSES})` : "";
     lines.push(s.correct ? `${label} ${mark} ${fmt(s.points)}${tryNote}${used ? "  " + used : ""}` : `${label} ❌`);
   });
   lines.push(CONFIG.siteUrl || location.origin + location.pathname);
@@ -541,6 +589,7 @@ async function boot() {
     $("#app").replaceChildren(h("div", { class: "card empty" }, h("h2", {}, "No puzzle yet"), h("p", { class: "muted" }, `There's no puzzle for ${date}. `, h("a", { href: "archive.html" }, "See past days"), ".")));
     return;
   }
+  titleIndex = buildIndex(await loadTitleList(), day);
   state = loadState();
   saveState();  // persist the fingerprint right away, so a later rebuild is always detected
   const first = state.titles.findIndex((s) => s.correct === null);

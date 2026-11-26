@@ -1300,5 +1300,36 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 194614,
+   "n": "Machino-san, Waiting for a Comeback",
+   "p": 1634,
+   "y": 2025,
+   "o": "manga",
+   "r": "Tsukkomi Machi no Machino-san",
+   "a": [
+    "Machino-san Wants A Retort",
+    "Tsukkomi-machi no Machino-san"
+   ]
+  },
+  {
+   "i": 189523,
+   "n": "Ho Romance",
+   "p": 95,
+   "y": 2025,
+   "o": "manhwa",
+   "a": [
+    "Horror Romance"
+   ]
+  },
+  {
+   "i": 34260,
+   "n": "Mail",
+   "p": 1209,
+   "y": 1999,
+   "o": "manga"
+  }
  ]
 }

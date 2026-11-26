@@ -1590,5 +1590,36 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 86820,
+   "n": "Signal 100",
+   "p": 4124,
+   "y": 2015,
+   "o": "manga"
+  },
+  {
+   "i": 144626,
+   "n": "Long After the Ending",
+   "p": 2438,
+   "y": 2021,
+   "o": "manhwa",
+   "r": "Wonjageun Wangyeollan Ji Hancham Dwaetseumnidaman",
+   "a": [
+    "It's Been A While Since the Original Novel was Completed",
+    "Wonjag'eun Wangyeolnan Ji Hancham Dwaessseubnidaman",
+    "It's Been a While Since the Original Novel Was Completed",
+    "It's Been a While Since the Original Was Finished"
+   ]
+  },
+  {
+   "i": 194252,
+   "n": "Kindan Wa Ni Jusai Ni Natte Kara",
+   "p": 12,
+   "y": 2025,
+   "o": "manga",
+   "r": "Kindan wa Hatachi ni Natte Kara"
+  }
  ]
 }

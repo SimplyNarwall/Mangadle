@@ -1329,5 +1329,39 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 114521,
+   "n": "A Tyrant's First Love",
+   "p": 2690,
+   "y": 2019,
+   "o": "manhwa",
+   "r": "Pokgunhangjeui Jeotsarang",
+   "a": [
+    "The Tyrant's First Love",
+    "Poggun Hwangje-ui Cheos-salang"
+   ]
+  },
+  {
+   "i": 109828,
+   "n": "Schrodinger's Nekomiya-san",
+   "p": 243,
+   "y": 2018,
+   "o": "manga",
+   "r": "Schrodinger no Nekomiya-san"
+  },
+  {
+   "i": 130498,
+   "n": "Strongest Swordsman’s Magic Training: Reincarnated with Level 99 Stats, He Gets to Start Over from Level 1",
+   "p": 1176,
+   "y": 2020,
+   "o": "manga",
+   "r": "Saikyou Kensei no Mahou Shugyou: Level 99 no Status wo Tamotta Mama Level 1 kara Yarinaosu",
+   "a": [
+    "Strongest Swordsman’s Magic Training",
+    "Saikyou Kensei no Mahou Shugyou"
+   ]
+  }
  ]
 }

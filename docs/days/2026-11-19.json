@@ -1473,5 +1473,37 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 101038,
+   "n": "Two People's Time",
+   "p": 2526,
+   "y": 2016,
+   "o": "manga",
+   "r": "Futari no Jikan"
+  },
+  {
+   "i": 154221,
+   "n": "The Clingy New Hire Keeps Asking Me Out",
+   "p": 1230,
+   "y": 2022,
+   "o": "manga",
+   "r": "Kamatte Shinsotsu-chan ga Maikai Sasotte Kuru",
+   "a": [
+    "Kamatte Shinsotsu-chan ga Maikai Sasotte Kuru: Nee Senpai, Shigoto mo Koi mo Kyouiku Shite Moratte Ii desu ka?"
+   ]
+  },
+  {
+   "i": 53324,
+   "n": "Dazzling - Dreaming ☆Highschool 4 Koma",
+   "p": 8,
+   "y": 2007,
+   "o": "manga",
+   "r": "Mekurumeku",
+   "a": [
+    "Mekurumeku - Dreaming ☆Highschool 4 Koma"
+   ]
+  }
  ]
 }

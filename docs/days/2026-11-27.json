@@ -1567,5 +1567,35 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 155555,
+   "n": "Momo's Medical History",
+   "p": 577,
+   "y": 2022,
+   "o": "manga",
+   "r": "Momo no Ijutsushi"
+  },
+  {
+   "i": 177826,
+   "n": "Youth Explosion!",
+   "p": 1186,
+   "y": 2024,
+   "o": "manga",
+   "r": "Seishun Bakusou!",
+   "a": [
+    "¡Explosión juvenil!",
+    "Blue Spring Explosion!"
+   ]
+  },
+  {
+   "i": 110512,
+   "n": "Playing House With My Pet Dog",
+   "p": 1271,
+   "y": 2019,
+   "o": "manga",
+   "r": "Pochi Gokko."
+  }
  ]
 }

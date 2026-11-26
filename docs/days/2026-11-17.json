@@ -1336,5 +1336,47 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 110342,
+   "n": "My Stepmom's Daughter Is My Ex",
+   "p": 6151,
+   "y": 2019,
+   "o": "manga",
+   "r": "Mamahaha no Tsurego ga Motokano datta",
+   "a": [
+    "Tsurekano",
+    "Step-Exes",
+    "My Stepsister is My Ex-Girlfriend"
+   ]
+  },
+  {
+   "i": 96005,
+   "n": "Ikebukuro Otome Road Senki",
+   "p": 53,
+   "y": 2015,
+   "o": "manga",
+   "a": [
+    "Ikebukuro Otomedou Senki",
+    "Go to the Ikebukuro Otome St."
+   ]
+  },
+  {
+   "i": 35118,
+   "n": "Icare",
+   "p": 1250,
+   "y": 1997,
+   "o": "manga",
+   "r": "Icaro",
+   "a": [
+    "Ikarus",
+    "Ikar. Wydawnictwo Hanami.",
+    "Ikarus. Schreiber & Leser.",
+    "Icare. Kana.",
+    "Icaro.",
+    "Ikar"
+   ]
+  }
  ]
 }

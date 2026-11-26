@@ -1,0 +1,1539 @@
+{
+ "date": "2026-12-04",
+ "number": 24,
+ "reviewed": false,
+ "rebuilds": 0,
+ "start_points": 1000,
+ "titles": [
+  {
+   "anilist_id": 112544,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 20725,
+    "average_score": 77,
+    "genres": [
+     "Drama",
+     "Mystery",
+     "Romance",
+     "Sci-Fi",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2019 to 2026"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx112544-vDV8R4aykMTG.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Welcome to Kowloon Walled City: a dystopian townscape where the people are brimming with nostalgia, and where the past, present, and future converge. Amid the hidden emotions and extraordinary daily lives of the men and women working in its confines, a tale of romance begins to unfold for real estate agent [character]—one that feels as familiar as Kowloon itself…\n\nNote:\n\n- Nominated for the 14th Manga Taisho Award in 2021.\n\n- Nominated for the 6th Tsugimanga Award in the Print Manga Category in 2020."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Clone",
+       "rank": 97,
+       "spoiler": true
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Amnesia",
+       "rank": 85,
+       "spoiler": true
+      },
+      {
+       "name": "Memory Manipulation",
+       "rank": 80,
+       "spoiler": true
+      },
+      {
+       "name": "Primarily Adult Cast",
+       "rank": 78,
+       "spoiler": false
+      },
+      {
+       "name": "Dystopian",
+       "rank": 74,
+       "spoiler": false
+      },
+      {
+       "name": "Office Lady",
+       "rank": 73,
+       "spoiler": false
+      },
+      {
+       "name": "Urban",
+       "rank": 72,
+       "spoiler": false
+      },
+      {
+       "name": "Work",
+       "rank": 71,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Jun Mayuzuki",
+       "native": "眉月じゅん",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Reiko Kujirai",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b160725-amsqiE4A8YKd.png"
+      },
+      {
+       "name": "Hajime Kudou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b160726-OG7wrv0MigAx.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Youmei",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b205055-iVdbDjfr28cd.png"
+      },
+      {
+       "name": "Xiaohei",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b205054-4ts6uWlnV5wC.png"
+      },
+      {
+       "name": "Miyuki Hebinuma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b205053-Oiuc6c3gQtlQ.jpg"
+      },
+      {
+       "name": "Tao Nguyen",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b292981-2jmui6aKCtn3.jpg"
+      },
+      {
+       "name": "Yulong",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b356922-RJYTgWwKrVm1.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Holding onto bliss amidst a hospitable dystopia.",
+      "excerpt": "Today’s review is on [title], penned and illustrated by Mayuzuki Jun, renowned for her After the Rain romance manga. The object of the review is also a romance, albeit an unusual given how few animanga are set in Hong Kong. \n\nMore precisely, its setting is based on Hong Kong’s Kowloon Walled City, a fort turned into a densely populated Chinese enclave after the Convention for the...",
+      "score": 70,
+      "upvotes": 69,
+      "url": "https://anilist.co/review/15253"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Kowloon Generic Romance",
+    "romaji": "Kowloon Generic Romance",
+    "native": "九龍ジェネリックロマンス",
+    "url": "https://anilist.co/manga/112544",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx112544-vDV8R4aykMTG.jpg",
+    "accepted_aliases": [
+     "Kowloon Generic Romance",
+     "Kyuuryuu Generic Romance",
+     "Chuyện Tình Cửu Long"
+    ],
+    "mangadex_id": "dc22c201-a2a8-40aa-a23f-69852b0c8d0f"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 86742,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 10703,
+    "average_score": 77,
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Fantasy",
+     "Mystery",
+     "Romance"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2013 to 2023"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86742-ITZDBhrgeL0O.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character] is the [character] for the Mud Whale, diligently chronicling the lives and deaths of his people. As one of the short-lived thymia wielders, he knows his time is limited and is determined to leave a better record than his predecessors. But the steady pace of their isolated existence on the Mud Whale is abruptly shattered when a scouting party discovers a mysterious young girl who seems to know more about their home than they do…\n\nNotes: Nominated to the 21st Annual Tezuka Osamu Cultural Prize."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Dystopian",
+       "rank": 96,
+       "spoiler": false
+      },
+      {
+       "name": "Lost Civilization",
+       "rank": 94,
+       "spoiler": false
+      },
+      {
+       "name": "Philosophy",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "War",
+       "rank": 86,
+       "spoiler": false
+      },
+      {
+       "name": "Ships",
+       "rank": 76,
+       "spoiler": false
+      },
+      {
+       "name": "Male Protagonist",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Abi Umeda",
+       "native": "梅田阿比",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Ouni",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124311-IoYfnitf6Ckv.png"
+      },
+      {
+       "name": "Lykos",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124310-ubGVo4azPzjK.png"
+      },
+      {
+       "name": "Chakuro",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124309-3yUMz9VGQL81.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Ryodari",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124313-cAUyN3l6TDq0.jpg"
+      },
+      {
+       "name": "Suou",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124314-XU9rLBRcswpr.png"
+      },
+      {
+       "name": "Shuan",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124315-xiyFHNIAwWn3.png"
+      },
+      {
+       "name": "Ginshu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124312-IRUtbj7eqvUi.png"
+      },
+      {
+       "name": "Oruka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124317-N2lzhmfBz4yz.png"
+      },
+      {
+       "name": "Nibi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124318-Dx27YPiblDwg.png"
+      },
+      {
+       "name": "Sami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b124316-qSu9bcg4tzzv.png"
+      },
+      {
+       "name": "Rochalizo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b274597-VxBp539PcX03.png"
+      },
+      {
+       "name": "Koutei Heika",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b310151-6TNhRoWW5u7M.png"
+      },
+      {
+       "name": "Suzu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/124925-i0PBhJWX9fRx.jpg"
+      },
+      {
+       "name": "Shiraai",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b259064-vJMxiiPf1kus.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Um conto sobre memórias e o sentido da vida/ A tale of memories and the meaning of life",
+      "excerpt": "Um conto sobre memórias e o sentido da vida\n\nI made it in english too! It is below!\n\n[title] é um mangá que me surpreendeu de forma positiva. Comecei a lê-lo por conta da arte e pela sinopse. Estava numa vibe de procurar algum mangá que tratasse sobre uma “civilização perdida”, e o anilist me recomendou isso. E, pra minha surpresa, foi muito mais do que eu estava esperando!\n\nUsando...",
+      "score": 85,
+      "upvotes": 36,
+      "url": "https://anilist.co/review/10813"
+     },
+     {
+      "cost": 50,
+      "summary": "La plus belle calligraphie du monde pour écrire sans cesse le même message",
+      "excerpt": "It's in french because I'm too lazy to write in english sorry ! \nIl y a des spoils après ma petite introduction\n\n\"[title]\", que je vais appeler \"[title]\" pour aller plus vite, est une œuvre qui possède à la fois des immenses forces et des faiblesses que je n'ai pas réussi à ne pas considérer au cours de ma lecture. J'ai tendance à vouloir vite écrire...",
+      "score": 67,
+      "upvotes": 6,
+      "url": "https://anilist.co/review/33125"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Children of the Whales",
+    "romaji": "Kujira no Kora wa Sajou ni Utau",
+    "native": "クジラの子らは砂上に歌う",
+    "url": "https://anilist.co/manga/86742",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86742-ITZDBhrgeL0O.png",
+    "accepted_aliases": [
+     "Children of the Whales",
+     "Kujira no Kora wa Sajou ni Utau",
+     "Whale Calves Sing on the Debris",
+     "Tales of the Wales Calves",
+     "Les enfants de la baleine",
+     "Die Walkinder",
+     "Children of the Whale Sing on the Sand",
+     "Kujira no Kora wa Sajō ni Utau",
+     "Kujisuna",
+     "Tales of the Whale Calves",
+     "The Children of the Whales Sing Upon the Sand",
+     "Whale Calve"
+    ],
+    "mangadex_id": "e498f4c1-844c-40a8-bbe7-37c26287f858"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 85895,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 2361,
+    "average_score": 69,
+    "genres": [
+     "Comedy",
+     "Romance"
+    ],
+    "demographic": [
+     "Shoujo"
+    ],
+    "release": "2012 to 2015"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85895-THcupNP1QxeS.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Fujiwara is the school’s most admired student and captain of the volleyball team, but her reputation is at risk when she accidentally breaks the principal’s most prized possession, a priceless vase. Fellow student Miu witnesses the accident, and Fujiwara begs her not to tell. In exchange, she’ll do whatever Miu wants. It turns out that what Miu wants is to date Fujimaru! Although this wasn’t an arrangement that either girl expected, the two soon discover that breaking the vase may have been destiny’s way of bringing them together."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Yuri",
+       "rank": 100,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Female Cast",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Teen Cast",
+       "rank": 79,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Milk Morinaga",
+       "native": "森永みるく",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Secret of the Princess",
+    "romaji": "Ohimesama no Himitsu",
+    "native": "お姫様のひみつ",
+    "url": "https://anilist.co/manga/85895",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85895-THcupNP1QxeS.jpg",
+    "accepted_aliases": [
+     "Secret of the Princess",
+     "Ohimesama no Himitsu",
+     "Ohimesama Series",
+     "Ohime-sama no Himitsu",
+     "Ohimesama no Kagami",
+     "The Princess's Mirror"
+    ],
+    "mangadex_id": "8f6df0a4-6032-4f97-90f5-1f605404c28b"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 180263,
+   "source": "fallback",
+   "tier": "random",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 131,
+    "average_score": null,
+    "genres": [
+     "Fantasy",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2022 to 2024"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx180263-gEqtsA2zC86H.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Life at Papilon, the elite magic school, is full of hardships for Rhea who's failing in every possible way. One day, when her hidden friendship with the top student and her childhood friend Sion gets discovered by the mysterious transfer student, Joon, Rhea can’t help but notice the energy of death surrounding him… Who will be the wizard to kill her?!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Full Color",
+       "rank": 20,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 20,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Hu-Chu Baek",
+       "native": "백후추",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": null,
+     "supporting": null
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Nal Jugil Mabeopsaneun Nugu",
+    "romaji": "Nal Jugil Mabeopsaneun Nugu",
+    "native": "날 죽일 마법사는 누구",
+    "url": "https://anilist.co/manga/180263",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx180263-gEqtsA2zC86H.jpg",
+    "accepted_aliases": [
+     "Nal Jugil Mabeopsaneun Nugu",
+     "Who's the Wizard That's Gonna Kill Me?",
+     "Which Wizard Will Kill Me"
+    ],
+    "mangadex_id": null
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 104140,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 14668,
+    "average_score": 78,
+    "genres": [
+     "Comedy",
+     "Drama",
+     "Romance"
+    ],
+    "demographic": [
+     "Seinen"
+    ],
+    "release": "2018 to 2021"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104140-ELvT0r7pOsBS.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character] is a cute but lonely high school student who just wants a few loving friends. Fellow student [character] invites [character] to work at his family’s café for “cross-dressing boys,” but he makes an incorrect assumption: [character] is non-binary and doesn’t identify as a boy or a girl. However, [character] soon finds out that the café is run by LGBT+ folks of all stripes, all with their own reasons for congregating there."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "LGBTQ+ Themes",
+       "rank": 98,
+       "spoiler": false
+      },
+      {
+       "name": "Transgender",
+       "rank": 96,
+       "spoiler": false
+      },
+      {
+       "name": "Agender",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "Estranged Family",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Found Family",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Crossdressing",
+       "rank": 81,
+       "spoiler": false
+      },
+      {
+       "name": "Restaurant",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Work",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Femboy",
+       "rank": 74,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Ei Tozaki",
+       "native": "戸崎映",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Ryuunosuke Mogumo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b140254-TyItYpy1oZjt.jpg"
+      },
+      {
+       "name": "Tetsu Iwaoka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b140257-6afyklaWgZok.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Mei Tatebayashi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b140255-syHK7AmGLp87.jpg"
+      },
+      {
+       "name": "Sou Suzumi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b140258-e4tPHKX4ahEY.jpg"
+      },
+      {
+       "name": "Tenmaru Inui",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b140256-W1yFwInltOaM.jpg"
+      },
+      {
+       "name": "Kotone Mizunoe",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156882-RaWk9D1Ccvtw.jpg"
+      },
+      {
+       "name": "Satori Iwaoka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156887-spRMr1TPQf7j.jpg"
+      },
+      {
+       "name": "Ema",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156884-0B1q4GXE9h3j.jpg"
+      },
+      {
+       "name": "Ayumu",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156888-OUOnFtBEItp6.png"
+      },
+      {
+       "name": "Sakura Mogumo",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156889-V01Gn3KdWE9R.jpg"
+      },
+      {
+       "name": "Minami",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156883-dRSarpDQm03V.jpg"
+      },
+      {
+       "name": "Haruto Aikawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156885-6mdkuoJPMpJa.png"
+      },
+      {
+       "name": "Yuuma",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156886-YsICGGTTTOgE.jpg"
+      },
+      {
+       "name": "Naoya",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156890-0K0l3LsFJQN7.png"
+      },
+      {
+       "name": "Kame-chan",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b156891-KvU8s7EXNDBh.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "A story about love, acceptance, and reconciliation.",
+      "excerpt": "Review Summary\n\n\\Note: This review was written on 2021/3/3, before chapter 28 was released\\\n\n“[title]” follows the life of non-binary teenager [character] and their journey towards being accepted by the ones they love. It is a beautiful and touching story of love, acceptance, and reconciliation. Whether or not you are part of the LGBTQ community, [character]’s inner desire to be...",
+      "score": 100,
+      "upvotes": 115,
+      "url": "https://anilist.co/review/9842"
+     },
+     {
+      "cost": 50,
+      "summary": "A dumpster fire of a series filled with unlikable characters, non-stop melodrama and angst. Absolute garbage. Skip.",
+      "excerpt": "[title] is a series that treats its characters as devices to the identities that they identify as rather than letting them breathe as characters with any level of independence from whatever point the story wants to make. All discussion surrounding gender and the various identities the character have are cloaked in a level of discourse more befitting the angst you'd find off people...",
+      "score": 20,
+      "upvotes": 91,
+      "url": "https://anilist.co/review/9883"
+     },
+     {
+      "cost": 50,
+      "summary": "Well-intentioned, but doesn't always stick the landing at times. It has its heart in the right place, though.",
+      "excerpt": "Just like how LGBT-themed books are becoming more and more common, manga centered on the subject have started popping up in the anime/manga industry, with varying degrees of success in regards to how they portray LGBT themes and issues. Some, such as Yuhki Kamatani's _Shimanami Tasogare: Our Dreams At Dusk_, drawn by an actual non-binary mangaka, explore every possible facet of what it means to...",
+      "score": 77,
+      "upvotes": 20,
+      "url": "https://anilist.co/review/15172"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Love Me for Who I Am",
+    "romaji": "Fukakai na Boku no Subete wo",
+    "native": "不可解なぼくのすべてを",
+    "url": "https://anilist.co/manga/104140",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104140-ELvT0r7pOsBS.jpg",
+    "accepted_aliases": [
+     "Love Me for Who I Am",
+     "Fukakai na Boku no Subete wo",
+     "Fukaboku",
+     "Love Me for What I Am.",
+     "Fukakai na Boku no Subete o",
+     "FukaBoku"
+    ],
+    "mangadex_id": "6cc77b74-4c4a-4a58-9ae1-682471d50840"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 97812,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "oneshot",
+    "popularity": 19919,
+    "average_score": 77,
+    "genres": [
+     "Drama",
+     "Music",
+     "Romance"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2016"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx97812-ApW0c5hDLFvX.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "A heart can only beat so many times in a lifetime. Kokuhaku disease, a rare condition that weakens the heart, leaves the victim with less heartbeats and a shorter lifespan than normal. With the right device, the amount of heartbeats remaining can be measured. When [character] accidentally walks in on [character] changing her clothes, he sees this device attached to her chest. [character] has resigned herself to an uneventful and isolated life to avoid elevating her heart rate. However, she expresses her true desire—to freely and wholeheartedly experience every second she has left. Recognizing her wish, [character] swears to help her enjoy life to the fullest and make her heart beat like crazy."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Disability",
+       "rank": 100,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 96,
+       "spoiler": true
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Teen Cast",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 76,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 74,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 73,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Naoshi Komi",
+       "native": "古味直志",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Hatsu  Takagi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b184427-XOBOCgjKvccV.jpg"
+      },
+      {
+       "name": "Hato  Iijima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b184428-gKuHkNp3Ji9E.jpg"
+      }
+     ],
+     "supporting": null
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "A story about what it means to be free and live life to the fullest",
+      "excerpt": "So I reread this in order to prep for this review and now I'm feeling way too emotional for 10 AM on a Friday. But first of all, if you're wondering if you should read this or not, it's only like 47 pages so just go do it. It'll be faster than reading this review, that's for sure. So if this oneshot is so short that you could finish it before this review, why am I writing it? Because I really...",
+      "score": 90,
+      "upvotes": 105,
+      "url": "https://anilist.co/review/5435"
+     },
+     {
+      "cost": 50,
+      "summary": "Nothing to write to home about with this one.",
+      "excerpt": "Short review because short story rada rada rada.\n\nStory - 60 \nArt - 70\nCharacter - 70\nEnjoyment - 50\n\nIntro:\n\nThis is just a blown out of proportion one-shot.\n\nTo be fair, for a one-shot this is pretty good, but considering its acclamation, I went into this believing this would be able to fit in with general manga despite its length. I won't say that this then suddenly becomes worse because it...",
+      "score": 63,
+      "upvotes": 23,
+      "url": "https://anilist.co/review/10798"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Toki Doki",
+    "romaji": "Tokidoki",
+    "native": "刻どキ",
+    "url": "https://anilist.co/manga/97812",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx97812-ApW0c5hDLFvX.png",
+    "accepted_aliases": [
+     "Toki Doki",
+     "Tokidoki"
+    ],
+    "mangadex_id": "566ab917-4893-423a-8b0c-787ba77b6def"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 117620,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 26294,
+    "average_score": 87,
+    "genres": [
+     "Drama",
+     "Psychological",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2020 to 2024"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117620-cyvy8nO9GLm8.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character] is a shy girl who hardly talks to other people. Instead, she loses herself in creative writing, crafting a novel that she never plans to show anyone. But when [character]–[character]’s cute, popular classmate–gets her hands on [character]’s manuscript, everything changes. [character] is a huge fan, and suggests that [character] can get inspiration for her writing if the two of them start dating! Can these very different young ladies create their own love story together?"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Yuri",
+       "rank": 96,
+       "spoiler": false
+      },
+      {
+       "name": "Tragedy",
+       "rank": 96,
+       "spoiler": true
+      },
+      {
+       "name": "Writing",
+       "rank": 91,
+       "spoiler": false
+      },
+      {
+       "name": "Female Protagonist",
+       "rank": 89,
+       "spoiler": false
+      },
+      {
+       "name": "Rehabilitation",
+       "rank": 89,
+       "spoiler": false
+      },
+      {
+       "name": "Disability",
+       "rank": 85,
+       "spoiler": true
+      },
+      {
+       "name": "Bullying",
+       "rank": 81,
+       "spoiler": true
+      },
+      {
+       "name": "Primarily Female Cast",
+       "rank": 78,
+       "spoiler": false
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 78,
+       "spoiler": false
+      },
+      {
+       "name": "LGBTQ+ Themes",
+       "rank": 75,
+       "spoiler": false
+      },
+      {
+       "name": "Fake Relationship",
+       "rank": 74,
+       "spoiler": false
+      },
+      {
+       "name": "Primarily Teen Cast",
+       "rank": 71,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Yuama",
+       "native": "ゆあま",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Shizuku Hoshikawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b204141-4bWLJhrjvHxn.png"
+      },
+      {
+       "name": "Kaori Asaka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b204142-l8Od0EbclRo3.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Ruri Ichinose",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b308867-QuV4skFWK5MV.png"
+      },
+      {
+       "name": "Shizuka Hoshikawa",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b308864-1Q9e8eaZK521.png"
+      },
+      {
+       "name": "Seri Ichihara",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b308866-uN1uegtdyuO2.png"
+      },
+      {
+       "name": "Shiori Asaka",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b308865-0m0nb09F1KS9.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Two Girls saving each other. And saving me in the process. THE most I have ever cried in fiction.",
+      "excerpt": "You know, I'm kind of a little bit of a bumbling mess, still, after just having finished this, but I really want to get my incoherent ramblings that dare call themselves \"thoughts\" in my head out into the world for others to read.\nBecause I think this deserves even more recognition than it is getting at the moment. Much more in fact. \n\nInstead of an actual, \"structured\", review that tells you...",
+      "score": 100,
+      "upvotes": 214,
+      "url": "https://anilist.co/review/23342"
+     },
+     {
+      "cost": 50,
+      "summary": "A must-read for anyone looking for a compelling manga in good taste",
+      "excerpt": "The very first thing I feel the need to tell you is that this manga is utterly devastating. It most certainly will leave you feeling empty, sad or overwhelmed so read it at your own discretion.\n\nWith that out of the way, let me start explaining why you SHOULD read this. [title] is a manga written and illustrated by Yuama. It tells the story of [character], a girl who has...",
+      "score": 100,
+      "upvotes": 83,
+      "url": "https://anilist.co/review/23328"
+     },
+     {
+      "cost": 50,
+      "summary": "A mixture of the ruthlessness of time and unclear feelings blended together with a hint of hope. Highly recommended.",
+      "excerpt": "This manga is unequivocally a masterpiece. I was scrolling through the manga pages, thinking I'll find something light in yuri, but dear God, did I choose the worst yet best yuri I've ever read; I cannot believe how deep it hit.\n\nI binged the entire manga in one sitting, and late at night too — the worst decision I could make, 'cause I could not sleep at all. It felt like there was a lump in my...",
+      "score": 100,
+      "upvotes": 40,
+      "url": "https://anilist.co/review/29189"
+     }
+    ]
+   },
+   "answer": {
+    "title": "The Summer You Were There",
+    "romaji": "Kimi to Tsuzuru Utakata",
+    "native": "君と綴るうたかた",
+    "url": "https://anilist.co/manga/117620",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117620-cyvy8nO9GLm8.jpg",
+    "accepted_aliases": [
+     "The Summer You Were There",
+     "Kimi to Tsuzuru Utakata",
+     "KimiTsuzu",
+     "Notre été éphémère",
+     "Der Sommer, als du da warst",
+     "Un amor de tinta y espuma",
+     "Áng phù du mùa hạ",
+     "Ephemeral Spelling With You",
+     "Gòng pǔ pàomò liàn qū",
+     "Kimitsuzu",
+     "Transient Spelling With You",
+     "TSYWT"
+    ],
+    "mangadex_id": "6ecc62e4-25ad-4102-b0d8-580a8023d2fb"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 38144,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 11126,
+    "average_score": 77,
+    "genres": [
+     "Comedy",
+     "Drama",
+     "Ecchi",
+     "Romance",
+     "Sci-Fi"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2007 to 2014"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx38144-mPs2QWbRy2n3.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "[character] is a normal student whose motto is \"normal is the best\". If there is one thing abnormal, it is that he often dreams of a girl whose face he cannot even remember, and when he wakes up from that dream, he would always be crying. He tried leaving it as just a dream... but one day, from the sky, an angel descended.\n\nNote: Includes 20 extra chapters."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Harem",
+       "rank": 95,
+       "spoiler": false
+      },
+      {
+       "name": "Angels",
+       "rank": 90,
+       "spoiler": false
+      },
+      {
+       "name": "School",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Surreal Comedy",
+       "rank": 80,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Rural",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Slapstick",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Mythology",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Parody",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Slavery",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Artificial Intelligence",
+       "rank": 79,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Suu Minazuki",
+       "native": "水無月すう",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Ikaros",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b21150-VDqnMYaHeSg4.png"
+      },
+      {
+       "name": "Nymph",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b23496-I31MUgD2E9Dq.png"
+      },
+      {
+       "name": "Tomoki Sakurai",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b23490-2z5avxHoE9hO.png"
+      },
+      {
+       "name": "Astraea",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/28859.jpg"
+      },
+      {
+       "name": "Sohara Mitsuki",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b23491-8X5P0t25wvAO.png"
+      },
+      {
+       "name": "Mikako Satsukitane",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b23495-YT6KOUHOydDb.png"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Eishirou Sugata",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b23494-cOOxV2ygDecg.png"
+      },
+      {
+       "name": "Chaos",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/29581.jpg"
+      },
+      {
+       "name": "Hiyori Kazane",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/29580-ukPx93lmb6xD.png"
+      },
+      {
+       "name": "Daedalus",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b37553-4Cghix0LmOXT.png"
+      },
+      {
+       "name": "Harpy 1",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/37694.jpg"
+      },
+      {
+       "name": "Tomozo Sakurai",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b37696-FY7nNkoBr7FT.png"
+      },
+      {
+       "name": "Harpy 2",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/37695.jpg"
+      },
+      {
+       "name": "Man of Judas",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/38842.jpg"
+      },
+      {
+       "name": "Tsukino Hououin",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b60813-c0qOTcyBBjHZ.png"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "An ecchi manga with gut busting laughs and tear-inducing heart.",
+      "excerpt": "Everyone has a perverted side, whether they want to admit it. It’s a very fact of life that makes us human in every way to heighten our sexual desires in private or, in some cases, publicly. For us that are of the latter and are fans of anime, the ecchi genre has fueled that encompassing aura in our psyche that makes us like to see sexy and beautiful girls. There’s always that example that puts...",
+      "score": 90,
+      "upvotes": 15,
+      "url": "https://anilist.co/review/16680"
+     },
+     {
+      "cost": 50,
+      "summary": "A series with a lot of ambition, but does it bite off more than it can chew?",
+      "excerpt": "[title] is maybe one of the most ambitious harem series I have ever read. No other series in recent memory has come even close to desiring as much as this series does nor tries so hard to achieve its goals. This manga not only wants to be a heavily comedic ecchi harem series, but it also wants to have an intense plot full of unexpected twists and turns that leaves you wanting more....",
+      "score": 75,
+      "upvotes": 12,
+      "url": "https://anilist.co/review/13976"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Heaven's Lost Property",
+    "romaji": "Sora no Otoshimono",
+    "native": "そらのおとしもの",
+    "url": "https://anilist.co/manga/38144",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx38144-mPs2QWbRy2n3.jpg",
+    "accepted_aliases": [
+     "Sora no Otoshimono",
+     "Lost Continent of the Sky",
+     "Misplaced by Heaven",
+     "Heaven’s Lost Property",
+     "Tombée du ciel: Sora no otoshimoto",
+     "Angeloid",
+     "Sora no Otoshimono Forte",
+     "Lost Property of the Sky",
+     "Tombée du ciel",
+     "Heaven's Lost Property",
+     "The Thing Which Has Fallen From The Sky"
+    ],
+    "mangadex_id": "f66c2b61-7eda-4047-a5ff-97945db0589c"
+   },
+   "review_notes": [
+    "of"
+   ]
+  },
+  {
+   "anilist_id": 96754,
+   "source": "fallback",
+   "tier": "possible",
+   "revealed": {
+    "origin": "manga",
+    "format": "series",
+    "popularity": 11599,
+    "average_score": 80,
+    "genres": [
+     "Drama",
+     "Romance",
+     "Slice of Life"
+    ],
+    "demographic": [
+     "Shounen"
+    ],
+    "release": "2015 to 2017"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx96754-HHNc0SKT38aC.png"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "In 1910s, Japan. [character], a young man, loses his mother, the freedom in his right hand, and the pride of his father in an accident- then banished to the countryside under the guise of recuperation. Sick and tired of the world, he had become a pessemestic recluse. That's when a young girl named [character] arrives at his door. As it turns out, she was sent over by his father to become [character]'s wife...\n\nNote: Includes four extra chapters."
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Historical",
+       "rank": 92,
+       "spoiler": false
+      },
+      {
+       "name": "Family Life",
+       "rank": 88,
+       "spoiler": false
+      },
+      {
+       "name": "Marriage",
+       "rank": 85,
+       "spoiler": false
+      },
+      {
+       "name": "Coming of Age",
+       "rank": 82,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 70,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "Sana Kirioka",
+       "native": "桐丘さな",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Yuzuki Tachibana",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139895-sJXsDrmmcAIV.jpg"
+      },
+      {
+       "name": "Tamahiko Shima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139894-C4NPrBOP0tzq.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Tamako Shima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139893-VgVrGdQzKIG8.jpg"
+      },
+      {
+       "name": "Tamao Shima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139890-vpYRbUSK8LIx.jpg"
+      },
+      {
+       "name": "Ryou Atsumi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139892-zHeS4WKDOSqS.jpg"
+      },
+      {
+       "name": "Kotori Shiratori",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b215576-IRJyfnljVSqi.jpg"
+      },
+      {
+       "name": "Hikaru Shiratori",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b215575-fmjCyDDq3Di4.jpg"
+      },
+      {
+       "name": "Tamayo Shima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139887-xUTtIcTlgnLE.jpg"
+      },
+      {
+       "name": "Midori",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139889-ITGjv4QteZmY.jpg"
+      },
+      {
+       "name": "Ryoutarou Atsumi",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139891-zsucxxk0DtD9.jpg"
+      },
+      {
+       "name": "Tamayoshi Shima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139886-uf4B33SLMLAC.jpg"
+      },
+      {
+       "name": "Tamaki Shima",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b139888-7aOVuPZUaFRf.jpg"
+      }
+     ]
+    },
+    "reviews": [
+     {
+      "cost": 50,
+      "summary": "Sweetest, happiest, most adorable love story I know",
+      "excerpt": "If you are looking a cute feel-good love story, you will love this. [character], the female lead, is the sweetest, most adorable, most lovable girl I have seen in ANY work of fiction. Every page featuring her was pure delight to read. :D \n\n\"[title]\" (大正処女御伽話) means \"Taishou Maiden Fairytale\", i.e., \"A Fairytale of a Maiden of the Taishou Era\". This review covers the whole series...",
+      "score": 100,
+      "upvotes": 39,
+      "url": "https://anilist.co/review/3060"
+     },
+     {
+      "cost": 50,
+      "summary": "A refreshing take on the romance genre and cuteness overload!",
+      "excerpt": "I don't usually write reviews in general but I felt like this hidden gem deserved more recognition, and if I can get more people to read this underrated story then I am willing to do so. \n\n[title] aka Taishou Maiden Fairytale is a story focused on our two main characters [character] who is the son of a rich family and his fiancée [character]. Tamashiko is involved in an...",
+      "score": 96,
+      "upvotes": 31,
+      "url": "https://anilist.co/review/8709"
+     }
+    ]
+   },
+   "answer": {
+    "title": "Taisho Girl Fairy Tale",
+    "romaji": "Taishou Otome Otogibanashi",
+    "native": "大正処女御伽話",
+    "url": "https://anilist.co/manga/96754",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx96754-HHNc0SKT38aC.png",
+    "accepted_aliases": [
+     "Taisho Girl Fairy Tale",
+     "Taishou Otome Otogibanashi",
+     "Taishou Wotome Otogibanashi",
+     "Taisho Maiden Fairytale"
+    ],
+    "mangadex_id": "f42f3212-f2fd-4479-9d82-b9c55eaec820"
+   },
+   "review_notes": []
+  },
+  {
+   "anilist_id": 31079,
+   "source": "fallback",
+   "tier": "not_possible",
+   "revealed": {
+    "origin": "manhwa",
+    "format": "series",
+    "popularity": 1404,
+    "average_score": 67,
+    "genres": [
+     "Comedy",
+     "Drama",
+     "Romance"
+    ],
+    "demographic": [],
+    "release": "2002 to 2011"
+   },
+   "hints": {
+    "cover": {
+     "cost": 50,
+     "url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31079-3R0z29OxpEeP.jpg"
+    },
+    "summary": {
+     "cost": 100,
+     "text": "Monarchy ended long ago in Korea, but there are still other countries with Kings, Queens, princes and princesses. What if Korea had continued monarchism? What if all the beautiful palaces which are now only historical relics were actually filled with people?! What if the glamorous royal family still maintained the [title] customs?! Welcome to a world where Korea still has the royal family living their lives! Only for one high school girl, Che-Gyeong, is this a tragedy, since she has to marry the prince who apparently is a total jerk!"
+    },
+    "tags": {
+     "cost": 75,
+     "items": [
+      {
+       "name": "Female Protagonist",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Heterosexual",
+       "rank": 79,
+       "spoiler": false
+      },
+      {
+       "name": "Historical",
+       "rank": 50,
+       "spoiler": false
+      },
+      {
+       "name": "Arranged Marriage",
+       "rank": 20,
+       "spoiler": false
+      },
+      {
+       "name": "Royal Affairs",
+       "rank": 20,
+       "spoiler": false
+      }
+     ]
+    },
+    "creators": {
+     "cost": 50,
+     "items": [
+      {
+       "name": "So-Hee Park",
+       "native": "박소희",
+       "role": "Story & Art"
+      }
+     ]
+    },
+    "characters": {
+     "cost": 75,
+     "main": [
+      {
+       "name": "Chae-Gyeong Shin",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/b13854-oVNHSoTYQ5P2.png"
+      },
+      {
+       "name": "Shin Lee",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/13660.jpg"
+      },
+      {
+       "name": "Yul Lee",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/13838.jpg"
+      }
+     ],
+     "supporting": [
+      {
+       "name": "Hyo-rin Seong",
+       "image": "https://s4.anilist.co/file/anilistcdn/character/medium/29129.jpg"
+      }
+     ]
+    },
+    "reviews": []
+   },
+   "answer": {
+    "title": "Goong - The Royal Palace",
+    "romaji": "Goong",
+    "native": "궁(宮)",
+    "url": "https://anilist.co/manga/31079",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31079-3R0z29OxpEeP.jpg",
+    "accepted_aliases": [
+     "Goong - The Royal Palace",
+     "Goong",
+     "Palace Story",
+     "Princess Hours",
+     "Gung",
+     "Palace",
+     "The Royal Palace"
+    ],
+    "mangadex_id": "7bc46e10-d86d-4789-84cb-d44e538d5484"
+   },
+   "review_notes": []
+  }
+ ],
+ "choices": [
+  {
+   "i": 85895,
+   "n": "Secret of the Princess",
+   "p": 2361,
+   "y": 2012,
+   "o": "manga",
+   "r": "Ohimesama no Himitsu",
+   "a": [
+    "Ohimesama Series",
+    "Ohime-sama no Himitsu",
+    "Ohimesama no Kagami",
+    "The Princess's Mirror"
+   ]
+  },
+  {
+   "i": 180263,
+   "n": "Nal Jugil Mabeopsaneun Nugu",
+   "p": 131,
+   "y": 2022,
+   "o": "manhwa",
+   "a": [
+    "Who's the Wizard That's Gonna Kill Me?",
+    "Which Wizard Will Kill Me"
+   ]
+  },
+  {
+   "i": 31079,
+   "n": "Goong - The Royal Palace",
+   "p": 1404,
+   "y": 2002,
+   "o": "manhwa",
+   "r": "Goong",
+   "a": [
+    "Palace Story",
+    "Princess Hours",
+    "Gung",
+    "Palace",
+    "The Royal Palace"
+   ]
+  }
+ ]
+}

@@ -1399,5 +1399,36 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 123061,
+   "n": "Namja Juingonggwa Ihonhaneun Beop",
+   "p": 326,
+   "y": 2020,
+   "o": "manhwa",
+   "a": [
+    "How to Divorce the Male Lead",
+    "Namja Ju-ingong-gwa Ihonhaneun Beob"
+   ]
+  },
+  {
+   "i": 50576,
+   "n": "Paranoia Street",
+   "p": 1255,
+   "y": 2000,
+   "o": "manga"
+  },
+  {
+   "i": 86687,
+   "n": "Hanakoi Tsurane",
+   "p": 2031,
+   "y": 2015,
+   "o": "manga",
+   "a": [
+    "Le théâtre des fleurs",
+    "Dance of Love"
+   ]
+  }
  ]
 }

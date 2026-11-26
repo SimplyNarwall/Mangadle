@@ -1411,5 +1411,36 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 118001,
+   "n": "Kono Kouhai, Shinratsu ni Tsuki",
+   "p": 8,
+   "y": 2020,
+   "o": "manga"
+  },
+  {
+   "i": 97240,
+   "n": "My House Is a Magic Power Spot: Just by Living There I Become the Strongest in the World",
+   "p": 8418,
+   "y": 2016,
+   "o": "manga",
+   "r": "Ore no Ie ga Maryoku Spot Datta Ken: Sundeiru dake de Sekai Saikyou",
+   "a": [
+    "Regarding My House Being a Magic Power Spot: Just by Living There I Become the Strongest in the World",
+    "My House is a Magic Power Spot",
+    "Ore no Ie ga Maryoku Spot Datta Ken",
+    "Regarding My House Being a Magic Power Spot",
+    "Ore no Ie ga Maryoku Spot datta Ken: Sundeiru dake de Sekai Saikyou"
+   ]
+  },
+  {
+   "i": 128722,
+   "n": "Naked Color",
+   "p": 1850,
+   "y": 2020,
+   "o": "manga"
+  }
  ]
 }

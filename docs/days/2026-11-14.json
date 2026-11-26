@@ -1494,5 +1494,39 @@
    },
    "review_notes": []
   }
+ ],
+ "choices": [
+  {
+   "i": 180378,
+   "n": "Yamada's Class Diary",
+   "p": 1193,
+   "y": 2024,
+   "o": "manga",
+   "r": "Yamada no Gakkyuu Nisshi"
+  },
+  {
+   "i": 132592,
+   "n": "Mr. Right in Neighborhood",
+   "p": 53,
+   "y": 2017,
+   "o": "manhua",
+   "r": "Ge qiang You Nan Shen: Qiangxing Xiang'ai 100 Tian",
+   "a": [
+    "Ge qiang You Nan Shen"
+   ]
+  },
+  {
+   "i": 188800,
+   "n": "The Regressed Genius Player's Mythical-Rank Weapon Creation",
+   "p": 3195,
+   "y": 2025,
+   "o": "manhwa",
+   "r": "Hoegwihan Cheonjae Player-ui Sinhwageup Mugichangjo",
+   "a": [
+    "Regressed Genius Creates Mythic Items",
+    "The Regressed Genius Player's Legendary Weapon Creation",
+    "The Mythical Weapon Creation of the Regressed Genius Player"
+   ]
+  }
  ]
 }
