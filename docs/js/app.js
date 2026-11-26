@@ -1,4 +1,4 @@
-import { loadTitleList, buildIndex, search, MAX_RESULTS, MIN_QUERY_LENGTH } from "./picker.js";
+import { loadTitleList, buildIndex, search, highlightParts, MAX_RESULTS, MIN_QUERY_LENGTH } from "./picker.js";
 import CONFIG from "./config.js";
 
 // ------------------------------------------------------------------ setup --
@@ -334,17 +334,19 @@ function renderGuessForm(i) {
     if (q.trim().length < MIN_QUERY_LENGTH) { closeList(); return; }
     list.replaceChildren(...(results.length ? results.map((hit, k) => {
       const e = hit.entry;
-      const sub = [
-        e.r && e.r !== e.n ? e.r : null,
-        hit.matched && hit.matched !== e.n && hit.matched !== e.r ? `aka ${hit.matched}` : null,
-      ].filter(Boolean).join(" · ");
+      // highlight what the typed words matched, in the name and in the line under it
+      const marked = (text) => highlightParts(text, q).map((part) => part.hit ? h("mark", {}, part.text) : part.text);
+      const subParts = [];
+      if (e.r && e.r !== e.n) subParts.push(marked(e.r));
+      if (hit.matched && hit.matched !== e.n && hit.matched !== e.r) subParts.push(["aka ", ...marked(hit.matched)]);
+      const sub = subParts.flatMap((part, n) => (n ? [" · ", ...part] : part));
       const meta = [ORIGIN_SHORT[e.o], e.y].filter(Boolean).join(", ");
       return h("li", {
         id: `${listId}-${k}`, role: "option", class: "picker-item",
         onmousedown: (ev) => { ev.preventDefault(); choose(k); },
       },
-      h("div", { class: "picker-name" }, e.n, meta ? h("span", { class: "picker-meta" }, ` ${meta}`) : null),
-      sub ? h("div", { class: "picker-sub" }, sub) : null);
+      h("div", { class: "picker-name" }, ...marked(e.n), meta ? h("span", { class: "picker-meta" }, ` ${meta}`) : null),
+      sub.length ? h("div", { class: "picker-sub" }, ...sub) : null);
     }) : [h("li", { class: "picker-empty" }, "No matching titles")]));
     list.hidden = false;
     input.setAttribute("aria-expanded", "true");

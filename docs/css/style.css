@@ -140,6 +140,8 @@ input[type="text"]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 .picker-meta { color: var(--muted); font-weight: 400; font-size: 0.8rem; }
 .picker-sub { color: var(--muted); font-size: 0.82rem; margin-top: 2px; }
 .picker-empty { padding: 10px 12px; color: var(--muted); }
+.picker-item mark { background: none; color: var(--accent); font-weight: 700; padding: 0; }
+.picker-sub mark { color: color-mix(in srgb, var(--accent) 80%, var(--text)); }
 .guess-form button.primary:disabled { opacity: 0.45; cursor: not-allowed; }
 
 .past-guesses { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }

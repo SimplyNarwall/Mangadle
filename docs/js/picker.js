@@ -86,3 +86,64 @@ export function search(index, query, limit = MAX_RESULTS) {
   hits.sort((a, b) => b.score - a.score || (b.onMain - a.onMain) || (b.entry.p || 0) - (a.entry.p || 0));
   return hits.slice(0, limit);
 }
+
+// ------------------------------------------------------------------ highlight --
+// Splits text into [{ text, hit }] pieces marking the parts the typed words matched, so the
+// dropdown can show why a title came up. Works on the original text (accents, symbols and
+// case kept); each typed word marks one word of the text, preferring the start of a word.
+
+const foldChar = (c) => c.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+export function highlightParts(text, query) {
+  const qWords = normalize(query).split(" ").filter(Boolean);
+  if (!text || !qWords.length) return [{ text: text || "", hit: false }];
+
+  // words of the original text with their folded form and a map back to original offsets
+  const tokens = [];
+  for (const m of text.matchAll(/[\p{L}\p{N}]+/gu)) {
+    let folded = "";
+    const ends = [];  // ends[j] = original offset just after the char that produced folded[j]
+    [...m[0]].forEach((ch, k, arr) => {
+      const f = foldChar(ch);
+      const end = m.index + arr.slice(0, k + 1).join("").length;
+      for (let n = 0; n < f.length; n++) { folded += f[n]; ends.push(end); }
+    });
+    tokens.push({ start: m.index, folded, ends });
+  }
+
+  const marks = [];
+  const used = new Set();
+  let after = -1;  // prefer matching the typed words in order
+  for (const w of qWords) {
+    const candidates = [
+      (t, k) => k > after && t.folded.startsWith(w),
+      (t) => t.folded.startsWith(w),
+      (t) => t.folded.includes(w),
+    ];
+    let found = null;
+    for (const test of candidates) {
+      const k = tokens.findIndex((t, idx) => !used.has(idx) && test(t, idx));
+      if (k !== -1) { found = k; break; }
+    }
+    if (found === null) continue;
+    const t = tokens[found];
+    const at = t.folded.indexOf(w);
+    const from = at === 0 ? t.start : t.ends[at - 1];
+    const to = t.ends[at + w.length - 1];
+    marks.push([from, to]);
+    used.add(found);
+    after = Math.max(after, found);
+  }
+
+  marks.sort((a, b) => a[0] - b[0]);
+  const parts = [];
+  let pos = 0;
+  for (const [from, to] of marks) {
+    if (from < pos) continue;
+    if (from > pos) parts.push({ text: text.slice(pos, from), hit: false });
+    parts.push({ text: text.slice(from, to), hit: true });
+    pos = to;
+  }
+  if (pos < text.length) parts.push({ text: text.slice(pos), hit: false });
+  return parts;
+}
