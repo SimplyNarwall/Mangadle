@@ -37,17 +37,25 @@ export function buildIndex(titleList, day) {
     }));
   for (const e of extras) if (!byId.has(e.i)) byId.set(e.i, e);
   return [...byId.values()].map((e) => {
-    const names = [e.n, e.r, ...(e.a || [])].filter(Boolean);
-    return { ...e, names, norms: names.map((n) => normalize(n)) };
+    const main = [e.n, e.r].filter(Boolean);
+    const names = [...main, ...(e.a || [])];
+    return { ...e, names, mainCount: main.length, norms: names.map((n) => normalize(n)) };
   });
 }
 
 // Score how well a normalized query matches one normalized name (0 = no match).
+//   100  exact name
+//    90  the name's first words match the typed words in order ("sol lev" -> "Solo Leveling")
+//    85  the name starts with the typed text
+//    70  every typed word starts some word of the name, in order
+//    60  ... in any order ("titan attack" -> "Attack on Titan")
+//    50  the typed text appears anywhere
 function scoreName(q, qWords, name) {
   if (!name) return 0;
   if (name === q) return 100;
-  if (name.startsWith(q)) return 85;
   const words = name.split(" ");
+  if (qWords.length <= words.length && qWords.every((w, k) => words[k].startsWith(w))) return 90;
+  if (name.startsWith(q)) return 85;
   // every query word starts some word of the name (in any order): "titan attack" finds "Attack on Titan"
   if (qWords.every((w) => words.some((nw) => nw.startsWith(w)))) {
     const inOrder = qWords.every((w, k) => k === 0 || name.indexOf(w) > name.indexOf(qWords[k - 1]));
@@ -66,12 +74,15 @@ export function search(index, query, limit = MAX_RESULTS) {
   for (const e of index) {
     let best = 0;
     let matched = null;
+    let onMain = false;   // matched the shown name or romaji, not an alternate name
     e.norms.forEach((nm, k) => {
       const sc = scoreName(q, qWords, nm);
-      if (sc > best) { best = sc; matched = e.names[k]; }
+      const isMain = k < e.mainCount;
+      if (sc > best || (sc === best && sc && isMain && !onMain)) { best = sc; matched = e.names[k]; onMain = isMain; }
     });
-    if (best) hits.push({ entry: e, matched, score: best });
+    if (best) hits.push({ entry: e, matched, score: best, onMain });
   }
-  hits.sort((a, b) => b.score - a.score || (b.entry.p || 0) - (a.entry.p || 0));
+  // best match first; then matches on the main name over alternate names; then more popular
+  hits.sort((a, b) => b.score - a.score || (b.onMain - a.onMain) || (b.entry.p || 0) - (a.entry.p || 0));
   return hits.slice(0, limit);
 }
