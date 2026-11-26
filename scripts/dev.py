@@ -178,9 +178,9 @@ def cmd_fake(args):
                          "average_score": 70 + k, "genres": genres, "demographic": [demo] if demo else [],
                          "release": "2019, ongoing" if k % 3 == 0 else f"{2010 + k} to {2014 + k}"},
             "hints": {
-                "cover": {"cost": 50, "url": cover},
+                "cover": {"cost": 150, "url": cover},
                 "summary": {"cost": 100, "text": f"[character] has spent years hiding a secret. When [title] begins, a chance meeting with [character] changes everything.\n\nFake summary #{k + 1} for testing."},
-                "tags": {"cost": 75, "items": [{"name": "Fake Tag A", "rank": 91, "spoiler": False},
+                "tags": {"cost": 50, "items": [{"name": "Fake Tag A", "rank": 91, "spoiler": False},
                                                {"name": "Big Twist", "rank": 84, "spoiler": True},
                                                {"name": "Fake Tag B", "rank": 77, "spoiler": False},
                                                {"name": "Fake Tag C", "rank": 66, "spoiler": False},
@@ -189,8 +189,8 @@ def cmd_fake(args):
                 "characters": None if k == 4 else {"cost": 75, "main": [{"name": f"Hero {k + 1}", "image": None}, {"name": f"Rival {k + 1}", "image": None}],
                                                    "supporting": [{"name": f"Friend {k + 1}", "image": None}]},
                 "reviews": [] if tier in ("not_possible", "random") else [
-                    {"cost": 50, "summary": "A slow start that pays off", "excerpt": "I almost dropped [title] after the first arc, but [character] grows on you...", "score": 85, "upvotes": 40, "url": None},
-                    {"cost": 50, "summary": "Overrated", "excerpt": "The art is great but the pacing in the middle is rough.", "score": 60, "upvotes": 12, "url": None},
+                    {"cost": 25, "summary": "A slow start that pays off", "excerpt": "I almost dropped [title] after the first arc, but [character] grows on you...", "score": 85, "upvotes": 40, "url": None},
+                    {"cost": 25, "summary": "Overrated", "excerpt": "The art is great but the pacing in the middle is rough.", "score": 60, "upvotes": 12, "url": None},
                 ],
             },
             "answer": {"title": en, "romaji": romaji, "native": None, "url": "https://anilist.co",

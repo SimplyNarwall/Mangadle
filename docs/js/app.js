@@ -6,14 +6,14 @@ const START_POINTS = 1000;
 const MAX_GUESSES = 3;
 const NUMBER_EMOJI = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"];
 const HINTS = [
-  { key: "cover", label: "Cover", emoji: "🖼️", cost: 50 },
+  { key: "cover", label: "Cover", emoji: "🖼️", cost: 150 },
   { key: "summary", label: "Summary", emoji: "📖", cost: 100 },
-  { key: "tags", label: "Tags", emoji: "🏷️", cost: 75 },
+  { key: "tags", label: "Tags", emoji: "🏷️", cost: 50 },
   { key: "creators", label: "Author & artist", emoji: "✏️", cost: 50 },
   { key: "characters", label: "Characters", emoji: "😀", cost: 75 },
-  { key: "review0", label: "Review 1", emoji: "🗣️", cost: 50 },
-  { key: "review1", label: "Review 2", emoji: "🗣️", cost: 50 },
-  { key: "review2", label: "Review 3", emoji: "🗣️", cost: 50 },
+  { key: "review0", label: "Review 1", emoji: "🗣️", cost: 25 },
+  { key: "review1", label: "Review 2", emoji: "🗣️", cost: 25 },
+  { key: "review2", label: "Review 3", emoji: "🗣️", cost: 25 },
 ];
 const ORIGIN_LABEL = { manga: "Manga (Japan)", manhwa: "Manhwa (Korea)", manhua: "Manhua (China)" };
 
@@ -99,7 +99,7 @@ function hintInfo(title, key) {
   const hints = title.hints || {};
   if (key.startsWith("review")) {
     const r = (hints.reviews || [])[Number(key.slice(6))];
-    return { available: !!r, cost: r ? r.cost ?? 50 : 50, data: r };
+    return { available: !!r, cost: r ? r.cost ?? 25 : 25, data: r };
   }
   const data = hints[key];
   const def = HINTS.find((x) => x.key === key);

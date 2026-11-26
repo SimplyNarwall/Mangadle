@@ -443,12 +443,12 @@ def build_title(anilist_id, source, tier, raw_by_id, fetch=anilist, mangadex=man
             "release": release,
         },
         "hints": {
-            "cover": {"cost": 50, "url": base["cover"]},
+            "cover": {"cost": 150, "url": base["cover"]},
             "summary": {"cost": 100, "text": summary or None},
-            "tags": {"cost": 75, "items": pick_tags(base["tags"]) or None},
+            "tags": {"cost": 50, "items": pick_tags(base["tags"]) or None},
             "creators": {"cost": 50, "items": creators or None},
             "characters": {"cost": 75, "main": char_out(main) or None, "supporting": char_out(support) or None},
-            "reviews": [{"cost": 50, **r} for r in reviews],
+            "reviews": [{"cost": 25, **r} for r in reviews],
         },
         "answer": {
             # Shown when the title is revealed: English whenever any source has one.
