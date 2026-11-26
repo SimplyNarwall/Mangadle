@@ -33,6 +33,8 @@ h2, h3, h4 { margin: 0; }
 .topbar { display: flex; align-items: center; justify-content: space-between; padding-block: 18px 10px; }
 .brand { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .logo { font-weight: 800; font-size: 1.7rem; letter-spacing: -0.02em; }
+a.logo { color: inherit; text-decoration: none; }
+a.logo:hover .accent { text-decoration: underline; text-underline-offset: 4px; }
 .puzzle-meta { color: var(--muted); font-size: 0.9rem; }
 .topbar-right { display: flex; align-items: center; gap: 12px; }
 .total { font-weight: 700; font-variant-numeric: tabular-nums; }
