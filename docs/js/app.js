@@ -340,7 +340,7 @@ function renderGuessForm(i) {
       if (e.r && e.r !== e.n) subParts.push(marked(e.r));
       if (hit.matched && hit.matched !== e.n && hit.matched !== e.r) subParts.push(["aka ", ...marked(hit.matched)]);
       const sub = subParts.flatMap((part, n) => (n ? [" · ", ...part] : part));
-      const meta = [ORIGIN_SHORT[e.o], e.y].filter(Boolean).join(", ");
+      const meta = ORIGIN_SHORT[e.o] || "";
       return h("li", {
         id: `${listId}-${k}`, role: "option", class: "picker-item",
         onmousedown: (ev) => { ev.preventDefault(); choose(k); },
