@@ -137,7 +137,6 @@ input[type="text"]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 .picker-item:hover, .picker-item.active { background: var(--panel-2); }
 .picker-item.active { outline: 1px solid var(--accent); }
 .picker-name { font-weight: 600; line-height: 1.3; }
-.picker-meta { color: var(--muted); font-weight: 400; font-size: 0.8rem; }
 .picker-sub { color: var(--muted); font-size: 0.82rem; margin-top: 2px; }
 .picker-empty { padding: 10px 12px; color: var(--muted); }
 .picker-item mark { background: none; color: var(--accent); font-weight: 700; padding: 0; }

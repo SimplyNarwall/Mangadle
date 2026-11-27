@@ -289,7 +289,6 @@ function renderHint(i, key) {
   return box();
 }
 
-const ORIGIN_SHORT = { manga: "Manga", manhwa: "Manhwa", manhua: "Manhua" };
 
 // Guess box: type part of a title, pick it from the dropdown, then press Guess.
 // Only titles in the list can be guessed, so there's no typo matching to worry about.
@@ -340,12 +339,11 @@ function renderGuessForm(i) {
       if (e.r && e.r !== e.n) subParts.push(marked(e.r));
       if (hit.matched && hit.matched !== e.n && hit.matched !== e.r) subParts.push(["aka ", ...marked(hit.matched)]);
       const sub = subParts.flatMap((part, n) => (n ? [" · ", ...part] : part));
-      const meta = ORIGIN_SHORT[e.o] || "";
       return h("li", {
         id: `${listId}-${k}`, role: "option", class: "picker-item",
         onmousedown: (ev) => { ev.preventDefault(); choose(k); },
       },
-      h("div", { class: "picker-name" }, ...marked(e.n), meta ? h("span", { class: "picker-meta" }, ` ${meta}`) : null),
+      h("div", { class: "picker-name" }, ...marked(e.n)),
       sub.length ? h("div", { class: "picker-sub" }, ...sub) : null);
     }) : [h("li", { class: "picker-empty" }, "No matching titles")]));
     list.hidden = false;
